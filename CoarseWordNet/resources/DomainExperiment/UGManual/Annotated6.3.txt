@@ -1,0 +1,436 @@
+--------------------------
+###Lemma: Grading 
+###SenseIdentifier: Grading NN 874977 
+###Sense: evaluation of performance by assigning a grade or score; "what he disliked about teaching was all the grading he had to do"
+--------------------------
+--------------------------
+###Lemma: System 
+###SenseIdentifier: System NN 5726596 
+###Sense: an organized structure for arranging or classifying; "he changed the arrangement of the topics"; "the facts were familiar but it was in the organization of them that he was original"; "he tried to understand their system of classification"
+###SenseIdentifier: System NN 5902872 
+###Sense: a procedure or process for obtaining an objective; "they had to devise a system that did not depend on cooperation"
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+--------------------------
+--------------------------
+###Lemma: Points 
+###SenseIdentifier: Points NN 13610162 
+###Sense: the unit of counting in scoring a game or contest; "he scored 20 points in the first half"; "a touchdown counts 6 points"
+--------------------------
+--------------------------
+###Lemma: end 
+###SenseIdentifier: end NN 15266911 
+###Sense: the point in time at which something ends; "the end of the year"; "the ending of warranty period"
+--------------------------
+--------------------------
+###Lemma: semester 
+###SenseIdentifier: semester NN 15225797 
+###Sense: one of two divisions of an academic year
+--------------------------
+--------------------------
+###Lemma: summer 
+###SenseIdentifier: summer NN 15237250 
+###Sense: the warmest season of the year; in the northern hemisphere it extends from the summer solstice to the autumnal equinox; "they spent a lazy summer at the shore"
+--------------------------
+--------------------------
+###Lemma: term 
+###SenseIdentifier: term NN 15224486 
+###Sense: a limited period of time; "a prison term"; "he left school before the end of term"
+--------------------------
+--------------------------
+###Lemma: student 
+###SenseIdentifier: student NN 10665698 
+###Sense: a learner who is enrolled in an educational institution
+--------------------------
+--------------------------
+###Lemma: letter 
+###SenseIdentifier: letter NN 6828818 
+###Sense: the conventional characters of the alphabet used to represent speech; "his grandmother taught him his letters"
+--------------------------
+--------------------------
+###Lemma: course 
+###SenseIdentifier: course NN 884466 
+###Sense: education imparted in a series of lessons or meetings; "he took a course in basket weaving"; "flirting is not unknown in college classes"
+--------------------------
+--------------------------
+###Lemma: Instructor-in-Charge 
+###SenseIdentifier: Instructor-in-Charge NN 10694258 
+###Sense: a person whose occupation is teaching
+--------------------------
+--------------------------
+###Lemma: account 
+###SenseIdentifier: account NN 9179382 
+###Sense: grounds; "don't do it on my account"; "the paper was rejected on account of its length"; "he tried to blame the victim but his success on that score was doubtful"
+--------------------------
+--------------------------
+###Lemma: performance 
+###SenseIdentifier: performance NN 97504 
+###Sense: the act of performing; of doing something successfully; using knowledge as distinguished from merely possessing it; "they criticised his performance as mayor"; "experience generally improves performance"
+###SenseIdentifier: performance NN 13525549 
+###Sense: process or manner of functioning or operating; "the power of its engine determines its operation"; "the plane's operation in high winds"; "they compared the cooking performance of each oven"; "the jet's performance conformed to high standards"
+--------------------------
+--------------------------
+###Lemma: examination 
+###SenseIdentifier: examination NN 7197021 
+###Sense: a set of questions or exercises evaluating skill or knowledge; "when the test was stolen the professor had to make a new set of questions"
+###SenseIdentifier: examination NN 636461 
+###Sense: the act of giving students or candidates a test (as by questions) to determine what they know or have learned
+--------------------------
+--------------------------
+###Lemma: quiz 
+###SenseIdentifier: quiz NN 7199191 
+###Sense: an examination consisting of a few short questions
+--------------------------
+--------------------------
+###Lemma: assignment 
+###SenseIdentifier: assignment NN 796586 
+###Sense: an undertaking that you have been assigned to do (as by an instructor)
+--------------------------
+--------------------------
+###Lemma: laboratory 
+###SenseIdentifier: laboratory NN 3629986 
+###Sense: a workplace for the conduct of scientific research
+--------------------------
+--------------------------
+###Lemma: work 
+###SenseIdentifier: work NN 575741 
+###Sense: activity directed toward making or doing something; "she checked several points needing further work"
+###SenseIdentifier: work NN 5755883 
+###Sense: applying the mind to learning and understanding a subject (especially by reading); "mastering a second language requires a lot of work"; "no schools offer graduate study in interior design"
+--------------------------
+--------------------------
+###Lemma: regularity 
+###SenseIdentifier: regularity NN 4767347 
+###Sense: the quality of being characterized by a fixed principle or rate; "he was famous for the regularity of his habits"
+--------------------------
+--------------------------
+###Lemma: attendance 
+###SenseIdentifier: attendance NN 1233397 
+###Sense: the act of being present (at a meeting or event etc.)
+--------------------------
+--------------------------
+###Lemma: class 
+###SenseIdentifier: class NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: class NN 884466 
+###Sense: education imparted in a series of lessons or meetings; "he took a course in basket weaving"; "flirting is not unknown in college classes"
+--------------------------
+--------------------------
+###Lemma: office 
+###SenseIdentifier: office NN 3841666 
+###Sense: place of business where professional or clerical duties are performed; "he rented an office in the new building"
+--------------------------
+--------------------------
+###Lemma: time 
+###SenseIdentifier: time NN 15270431 
+###Sense: a period of time considered as a resource under your control and sufficient to accomplish something; "take time to smell the roses"; "I didn't have time to finish"; "it took more than half my time"
+--------------------------
+--------------------------
+###Lemma: limit 
+###SenseIdentifier: limit NN 13758296 
+###Sense: the greatest amount of something that is possible or allowed; "there are limits on the amount you can bet"; "it is growing rapidly with no limitation in sight"
+--------------------------
+--------------------------
+###Lemma: hour 
+###SenseIdentifier: hour NN 15227846 
+###Sense: a period of time equal to 1/24th of a day; "the job will take more than an hour"
+--------------------------
+--------------------------
+###Lemma: end 
+###SenseIdentifier: end NN 15266911 
+###Sense: the point in time at which something ends; "the end of the year"; "the ending of warranty period"
+--------------------------
+--------------------------
+###Lemma: semester 
+###SenseIdentifier: semester NN 15225797 
+###Sense: one of two divisions of an academic year
+--------------------------
+--------------------------
+###Lemma: department 
+###SenseIdentifier: department NN 8114861 
+###Sense: a specialized division of a large organization; "you'll find it in the hardware department"; "she got a job in the historical section of the Treasury"
+###SenseIdentifier: department NN 5853273 
+###Sense: a specialized sphere of knowledge; "baking is not my department"; "his work established a new department of literature"
+--------------------------
+--------------------------
+###Lemma: procedure 
+###SenseIdentifier: procedure NN 1023820 
+###Sense: a particular course of action intended to achieve a result; "the procedure of obtaining a driver's license"; "it was a process of trial and error"
+--------------------------
+--------------------------
+###Lemma: award 
+###SenseIdentifier: award NN 6696483 
+###Sense: a tangible symbol signifying approval or distinction; "an award for bravery"
+--------------------------
+--------------------------
+###SenseIdentifier: letter NN 6828818 
+###Sense: the conventional characters of the alphabet used to represent speech; "his grandmother taught him his letters"
+--------------------------
+--------------------------
+###Lemma: project 
+###SenseIdentifier: project NN 795720 
+###Sense: any piece of work that is undertaken or attempted; "he prepared for great undertakings"
+###SenseIdentifier: project NN 5910453 
+###Sense: a planned undertaking
+--------------------------
+--------------------------
+###Lemma: course 
+###SenseIdentifier: course NN 884466 
+###Sense: education imparted in a series of lessons or meetings; "he took a course in basket weaving"; "flirting is not unknown in college classes"
+
+--------------------------
+--------------------------
+###Lemma: a 
+###SenseIdentifier: a NN 6831177 
+###Sense: the 1st letter of the Roman alphabet
+--------------------------
+--------------------------
+###Lemma: b 
+###SenseIdentifier: b NN 6831284 
+###Sense: the 2nd letter of the Roman alphabet
+--------------------------
+--------------------------
+###Lemma: c 
+###SenseIdentifier: c NN 6831391 
+###Sense: the 3rd letter of the Roman alphabet
+--------------------------
+--------------------------
+###Lemma: d 
+###SenseIdentifier: d NN 6831498 
+###Sense: the 4th letter of the Roman alphabet
+--------------------------
+--------------------------
+###Lemma: F
+###SenseIdentifier: F. NN 6831712 
+###Sense: the 6th letter of the Roman alphabet
+--------------------------
+--------------------------
+###Lemma: letter 
+###SenseIdentifier: letter NN 6828818 
+###Sense: the conventional characters of the alphabet used to represent speech; "his grandmother taught him his letters"
+--------------------------
+--------------------------
+###Lemma: equivalent 
+###SenseIdentifier: equivalent NN 5695554 
+###Sense: a person or thing equal to another in value or measure or force or effect or significance etc; "send two dollars or the equivalent in stamps"
+--------------------------
+--------------------------
+###Lemma: scale 
+###SenseIdentifier: scale NN 13850304 
+###Sense: an ordered reference standard; "judging on a scale of 1 to 10"
+--------------------------
+--------------------------
+###Lemma: addition 
+###SenseIdentifier: addition NN 2679415 
+###SenseIdentifier: addition NN 13253423 
+###Sense: something added to what you already have; "the librarian shelved the new accessions"; "he was a new addition to the staff"
+--------------------------
+--------------------------
+###Lemma: s 
+###SenseIdentifier: s NN 6833112 
+###Sense: the 19th letter of the Roman alphabet
+--------------------------
+--------------------------
+###Lemma: x 
+###SenseIdentifier: x NN 6833663 
+###Sense: the 24th letter of the Roman alphabet
+--------------------------
+--------------------------
+###Lemma: reason 
+###SenseIdentifier: reason NN 9178999 
+###Sense: a rational motive for a belief or action; "the reason that war was declared"; "the grounds for their declaration"
+###SenseIdentifier: reason NN 6739990 
+###Sense: an explanation of the cause of some phenomenon; "the reason a steady state was never reached was that the back pressure built up too slowly"
+--------------------------
+--------------------------
+###Lemma: part 
+###SenseIdentifier: part NN 5867413 
+###Sense: one of the portions into which something is regarded as divided and which together constitute a whole; "the written part of the exam"; "the finance section of the company"; "the BBC's engineering division"
+--------------------------
+--------------------------
+###Lemma: requirement 
+###SenseIdentifier: requirement NN 5892651 
+###Sense: required activity; "the requirements of his work affected his health"; "there were many demands on his time"
+--------------------------
+--------------------------
+###Lemma: date 
+###SenseIdentifier: date NN 15159819 
+###Sense: a particular day specified as the time something happens; "the date of the election is set by law"
+--------------------------
+--------------------------
+###Lemma: calendar 
+###SenseIdentifier: calendar NN 6487395 
+###Sense: a list or register of events (appointments or social events or court cases etc); "I --------------------------
+--------------------------
+###Lemma: submission 
+###SenseIdentifier: submission NN 7167578 
+###Sense: something (manuscripts or architectural plans and models or estimates or works of art of all genres etc.) submitted for the judgment of others (as in a competition); "several of his submissions were rejected by publishers"; "what was the date of submission of your proposal?"
+--------------------------
+--------------------------
+###Lemma: non-completion 
+--------------------------
+--------------------------
+###Lemma: lack 
+###SenseIdentifier: lack NN 14449405 
+###Sense: the state of needing something that is absent or unavailable; "there is a serious lack of insight into the problem"; "water is the critical deficiency in desert regions"; "for want of a nail the shoe was lost"
+--------------------------
+--------------------------
+###Lemma: facility 
+###SenseIdentifier: facility NN 585406 
+###Sense: something designed and created to serve a particular function and to afford a particular convenience or service; "catering facilities"; "toilet facilities"; "educational facilities"
+###SenseIdentifier: facility NN 578549 
+###Sense: a service that an organization or a piece of equipment offers you; "a cell phone with internet facility"
+--------------------------
+--------------------------
+###Lemma: Change 
+###SenseIdentifier: Change NN 191142 
+###Sense: the action of changing something; "the change of government had no impact on the economy"; "his change on abortion cost him the election"
+--------------------------
+--------------------------
+###Lemma: request 
+###SenseIdentifier: request NN 7185325 
+###Sense: the verbal act of requesting
+--------------------------
+--------------------------
+###Lemma: instructor-in 
+###SenseIdentifier: instructor-in NN 10694258 
+###Sense: a person whose occupation is teaching
+--------------------------
+--------------------------
+###Lemma: charge 
+###SenseIdentifier: charge NN 731222 
+###Sense: a special assignment that is given to a person or group; "a confidential mission to London"; "his charge was deliver a message"
+--------------------------
+--------------------------
+###Lemma: instructor 
+###SenseIdentifier: instructor NN 10694258 
+###Sense: a person whose occupation is teaching
+--------------------------
+--------------------------
+###Lemma: tutor 
+###SenseIdentifier: tutor NN 9931418 
+###Sense: a person who gives private instruction (as in singing, acting, etc.)
+--------------------------
+--------------------------
+###Lemma: Chairman 
+###SenseIdentifier: Chairman NN 10468962 
+###Sense: the officer who presides at the meetings of an organization; "address your remarks to the chairperson"
+--------------------------
+--------------------------
+###Lemma: Senate 
+###SenseIdentifier: Senate NN 8161477 
+###Sense: assembly possessing high legislative powers
+--------------------------
+--------------------------
+###Lemma: week 
+###SenseIdentifier: week NN 15169873 
+###Sense: any period of seven consecutive days; "it rained for a week"
+###SenseIdentifier: week NN 15136147 
+###Sense: a period of seven consecutive days starting on Sunday
+--------------------------
+--------------------------
+###Lemma: start 
+###SenseIdentifier: start NN 15265518 
+###Sense: the time at which something is supposed to begin; "they got an early start"; "she knew from the get-go that he was the man for her"
+--------------------------
+--------------------------
+###Lemma: form 
+###SenseIdentifier: form NN 6473563 
+###Sense: a printed document with spaces in which to write; "he filled out his tax form"
+--------------------------
+--------------------------
+###Lemma: appendix 
+###SenseIdentifier: appendix NN 6399337 
+###Sense: supplementary material that is collected and appended at the back of a book
+--------------------------
+--------------------------
+###Lemma: record 
+###SenseIdentifier: record NN 6647206 
+###Sense: anything (such as a document or a phonograph record or a photograph) providing permanent evidence of or information about past events; "the film provided a valuable record of stage techniques"
+###SenseIdentifier: record NN 3924069 
+###SenseIdentifier: record NN 6636524 
+###Sense: a compilation of the known facts regarding something or someone; "Al Smith used to say, `Let's look at the record'"; "his name is in all the record books"
+--------------------------
+--------------------------
+###Lemma: justification 
+###SenseIdentifier: justification NN 5823054 
+###Sense: something (such as a fact or circumstance) that shows an action to be reasonable or necessary; "he considered misrule a justification for revolution"
+###SenseIdentifier: justification NN 6740183 
+###Sense: a statement in explanation of some action or belief
+--------------------------
+--------------------------
+###Lemma: Index 
+###SenseIdentifier: Index NN 6639674 
+###Sense: a number or ratio (a value on a scale of measurement) derived from a series of observed facts; can reveal relative changes as a function of time
+--------------------------
+--------------------------
+###Lemma: average 
+###SenseIdentifier: average NN 6021761 
+###Sense: a statistic describing the location of a distribution; "it set the norm for American homes"
+--------------------------
+--------------------------
+###Lemma: computation 
+###SenseIdentifier: computation NN 868910 
+###Sense: the procedure of calculating; determining something by mathematical or logical methods
+--------------------------
+--------------------------
+###Lemma: CPI 
+--------------------------
+--------------------------
+###Lemma: term 
+###SenseIdentifier: term NN 15224486 
+###Sense: a limited period of time; "a prison term"; "he left school before the end of term"
+--------------------------
+--------------------------
+###Lemma: Whenever 
+--------------------------
+--------------------------
+###Lemma: repeat 
+###SenseIdentifier: repeat NN 7342049 
+###Sense: an event that repeats; "the events today were a repeat of yesterday's"
+--------------------------
+--------------------------
+###Lemma: Report 
+###SenseIdentifier: Report NN 7220300 
+###Sense: a written evaluation of a student's scholarship and deportment; "his father signed his report card"
+--------------------------
+--------------------------
+###Lemma: copy 
+###SenseIdentifier: copy NN 6505517 
+###Sense: a reproduction of a written record (e.g. of a legal or school record)
+--------------------------
+--------------------------
+###Lemma: payment 
+###SenseIdentifier: payment NN 1120448 
+###Sense: the act of paying money
+--------------------------
+--------------------------
+###Lemma: fee 
+###SenseIdentifier: fee NN 13320168 
+###Sense: a fixed charge for a privilege or for professional services
+--------------------------
+--------------------------
+###Lemma: withholding 
+###SenseIdentifier: withholding NN 810794 
+###Sense: the act of holding back or keeping within your possession or control; "I resented his withholding permission"; "there were allegations of the withholding of evidence"
+--------------------------
+--------------------------
+###Lemma: due 
+###SenseIdentifier: due NN 13396861 
+###Sense: a payment that is due (e.g., as the price of membership); "the society dropped him for non-payment of dues"
+--------------------------
+--------------------------
+###Lemma: case 
+###SenseIdentifier: case NN 7308889 
+###Sense: an occurrence of something; "it was a case of bad judgment"; "another instance occurred yesterday"; "but there is always the famous example of the Smiths"
+###SenseIdentifier: case NN 13943400 
+###Sense: a special set of circumstances; "in that event, the first possibility is excluded"; "it may rain in which case the picnic will be canceled"
+--------------------------
+--------------------------
+###Lemma: indiscipline 
+###SenseIdentifier: indiscipline NN 4884450 
+###Sense: the trait of lacking discipline

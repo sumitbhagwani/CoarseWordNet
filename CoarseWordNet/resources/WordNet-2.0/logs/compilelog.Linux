@@ -1,0 +1,80 @@
+(cd src; make -k CC='gcc' WN_ROOT='/usr/people/rit/WordNet/testinstall' TCL_INCDIR='/usr/include' TK_INCDIR='/usr/include' TCL_LIBDIR='/usr/lib' TK_LIBDIR='/usr/lib' X11_INCDIR='/usr/X11R6/include' X11_LIBDIR='/usr/X11R6/lib' WNB_LIBS='-ltk -ltcl -lX11 -lm -lnsl -ldl -lpthread' LOCAL_CFLAGS='-O -DUNIX' LOCAL_LDFLAGS='' WN_BINDIR='/usr/people/rit/WordNet/testinstall/bin' WN_LIBDIR='/usr/people/rit/WordNet/testinstall/lib' WN_INCDIR='/usr/people/rit/WordNet/testinstall/include' all install)
+make[1]: Entering directory `/usr/people/rit/WordNet/unix/src'
+Installing include..
+make[2]: Entering directory `/usr/people/rit/WordNet/unix/src/include'
+make[2]: Nothing to be done for `all'.
+Making directory /usr/people/rit/WordNet/testinstall/include
+Installing /usr/people/rit/WordNet/testinstall/include/license.h
+Installing /usr/people/rit/WordNet/testinstall/include/setutil.h
+Installing /usr/people/rit/WordNet/testinstall/include/wn.h
+Installing /usr/people/rit/WordNet/testinstall/include/wnconsts.h
+Installing /usr/people/rit/WordNet/testinstall/include/wnglobal.h
+Installing /usr/people/rit/WordNet/testinstall/include/wnhelp.h
+Installing /usr/people/rit/WordNet/testinstall/include/wnrtl.h
+Installing /usr/people/rit/WordNet/testinstall/include/wntypes.h
+Done installing include files in /usr/people/rit/WordNet/testinstall/include
+make[2]: Leaving directory `/usr/people/rit/WordNet/unix/src/include'
+Making WordNet library libwn.a
+make[2]: Entering directory `/usr/people/rit/WordNet/unix/src/lib'
+gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX   -c -o binsrch.o binsrch.c
+gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX   -c -o morph.o morph.c
+gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX   -c -o search.o search.c
+gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX   -c -o setutil.o setutil.c
+gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX   -c -o wnglobal.o wnglobal.c
+gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX   -c -o wnhelp.o wnhelp.c
+gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX   -c -o wnrtl.o wnrtl.c
+gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX   -c -o wnutil.o wnutil.c
+ar rcv libwn.a binsrch.o morph.o search.o setutil.o wnglobal.o wnhelp.o wnrtl.o wnutil.o; ranlib libwn.a
+a - binsrch.o
+a - morph.o
+a - search.o
+a - setutil.o
+a - wnglobal.o
+a - wnhelp.o
+a - wnrtl.o
+a - wnutil.o
+make[2]: Leaving directory `/usr/people/rit/WordNet/unix/src/lib'
+Done compiling library
+Installing lib..
+make[2]: Entering directory `/usr/people/rit/WordNet/unix/src/lib'
+Making directory /usr/people/rit/WordNet/testinstall/lib
+Installing /usr/people/rit/WordNet/testinstall/lib/libwn.a
+make[3]: Entering directory `/usr/people/rit/WordNet/unix/src/lib/wnres'
+Making directory /usr/people/rit/WordNet/testinstall/lib/wnres
+Installing resource files in /usr/people/rit/WordNet/testinstall/lib/wnres
+Installing /usr/people/rit/WordNet/testinstall/lib/wnres/license.txt
+Installing /usr/people/rit/WordNet/testinstall/lib/wnres/wn.xbm
+Installing /usr/people/rit/WordNet/testinstall/lib/wnres/wngloss.man
+Installing /usr/people/rit/WordNet/testinstall/lib/wnres/wnb.man
+Done installing resource files in /usr/people/rit/WordNet/testinstall/lib/wnres
+make[3]: Leaving directory `/usr/people/rit/WordNet/unix/src/lib/wnres'
+Done installing WordNet library in /usr/people/rit/WordNet/testinstall/lib
+make[2]: Leaving directory `/usr/people/rit/WordNet/unix/src/lib'
+Compiling wn...
+make[2]: Entering directory `/usr/people/rit/WordNet/unix/src/wn'
+gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX   -c -o wn.o wn.c
+gcc -o wn -L/usr/people/rit/WordNet/testinstall/lib  wn.o -lwn
+make[2]: Leaving directory `/usr/people/rit/WordNet/unix/src/wn'
+Compiling wnb...
+make[2]: Entering directory `/usr/people/rit/WordNet/unix/src/wnb'
+gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -I/usr/include -I/usr/include -I/usr/X11R6/include   -c -o stubs.o stubs.c
+gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -I/usr/include -I/usr/include -I/usr/X11R6/include   -c -o tkAppInit.o tkAppInit.c
+gcc -o wishwn -L/usr/people/rit/WordNet/testinstall/lib -L/usr/lib -L/usr/lib -L/usr/X11R6/lib stubs.o tkAppInit.o -ltk -ltcl -lX11 -lm -lnsl -ldl -lpthread -lwn
+make[2]: Leaving directory `/usr/people/rit/WordNet/unix/src/wnb'
+Skipping grind...
+Done compiling interfaces
+Installing wn...
+make[2]: Entering directory `/usr/people/rit/WordNet/unix/src/wn'
+Making directory /usr/people/rit/WordNet/testinstall/bin
+Installing /usr/people/rit/WordNet/testinstall/bin/wn
+Done installing command line interface in /usr/people/rit/WordNet/testinstall/bin
+make[2]: Leaving directory `/usr/people/rit/WordNet/unix/src/wn'
+Installing wnb...
+make[2]: Entering directory `/usr/people/rit/WordNet/unix/src/wnb'
+Installing /usr/people/rit/WordNet/testinstall/bin/wishwn
+Installing /usr/people/rit/WordNet/testinstall/bin/wnb
+Done installing WordNet browser interface in /usr/people/rit/WordNet/testinstall/bin
+make[2]: Leaving directory `/usr/people/rit/WordNet/unix/src/wnb'
+Skipping grind...
+Done installing interfaces
+make[1]: Leaving directory `/usr/people/rit/WordNet/unix/src'

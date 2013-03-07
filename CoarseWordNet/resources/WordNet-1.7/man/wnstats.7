@@ -1,0 +1,62 @@
+'\" t
+.\" $Id$
+.TH WNSTATS 7WN "30 Sept 1995" "WordNet 1.6" "WordNet\(tm"
+.SH NAME
+wnstats \- WordNet 1.6 database statistics
+.SH DESCRIPTION
+.SS Number of words, synsets, and senses
+.TS
+center box tab(/);
+c | c | c | c
+l | r | r | r.
+\fBPOS/Unique Strings/Synsets/Total Word-Sense Pairs\fP
+_
+Noun/107930/74488/132407
+Verb/10806/12754/23255
+Adjective/21365/18523/31077
+Adverb/4583/3612/5721
+=
+Totals/144684/109377/192460
+.TE
+
+.SS Polysemy information
+
+.TS
+center box tab(/);
+c | c | c | c
+c | c | c | c
+l | r | r | r.
+\fBPOS/Monosemous Words/Polysemous Words/Polysemous Senses\fP
+\fB/and Senses//\fP
+_
+Noun/94025/13905/38382
+Verb/6099/4707/17156
+Adjective/15992/5373/15085
+Adverb/3833/750/1888
+=
+Totals/119949/24735/72511
+.TE
+
+.TS
+center box tab(/);
+c | c | c
+c | c | c
+l | r | r.
+\fBPOS/Average Polysemy/Average Polysemy\fP
+\fB/Including Monosemous Words/Excluding Monosemous Words\fP
+_
+Noun/1.22/2.76
+Verb/2.15/3.64
+Adjective/1.45/2.80
+Adverb/1.24/2.51
+.TE
+.SH NOTES
+Statistics for all types of adjectives and adjective satellites are
+combined.  
+
+The total of all unique noun, verb, adjective, and adverb strings is
+actually 136972.
+However, many strings are unique within a
+syntactic category, but are in more than one syntactic category.  The
+figures in the table represent the unique strings in each syntactic category.
+

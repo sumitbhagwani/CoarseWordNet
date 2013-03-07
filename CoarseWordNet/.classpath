@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="externalLibraries/babelnet-api-1.1.0.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/collections-generic-4.01.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/commons-codec-1.4.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/commons-configuration-1.5.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/commons-io-2.0.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/concurrentlinkedhashmap-lru-1.3.2.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/edu.mit.jwi_2.1.4.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/edu.mit.jwi_2.2.3_jdk.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/edu.sussex.nlp.jws.beta.11.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/extjwnl-1.6.10.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/extjwnl-utilities-1.6.10.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/google-collections-20080820.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/je-4.1.6.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/jgrapht-0.8.0.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/jlt-1.0.0.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/jnisvmlight.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="CoarseWordNet/externalLibraries"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="externalLibraries/jung-algorithms-2.0.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/jung-api-2.0.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/jung-graph-impl-2.0.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/jwsNew.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/libsvm.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/mysql-connector-java-5.1.22.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/weka.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

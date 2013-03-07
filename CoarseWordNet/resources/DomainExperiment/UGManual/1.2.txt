@@ -1,0 +1,860 @@
+--------------------------
+###Lemma: senate 
+###SenseIdentifier: senate NN 8161477 
+###Sense: assembly possessing high legislative powers
+###SenseIdentifier: senate NN 8161591 
+###Sense: the upper house of the United States Congress
+--------------------------
+--------------------------
+###Lemma: under-graduate 
+###SenseIdentifier: under-graduate NN 10736602 
+###Sense: a university student who has not yet received a first degree
+--------------------------
+--------------------------
+###Lemma: committee 
+###SenseIdentifier: committee NN 8324514 
+###Sense: a special group delegated to consider some matter; "a committee is a group that keeps minutes and loses hours" - Milton Berle
+###SenseIdentifier: committee NN 8325686 
+###Sense: a self-constituted organization to promote something
+--------------------------
+--------------------------
+###Lemma: sugc 
+--------------------------
+--------------------------
+###Lemma: undergraduate 
+###SenseIdentifier: undergraduate NN 10736602 
+###Sense: a university student who has not yet received a first degree
+--------------------------
+--------------------------
+###Lemma: standing 
+###SenseIdentifier: standing NN 13948136 
+###Sense: social or financial or professional status or reputation; "of equal standing"; "a member in good standing"
+###SenseIdentifier: standing NN 6496116 
+###Sense: an ordered listing of scores or results showing the relative positions of competitors (individuals or teams) in a sporting event
+###SenseIdentifier: standing NN 349080 
+###Sense: the act of assuming or maintaining an erect upright position
+--------------------------
+--------------------------
+###Lemma: academic 
+###SenseIdentifier: academic NN 9759069 
+###Sense: an educator who works at a college or university
+--------------------------
+--------------------------
+###Lemma: constitution 
+###SenseIdentifier: constitution NN 6533648 
+###Sense: law determining the fundamental political principles of a government
+###SenseIdentifier: constitution NN 237078 
+###Sense: the act of forming or establishing something; "the constitution of a PTA group last year"; "it was the establishment of his reputation"; "he still remembers the organization of the club"
+###SenseIdentifier: constitution NN 6534132 
+###Sense: the constitution written at the Constitutional Convention in Philadelphia in 1787 and subsequently ratified by the original thirteen states
+###SenseIdentifier: constitution NN 4933544 
+###Sense: the way in which someone or something is composed
+###SenseIdentifier: constitution NN 3093018 
+###Sense: a United States 44-gun frigate that was one of the first three naval ships built by the United States; it won brilliant victories over British frigates during the War of 1812 and is without doubt the most famous ship in the history of the United States Navy; it has been rebuilt and is anchored in the Charlestown Navy Yard in Boston
+--------------------------
+--------------------------
+###Lemma: sugc 
+--------------------------
+--------------------------
+###Lemma: process 
+###SenseIdentifier: process NN 1023820 
+###Sense: a particular course of action intended to achieve a result; "the procedure of obtaining a driver's license"; "it was a process of trial and error"
+###SenseIdentifier: process NN 5701363 
+###Sense: (psychology) the performance of some composite cognitive activity; an operation that affects mental contents; "the process of thinking"; "the cognitive operation of remembering"
+###SenseIdentifier: process NN 6556692 
+###Sense: a writ issued by authority of law; usually compels the defendant's attendance in a civil suit; failure to appear results in a default judgment against the defendant
+###SenseIdentifier: process NN 5701738 
+###Sense: a mental process that you are not directly aware of; "the process of denial"
+###SenseIdentifier: process NN 5470189 
+###Sense: a natural prolongation or projection from a part of an organism either animal or plant; "a bony process"
+###SenseIdentifier: process NN 29677 
+###Sense: a sustained phenomenon or one marked by gradual changes through a series of states; "events now in process"; "the process of calcification begins later for boys than for girls"
+--------------------------
+--------------------------
+###Lemma: election 
+###SenseIdentifier: election NN 181781 
+###Sense: a vote to select the winner of a position or political office; "the results of the election will be announced tonight"
+###SenseIdentifier: election NN 180962 
+###Sense: the act of selecting someone or something; the exercise of deliberate choice; "her election of medicine as a profession"
+###SenseIdentifier: election NN 13926329 
+###Sense: the status or fact of being elected; "they celebrated his election"
+###SenseIdentifier: election NN 5966798 
+###Sense: the predestination of some individuals as objects of divine mercy (especially as conceived by Calvinists)
+--------------------------
+--------------------------
+###Lemma: chairman 
+###SenseIdentifier: chairman NN 10468962 
+###Sense: the officer who presides at the meetings of an organization; "address your remarks to the chairperson"
+--------------------------
+--------------------------
+###Lemma: sugc 
+--------------------------
+--------------------------
+###Lemma: meeting 
+###SenseIdentifier: meeting NN 8307589 
+###Sense: a formally arranged gathering; "next year the meeting will be in Chicago"; "the meeting elected a chairperson"
+###SenseIdentifier: meeting NN 8310389 
+###Sense: a small informal social gathering; "there was an informal meeting in my living room"
+###SenseIdentifier: meeting NN 7414922 
+###Sense: a casual or unexpected convergence; "he still remembers their meeting in Paris"; "there was a brief encounter in the hallway"
+###SenseIdentifier: meeting NN 1230965 
+###Sense: the social act of assembling for some common purpose; "his meeting with the salesmen was the high point of his day"
+###SenseIdentifier: meeting NN 146856 
+###Sense: the act of joining together as one; "the merging of the two groups occurred quickly"; "there was no meeting of minds"
+###SenseIdentifier: meeting NN 8542634 
+###Sense: a place where things merge or flow together (especially rivers); "Pittsburgh is located at the confluence of the Allegheny and Monongahela rivers"
+--------------------------
+--------------------------
+###Lemma: matter 
+###SenseIdentifier: matter NN 5671325 
+###Sense: a vaguely specified concern; "several matters to attend to"; "it is none of your affair"; "things are going well"
+###SenseIdentifier: matter NN 5814291 
+###Sense: some situation or event that is thought about; "he kept drifting off the topic"; "he had been thinking about the subject for several years"; "it is a matter for the police"
+###SenseIdentifier: matter NN 20827 
+###Sense: that which has mass and occupies space; "physicists study both the nature of matter and the forces which govern it"
+###SenseIdentifier: matter NN 5688397 
+###Sense: a problem; "is anything the matter?"
+###SenseIdentifier: matter NN 5169242 
+###Sense: (used with negation) having consequence; "they were friends and it was no matter who won the games"
+###SenseIdentifier: matter NN 6365467 
+###Sense: written works (especially in books or magazines); "he always took some reading matter with him on the plane"
+--------------------------
+--------------------------
+###Lemma: program 
+###SenseIdentifier: program NN 5898568 
+###Sense: a series of steps to be carried out or goals to be accomplished; "they drew up a six-step plan"; "they discussed plans for a new bond issue"
+###SenseIdentifier: program NN 5899087 
+###Sense: a system of projects or services intended to meet a public need; "he proposed an elaborate program of public works"; "working mothers rely on the day care program"
+###SenseIdentifier: program NN 6619428 
+###Sense: a radio or television show; "did you see his program last night?"
+###SenseIdentifier: program NN 6501311 
+###Sense: a document stating the aims and principles of a political party; "their candidate simply ignored the party platform"; "they won the election even though they offered no positive program"
+###SenseIdentifier: program NN 6748466 
+###Sense: an announcement of the events that will occur as part of a theatrical or sporting event; "you can't tell the players without a program"
+###SenseIdentifier: program NN 6676416 
+###Sense: an integrated course of academic studies; "he was admitted to a new program at the university"
+###SenseIdentifier: program NN 6568978 
+###Sense: (computer science) a sequence of instructions that a computer can interpret and execute; "the program required several hundred lines of code"
+###SenseIdentifier: program NN 551215 
+###Sense: a performance (or series of performances) at a public presentation; "the program lasted more than two hours"
+--------------------------
+--------------------------
+###Lemma: institute 
+###SenseIdentifier: institute NN 8407330 
+###Sense: an association organized to promote art or science or education
+--------------------------
+--------------------------
+###Lemma: sugc 
+--------------------------
+--------------------------
+###Lemma: jurisdiction 
+###SenseIdentifier: jurisdiction NN 5198427 
+###Sense: (law) the right and power to interpret and apply the law; "courts having jurisdiction in this district"
+###SenseIdentifier: jurisdiction NN 8590369 
+###Sense: in law; the territory within which power can be exercised
+--------------------------
+--------------------------
+###Lemma: approval 
+###SenseIdentifier: approval NN 1215392 
+###Sense: the formal act of approving; "he gave the project his blessing"; "his decision merited the approval of any sensible person"
+###SenseIdentifier: approval NN 7500159 
+###Sense: a feeling of liking something or someone good; "although she fussed at them, she secretly viewed all her children with approval"
+###SenseIdentifier: approval NN 14412374 
+###Sense: acceptance as satisfactory; "he bought it on approval"
+###SenseIdentifier: approval NN 6686736 
+###Sense: a message expressing a favorable opinion; "words of approval seldom passed his lips"
+--------------------------
+--------------------------
+###Lemma: course 
+###SenseIdentifier: course NN 884466 
+###Sense: education imparted in a series of lessons or meetings; "he took a course in basket weaving"; "flirting is not unknown in college classes"
+###SenseIdentifier: course NN 8377085 
+###Sense: a connected series of events or actions or developments; "the government took a firm course"; "historians can only point out those lines for which evidence is available"
+###SenseIdentifier: course NN 8681222 
+###Sense: general line of orientation; "the river takes a southern course"; "the northeastern trend of the coast"
+###SenseIdentifier: course NN 38262 
+###Sense: a mode of action; "if you persist in that course you will surely fail"; "once a nation is embarked on a course of action it becomes extremely difficult for any retraction to take place"
+###SenseIdentifier: course NN 9387222 
+###Sense: a line or route along which something travels or moves; "the hurricane demolished houses in its path"; "the track of an animal"; "the course of the river"
+###SenseIdentifier: course NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: course NN 7556970 
+###Sense: part of a meal served at one time; "she prepared a three course meal"
+###SenseIdentifier: course NN 3120029 
+###Sense: (construction) a layer of masonry; "a course of bricks"
+###SenseIdentifier: course NN 3119790 
+###Sense: facility consisting of a circumscribed area of land or water laid out for a sport; "the course had only nine holes"; "the course was less than a mile"
+--------------------------
+--------------------------
+###Lemma: instruction 
+###SenseIdentifier: instruction NN 6786629 
+###Sense: a message describing how something is to be done; "he gave directions faster than she could follow them"
+###SenseIdentifier: instruction NN 883297 
+###Sense: the activities of educating or instructing; activities that impart knowledge or skill; "he received no formal education"; "our instruction was carefully programmed"; "good classroom teaching is seldom rewarded"
+###SenseIdentifier: instruction NN 887081 
+###Sense: the profession of a teacher; "he prepared for teaching while still in college"; "pedagogy is recognized as an important profession"
+###SenseIdentifier: instruction NN 6584891 
+###Sense: (computer science) a line of code written as part of a computer program
+--------------------------
+--------------------------
+###Lemma: modification 
+###SenseIdentifier: modification NN 199707 
+###Sense: the act of making something different (as e.g. the size of a garment)
+###SenseIdentifier: modification NN 3778302 
+###Sense: slightly modified copy; not an exact copy; "a modification of last year's model"
+###SenseIdentifier: modification NN 13800801 
+###Sense: the grammatical relation that exists when a word qualifies the meaning of the phrase
+###SenseIdentifier: modification NN 7296428 
+###Sense: an event that occurs when something passes from one state or phase to another; "the change was intended to increase sales"; "this storm is certainly a change for the worse"; "the neighborhood had undergone few modifications since his last visit years ago"
+--------------------------
+--------------------------
+###Lemma: credit 
+###SenseIdentifier: credit NN 6688274 
+###Sense: approval; "give her recognition for trying"; "he was given credit for his work"; "give her credit for trying"
+###SenseIdentifier: credit NN 13378518 
+###Sense: money available for a client to borrow
+###SenseIdentifier: credit NN 13405646 
+###Sense: an accounting entry acknowledging income or capital items
+###SenseIdentifier: credit NN 37200 
+###Sense: used in the phrase `to your credit' in order to indicate an achievement deserving praise; "she already had several performances to her credit";
+###SenseIdentifier: credit NN 13374281 
+###Sense: arrangement for deferred payment for goods and services
+###SenseIdentifier: credit NN 65855 
+###Sense: recognition by a college or university that a course of studies has been successfully completed; typically measured in semester hours
+###SenseIdentifier: credit NN 6763681 
+###Sense: a short note recognizing a source of information or of a quoted passage; "the student's essay failed to list several important citations"; "the acknowledgments are usually printed at the front of a book"; "the article includes mention of similar clinical cases"
+###SenseIdentifier: credit NN 6346681 
+###Sense: an entry on a list of persons who contributed to a film or written work; "the credits were given at the end of the film"
+###SenseIdentifier: credit NN 5803747 
+###Sense: an estimate, based on previous dealings, of a person's or an organization's ability to fulfill their financial commitments
+--------------------------
+--------------------------
+###Lemma: valuation 
+###SenseIdentifier: valuation NN 5736149 
+###Sense: an appraisal of the value of something; "he set a high valuation on friendship"
+###SenseIdentifier: valuation NN 13305673 
+###Sense: assessed price; "the valuation of this property is much too high"
+--------------------------
+--------------------------
+###Lemma: admission 
+###SenseIdentifier: admission NN 1248191 
+###Sense: the act of admitting someone to enter; "the surgery was performed on his second admission to the clinic"
+###SenseIdentifier: admission NN 7215948 
+###Sense: an acknowledgment of the truth of something
+###SenseIdentifier: admission NN 13321495 
+###Sense: the fee charged for admission
+###SenseIdentifier: admission NN 5176188 
+###Sense: the right to enter
+--------------------------
+--------------------------
+###Lemma: year 
+###SenseIdentifier: year NN 15203791 
+###Sense: a period of time containing 365 (or 366) days; "she is 4 years old"; "in the year 1920"
+###SenseIdentifier: year NN 15204297 
+###Sense: a period of time occupying a regular part of a calendar year that is used for some particular activity; "a school year"
+###SenseIdentifier: year NN 15201505 
+###Sense: the period of time that it takes for a planet (as, e.g., Earth or Mars) to make a complete revolution around the sun; "a Martian year takes 687 of our days"
+###SenseIdentifier: year NN 8238660 
+###Sense: a body of students who graduate together; "the class of '97"; "she was in my year at Hoehandle High"
+--------------------------
+--------------------------
+###Lemma: student 
+###SenseIdentifier: student NN 10665698 
+###Sense: a learner who is enrolled in an educational institution
+###SenseIdentifier: student NN 10557854 
+###Sense: a learned person (especially in the humanities); someone who by long study has gained mastery in one or more disciplines
+--------------------------
+--------------------------
+###Lemma: other 
+--------------------------
+--------------------------
+###Lemma: advance 
+###SenseIdentifier: advance NN 7445265 
+###Sense: a movement forward; "he listened for the progress of the troops"
+###SenseIdentifier: advance NN 7357388 
+###Sense: a change for the better; progress in development
+###SenseIdentifier: advance NN 7164349 
+###Sense: a tentative suggestion designed to elicit the reactions of others; "she rejected his advances"
+###SenseIdentifier: advance NN 282050 
+###Sense: the act of moving forward (as toward a goal)
+###SenseIdentifier: advance NN 13375891 
+###Sense: an amount paid before it is earned
+###SenseIdentifier: advance NN 364260 
+###Sense: increase in price or value; "the news caused a general advance on the stock market"
+--------------------------
+--------------------------
+###Lemma: degree 
+###SenseIdentifier: degree NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: degree NN 13939892 
+###Sense: a specific identifiable position in a continuum or series or especially in a process; "a remarkable degree of frankness"; "at what stage are the social sciences?"
+###SenseIdentifier: degree NN 6697331 
+###Sense: an award conferred by a college or university signifying that the recipient has satisfactorily completed a course of study; "he earned his degree at Princeton summa cum laude"
+###SenseIdentifier: degree NN 13611207 
+###Sense: a measure for arcs and angles; "there are 360 degrees in a circle"
+###SenseIdentifier: degree NN 5861317 
+###Sense: the highest power of a term or variable
+###SenseIdentifier: degree NN 13714184 
+###Sense: a unit of temperature on a specified scale; "the game was played in spite of the 40-degree temperature"
+###SenseIdentifier: degree NN 5094565 
+###Sense: the seriousness of something (e.g., a burn or crime); "murder in the second degree"; "a second degree burn"
+--------------------------
+--------------------------
+###Lemma: conduct 
+###SenseIdentifier: conduct NN 1220984 
+###Sense: manner of acting or controlling yourself
+###SenseIdentifier: conduct NN 4897762 
+###Sense: (behavioral attributes) the way a person behaves toward other people
+--------------------------
+--------------------------
+###Lemma: examination 
+###SenseIdentifier: examination NN 635850 
+###Sense: the act of examining something closely (as for mistakes)
+###SenseIdentifier: examination NN 7197021 
+###Sense: a set of questions or exercises evaluating skill or knowledge; "when the test was stolen the professor had to make a new set of questions"
+###SenseIdentifier: examination NN 7193958 
+###Sense: formal systematic questioning
+###SenseIdentifier: examination NN 5787005 
+###Sense: a detailed inspection of your conscience (as done daily by Jesuits)
+###SenseIdentifier: examination NN 636461 
+###Sense: the act of giving students or candidates a test (as by questions) to determine what they know or have learned
+--------------------------
+--------------------------
+###Lemma: evaluation 
+###SenseIdentifier: evaluation NN 874806 
+###Sense: act of ascertaining or fixing the value or worth of
+###SenseIdentifier: evaluation NN 5736149 
+###Sense: an appraisal of the value of something; "he set a high valuation on friendship"
+--------------------------
+--------------------------
+###Lemma: performance 
+###SenseIdentifier: performance NN 6891493 
+###Sense: a dramatic or musical entertainment; "they listened to ten different performances"; "the play ran for 100 performances"; "the frequent performances of the symphony testify to its popularity"
+###SenseIdentifier: performance NN 550771 
+###Sense: the act of presenting a play or a piece of music or other entertainment; "we congratulated him on his performance at the rehearsal"; "an inspired performance of Mozart's C minor concerto"
+###SenseIdentifier: performance NN 97504 
+###Sense: the act of performing; of doing something successfully; using knowledge as distinguished from merely possessing it; "they criticised his performance as mayor"; "experience generally improves performance"
+###SenseIdentifier: performance NN 47106 
+###Sense: any recognized accomplishment; "they admired his performance under stress"; "when Roger Maris powered four home runs in one game his performance merits awe"
+###SenseIdentifier: performance NN 13525549 
+###Sense: process or manner of functioning or operating; "the power of its engine determines its operation"; "the plane's operation in high winds"; "they compared the cooking performance of each oven"; "the jet's performance conformed to high standards"
+--------------------------
+--------------------------
+###Lemma: function 
+###SenseIdentifier: function NN 13783816 
+###Sense: (mathematics) a mathematical relation such that each element of a given set (the domain of the function) is associated with an element of another set (the range of the function)
+###SenseIdentifier: function NN 5149325 
+###Sense: what something is used for; "the function of an auger is to bore holes"; "ballet is beautiful but what use is it?"
+###SenseIdentifier: function NN 720565 
+###Sense: the actions and activities assigned to or required or expected of a person or group; "the function of a teacher"; "the government must do its part"; "play its role"
+###SenseIdentifier: function NN 13781164 
+###Sense: a relation such that one thing is dependent on another; "height is a function of age"; "price is a function of supply and demand"
+###SenseIdentifier: function NN 8252467 
+###Sense: a formal or official social gathering or ceremony; "it was a black-tie function"
+###SenseIdentifier: function NN 7447261 
+###Sense: a vaguely specified social event; "the party was quite an affair"; "an occasion arranged to honor the president"; "a seemingly endless round of social functions"
+###SenseIdentifier: function NN 6582403 
+###Sense: a set sequence of steps, part of larger computer program
+--------------------------
+--------------------------
+###Lemma: sugc 
+--------------------------
+--------------------------
+###Lemma: policy 
+###SenseIdentifier: policy NN 5901508 
+###Sense: a plan of action adopted by an individual or social group; "it was a policy of retribution"; "a politician keeps changing his policies"
+###SenseIdentifier: policy NN 6656408 
+###Sense: a line of argument rationalizing the course of action of a government; "they debated the policy or impolicy of the proposed legislation"
+###SenseIdentifier: policy NN 6523641 
+###Sense: written contract or certificate of insurance; "you should have read the small print on your policy"
+--------------------------
+--------------------------
+###Lemma: determination 
+###SenseIdentifier: determination NN 151497 
+###Sense: the act of determining the properties of something, usually by research or calculation; "the determination of molecular structures"
+###SenseIdentifier: determination NN 4864200 
+###Sense: the quality of being determined to do or achieve something; firmness of purpose; "his determination showed in his every movement"; "he is a man of purpose"
+###SenseIdentifier: determination NN 5838176 
+###Sense: a position or opinion or judgment reached after consideration; "a decision unfavorable to the opposition"; "his conclusion took the evidence into account"; "satisfied with the panel's determination"
+###SenseIdentifier: determination NN 5788552 
+###Sense: deciding or controlling something's outcome or nature; "the determination of grammatical inflections"
+###SenseIdentifier: determination NN 162632 
+###Sense: the act of making up your mind about something; "the burden of decision was his"; "he drew his conclusions quickly"
+--------------------------
+--------------------------
+###Lemma: coordination 
+###SenseIdentifier: coordination NN 5641556 
+###Sense: the skillful and effective interaction of movements
+###SenseIdentifier: coordination NN 807273 
+###Sense: the regulation of diverse elements into an integrated and harmonious operation
+###SenseIdentifier: coordination NN 13800539 
+###Sense: the grammatical relation of two constituents having the same grammatical form
+###SenseIdentifier: coordination NN 5641432 
+###Sense: being of coordinate importance, rank, or degree
+--------------------------
+--------------------------
+###Lemma: review 
+###SenseIdentifier: review NN 5747582 
+###Sense: a new appraisal or evaluation
+###SenseIdentifier: review NN 6410391 
+###Sense: an essay or article that gives a critical evaluation (as of a book or play)
+###SenseIdentifier: review NN 143251 
+###Sense: a subsequent examination of a patient for the purpose of monitoring earlier treatment
+###SenseIdentifier: review NN 13411533 
+###Sense: (accounting) a service (less exhaustive than an audit) that provides some assurance to interested parties as to the reliability of financial data
+###SenseIdentifier: review NN 7019866 
+###Sense: a variety show with topical sketches and songs and dancing and comedians
+###SenseIdentifier: review NN 6597758 
+###Sense: a periodical that publishes critical essays on current affairs or literature or art
+###SenseIdentifier: review NN 6469377 
+###Sense: a summary at the end that repeats the substance of a longer discussion
+###SenseIdentifier: review NN 1197258 
+###Sense: (law) a judicial reexamination of the proceedings of a court (especially by an appellate court)
+###SenseIdentifier: review NN 897811 
+###Sense: practice intended to polish performance or refresh the memory
+###SenseIdentifier: review NN 879271 
+###Sense: a formal or official examination; "the platoon stood ready for review"; "we had to wait for the inspection before we could use the elevator"
+--------------------------
+--------------------------
+###Lemma: power 
+###SenseIdentifier: power NN 5190804 
+###Sense: possession of controlling influence; "the deterrent power of nuclear weapons"; "the power of his love saved her"; "his powerfulness was concealed by a gentle facade"
+###SenseIdentifier: power NN 11453016 
+###Sense: (physics) the rate of doing work; measured in watts (= joules/second)
+###SenseIdentifier: power NN 5616246 
+###Sense: possession of the qualities (especially mental qualities) required to do something or get something done; "danger heightened his powers of discrimination"
+###SenseIdentifier: power NN 13945102 
+###Sense: (of a government or government official) holding an office means being in power; "being in office already gives a candidate a great advantage"; "during his first year in office"; "during his first year in power"; "the power of the president"
+###SenseIdentifier: power NN 10461424 
+###Sense: one possessing or exercising power or influence or authority; "the mysterious presence of an evil power"; "may the force be with you"; "the forces of evil"
+###SenseIdentifier: power NN 6812417 
+###Sense: a mathematical notation indicating the number of times a quantity is multiplied by itself
+###SenseIdentifier: power NN 5030680 
+###Sense: physical strength
+###SenseIdentifier: power NN 8177592 
+###Sense: a state powerful enough to influence events throughout the world
+###SenseIdentifier: power NN 9840217 
+###Sense: a very wealthy or powerful businessman; "an oil baron"
+--------------------------
+--------------------------
+###Lemma: appeal 
+###SenseIdentifier: appeal NN 7186828 
+###Sense: earnest or urgent request; "an entreaty to stop the fighting"; "an appeal for help"; "an appeal to the public to keep calm"
+###SenseIdentifier: appeal NN 4687333 
+###Sense: attractiveness that interests or pleases or stimulates; "his smile was part of his appeal to her"
+###SenseIdentifier: appeal NN 1185611 
+###Sense: (law) a legal proceeding in which the appellant resorts to a higher court for the purpose of obtaining a review of a lower court decision and a reversal of the lower court's judgment or the granting of a new trial; "their appeal was denied in the superior court"
+###SenseIdentifier: appeal NN 6513764 
+###Sense: request for a sum of money; "an appeal to raise money for starving children"
+--------------------------
+--------------------------
+###Lemma: responsibility 
+###SenseIdentifier: responsibility NN 1129920 
+###Sense: the social force that binds you to the courses of action demanded by that force; "we must instill a sense of duty in our children"; "every right implies a responsibility; every opportunity, an obligation; every possession, a duty"- John D.Rockefeller Jr
+###SenseIdentifier: responsibility NN 14515633 
+###Sense: the proper sphere or extent of your activities; "it was his province to take care of himself"
+###SenseIdentifier: responsibility NN 4669247 
+###Sense: a form of trustworthiness; the trait of being answerable to someone for something or being responsible for one's conduct; "he holds a position of great responsibility"
+--------------------------
+--------------------------
+###Lemma: sugc 
+--------------------------
+--------------------------
+###Lemma: use 
+###SenseIdentifier: use NN 947128 
+###Sense: the act of using; "he warned against the use of narcotic drugs"; "skilled in the utilization of computers"
+###SenseIdentifier: use NN 5149325 
+###Sense: what something is used for; "the function of an auger is to bore holes"; "ballet is beautiful but what use is it?"
+###SenseIdentifier: use NN 5149978 
+###Sense: a particular service; "he put his knowledge to good use"; "patrons have their uses"
+###SenseIdentifier: use NN 13451804 
+###Sense: (economics) the utilization of economic goods to satisfy needs or in manufacturing; "the consumption of energy has increased steadily"
+###SenseIdentifier: use NN 414179 
+###Sense: (psychology) an automatic pattern of behavior in reaction to a specific situation; may be inherited or acquired through frequent repetition; "owls have nocturnal habits"; "she had a habit twirling the ends of her hair"; "long use had hardened him to it"
+###SenseIdentifier: use NN 158185 
+###Sense: exerting shrewd or devious influence especially for one's own advantage; "his manipulation of his friends was scandalous"
+###SenseIdentifier: use NN 5190106 
+###Sense: (law) the exercise of the legal right to enjoy the benefits of owning property; "we were given the use of his boat"
+--------------------------
+--------------------------
+###Lemma: appraisal 
+###SenseIdentifier: appraisal NN 5733583 
+###Sense: the classification of someone or something with respect to its worth
+###SenseIdentifier: appraisal NN 6528783 
+###Sense: a document appraising the value of something (as for insurance or taxation)
+###SenseIdentifier: appraisal NN 875519 
+###Sense: an expert estimation of the quality, quantity, and other characteristics of someone or something
+--------------------------
+--------------------------
+###Lemma: recommendation 
+###SenseIdentifier: recommendation NN 6671637 
+###Sense: something (as a course of action) that is recommended as advisable
+###SenseIdentifier: recommendation NN 6694540 
+###Sense: something that recommends (or expresses commendation of) a person or thing as worthy or desirable
+###SenseIdentifier: recommendation NN 4673668 
+###Sense: any quality or characteristic that gains a person a favorable reception or acceptance or admission; "her pleasant personality is already a recommendation"; "his wealth was not a passport into the exclusive circles of society"
+--------------------------
+--------------------------
+###Lemma: department 
+###SenseIdentifier: department NN 8114861 
+###Sense: a specialized division of a large organization; "you'll find it in the hardware department"; "she got a job in the historical section of the Treasury"
+###SenseIdentifier: department NN 8548733 
+###Sense: the territorial and administrative division of some countries (such as France)
+###SenseIdentifier: department NN 5853273 
+###Sense: a specialized sphere of knowledge; "baking is not my department"; "his work established a new department of literature"
+--------------------------
+--------------------------
+###Lemma: sugc 
+--------------------------
+--------------------------
+###Lemma: sub-committee 
+###SenseIdentifier: sub-committee NN 8325993 
+###Sense: a subset of committee members organized for a specific purpose
+--------------------------
+--------------------------
+###Lemma: core 
+###SenseIdentifier: core NN 8242223 
+###Sense: a small group of indispensable persons or things; "five periodicals make up the core of their publishing program"
+###SenseIdentifier: core NN 8524262 
+###Sense: the center of an object; "the ball has a titanium core"
+###SenseIdentifier: core NN 9256815 
+###Sense: the central part of the Earth
+###SenseIdentifier: core NN 5921123 
+###Sense: the choicest or most essential or most vital part of some idea or experience; "the gist of the prosecutor's argument"; "the heart and soul of the Republican Party"; "the nub of the story"
+###SenseIdentifier: core NN 9256895 
+###Sense: a cylindrical sample of soil or rock obtained with a hollow drill
+###SenseIdentifier: core NN 8308922 
+###Sense: an organization founded by James Leonard Farmer in 1942 to work for racial equality
+###SenseIdentifier: core NN 6604066 
+###Sense: the central meaning or theme of a speech or literary work
+###SenseIdentifier: core NN 3108069 
+###Sense: (computer science) a tiny ferrite toroid formerly used in a random access memory to store one bit of data; now superseded by semiconductor memories; "each core has three wires passing through it, providing the means to select and detect the contents of each bit"
+###SenseIdentifier: core NN 3107904 
+###Sense: the chamber of a nuclear reactor containing the fissile material where the reaction takes place
+###SenseIdentifier: core NN 3107716 
+###Sense: a bar of magnetic material (as soft iron) that passes through a coil and serves to increase the inductance of the coil
+--------------------------
+--------------------------
+###Lemma: curriculum 
+###SenseIdentifier: curriculum NN 6676416 
+###Sense: an integrated course of academic studies; "he was admitted to a new program at the university"
+--------------------------
+--------------------------
+###Lemma: ccc 
+--------------------------
+--------------------------
+###Lemma: apec 
+--------------------------
+--------------------------
+###Lemma: dugc 
+--------------------------
+--------------------------
+###Lemma: sugc 
+--------------------------
+--------------------------
+###Lemma: chairmen 
+###SenseIdentifier: chairmen NN 10468962 
+###Sense: the officer who presides at the meetings of an organization; "address your remarks to the chairperson"
+--------------------------
+--------------------------
+###Lemma: ccc 
+--------------------------
+--------------------------
+###Lemma: apec 
+--------------------------
+--------------------------
+###Lemma: consultation 
+###SenseIdentifier: consultation NN 7143624 
+###Sense: a conference (usually with someone important); "he had a consultation with the judge"; "he requested an audience with the king"
+###SenseIdentifier: consultation NN 7143137 
+###Sense: a conference between two or more people to consider a particular question; "frequent consultations with his lawyer"; "a consultation of several medical specialists"
+###SenseIdentifier: consultation NN 1264050 
+###Sense: the act of referring or consulting; "reference to an encyclopedia produced the answer"
+--------------------------
+--------------------------
+###Lemma: sugc 
+--------------------------
+--------------------------
+###Lemma: faculty 
+###SenseIdentifier: faculty NN 5650329 
+###Sense: one of the inherent cognitive or perceptual powers of the mind
+###SenseIdentifier: faculty NN 8287586 
+###Sense: the body of teachers and administrators at a school; "the dean addressed the letter to the entire staff of the university"
+--------------------------
+--------------------------
+###Lemma: member 
+###SenseIdentifier: member NN 10307234 
+###Sense: one of the persons who compose a social group (especially individuals who have joined and participate in a group organization); "only members will be admitted"; "a member of the faculty"; "she was introduced to all the members of his family"
+###SenseIdentifier: member NN 13810615 
+###Sense: anything that belongs to a set or class; "snakes are members of the class Reptilia"; "members of the opposite sex"
+###SenseIdentifier: member NN 5559908 
+###Sense: an external body part that projects from the body; "it is important to keep the extremities warm"
+###SenseIdentifier: member NN 8170686 
+###Sense: an organization that is a member of another organization (especially a state that belongs to a group of nations); "the library was a member of the interlibrary loan association"; "Canada is a member of the United Nations"
+###SenseIdentifier: member NN 5526384 
+###Sense: the male organ of copulation (`member' is a euphemism)
+--------------------------
+--------------------------
+###Lemma: sugc 
+--------------------------
+--------------------------
+###Lemma: ccc 
+--------------------------
+--------------------------
+###Lemma: facet 
+###SenseIdentifier: facet NN 5850624 
+###Sense: a distinct feature or element in a problem; "he studied every facet of the question"
+###SenseIdentifier: facet NN 13913164 
+###Sense: a smooth surface (as of a bone or cut gemstone)
+--------------------------
+--------------------------
+###Lemma: apec 
+--------------------------
+--------------------------
+###Lemma: study 
+###SenseIdentifier: study NN 644503 
+###Sense: a detailed critical inspection
+###SenseIdentifier: study NN 5755883 
+###Sense: applying the mind to learning and understanding a subject (especially by reading); "mastering a second language requires a lot of work"; "no schools offer graduate study in interior design"
+###SenseIdentifier: study NN 7218470 
+###Sense: a written document describing the findings of some individual or group; "this accords with the recent study by Hill and Dale"
+###SenseIdentifier: study NN 5705355 
+###Sense: a state of deep mental absorption; "she is in a deep study"
+###SenseIdentifier: study NN 4345028 
+###Sense: a room used for reading and writing and studying; "he knocked lightly on the closed door of the study"
+###SenseIdentifier: study NN 5996646 
+###Sense: a branch of knowledge; "in what discipline is his doctorate?"; "teachers should be well trained in their subject"; "anthropology is the study of human beings"
+###SenseIdentifier: study NN 4227144 
+###Sense: preliminary drawing for later elaboration; "he made several studies before starting to paint"
+###SenseIdentifier: study NN 5784242 
+###Sense: attentive consideration and meditation; "after much cogitation he rejected the offer"
+###SenseIdentifier: study NN 10666464 
+###Sense: someone who memorizes quickly and easily (as the lines for a part in a play); "he is a quick study"
+###SenseIdentifier: study NN 7048627 
+###Sense: a composition intended to develop one aspect of the performer's technique; "a study in spiccato bowing"
+--------------------------
+--------------------------
+###Lemma: action 
+###SenseIdentifier: action NN 37396 
+###Sense: something done (usually as opposed to something said); "there were stories of murders and other unnatural actions"
+###SenseIdentifier: action NN 14006945 
+###Sense: the state of being active; "his sphere of activity"; "he is out of action"
+###SenseIdentifier: action NN 952963 
+###Sense: a military engagement; "he saw action in Korea"
+###SenseIdentifier: action NN 13518963 
+###Sense: a process existing in or produced by nature (rather than by the intent of human beings); "the action of natural forces"; "volcanic activity"
+###SenseIdentifier: action NN 6373513 
+###Sense: the series of events that form a plot; "his novels always have a lot of action"
+###SenseIdentifier: action NN 4835950 
+###Sense: the trait of being active and energetic and forceful; "a man of action"
+###SenseIdentifier: action NN 2677718 
+###Sense: the operating part that transmits power to a mechanism; "the piano had a very stiff action"
+###SenseIdentifier: action NN 1181902 
+###Sense: a judicial proceeding brought by one party against another; one party prosecutes another for a wrong done or for protection of a right or for prevention of a wrong
+###SenseIdentifier: action NN 1182312 
+###Sense: an act by a government body or supranational organization; "recent federal action undermined the segregationist position"; "the United Nations must have the power to propose and organize action without being hobbled by irrelevant issues"; "the Union action of emancipating Southern slaves"
+###SenseIdentifier: action NN 576451 
+###Sense: the most important or interesting work or activity in a specific area or field; "the action is no longer in technology stocks but in municipal bonds"; "gawkers always try to get as close to the action as possible"
+--------------------------
+--------------------------
+###Lemma: case 
+###SenseIdentifier: case NN 7308889 
+###Sense: an occurrence of something; "it was a case of bad judgment"; "another instance occurred yesterday"; "but there is always the famous example of the Smiths"
+###SenseIdentifier: case NN 13943400 
+###Sense: a special set of circumstances; "in that event, the first possibility is excluded"; "it may rain in which case the picnic will be canceled"
+###SenseIdentifier: case NN 1182654 
+###Sense: a comprehensive term for any proceeding in a court of law whereby an individual seeks a legal remedy; "the family brought suit against the landlord"
+###SenseIdentifier: case NN 5817743 
+###Sense: the actual state of things; "that was not the case"
+###SenseIdentifier: case NN 2974697 
+###Sense: a portable container for carrying several objects; "the musicians left their instrument cases backstage"
+###SenseIdentifier: case NN 9898892 
+###Sense: a person requiring professional services; "a typical case was the suburban housewife described by a marriage counselor"
+###SenseIdentifier: case NN 10668666 
+###Sense: a person who is subjected to experimental or other observational procedures; someone who is an object of investigation; "the subjects for this investigation were selected randomly"; "the cases that we studied were drawn from two different communities"
+###SenseIdentifier: case NN 6784966 
+###Sense: a problem requiring investigation; "Perry Mason solved the case of the missing heir"
+###SenseIdentifier: case NN 6649426 
+###Sense: a statement of facts and reasons used to support an argument; "he stated his case clearly"
+###SenseIdentifier: case NN 13766436 
+###Sense: the quantity contained in a case
+###SenseIdentifier: case NN 6310945 
+###Sense: nouns or pronouns or adjectives (often marked by inflection) related in some way to other words in a sentence
+###SenseIdentifier: case NN 14015996 
+###Sense: a specific state of mind that is temporary; "a case of the jitters"
+###SenseIdentifier: case NN 9909060 
+###Sense: a person of a specified kind (usually with many eccentricities); "a real character"; "a strange character"; "a friendly eccentric"; "the capable type"; "a mental case"
+###SenseIdentifier: case NN 6825399 
+###Sense: a specific size and style of type within a type family
+###SenseIdentifier: case NN 5238036 
+###Sense: an enveloping structure or covering enclosing an animal or plant organ or part
+###SenseIdentifier: case NN 4190747 
+###Sense: the housing or outer covering of something; "the clock has a walnut case"
+###SenseIdentifier: case NN 2977619 
+###Sense: the enclosing frame around a door or window opening; "the casings had rotted away and had to be replaced"
+###SenseIdentifier: case NN 2975589 
+###Sense: (printing) the receptacle in which a compositor has his type, which is divided into compartments for the different letters, spaces, or numbers; "for English, a compositor will ordinarily have two such cases, the upper case containing the capitals and the lower case containing the small letters"
+###SenseIdentifier: case NN 2975412 
+###Sense: bed linen consisting of a cover for a pillow; "the burglar carried his loot in a pillowcase"
+###SenseIdentifier: case NN 2975212 
+###Sense: a glass container used to store and display items in a shop or museum or home
+--------------------------
+--------------------------
+###Lemma: sugc 
+--------------------------
+--------------------------
+###Lemma: dugc 
+--------------------------
+--------------------------
+###Lemma: convenor 
+--------------------------
+--------------------------
+###Lemma: head 
+###SenseIdentifier: head NN 5538625 
+###Sense: the upper part of the human body or the front part of the body in animals; contains the face and brains; "he stuck his head out the window"
+###SenseIdentifier: head NN 1318381 
+###Sense: a single domestic animal; "200 head of cattle"
+###SenseIdentifier: head NN 5611302 
+###Sense: that which is responsible for one's thoughts and feelings; the seat of the faculty of reason; "his mind wandered"; "I couldn't get his words out of my head"
+###SenseIdentifier: head NN 10162991 
+###Sense: a person who is in charge; "the head of the whole operation"
+###SenseIdentifier: head NN 8482271 
+###Sense: the front of a military formation or procession; "the head of the column advanced boldly"; "they were at the head of the attack"
+###SenseIdentifier: head NN 11495607 
+###Sense: the pressure exerted by a fluid; "a head of steam"
+###SenseIdentifier: head NN 8664184 
+###Sense: the top of something; "the head of the stairs"; "the head of the page"; "the head of the list"
+###SenseIdentifier: head NN 8508449 
+###Sense: the source of water from which a stream arises; "they tracked him back toward the head of the stream"
+###SenseIdentifier: head NN 6291809 
+###Sense: (grammar) the word in a grammatical constituent that plays the same grammatical role as the whole constituent
+###SenseIdentifier: head NN 14312481 
+###Sense: the tip of an abscess (where the pus accumulates)
+###SenseIdentifier: head NN 13654380 
+###Sense: the length or height based on the size of a human or animal head; "he is two heads taller than his little sister"; "his horse won by a head"
+###SenseIdentifier: head NN 13133786 
+###Sense: a dense cluster of flowers or foliage; "a head of cauliflower"; "a head of lettuce"
+###SenseIdentifier: head NN 10474645 
+###Sense: the educator who has executive authority for a school; "she sent unruly pupils to see the principal"
+###SenseIdentifier: head NN 10163354 
+###Sense: an individual person; "tickets are $5 per head"
+###SenseIdentifier: head NN 10162780 
+###Sense: a user of (usually soft) drugs; "the office was full of secret heads"
+###SenseIdentifier: head NN 9399592 
+###Sense: a natural elevation (especially a rocky one that juts out into the sea)
+###SenseIdentifier: head NN 9302031 
+###Sense: a rounded compact mass; "the head of a comet"
+###SenseIdentifier: head NN 9301844 
+###Sense: the foam or froth that accumulates at the top when you pour an effervescent liquid into a container; "the beer had a large head of foam"
+###SenseIdentifier: head NN 8572467 
+###Sense: the part in the front or nearest the viewer; "he was in the forefront"; "he was at the head of the column"
+###SenseIdentifier: head NN 7418822 
+###Sense: a difficult juncture; "a pretty pass"; "matters came to a head yesterday"
+###SenseIdentifier: head NN 7372779 
+###Sense: forward movement; "the ship made little headway against the gale"
+###SenseIdentifier: head NN 6822034 
+###Sense: a V-shaped mark at one end of an arrow pointer; "the point of the arrow was due north"
+###SenseIdentifier: head NN 6783768 
+###Sense: the subject matter at issue; "the question of disease merits serious discussion"; "under the head of minor Roman poets"
+###SenseIdentifier: head NN 6343971 
+###Sense: a line of text serving to indicate what the passage below it is about; "the heading seemed to have little to do with the text"
+###SenseIdentifier: head NN 5595837 
+###Sense: the rounded end of a bone that fits into a rounded cavity in another bone to form a joint; "the head of the humerus"
+###SenseIdentifier: head NN 5290756 
+###Sense: that part of a skeletal muscle that is away from the bone that it moves
+###SenseIdentifier: head NN 4058721 
+###Sense: (computer science) a tiny electromagnetic coil and metal pole used to write and read magnetic patterns on a disk
+###SenseIdentifier: head NN 3501811 
+###Sense: (usually plural) the obverse side of a coin that usually bears the representation of a person's head; "call heads or tails!"
+###SenseIdentifier: head NN 3501614 
+###Sense: the striking part of a tool; "the head of the hammer"
+###SenseIdentifier: head NN 3501520 
+###Sense: (nautical) a toilet on board a boat or ship
+###SenseIdentifier: head NN 3501288 
+###Sense: a projection out from one end; "the head of the nail", "a pinhead is the head of a pin"
+###SenseIdentifier: head NN 3250279 
+###Sense: a membrane that is stretched taut over a drum
+###SenseIdentifier: head NN 854876 
+###Sense: oral stimulation of the genitals; "they say he gives good head"
+--------------------------
+--------------------------
+###Lemma: minimum 
+###SenseIdentifier: minimum NN 13763384 
+###Sense: the smallest possible quantity
+###SenseIdentifier: minimum NN 8600274 
+###Sense: the point on a curve where the tangent changes from negative on the left to positive on the right
+--------------------------
+--------------------------
+###Lemma: maximum 
+###SenseIdentifier: maximum NN 13776137 
+###Sense: the largest possible quantity
+###SenseIdentifier: maximum NN 5124928 
+###Sense: the greatest possible degree; "he tried his utmost"
+###SenseIdentifier: maximum NN 8598132 
+###Sense: the point on a curve where the tangent changes from positive on the left to negative on the right
+--------------------------
+--------------------------
+###Lemma: representative 
+###SenseIdentifier: representative NN 10522035 
+###Sense: a person who represents others
+###SenseIdentifier: representative NN 10638385 
+###Sense: an advocate who represents someone else's policy or purpose; "the meeting was attended by spokespersons for all the major organs of government"
+###SenseIdentifier: representative NN 9955781 
+###Sense: a member of the United States House of Representatives
+###SenseIdentifier: representative NN 5820620 
+###Sense: an item of information that is typical of a class or group; "this patient provides a typical example of the syndrome"; "there is an example on page 10"
+--------------------------
+--------------------------
+###Lemma: period 
+###SenseIdentifier: period NN 15113229 
+###Sense: an amount of time; "a time period of 30 years"; "hastened the period of time of his recovery"; "Picasso's blue period"
+###SenseIdentifier: period NN 15289779 
+###Sense: the interval taken to complete one cycle of a regularly repeating phenomenon
+###SenseIdentifier: period NN 15258281 
+###Sense: (ice hockey) one of three divisions into which play is divided in hockey games
+###SenseIdentifier: period NN 15247518 
+###Sense: a unit of geological time during which a system of rocks formed; "ganoid fishes swarmed during the earlier geological periods"
+###SenseIdentifier: period NN 15144178 
+###Sense: the end or completion of something; "death put a period to his endeavors"; "a change soon put a period to my tranquility"
+###SenseIdentifier: period NN 13513747 
+###Sense: the monthly discharge of blood from the uterus of nonpregnant women from puberty to menopause; "the women were sickly and subject to excessive menstruation"; "a woman does not take the gout unless her menses be stopped"--Hippocrates; "the semen begins to appear in males and to be emitted at the same time of life that the catamenia begin to flow in females"--Aristotle
+###SenseIdentifier: period NN 6843520 
+###Sense: a punctuation mark (.) placed at the end of a declarative sentence to indicate a full stop or after abbreviations; "in England they call a period a stop"
+--------------------------
+--------------------------
+###Lemma: tenure 
+###SenseIdentifier: tenure NN 15291498 
+###Sense: the term during which some position is held
+###SenseIdentifier: tenure NN 13242719 
+###Sense: the right to hold property; part of an ancient hierarchical system of holding lands
+--------------------------
+--------------------------
+###Lemma: half 
+###SenseIdentifier: half NN 13736799 
+###Sense: one of two equal parts of a divisible whole; "half a loaf"; "half an hour"; "a century and one half"
+###SenseIdentifier: half NN 15257829 
+###Sense: one of two divisions into which some games or performances are divided: the two divisions are separated by an interval
+--------------------------
+--------------------------
+###Lemma: lot 
+###SenseIdentifier: lot NN 13774404 
+###Sense: (often followed by `of') a large number or amount or extent; "a batch of letters"; "a deal of trouble"; "a lot of money"; "he made a mint on the stock market"; "see the rest of the winners in our huge passel of photos"; "it must have cost plenty"; "a slew of journalists"; "a wad of money"
+###SenseIdentifier: lot NN 8674970 
+###Sense: a parcel of land having fixed boundaries; "he bought a lot on the lake"
+###SenseIdentifier: lot NN 8240169 
+###Sense: an unofficial association of people or groups; "the smart set goes there"; "they were an angry lot"
+###SenseIdentifier: lot NN 14473222 
+###Sense: your overall circumstances or condition in life (including everything that happens to you); "whatever my fortune may be"; "deserved a better fate"; "has a happy lot"; "the luck of the Irish"; "a victim of circumstances"; "success that was her portion"
+###SenseIdentifier: lot NN 3233423 
+###Sense: anything (straws or pebbles etc.) taken or chosen at random; "the luck of the draw"; "they drew lots for it"
+###SenseIdentifier: lot NN 7954731 
+###Sense: any collection in its entirety; "she bought the whole caboodle"
+###SenseIdentifier: lot NN 10273669 
+###Sense: (Old Testament) nephew of Abraham; God destroyed Sodom and Gomorrah but chose to spare Lot and his family who were told to flee without looking back at the destruction
+--------------------------
+--------------------------
+###Lemma: dugc 
+--------------------------
+--------------------------
+###Lemma: sugc 
+--------------------------

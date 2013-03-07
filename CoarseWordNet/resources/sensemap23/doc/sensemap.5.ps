@@ -1,0 +1,609 @@
+%!PS
+%%Version: 3.15
+%%DocumentFonts: (atend)
+%%Pages: (atend)
+%%EndComments
+%ident	"@(#)lp:filter/postscript/postscript/dpost.ps	1.1"
+%
+% Version 3.16 prologue for troff files.
+%
+
+/#copies 1 store
+/aspectratio 1 def
+/formsperpage 1 def
+/landscape false def
+/linewidth .3 def
+/magnification 1 def
+/margin 0 def
+/orientation 0 def
+/resolution 720 def
+/xoffset 0 def
+/yoffset 0 def
+
+/roundpage true def
+/useclippath true def
+/pagebbox [0 0 612 792] def
+
+/R  /Times-Roman def
+/I  /Times-Italic def
+/B  /Times-Bold def
+/BI /Times-BoldItalic def
+/H  /Helvetica def
+/HI /Helvetica-Oblique def
+/HB /Helvetica-Bold def
+/HX /Helvetica-BoldOblique def
+/CW /Courier def
+/CO /Courier def
+/CI /Courier-Oblique def
+/CB /Courier-Bold def
+/CX /Courier-BoldOblique def
+/PA /Palatino-Roman def
+/PI /Palatino-Italic def
+/PB /Palatino-Bold def
+/PX /Palatino-BoldItalic def
+/Hr /Helvetica-Narrow def
+/Hi /Helvetica-Narrow-Oblique def
+/Hb /Helvetica-Narrow-Bold def
+/Hx /Helvetica-Narrow-BoldOblique def
+/KR /Bookman-Light def
+/KI /Bookman-LightItalic def
+/KB /Bookman-Demi def
+/KX /Bookman-DemiItalic def
+/AR /AvantGarde-Book def
+/AI /AvantGarde-BookOblique def
+/AB /AvantGarde-Demi def
+/AX /AvantGarde-DemiOblique def
+/NR /NewCenturySchlbk-Roman def
+/NI /NewCenturySchlbk-Italic def
+/NB /NewCenturySchlbk-Bold def
+/NX /NewCenturySchlbk-BoldItalic def
+/ZD /ZapfDingbats def
+/ZI /ZapfChancery-MediumItalic def
+/VR /Varitimes#Roman def
+/VI /Varitimes#Italic def
+/VB /Varitimes#Bold def
+/VX /Varitimes#BoldItalic def
+/S  /S def
+/S1 /S1 def
+/GR /Symbol def
+
+/inch {72 mul} bind def
+/min {2 copy gt {exch} if pop} bind def
+
+/setup {
+	counttomark 2 idiv {def} repeat pop
+
+	landscape {/orientation 90 orientation add def} if
+	/scaling 72 resolution div def
+	linewidth setlinewidth
+	1 setlinecap
+
+	pagedimensions
+	xcenter ycenter translate
+	orientation neg rotate
+	width 2 div neg height 2 div translate
+	xoffset inch yoffset inch translate
+	margin 2 div dup neg translate
+	magnification dup aspectratio mul scale
+	scaling scaling scale
+
+	/Symbol /S Sdefs cf
+	/Times-Roman /S1 S1defs cf
+	0 0 moveto
+} def
+
+/pagedimensions {
+	useclippath userdict /gotpagebbox known not and {
+		/pagebbox [clippath pathbbox newpath] def
+		roundpage currentdict /roundpagebbox known and {roundpagebbox} if
+	} if
+	pagebbox aload pop
+	4 -1 roll exch 4 1 roll 4 copy
+	landscape {4 2 roll} if
+	sub /width exch def
+	sub /height exch def
+	add 2 div /xcenter exch def
+	add 2 div /ycenter exch def
+	userdict /gotpagebbox true put
+} def
+
+/pagesetup {
+	/page exch def
+	currentdict /pagedict known currentdict page known and {
+		page load pagedict exch get cvx exec
+	} if
+} def
+
+/decodingdefs [
+	{counttomark 2 idiv {y moveto show} repeat}
+	{neg /y exch def counttomark 2 idiv {y moveto show} repeat}
+	{neg moveto {2 index stringwidth pop sub exch div 0 32 4 -1 roll widthshow} repeat}
+	{neg moveto {spacewidth sub 0.0 32 4 -1 roll widthshow} repeat}
+	{counttomark 2 idiv {y moveto show} repeat}
+	{neg setfunnytext}
+] def
+
+/setdecoding {/t decodingdefs 3 -1 roll get bind def} bind def
+
+/w {neg moveto show} bind def
+/m {neg dup /y exch def moveto} bind def
+/done {/lastpage where {pop lastpage} if} def
+
+/f {
+	dup /font exch def findfont exch
+	dup /ptsize exch def scaling div dup /size exch def scalefont setfont
+	linewidth ptsize mul scaling 10 mul div setlinewidth
+	/spacewidth ( ) stringwidth pop def
+} bind def
+
+/changefont {
+	/fontheight exch def
+	/fontslant exch def
+	currentfont [
+		1 0
+		fontheight ptsize div fontslant sin mul fontslant cos div
+		fontheight ptsize div
+		0 0
+	] makefont setfont
+} bind def
+
+/sf {f} bind def
+
+/cf {
+	dup length 2 idiv
+	/entries exch def
+	/chtab exch def
+	/newfont exch def
+
+	findfont dup length 1 add dict
+	/newdict exch def
+	{1 index /FID ne {newdict 3 1 roll put} {pop pop} ifelse} forall
+
+	newdict /Metrics entries dict put
+	newdict /Metrics get
+	begin
+		chtab aload pop
+		1 1 entries {pop def} for
+		newfont newdict definefont pop
+	end
+} bind def
+
+%
+% A few arrays used to adjust reference points and character widths in some
+% of the printer resident fonts. If square roots are too high try changing
+% the lines describing /radical and /radicalex to,
+%
+%	/radical	[0 -75 550 0]
+%	/radicalex	[-50 -75 500 0]
+%
+
+/Sdefs [
+	/bracketlefttp		[220 500]
+	/bracketleftbt		[220 500]
+	/bracketrighttp		[-70 380]
+	/bracketrightbt		[-70 380]
+	/braceleftbt		[220 490]
+	/bracketrightex		[220 -125 500 0]
+	/radical		[0 0 550 0]
+	% NeWSprint's \(br is too low, compensate
+	statusdict /product get (NeWS Server) eq {
+		/radicalex		[-50 100 500 0]
+		/parenleftex		[-20 100 0 0]
+
+	} {
+		/radicalex		[-50 0 500 0]
+		/parenleftex		[-20 -170 0 0]
+	} ifelse
+	/integral		[100 -50 500 0]
+	/infinity		[10 -75 730 0]
+] def
+
+/S1defs [
+	/underscore		[0 80 500 0]
+	/endash			[7 90 650 0]
+] def
+%%EndProlog
+%%BeginSetup
+mark
+/resolution 720 def
+setup
+2 setdecoding
+%%EndSetup
+%%Page: 1 1
+save
+mark
+1 pagesetup
+10 R f
+(WordNet)720 480 w
+10 S f
+(\324)1091 480 w
+10 R f
+( \( 5WN \))3 330( SENSEMAP)1 3340(File Formats)1 517 3 1213 480 t
+9 B f
+(NAME)720 960 w
+10 R f
+(2.1to3.0.noun.poly)1080 1080 w
+10 S1 f
+(\261)1892 1080 w
+10 R f
+( corresponding 3.0)2 810(mapping from polysemous noun senses in WordNet 2.1 to)8 2577 2 2013 1080 t
+(senses)1080 1200 w
+(2.1to3.0.noun.mono)1080 1368 w
+10 S1 f
+(\261)1933 1368 w
+10 R f
+(mapping from monosemous noun senses in WordNet 2.1 to corresponding 3.0)10 3355 1 2045 1368 t
+(senses)1080 1488 w
+(2.1to3.0.verb.poly)1080 1656 w
+10 S1 f
+(\261)1846 1656 w
+10 R f
+(mapping from polysemous verb senses in WordNet 2.1 to corresponding 3.0 senses)11 3420 1 1944 1656 t
+(2.1to3.0.verb.poly)1080 1824 w
+10 S1 f
+(\261)1868 1824 w
+10 R f
+(mapping from monosemous verb senses in WordNet 2.1 to corresponding 3.0)10 3412 1 1988 1824 t
+(senses)1080 1944 w
+9 B f
+(DESCRIPTION)720 2112 w
+10 R f
+( to senses in version 2.1, or who have statically)9 2145(WordNet users who have semantically tagged text)6 2175 2 1080 2232 t
+( help)1 214( To)1 186(assigned or used 2.1 senses in other applications should upgrade to WordNet 3.0 if possible.)14 3920 3 1080 2352 t
+( provide sense)2 589(users automatically convert 2.1 noun and verb senses to their corresponding 3.0 senses, we)13 3731 2 1080 2472 t
+(mapping information with version 3.0.)4 1576 1 1080 2592 t
+(The sense mapping was done as follows:)6 1679 1 1080 2832 t
+( and verbs unique to either database were ignored.)8 2067(\267 Nouns)1 511 2 1440 3120 t
+( both databases were found and their)6 1529( and verbs that are monosemous in)6 1447(\267 Nouns)1 511 3 1440 3288 t
+10 I f
+(sense)4963 3288 w
+10 S f
+(_)5179 3288 w
+10 I f
+(key)5229 3288 w
+10 R f
+(s)5361 3288 w
+(and)1690 3408 w
+10 I f
+(synset)1946 3408 w
+10 S f
+(_)2190 3408 w
+10 I f
+(offset)2240 3408 w
+10 R f
+( the \256les)2 511( sense mappings are in)4 1252( These)1 383(s were mapped.)2 797 4 2457 3408 t
+10 B f
+(2.1to3.0.)1690 3528 w
+10 S f
+({)2048 3528 w
+10 B f
+(noun,verb)2096 3528 w
+10 S f
+(})2533 3528 w
+10 B f
+(.mono)2581 3528 w
+10 R f
+(.)2845 3528 w
+( senses of polysemous nouns and verb in version 2.1 were mapped to senses in version)15 3582(\267 All)1 378 2 1440 3696 t
+( the similarity of 2.1 and 3.0 senses, and a)9 1802( heuristics were used to evaluate)5 1369(3.0. Various)1 539 3 1690 3816 t
+( each word, each 2.1 sense was compared to)8 1857( For)1 209( assigned to each comparison.)4 1243(score was)1 401 4 1690 3936 t
+( for the same word, and the 3.0 sense \(or senses\) with the highest)13 2845(all of the 3.0 senses)4 865 2 1690 4056 t
+( sense mappings are in the \256le)6 1582( These)1 359( mapping.)1 463(score was deemed the best)4 1306 4 1690 4176 t
+10 B f
+(2.1to3.0.)1690 4296 w
+10 S f
+({)2048 4296 w
+10 B f
+(noun,verb)2096 4296 w
+10 S f
+(})2533 4296 w
+10 B f
+(.poly)2581 4296 w
+10 R f
+(.)2790 4296 w
+( relative tree)2 530(Heuristics include comparison of sense keys, similarity of synset terms, and)10 3180 2 1690 4536 t
+( used for comparisions, as they are)6 1455( are not)2 325( Glosses)1 382(location \(comparision of hypernyms\).)3 1548 4 1690 4656 t
+(often signi\256cantly modi\256ed.)2 1147 1 1690 4776 t
+9 B f
+(File Format)1 480 1 900 4944 t
+10 R f
+(A sense mapping is generally represented by two)7 2093 1 1080 5064 t
+10 I f
+(sense)3217 5064 w
+10 S f
+(_)3433 5064 w
+10 I f
+(key synset)1 442 1 3483 5064 t
+10 S f
+(_)3925 5064 w
+10 I f
+(offset)3975 5064 w
+10 R f
+( 2.1 sense)2 431(pairs, one for the)3 733 2 4236 5064 t
+( the polysemous sense mappings,)4 1390( For)1 212( sense.)1 281(and one for its corresponding 3.0)5 1400 4 1080 5184 t
+10 I f
+(sense)4403 5184 w
+10 S f
+(_)4619 5184 w
+10 I f
+(number)4669 5184 w
+10 R f
+(is also in)2 386 1 5014 5184 t
+( is not needed in the monosemous mappings since all monosemous words are)12 3416( \256eld)1 229( This)1 262(each pair.)1 413 4 1080 5304 t
+(assigned)1080 5424 w
+10 I f
+(sense)1457 5424 w
+10 S f
+(_)1673 5424 w
+10 I f
+(number)1723 5424 w
+10 R f
+(1. See)1 285 1 2061 5424 t
+10 B f
+(senseidx)2379 5424 w
+10 R f
+(\(5WN\) for a detailed description of these \256elds.)7 1963 1 2735 5424 t
+( space is the \256eld delimiter unless otherwise noted, and each line is terminated)13 3259(In all the mapping \256les, a)5 1061 2 1080 5664 t
+(with a newline character.)3 1026 1 1080 5784 t
+9 B f
+(2.1to3.0.)900 5952 w
+9 S f
+({)1224 5952 w
+9 B f
+(noun,verb)1267 5952 w
+9 S f
+(})1660 5952 w
+9 B f
+(.mono)1703 5952 w
+10 R f
+( and verbs that are monosemous in both Word-)8 1979(These \256les contain the mapping of sense keys for nouns)9 2341 2 1080 6072 t
+( databases, not all)3 749( the actual words and sense numbers are the same in both)11 2441( Although)1 450(Net 2.1 and 3.0.)3 680 4 1080 6192 t
+10 I f
+(sense)1080 6312 w
+10 S f
+(_)1296 6312 w
+10 I f
+(keys)1346 6312 w
+10 R f
+(are the same, and the)4 927 1 1563 6312 t
+10 I f
+(synset)2537 6312 w
+10 S f
+(_)2781 6312 w
+10 I f
+(offset)2831 6312 w
+10 R f
+( \256le is an alphabetized list of one)7 1472( This)1 258(s are different.)2 622 3 3048 6312 t
+( line is of the form:)5 809( Each)1 265(mapping per line.)2 718 3 1080 6432 t
+10 I f
+(2.1)1440 6672 w
+10 S f
+(_)1565 6672 w
+10 I f
+(sense)1615 6672 w
+10 S f
+(_)1831 6672 w
+10 I f
+(key)1881 6672 w
+10 B f
+(;)2013 6672 w
+10 I f
+(2.1)2046 6672 w
+10 S f
+(_)2171 6672 w
+10 I f
+(synset)2221 6672 w
+10 S f
+(_)2465 6672 w
+10 I f
+(offset 3.0)1 408 1 2515 6672 t
+10 S f
+(_)2923 6672 w
+10 I f
+(sense)2973 6672 w
+10 S f
+(_)3189 6672 w
+10 I f
+(key)3239 6672 w
+10 B f
+(;)3371 6672 w
+10 I f
+(3.0)3404 6672 w
+10 S f
+(_)3529 6672 w
+10 I f
+(synset)3579 6672 w
+10 S f
+(_)3823 6672 w
+10 I f
+(offset)3873 6672 w
+9 B f
+(2.1to3.0.)900 6840 w
+9 S f
+({)1224 6840 w
+9 B f
+(noun,verb)1267 6840 w
+9 S f
+(})1660 6840 w
+9 B f
+(.poly)1703 6840 w
+10 R f
+(These \256les contain the mapping of sense keys for nouns and verbs that are polysemous in WordNet 2.1)17 4320 1 1080 6960 t
+( sorted by score from highest score \(100\) to lowest \(0\), and then)12 2715( \256le is)2 273( This)1 250(and are also found in 3.0.)5 1082 4 1080 7080 t
+( sense maps)2 509( line lists all 3.0 sense\(s\) that the corresponding 2.1)9 2186( Each)1 272(alphabetically within each score.)3 1353 4 1080 7200 t
+( 1)1 1770( change: February 2007)3 969( Last)1 1412(WordNet 3.0)1 529 4 720 7680 t
+cleartomark
+showpage
+restore
+%%EndPage: 1 1
+%%Page: 2 2
+save
+mark
+2 pagesetup
+10 R f
+(WordNet)720 480 w
+10 S f
+(\324)1091 480 w
+10 R f
+( \( 5WN \))3 330( SENSEMAP)1 3340(File Formats)1 517 3 1213 480 t
+( line is of the form:)5 809( Each)1 265(to with that score.)3 740 3 1080 960 t
+10 I f
+(score 2.1)1 407 1 1440 1200 t
+10 S f
+(_)1847 1200 w
+10 I f
+(sense)1897 1200 w
+10 S f
+(_)2113 1200 w
+10 I f
+(info 3.0)1 347 1 2163 1200 t
+10 S f
+(_)2510 1200 w
+10 I f
+(sense)2560 1200 w
+10 S f
+(_)2776 1200 w
+10 I f
+(info [3.0)1 386 1 2826 1200 t
+10 S f
+(_)3212 1200 w
+10 I f
+(sense)3262 1200 w
+10 S f
+(_)3478 1200 w
+10 I f
+(info...])3528 1200 w
+10 R f
+(where)1080 1440 w
+10 I f
+(sense)1356 1440 w
+10 S f
+(_)1572 1440 w
+10 I f
+(info)1622 1440 w
+10 R f
+(consists of the following three \256elds:)5 1520 1 1811 1440 t
+10 I f
+(sense)1440 1680 w
+10 S f
+(_)1656 1680 w
+10 I f
+(key)1706 1680 w
+10 B f
+(;)1838 1680 w
+10 I f
+(synset)1871 1680 w
+10 S f
+(_)2115 1680 w
+10 I f
+(offset)2165 1680 w
+10 B f
+(;)2382 1680 w
+10 I f
+(sense)2415 1680 w
+10 S f
+(_)2631 1680 w
+10 I f
+(number)2681 1680 w
+9 B f
+(SCORES)720 1848 w
+10 R f
+(Scores range from 0 to 100, and are an indication of how con\256dent the mapping heuristics are that the)18 4320 1 1080 1968 t
+(senses are the same)3 823 1 1080 2088 t
+10 S1 f
+(\261)1943 2088 w
+10 R f
+( vast majority of)3 700( The)1 228(a higher score indicates greater reliability in the mapping.)8 2424 3 2048 2088 t
+(senses mapped with a score of 90 or 100.)8 1708 1 1080 2208 t
+9 B f
+(NOTES)720 2496 w
+10 R f
+( 2.1 often differs from the number of senses for)9 2007(The number of senses of a polysemous word in version)9 2313 2 1080 2616 t
+( there will always be a mapping for each 2.1 sense to one or more)14 2773( While)1 313(the same word in version 3.0.)5 1234 3 1080 2736 t
+(3.0 senses, there may be 3.0 senses to which no 2.1 sense is mapped.)13 2850 1 1080 2856 t
+( are unique to version 2.1, and therefore)7 1670(WordNet 2.1 words not found in either of the monsemous maps)10 2650 2 1080 3096 t
+(cannot be mapped to version 3.0.)5 1363 1 1080 3216 t
+9 B f
+(ENVIRONMENT VARIABLES)1 1265 1 720 3384 t
+10 B f
+(WNHOME)1080 3504 w
+10 R f
+( default is)2 416( Unix)1 269(Base directory for WordNet.)3 1174 3 2080 3504 t
+10 B f
+(/usr/local/WordNet-3.0)3975 3504 w
+10 R f
+(, Windows)1 445 1 4955 3504 t
+(default is)1 377 1 2080 3624 t
+10 B f
+(C:)2490 3624 w
+10 S1 f
+(\\)2595 3624 w
+10 B f
+(Program Files)1 615 1 2623 3624 t
+10 S1 f
+(\\)3238 3624 w
+10 B f
+(WordNet)3266 3624 w
+10 S1 f
+(\\)3665 3624 w
+10 B f
+(3.0)3693 3624 w
+10 R f
+(.)3818 3624 w
+9 B f
+(FILES)720 3792 w
+10 R f
+(All \256les are in)3 593 1 1080 3912 t
+10 B f
+(WNHOME/sensemap)1706 3912 w
+10 R f
+(on Unix platforms,)2 774 1 2667 3912 t
+10 B f
+(WNHOME)3474 3912 w
+10 S1 f
+(\\)3963 3912 w
+10 B f
+(sensemap)3991 3912 w
+10 R f
+(on Windows.)1 541 1 4435 3912 t
+9 B f
+(FILES)720 4080 w
+10 B f
+(2.1to3.0.noun.poly)1080 4200 w
+10 R f
+(mapping of polysemous 2.1 noun senses to 3.0 senses)8 2213 1 2080 4200 t
+10 B f
+(2.1to3.0.verb.poly)1080 4368 w
+10 R f
+(mapping of polysemous 2.1 verb senses to 3.0 senses)8 2190 1 2080 4368 t
+10 B f
+(2.1to3.0.noun.mono)1080 4536 w
+10 R f
+(mapping of monosemous 2.1 noun senses to 3.0 senses)8 2263 1 2080 4536 t
+10 B f
+(2.1to3.0.verb.mono)1080 4704 w
+10 R f
+(mapping of monosemous 2.1 verb senses to 3.0 senses)8 2240 1 2080 4704 t
+9 B f
+(SEE ALSO)1 460 1 720 4872 t
+10 B f
+(senseidx)1080 4992 w
+10 R f
+(\(5WN\),)1436 4992 w
+10 B f
+(wndb)1776 4992 w
+10 R f
+(\(5WN\),)2016 4992 w
+10 B f
+(wnpkgs)2356 4992 w
+10 R f
+(\(7WN\).)2685 4992 w
+( 2)1 1770( change: February 2007)3 969( Last)1 1412(WordNet 3.0)1 529 4 720 7680 t
+cleartomark
+showpage
+restore
+%%EndPage: 2 2
+%%Trailer
+done
+%%DocumentFonts: Times-Roman Symbol Times-Bold Times-Italic
+%%Pages: 2

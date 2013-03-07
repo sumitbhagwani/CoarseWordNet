@@ -1,0 +1,985 @@
+%!PS
+%%Version: 3.15
+%%DocumentFonts: (atend)
+%%Pages: (atend)
+%%EndComments
+%ident	"@(#)lp:filter/postscript/postscript/dpost.ps	1.1"
+%
+% Version 3.16 prologue for troff files.
+%
+
+/#copies 1 store
+/aspectratio 1 def
+/formsperpage 1 def
+/landscape false def
+/linewidth .3 def
+/magnification 1 def
+/margin 0 def
+/orientation 0 def
+/resolution 720 def
+/xoffset 0 def
+/yoffset 0 def
+
+/roundpage true def
+/useclippath true def
+/pagebbox [0 0 612 792] def
+
+/R  /Times-Roman def
+/I  /Times-Italic def
+/B  /Times-Bold def
+/BI /Times-BoldItalic def
+/H  /Helvetica def
+/HI /Helvetica-Oblique def
+/HB /Helvetica-Bold def
+/HX /Helvetica-BoldOblique def
+/CW /Courier def
+/CO /Courier def
+/CI /Courier-Oblique def
+/CB /Courier-Bold def
+/CX /Courier-BoldOblique def
+/PA /Palatino-Roman def
+/PI /Palatino-Italic def
+/PB /Palatino-Bold def
+/PX /Palatino-BoldItalic def
+/Hr /Helvetica-Narrow def
+/Hi /Helvetica-Narrow-Oblique def
+/Hb /Helvetica-Narrow-Bold def
+/Hx /Helvetica-Narrow-BoldOblique def
+/KR /Bookman-Light def
+/KI /Bookman-LightItalic def
+/KB /Bookman-Demi def
+/KX /Bookman-DemiItalic def
+/AR /AvantGarde-Book def
+/AI /AvantGarde-BookOblique def
+/AB /AvantGarde-Demi def
+/AX /AvantGarde-DemiOblique def
+/NR /NewCenturySchlbk-Roman def
+/NI /NewCenturySchlbk-Italic def
+/NB /NewCenturySchlbk-Bold def
+/NX /NewCenturySchlbk-BoldItalic def
+/ZD /ZapfDingbats def
+/ZI /ZapfChancery-MediumItalic def
+/VR /Varitimes#Roman def
+/VI /Varitimes#Italic def
+/VB /Varitimes#Bold def
+/VX /Varitimes#BoldItalic def
+/S  /S def
+/S1 /S1 def
+/GR /Symbol def
+
+/inch {72 mul} bind def
+/min {2 copy gt {exch} if pop} bind def
+
+/setup {
+	counttomark 2 idiv {def} repeat pop
+
+	landscape {/orientation 90 orientation add def} if
+	/scaling 72 resolution div def
+	linewidth setlinewidth
+	1 setlinecap
+
+	pagedimensions
+	xcenter ycenter translate
+	orientation neg rotate
+	width 2 div neg height 2 div translate
+	xoffset inch yoffset inch translate
+	margin 2 div dup neg translate
+	magnification dup aspectratio mul scale
+	scaling scaling scale
+
+	/Symbol /S Sdefs cf
+	/Times-Roman /S1 S1defs cf
+	0 0 moveto
+} def
+
+/pagedimensions {
+	useclippath userdict /gotpagebbox known not and {
+		/pagebbox [clippath pathbbox newpath] def
+		roundpage currentdict /roundpagebbox known and {roundpagebbox} if
+	} if
+	pagebbox aload pop
+	4 -1 roll exch 4 1 roll 4 copy
+	landscape {4 2 roll} if
+	sub /width exch def
+	sub /height exch def
+	add 2 div /xcenter exch def
+	add 2 div /ycenter exch def
+	userdict /gotpagebbox true put
+} def
+
+/pagesetup {
+	/page exch def
+	currentdict /pagedict known currentdict page known and {
+		page load pagedict exch get cvx exec
+	} if
+} def
+
+/decodingdefs [
+	{counttomark 2 idiv {y moveto show} repeat}
+	{neg /y exch def counttomark 2 idiv {y moveto show} repeat}
+	{neg moveto {2 index stringwidth pop sub exch div 0 32 4 -1 roll widthshow} repeat}
+	{neg moveto {spacewidth sub 0.0 32 4 -1 roll widthshow} repeat}
+	{counttomark 2 idiv {y moveto show} repeat}
+	{neg setfunnytext}
+] def
+
+/setdecoding {/t decodingdefs 3 -1 roll get bind def} bind def
+
+/w {neg moveto show} bind def
+/m {neg dup /y exch def moveto} bind def
+/done {/lastpage where {pop lastpage} if} def
+
+/f {
+	dup /font exch def findfont exch
+	dup /ptsize exch def scaling div dup /size exch def scalefont setfont
+	linewidth ptsize mul scaling 10 mul div setlinewidth
+	/spacewidth ( ) stringwidth pop def
+} bind def
+
+/changefont {
+	/fontheight exch def
+	/fontslant exch def
+	currentfont [
+		1 0
+		fontheight ptsize div fontslant sin mul fontslant cos div
+		fontheight ptsize div
+		0 0
+	] makefont setfont
+} bind def
+
+/sf {f} bind def
+
+/cf {
+	dup length 2 idiv
+	/entries exch def
+	/chtab exch def
+	/newfont exch def
+
+	findfont dup length 1 add dict
+	/newdict exch def
+	{1 index /FID ne {newdict 3 1 roll put} {pop pop} ifelse} forall
+
+	newdict /Metrics entries dict put
+	newdict /Metrics get
+	begin
+		chtab aload pop
+		1 1 entries {pop def} for
+		newfont newdict definefont pop
+	end
+} bind def
+
+%
+% A few arrays used to adjust reference points and character widths in some
+% of the printer resident fonts. If square roots are too high try changing
+% the lines describing /radical and /radicalex to,
+%
+%	/radical	[0 -75 550 0]
+%	/radicalex	[-50 -75 500 0]
+%
+
+/Sdefs [
+	/bracketlefttp		[220 500]
+	/bracketleftbt		[220 500]
+	/bracketrighttp		[-70 380]
+	/bracketrightbt		[-70 380]
+	/braceleftbt		[220 490]
+	/bracketrightex		[220 -125 500 0]
+	/radical		[0 0 550 0]
+	% NeWSprint's \(br is too low, compensate
+	statusdict /product get (NeWS Server) eq {
+		/radicalex		[-50 100 500 0]
+		/parenleftex		[-20 100 0 0]
+
+	} {
+		/radicalex		[-50 0 500 0]
+		/parenleftex		[-20 -170 0 0]
+	} ifelse
+	/integral		[100 -50 500 0]
+	/infinity		[10 -75 730 0]
+] def
+
+/S1defs [
+	/underscore		[0 80 500 0]
+	/endash			[7 90 650 0]
+] def
+%%EndProlog
+%%BeginSetup
+mark
+/resolution 720 def
+setup
+2 setdecoding
+%%EndSetup
+%%Page: 1 1
+save
+mark
+1 pagesetup
+10 R f
+(WordNet)720 480 w
+10 S f
+(\324)1091 480 w
+10 R f
+( \( 3WN \))3 330( WNINTRO)1 3130(Library Functions)1 727 3 1213 480 t
+9 B f
+(NAME)720 960 w
+10 R f
+(wnintro)1080 1080 w
+10 S1 f
+(\261)1424 1080 w
+10 R f
+(introduction to WordNet library functions)4 1708 1 1522 1080 t
+9 B f
+(DESCRIPTION)720 1248 w
+10 R f
+( of the)2 275(This section)1 495 2 1080 1368 t
+10 I f
+(WordNet Reference Manual)2 1140 1 1885 1368 t
+10 R f
+(contains manual pages that describe the WordNet library)7 2340 1 3060 1368 t
+(functions and API.)2 768 1 1080 1488 t
+(Functions are organized into the following categories:)6 2206 1 1080 1728 t
+10 S f
+(_ ____________________________________________)1 2242 1 2119 1868 t
+10 B f
+( File)1 194( Object)1 557( Page)1 238(Category Manual)1 1153 4 2169 1988 t
+10 S f
+(_ ____________________________________________)1 2242 1 2119 2008 t
+10 R f
+( search.o)1 479( \(3WN\))1 315( wnsearch)1 526(Database Search)1 669 4 2169 2128 t
+( morph.o)1 601( \(3WN\))1 315(Morphology morph)1 1080 3 2169 2248 t
+( wnutil.o)1 601( \(3WN\))1 315( wnutil)1 555(Misc. Utility)1 520 4 2169 2368 t
+( binsrch.o)1 601( \(3WN\))1 315( binsrch)1 537(Binary Search)1 576 4 2169 2488 t
+10 S f
+( \347)1 -2242(_ ____________________________________________)1 2242 2 2119 2508 t
+(\347)2119 2468 w
+(\347)2119 2368 w
+(\347)2119 2268 w
+(\347)2119 2168 w
+(\347)2119 2068 w
+(\347)2119 1968 w
+(\347)2913 2508 w
+(\347)2913 2468 w
+(\347)2913 2368 w
+(\347)2913 2268 w
+(\347)2913 2168 w
+(\347)2913 2068 w
+(\347)2913 1968 w
+(\347)3754 2508 w
+(\347)3754 2468 w
+(\347)3754 2368 w
+(\347)3754 2268 w
+(\347)3754 2168 w
+(\347)3754 2068 w
+(\347)3754 1968 w
+(\347)4361 2508 w
+(\347)4361 2468 w
+(\347)4361 2368 w
+(\347)4361 2268 w
+(\347)4361 2168 w
+(\347)4361 2068 w
+(\347)4361 1968 w
+10 R f
+( various WordNet pack-)3 994(The WordNet library is used by all of the searching interfaces provided with the)13 3326 2 1080 2748 t
+( programs in the system, such as)6 1344(ages. Additional)1 696 2 1080 2868 t
+10 B f
+(grind)3153 2868 w
+10 R f
+(\(1WN\), also use functions in this library.)6 1685 1 3387 2868 t
+( allow users to)3 616(The WordNet library is provided in both source and binary forms \(on some platforms\) to)14 3704 2 1080 3108 t
+( do not)2 314( We)1 214( WordNet database.)2 825(build applications and tools to their own speci\256cations that utilize the)10 2967 4 1080 3228 t
+(provide programming support or assistance.)4 1788 1 1080 3348 t
+( you do not)3 480( If)1 133( are de\256ned with function prototypes.)5 1543( Functions)1 462( to ANSI C standards.)4 916(The code conforms)2 786 6 1080 3588 t
+( source code and remove the prototypes before)7 1920(have a compiler that accepts prototypes, you must edit the)9 2400 2 1080 3708 t
+(compiling.)1080 3828 w
+10 B f
+(gcc)1587 3828 w
+10 R f
+( same code was)3 680( The)1 232( 2.95.2 was used to compile all of the Unix libraries.)10 2285(\(1\), version)1 478 4 1725 3828 t
+(compiled on all platforms, using)4 1401 1 1080 3948 t
+10 B f
+(cpp)2532 3948 w
+10 R f
+(\(1\))2688 3948 w
+10 S1 f
+(#)2855 3948 w
+10 B f
+(ifdef)2905 3948 w
+10 R f
+( conditionally compile platform speci\256c)4 1699(statements to)1 551 2 3150 3948 t
+( platform speci\256c de\256nitions are:)4 1353(code. The)1 434 2 1080 4068 t
+10 B f
+(UNIX)2036 4308 w
+10 R f
+(De\256ned for all Unix operating systems)5 1591 1 2703 4308 t
+10 B f
+(PC)2036 4428 w
+10 R f
+(De\256ned for all Windows operating system)5 1735 1 2703 4428 t
+10 B f
+(WINDOWS)2036 4548 w
+10 R f
+(De\256ned for Windows operating system)4 1602 1 2703 4548 t
+(Note that when)2 626 1 1080 4788 t
+10 B f
+(WINDOWS)1739 4788 w
+10 R f
+(is de\256ned,)1 419 1 2289 4788 t
+10 B f
+(PC)2741 4788 w
+10 R f
+( redundancy goes back to when we sup-)7 1656( The)1 222(is also de\256ned.)2 615 3 2907 4788 t
+(ported both DOS and Windows.)4 1317 1 1080 4908 t
+9 B f
+(LIST OF WORDNET LIBRARY FUNCTIONS)4 1930 1 720 5076 t
+10 R f
+( are called by documented)4 1119(Not all library functions are listed below. Missing are mainly functions that)11 3201 2 1080 5196 t
+( used during WordNet development.)4 1548(ones, or ones that were written for speci\256c applications or tools)10 2772 2 1080 5316 t
+(Data structures are de\256ned in)4 1201 1 1080 5436 t
+10 B f
+(wntypes.h)2314 5436 w
+10 R f
+(.)2745 5436 w
+9 B f
+(Database Searching Functions \(search.o\))3 1633 1 900 5724 t
+10 B f
+(\256ndtheinfo)1080 5844 w
+10 R f
+( formatted search)2 722( Returns)1 384(Primary search function for WordNet database.)5 1964 3 2330 5844 t
+( interfaces to perform requested)4 1340( by WordNet)2 559( Used)1 282(results in text buffer.)3 889 4 2330 5964 t
+(search.)2330 6084 w
+10 B f
+(\256ndtheinfo)1080 6252 w
+10 S f
+(_)1548 6252 w
+10 B f
+(ds)1598 6252 w
+10 R f
+( search results in)3 716( Returns)1 385(Primary search function for WordNet database.)5 1969 3 2330 6252 t
+(linked list data structure.)3 1012 1 2330 6372 t
+10 B f
+(is)1080 6540 w
+10 S f
+(_)1147 6540 w
+10 B f
+(de\256ned)1197 6540 w
+10 R f
+(Set bit for each search type that is valid for the search word passed and)14 3070 1 2330 6540 t
+(return bit mask.)2 646 1 2330 6660 t
+10 B f
+(in)1080 6828 w
+10 S f
+(_)1164 6828 w
+10 B f
+(wn)1214 6828 w
+10 R f
+(Set bit for each syntactic category that search word is in.)10 2339 1 2330 6828 t
+10 B f
+(index)1080 6996 w
+10 S f
+(_)1314 6996 w
+10 B f
+(lookup)1364 6996 w
+10 R f
+( Input)1 290( in data structure.)3 756(Find word in index \256le and return parsed entry)8 2024 3 2330 6996 t
+( by)1 133( Called)1 327(word must be exact match of string in database.)8 1969 3 2330 7116 t
+10 B f
+(getindex\( \))1 443 1 4792 7116 t
+10 R f
+(.)5235 7116 w
+10 B f
+(getindex)1080 7284 w
+10 R f
+( techniques)1 481(Find word in index \256le, trying different)6 1742 2 2330 7284 t
+10 S1 f
+(\261)4607 7284 w
+10 R f
+(replace hyphens)1 674 1 4726 7284 t
+( 1)1 1866( change: July 2003)3 776( Last)1 1509(WordNet 2.0)1 529 4 720 7764 t
+cleartomark
+showpage
+restore
+%%EndPage: 1 1
+%%Page: 2 2
+save
+mark
+2 pagesetup
+10 R f
+(WordNet)720 480 w
+10 S f
+(\324)1091 480 w
+10 R f
+( \( 3WN \))3 330( WNINTRO)1 3130(Library Functions)1 727 3 1213 480 t
+( strip hyphens and)3 817(with underscores, replace underscores with hyphens,)5 2253 2 2330 960 t
+(underscores, strip periods.)2 1064 1 2330 1080 t
+10 B f
+(read)1080 1248 w
+10 S f
+(_)1274 1248 w
+10 B f
+(synset)1324 1248 w
+10 R f
+( \256le at byte offset passed and return parsed entry in)10 2150(Read synset from data)3 920 2 2330 1248 t
+( Calls)1 272(data structure.)1 573 2 2330 1368 t
+10 B f
+(parse)3208 1368 w
+10 S f
+(_)3441 1368 w
+10 B f
+(synset\( \))1 343 1 3491 1368 t
+10 R f
+(.)3834 1368 w
+10 B f
+(parse)1080 1536 w
+10 S f
+(_)1313 1536 w
+10 B f
+(synset)1363 1536 w
+10 R f
+( and return parsed entry in data)6 1355(Read synset at current byte offset in \256le)7 1715 2 2330 1536 t
+(structure.)2330 1656 w
+10 B f
+(free)1080 1824 w
+10 S f
+(_)1245 1824 w
+10 B f
+(syns)1295 1824 w
+10 R f
+(Free a synset linked list allocated by)6 1502 1 2330 1824 t
+10 B f
+(\256ndtheinfo)3865 1824 w
+10 S f
+(_)4333 1824 w
+10 B f
+(ds\( \))1 177 1 4383 1824 t
+10 R f
+(.)4560 1824 w
+10 B f
+(free)1080 1992 w
+10 S f
+(_)1245 1992 w
+10 B f
+(synset)1295 1992 w
+10 R f
+(Free a synset structure.)3 944 1 2330 1992 t
+10 B f
+(free)1080 2160 w
+10 S f
+(_)1245 2160 w
+10 B f
+(index)1295 2160 w
+10 R f
+(Free an index structure.)3 966 1 2330 2160 t
+10 B f
+(traceptrs)1080 2328 w
+10 S f
+(_)1467 2328 w
+10 B f
+(ds)1517 2328 w
+10 R f
+( algorithm to trace a pointer tree and return results in)10 2367(Recursive search)1 703 2 2330 2328 t
+(linked list.)1 431 1 2330 2448 t
+10 B f
+(do)1080 2616 w
+10 S f
+(_)1186 2616 w
+10 B f
+(trace)1236 2616 w
+10 R f
+(Do requested search on synset passed returning formatted output in buffer.)10 3060 1 2330 2616 t
+9 B f
+(Morphology Functions \(morph.o\))2 1333 1 900 2904 t
+10 B f
+(morphinit)1080 3024 w
+10 R f
+(Open exception list \256les.)3 1018 1 2330 3024 t
+10 B f
+(re)1080 3192 w
+10 S f
+(_)1168 3192 w
+10 B f
+(morphinit)1218 3192 w
+10 R f
+(Close exception list \256les and reopen.)5 1511 1 2330 3192 t
+10 B f
+(morphstr)1080 3360 w
+10 R f
+( base form \(lemma\) of word or collocation in syntactic)9 2560(Try to \256nd)2 510 2 2330 3360 t
+( Calls)1 272(category passed.)1 667 2 2330 3480 t
+10 B f
+(morphword\( \))1 593 1 3302 3480 t
+10 R f
+(for each word in string passed.)5 1265 1 3928 3480 t
+10 B f
+(morphword)1080 3648 w
+10 R f
+( \(lemma\) of individual word in syntactic category)7 2137(Try to \256nd base form)4 933 2 2330 3648 t
+(passed.)2330 3768 w
+9 B f
+(Utility Functions \(wnutil.o\))2 1088 1 900 4056 t
+10 B f
+(wninit)1080 4176 w
+10 R f
+(Top level function to open database \256les and morphology exception lists.)10 3008 1 2330 4176 t
+10 B f
+(re)1080 4344 w
+10 S f
+(_)1168 4344 w
+10 B f
+(wninit)1218 4344 w
+10 R f
+( morphology)1 544(Top level function to close and reopen database \256les and)9 2526 2 2330 4344 t
+(exception lists.)1 608 1 2330 4464 t
+10 B f
+(cntwords)1080 4632 w
+10 R f
+(Count the number of underscore or space separated words in a string.)11 2854 1 2330 4632 t
+10 B f
+(strtolower)1080 4800 w
+10 R f
+( to lower case and remove trailing adjective marker if)9 2460(Convert string)1 610 2 2330 4800 t
+(found.)2330 4920 w
+10 B f
+(ToLowerCase)1080 5088 w
+10 R f
+(Convert string passed to lower case.)5 1482 1 2330 5088 t
+10 B f
+(strsubst)1080 5256 w
+10 R f
+(Replace all occurrences of)3 1078 1 2330 5256 t
+10 I f
+(from)3441 5256 w
+10 R f
+(with)3663 5256 w
+10 I f
+(to)3874 5256 w
+10 R f
+(in)3985 5256 w
+10 I f
+(str)4096 5256 w
+10 R f
+(.)4202 5256 w
+10 B f
+(getptrtype)1080 5424 w
+10 R f
+(Return code for pointer type character passed.)6 1884 1 2330 5424 t
+10 B f
+(getpos)1080 5592 w
+10 R f
+(Return syntactic category code for string passed.)6 1991 1 2330 5592 t
+10 B f
+(getsstype)1080 5760 w
+10 R f
+(Return synset type code for string passed.)6 1715 1 2330 5760 t
+10 B f
+(FmtSynset)1080 5928 w
+10 R f
+(Reconstruct synset string from synset pointer.)5 1872 1 2330 5928 t
+10 B f
+(StrToPos)1080 6096 w
+10 R f
+(Passed string for syntactic category, returns corresponding integer value.)8 2969 1 2330 6096 t
+10 B f
+(GetSynsetForSense)1080 6264 w
+10 R f
+(Return synset for sense key passed.)5 1454 1 2330 6264 t
+10 B f
+(GetDataOffset)1080 6432 w
+10 R f
+(Find synset offset for sense.)4 1150 1 2330 6432 t
+10 B f
+(GetPolyCount)1080 6600 w
+10 R f
+(Find polysemy count for sense passed.)5 1583 1 2330 6600 t
+10 B f
+(GetWORD)1080 6768 w
+10 R f
+(Return word part of sense key.)5 1265 1 2330 6768 t
+10 B f
+(GetPOS)1080 6936 w
+10 R f
+(Return syntactic category code for sense key passed.)7 2156 1 2330 6936 t
+10 B f
+(WNSnsToStr)1080 7104 w
+10 R f
+(Generate sense key for index entry passed.)6 1751 1 2330 7104 t
+10 B f
+(GetValidIndexPointer)1080 7272 w
+10 R f
+(Search for string and/or base form of word in database and return index)12 3070 1 2330 7272 t
+( 2)1 1866( change: July 2003)3 776( Last)1 1509(WordNet 2.0)1 529 4 720 7752 t
+cleartomark
+showpage
+restore
+%%EndPage: 2 2
+%%Page: 3 3
+save
+mark
+3 pagesetup
+10 R f
+(WordNet)720 480 w
+10 S f
+(\324)1091 480 w
+10 R f
+( \( 3WN \))3 330( WNINTRO)1 3130(Library Functions)1 727 3 1213 480 t
+(structure for word if found.)4 1121 1 2330 960 t
+10 B f
+(GetWNSense)1080 1128 w
+10 R f
+(Return sense number in database for sense key.)7 1946 1 2330 1128 t
+10 B f
+(GetSenseIndex)1080 1296 w
+10 R f
+(Return parsed sense index entry for sense key passed.)8 2206 1 2330 1296 t
+10 B f
+(default)1080 1464 w
+10 S f
+(_)1380 1464 w
+10 B f
+(display)1430 1464 w
+10 S f
+(_)1737 1464 w
+10 B f
+(message)1787 1464 w
+10 R f
+(Default function to use as value of)6 1423 1 2330 1464 t
+10 B f
+(display)3786 1464 w
+10 S f
+(_)4093 1464 w
+10 B f
+(message)4143 1464 w
+10 R f
+( returns)1 310(. Simply)1 381 2 4492 1464 t
+10 B f
+(-1)5216 1464 w
+10 R f
+(.)5299 1464 w
+9 B f
+(Binary Search Functions \(binsrch.o\))3 1463 1 900 1752 t
+10 B f
+(bin)1080 1872 w
+10 S f
+(_)1220 1872 w
+10 B f
+(search)1270 1872 w
+10 R f
+( to search for key as \256rst item on)8 1437(General purpose binary search function)4 1633 2 2330 1872 t
+(line in sorted \256le.)3 724 1 2330 1992 t
+10 B f
+(copy\256le)1080 2160 w
+10 R f
+(Copy contents from one \256le to another.)6 1616 1 2330 2160 t
+10 B f
+(replace)1080 2328 w
+10 S f
+(_)1390 2328 w
+10 B f
+(line)1440 2328 w
+10 R f
+(Replace a line in a sorted \256le.)6 1232 1 2330 2328 t
+10 B f
+(insert)1080 2496 w
+10 S f
+(_)1324 2496 w
+10 B f
+(line)1374 2496 w
+10 R f
+(Insert a line into a sorted \256le.)6 1216 1 2330 2496 t
+9 B f
+(LIST OF HEADER FILES)3 1110 1 720 2664 t
+10 B f
+(license.h)1080 2784 w
+10 R f
+(Text of WordNet license in various C data structure formats)9 2470 1 2080 2784 t
+10 B f
+(setutil.h)1080 2952 w
+10 R f
+( to perform)2 499( Used)1 288(Functions for creating and working with sets.)6 1962 3 2080 2952 t
+9 B f
+(RELATIVES)4880 2952 w
+10 R f
+(search.)2080 3072 w
+10 B f
+(wn.h)1080 3240 w
+10 R f
+( should be)2 481( This)1 271( others.)1 329(Top level WordNet include \256le that includes most)7 2239 4 2080 3240 t
+( lists function prototypes for library API.)6 1683( Also)1 255(suf\256cient for most applications.)3 1290 3 2080 3360 t
+10 B f
+(wnconsts.h)1080 3528 w
+10 R f
+( compiled)1 422( Conditionally)1 634( and applications.)2 752(Constants used by library functions)4 1512 4 2080 3528 t
+(code determines default pathnames and buffer sizes for different platforms,.)9 3100 1 2080 3648 t
+10 B f
+(wnglobal.h)1080 3816 w
+10 R f
+(External declarations for global variables initialized in)6 2258 1 2080 3816 t
+10 B f
+(wnglobal.c)4377 3816 w
+10 R f
+( vari-)1 228(. These)1 336 2 4836 3816 t
+( do not)2 310(ables are static: they do not change while library code is run, and they)13 3010 2 2080 3936 t
+(in\257uence how the library operates.)4 1415 1 2080 4056 t
+10 B f
+(wnhelp.h)1080 4224 w
+10 R f
+(External declaration for helptext initialized in)5 1862 1 2080 4224 t
+10 B f
+(wnhelp.c)3975 4224 w
+10 R f
+(.)4356 4224 w
+10 B f
+(wnrtl.h)1080 4392 w
+10 R f
+( the WordNet)2 563(External declarations for global variables and \257ags used and set by)10 2757 2 2080 4392 t
+(library functions at run-time.)3 1178 1 2080 4512 t
+10 B f
+(wntypes.h)1080 4680 w
+10 R f
+(C typedefs for data structures used in library.)7 1858 1 2080 4680 t
+9 B f
+(NOTES)720 4848 w
+10 R f
+( function)1 404( The)1 259( the \256les to be open.)5 1035(All library functions that access the database \256les expect)8 2622 4 1080 4968 t
+10 B f
+(wninit)1080 5088 w
+10 R f
+( before other database access functions such as)7 2107(\(3WN\) must be called)3 989 2 1353 5088 t
+10 B f
+(\256ndtheinfo)4508 5088 w
+10 R f
+(\(3WN\) or)1 424 1 4976 5088 t
+10 B f
+(read)1080 5208 w
+10 S f
+(_)1274 5208 w
+10 B f
+(synset)1324 5208 w
+10 R f
+(\(3WN\).)1585 5208 w
+(Inclusion of the header \256le)4 1102 1 1080 5448 t
+10 B f
+(wn.h)2215 5448 w
+10 R f
+(is usually suf\256cient, as it includes several other WordNet header \256les.)10 2870 1 2457 5448 t
+( library)1 301(The command line interface is a good example of a simple application that uses several WordNet)15 4019 2 1080 5688 t
+(functions.)1080 5808 w
+( The)1 232( type information.)2 757(Many of the library functions are passed or return syntactic category or synset)12 3331 3 1080 6048 t
+( categories as integer codes, synset type constant names, syntactic)9 2901(following table lists the possible)4 1419 2 1080 6168 t
+(category constant names, single characters and character strings.)7 2629 1 1080 6288 t
+10 S f
+(_ _________________________________________________________)1 2880 1 1800 6428 t
+10 B f
+( Char String)2 789( Category)1 426( Syntactic)1 544( Type)1 250(Integer Synset)1 738 5 1850 6548 t
+10 S f
+(_ _________________________________________________________)1 2880 1 1800 6568 t
+10 R f
+( noun)1 436( n)1 818( NOUN)1 678(1 NOUN)1 618 4 1980 6688 t
+( verb)1 413( v)1 839( VERB)1 678(2 VERB)1 597 4 1980 6808 t
+( adj)1 361( a)1 920( ADJ)1 678(3 ADJ)1 513 4 1980 6928 t
+( adv)1 389( r)1 881( ADV)1 678(4 ADV)1 546 4 1980 7048 t
+( s)1 917( ADJ)1 334(5 SATELLITE)1 857 3 1980 7168 t
+10 I f
+(n/a)4330 7168 w
+10 S f
+( \347)1 -2880(_ _________________________________________________________)1 2880 2 1800 7188 t
+(\347)1800 7128 w
+(\347)1800 7028 w
+(\347)1800 6928 w
+(\347)1800 6828 w
+(\347)1800 6728 w
+(\347)1800 6628 w
+(\347)1800 6528 w
+(\347)2235 7188 w
+(\347)2235 7128 w
+(\347)2235 7028 w
+(\347)2235 6928 w
+(\347)2235 6828 w
+(\347)2235 6728 w
+(\347)2235 6628 w
+(\347)2235 6528 w
+(\347)2913 7188 w
+(\347)2913 7128 w
+(\347)2913 7028 w
+(\347)2913 6928 w
+(\347)2913 6828 w
+(\347)2913 6728 w
+(\347)2913 6628 w
+(\347)2913 6528 w
+(\347)3883 7188 w
+(\347)3883 7128 w
+(\347)3883 7028 w
+(\347)3883 6928 w
+(\347)3883 6828 w
+(\347)3883 6728 w
+(\347)3883 6628 w
+(\347)3883 6528 w
+(\347)4255 7188 w
+(\347)4255 7128 w
+(\347)4255 7028 w
+(\347)4255 6928 w
+(\347)4255 6828 w
+(\347)4255 6728 w
+(\347)4255 6628 w
+(\347)4255 6528 w
+(\347)4680 7188 w
+(\347)4680 7128 w
+(\347)4680 7028 w
+(\347)4680 6928 w
+(\347)4680 6828 w
+(\347)4680 6728 w
+(\347)4680 6628 w
+(\347)4680 6528 w
+10 R f
+( 3)1 1866( change: July 2003)3 776( Last)1 1509(WordNet 2.0)1 529 4 720 7680 t
+cleartomark
+showpage
+restore
+%%EndPage: 3 3
+%%Page: 4 4
+save
+mark
+4 pagesetup
+10 R f
+(WordNet)720 480 w
+10 S f
+(\324)1091 480 w
+10 R f
+( \( 3WN \))3 330( WNINTRO)1 3130(Library Functions)1 727 3 1213 480 t
+9 B f
+(ENVIRONMENT VARIABLES)1 1265 1 720 960 t
+10 B f
+(WNHOME)1080 1080 w
+10 R f
+( default is)2 416( Unix)1 269(Base directory for WordNet.)3 1174 3 2080 1080 t
+10 B f
+(/usr/local/WordNet-2.0)3975 1080 w
+10 R f
+(, Windows)1 445 1 4955 1080 t
+(default is)1 377 1 2080 1200 t
+10 B f
+(C:)2490 1200 w
+10 S1 f
+(\\)2595 1200 w
+10 B f
+(Program Files)1 615 1 2623 1200 t
+10 S1 f
+(\\)3238 1200 w
+10 B f
+(WordNet)3266 1200 w
+10 S1 f
+(\\)3665 1200 w
+10 B f
+(2.0)3693 1200 w
+10 R f
+(.)3818 1200 w
+10 B f
+(WNSEARCHDIR)1080 1368 w
+10 R f
+( is)1 115( default)1 324( Unix)1 280(Directory in which the WordNet database has been installed.)8 2601 4 2080 1368 t
+10 B f
+(WNHOME/dict)2080 1488 w
+10 R f
+(, Windows default is)3 851 1 2758 1488 t
+10 B f
+(WNHOME)3642 1488 w
+10 S1 f
+(\\)4131 1488 w
+10 B f
+(dict)4159 1488 w
+10 R f
+(.)4320 1488 w
+9 B f
+(FILES)720 1656 w
+10 B f
+(WNHOME/lib/libwn.a)1080 1776 w
+10 R f
+(WordNet library \(Unix\))2 969 1 2580 1776 t
+10 B f
+(WNHOME)1080 1944 w
+10 S1 f
+(\\)1569 1944 w
+10 B f
+(lib)1597 1944 w
+10 S1 f
+(\\)1709 1944 w
+10 B f
+(wn.lib)1737 1944 w
+10 R f
+(WordNet library \(Windows\))2 1152 1 2580 1944 t
+10 B f
+(WNHOME/include/)1080 2112 w
+10 S f
+(*)1937 2112 w
+10 R f
+(header \256les for use with WordNet library \(Unix\))7 1993 1 2580 2112 t
+10 B f
+(WNHOME)1080 2280 w
+10 S1 f
+(\\)1569 2280 w
+10 B f
+(include)1597 2280 w
+10 S1 f
+(\\)1909 2280 w
+10 S f
+(*)1937 2280 w
+10 R f
+(header \256les for use with WordNet library \(Windows\))7 2176 1 2580 2280 t
+9 B f
+(SEE ALSO)1 460 1 720 2448 t
+10 B f
+(wnintro)1080 2568 w
+10 R f
+(\(1WN\),)1419 2568 w
+10 B f
+(binsrch)1828 2568 w
+10 R f
+(\(3WN\),)2151 2568 w
+10 B f
+(morph)2560 2568 w
+10 R f
+(\(3WN\),)2849 2568 w
+10 B f
+(wnsearch)3258 2568 w
+10 R f
+(\(3WN\),)3663 2568 w
+10 B f
+(wnutil)4072 2568 w
+10 R f
+(\(3WN\),)4345 2568 w
+10 B f
+(wnintro)4754 2568 w
+10 R f
+(\(5WN\),)5093 2568 w
+10 B f
+(wnintro)1080 2688 w
+10 R f
+(\(7WN\).)1419 2688 w
+(Fellbaum, C. \(1998\), ed.)3 1004 1 1080 2928 t
+10 S1 f
+(")2150 2928 w
+10 I f
+(WordNet: An Electronic Lexical Database)4 1730 1 2191 2928 t
+10 S1 f
+(")3921 2928 w
+10 R f
+( Press, Cambridge, MA.)3 990(. MIT)1 274 2 3962 2928 t
+9 B f
+(BUGS)720 3096 w
+10 R f
+(Please report bugs to)3 859 1 1080 3216 t
+10 B f
+(wordnet)1972 3216 w
+10 S1 f
+(@)2327 3216 w
+10 B f
+(princeton.edu)2419 3216 w
+10 R f
+(.)3011 3216 w
+( 4)1 1866( change: July 2003)3 776( Last)1 1509(WordNet 2.0)1 529 4 720 7680 t
+cleartomark
+showpage
+restore
+%%EndPage: 4 4
+%%Trailer
+done
+%%DocumentFonts: Times-Roman Symbol Times-Bold Times-Italic
+%%Pages: 4

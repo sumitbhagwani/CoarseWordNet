@@ -1,0 +1,131 @@
+'\" t
+.\" $Id$
+.tr ~
+.TH SENSEMAP 5WN "February 2007" "WordNet 3.0" "WordNet\(tm File Formats"
+.SH NAME
+2.1to3.0.noun.poly \- mapping from polysemous noun senses in WordNet 2.1 to 
+corresponding 3.0 senses
+.LP
+2.1to3.0.noun.mono \- mapping from monosemous noun senses in WordNet 2.1 to 
+corresponding 3.0 senses
+.LP
+2.1to3.0.verb.poly \- mapping from polysemous verb senses in WordNet 2.1 to 
+corresponding 3.0 senses
+.LP
+2.1to3.0.verb.poly \- mapping from monosemous verb senses in WordNet 2.1 to 
+corresponding 3.0 senses
+.SH DESCRIPTION
+WordNet users who have semantically tagged text to senses in version
+2.1, or who have statically assigned or used 2.1 senses in other
+applications should upgrade to WordNet 3.0 if possible.  To help users
+automatically convert 2.1 noun and verb senses to their corresponding 3.0
+senses, we provide sense mapping information with version 3.0.
+
+The sense mapping was done as follows:
+
+.RS
+.TP 5
+\(bu 
+Nouns and verbs unique to either database were ignored.
+.TP 5
+\(bu 
+Nouns and verbs that are monosemous in both databases were found and their
+\fIsense_key\fPs and \fIsynset_offset\fPs were mapped.  These sense
+mappings are in the files \fB2.1to3.0.{noun,verb}.mono\fP.
+.TP 5
+\(bu 
+All senses of polysemous nouns and verb in version 2.1 were mapped to senses in
+version 3.0.  Various heuristics were used to evaluate the similarity
+of 2.1 and 3.0 senses, and a score was assigned to each comparison.
+For each word, each 2.1 sense was compared to all of the 3.0 senses
+for the same word, and the 3.0 sense (or senses) with the highest
+score was deemed the best mapping.  These sense mappings are in the
+file \fB2.1to3.0.{noun,verb}.poly\fP.
+
+Heuristics include comparison of sense keys, similarity of synset
+terms, and relative tree location (comparision of 
+hypernyms).  Glosses are not used for comparisions, as they are often 
+significantly modified.
+.RE
+.SS File Format
+A sense mapping is generally represented by two
+\fIsense_key\fP~~\fIsynset_offset\fP pairs, one for the 2.1 sense and
+one for its corresponding 3.0 sense.  For the polysemous sense mappings,
+\fIsense_number\fP is also in each pair.  This field is not needed in
+the monosemous mappings since all monosemous words are assigned
+\fIsense_number\fP 1.  See
+.BR senseidx (5WN)
+for a detailed description of these fields. 
+
+In all the mapping files, a space is the field delimiter unless
+otherwise noted, and each line is terminated with a newline character.
+.SS 2.1to3.0.{noun,verb}.mono
+These files contain the mapping of sense keys for nouns and verbs that are
+monosemous in both WordNet 2.1 and 3.0.  Although the actual words and
+sense numbers are the same in both databases, not all \fIsense_keys\fP
+are the same, and the \fIsynset_offset\fPs are different.  This file
+is an alphabetized list of one mapping per line.  Each line is of the
+form:
+
+.RS
+\fI2.1_sense_key\fP\fB;\fP\fI2.1_synset_offset~~3.0_sense_key\fP\fB;\fP\fI3.0_synset_offset\fP
+.RE
+.SS 2.1to3.0.{noun,verb}.poly
+These files contain the mapping of sense keys for nouns and verbs that are
+polysemous in WordNet 2.1 and are also found in 3.0.  This file is
+sorted by score from highest score (100) to lowest (0), and then
+alphabetically within each score.  Each line lists all 3.0 sense(s)
+that the corresponding 2.1 sense maps to with that score.  Each line
+is of the form:
+
+.RS
+\fIscore~~2.1_sense_info~~3.0_sense_info~~[3.0_sense_info...]\fR
+.RE
+
+where \fIsense_info\fP consists of the following three fields:
+
+.RS
+\fIsense_key\fP\fB;\fP\fIsynset_offset\fP\fB;\fP\fIsense_number\fP
+.RE
+.SH SCORES
+Scores range from 0 to 100, and are an indication of how confident the
+mapping heuristics are that the senses are the same \- a higher score
+indicates greater reliability in the mapping.  The vast majority of
+senses mapped with a score of 90 or 100.
+
+.SH NOTES
+The number of senses of a polysemous word in version 2.1 often differs
+from the number of senses for the same word in version 3.0.  While
+there will always be a mapping for each 2.1 sense to one or more 3.0
+senses, there may be 3.0 senses to which no 2.1 sense is mapped.
+
+WordNet 2.1 words not found in either of the monsemous maps
+are unique to version 2.1, and therefore cannot be
+mapped to version 3.0.
+.SH ENVIRONMENT VARIABLES
+.TP 20
+.B WNHOME
+Base directory for WordNet.  Unix default is
+\fB/usr/local/WordNet-3.0\fP, Windows default is 
+\fBC:\eProgram~Files\eWordNet\e3.0\fP.
+.SH FILES
+All files are in \fBWNHOME/sensemap\fP on Unix platforms,
+\fBWNHOME\esensemap\fP on Windows.
+.SH FILES
+.TP 20
+.B 2.1to3.0.noun.poly
+mapping of polysemous 2.1 noun senses to 3.0 senses
+.TP 20
+.B 2.1to3.0.verb.poly
+mapping of polysemous 2.1 verb senses to 3.0 senses
+.TP 20
+.B 2.1to3.0.noun.mono
+mapping of monosemous 2.1 noun senses to 3.0 senses
+.TP 20
+.B 2.1to3.0.verb.mono
+mapping of monosemous 2.1 verb senses to 3.0 senses
+.SH SEE ALSO
+.BR senseidx (5WN),
+.BR wndb (5WN),
+.BR wnpkgs (7WN).
+

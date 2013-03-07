@@ -1,0 +1,732 @@
+%!PS
+%%Version: 3.15
+%%DocumentFonts: (atend)
+%%Pages: (atend)
+%%EndComments
+%ident	"@(#)lp:filter/postscript/postscript/dpost.ps	1.1"
+%
+% Version 3.16 prologue for troff files.
+%
+
+/#copies 1 store
+/aspectratio 1 def
+/formsperpage 1 def
+/landscape false def
+/linewidth .3 def
+/magnification 1 def
+/margin 0 def
+/orientation 0 def
+/resolution 720 def
+/xoffset 0 def
+/yoffset 0 def
+
+/roundpage true def
+/useclippath true def
+/pagebbox [0 0 612 792] def
+
+/R  /Times-Roman def
+/I  /Times-Italic def
+/B  /Times-Bold def
+/BI /Times-BoldItalic def
+/H  /Helvetica def
+/HI /Helvetica-Oblique def
+/HB /Helvetica-Bold def
+/HX /Helvetica-BoldOblique def
+/CW /Courier def
+/CO /Courier def
+/CI /Courier-Oblique def
+/CB /Courier-Bold def
+/CX /Courier-BoldOblique def
+/PA /Palatino-Roman def
+/PI /Palatino-Italic def
+/PB /Palatino-Bold def
+/PX /Palatino-BoldItalic def
+/Hr /Helvetica-Narrow def
+/Hi /Helvetica-Narrow-Oblique def
+/Hb /Helvetica-Narrow-Bold def
+/Hx /Helvetica-Narrow-BoldOblique def
+/KR /Bookman-Light def
+/KI /Bookman-LightItalic def
+/KB /Bookman-Demi def
+/KX /Bookman-DemiItalic def
+/AR /AvantGarde-Book def
+/AI /AvantGarde-BookOblique def
+/AB /AvantGarde-Demi def
+/AX /AvantGarde-DemiOblique def
+/NR /NewCenturySchlbk-Roman def
+/NI /NewCenturySchlbk-Italic def
+/NB /NewCenturySchlbk-Bold def
+/NX /NewCenturySchlbk-BoldItalic def
+/ZD /ZapfDingbats def
+/ZI /ZapfChancery-MediumItalic def
+/VR /Varitimes#Roman def
+/VI /Varitimes#Italic def
+/VB /Varitimes#Bold def
+/VX /Varitimes#BoldItalic def
+/S  /S def
+/S1 /S1 def
+/GR /Symbol def
+
+/inch {72 mul} bind def
+/min {2 copy gt {exch} if pop} bind def
+
+/setup {
+	counttomark 2 idiv {def} repeat pop
+
+	landscape {/orientation 90 orientation add def} if
+	/scaling 72 resolution div def
+	linewidth setlinewidth
+	1 setlinecap
+
+	pagedimensions
+	xcenter ycenter translate
+	orientation neg rotate
+	width 2 div neg height 2 div translate
+	xoffset inch yoffset inch translate
+	margin 2 div dup neg translate
+	magnification dup aspectratio mul scale
+	scaling scaling scale
+
+	/Symbol /S Sdefs cf
+	/Times-Roman /S1 S1defs cf
+	0 0 moveto
+} def
+
+/pagedimensions {
+	useclippath userdict /gotpagebbox known not and {
+		/pagebbox [clippath pathbbox newpath] def
+		roundpage currentdict /roundpagebbox known and {roundpagebbox} if
+	} if
+	pagebbox aload pop
+	4 -1 roll exch 4 1 roll 4 copy
+	landscape {4 2 roll} if
+	sub /width exch def
+	sub /height exch def
+	add 2 div /xcenter exch def
+	add 2 div /ycenter exch def
+	userdict /gotpagebbox true put
+} def
+
+/pagesetup {
+	/page exch def
+	currentdict /pagedict known currentdict page known and {
+		page load pagedict exch get cvx exec
+	} if
+} def
+
+/decodingdefs [
+	{counttomark 2 idiv {y moveto show} repeat}
+	{neg /y exch def counttomark 2 idiv {y moveto show} repeat}
+	{neg moveto {2 index stringwidth pop sub exch div 0 32 4 -1 roll widthshow} repeat}
+	{neg moveto {spacewidth sub 0.0 32 4 -1 roll widthshow} repeat}
+	{counttomark 2 idiv {y moveto show} repeat}
+	{neg setfunnytext}
+] def
+
+/setdecoding {/t decodingdefs 3 -1 roll get bind def} bind def
+
+/w {neg moveto show} bind def
+/m {neg dup /y exch def moveto} bind def
+/done {/lastpage where {pop lastpage} if} def
+
+/f {
+	dup /font exch def findfont exch
+	dup /ptsize exch def scaling div dup /size exch def scalefont setfont
+	linewidth ptsize mul scaling 10 mul div setlinewidth
+	/spacewidth ( ) stringwidth pop def
+} bind def
+
+/changefont {
+	/fontheight exch def
+	/fontslant exch def
+	currentfont [
+		1 0
+		fontheight ptsize div fontslant sin mul fontslant cos div
+		fontheight ptsize div
+		0 0
+	] makefont setfont
+} bind def
+
+/sf {f} bind def
+
+/cf {
+	dup length 2 idiv
+	/entries exch def
+	/chtab exch def
+	/newfont exch def
+
+	findfont dup length 1 add dict
+	/newdict exch def
+	{1 index /FID ne {newdict 3 1 roll put} {pop pop} ifelse} forall
+
+	newdict /Metrics entries dict put
+	newdict /Metrics get
+	begin
+		chtab aload pop
+		1 1 entries {pop def} for
+		newfont newdict definefont pop
+	end
+} bind def
+
+%
+% A few arrays used to adjust reference points and character widths in some
+% of the printer resident fonts. If square roots are too high try changing
+% the lines describing /radical and /radicalex to,
+%
+%	/radical	[0 -75 550 0]
+%	/radicalex	[-50 -75 500 0]
+%
+
+/Sdefs [
+	/bracketlefttp		[220 500]
+	/bracketleftbt		[220 500]
+	/bracketrighttp		[-70 380]
+	/bracketrightbt		[-70 380]
+	/braceleftbt		[220 490]
+	/bracketrightex		[220 -125 500 0]
+	/radical		[0 0 550 0]
+	% NeWSprint's \(br is too low, compensate
+	statusdict /product get (NeWS Server) eq {
+		/radicalex		[-50 100 500 0]
+		/parenleftex		[-20 100 0 0]
+
+	} {
+		/radicalex		[-50 0 500 0]
+		/parenleftex		[-20 -170 0 0]
+	} ifelse
+	/integral		[100 -50 500 0]
+	/infinity		[10 -75 730 0]
+] def
+
+/S1defs [
+	/underscore		[0 80 500 0]
+	/endash			[7 90 650 0]
+] def
+%%EndProlog
+%%BeginSetup
+mark
+/resolution 720 def
+setup
+2 setdecoding
+%%EndSetup
+%%Page: 1 1
+save
+mark
+1 pagesetup
+10 R f
+(WordNet)720 480 w
+10 S f
+(\324)1091 480 w
+10 R f
+(WNPKGS \( 7WN \))3 752 1 4648 480 t
+9 B f
+(NAME)720 960 w
+10 R f
+(wnpkgs)1080 1080 w
+10 S1 f
+(\261)1424 1080 w
+10 R f
+(description of various WordNet system packages)5 2000 1 1522 1080 t
+9 B f
+(DESCRIPTION)720 1248 w
+10 R f
+( are available)2 551( of the packages)3 672( All)1 195(WordNet 1.7 is distributed in several formats and in various packages.)10 2902 4 1080 1368 t
+(via anonymous FTP from)3 1256 1 1080 1488 t
+10 B f
+(ftp.cogsci.princeton.edu)2438 1488 w
+10 R f
+( at)1 173(and from the WordNet Web site)5 1668 2 3559 1488 t
+10 B f
+(http://www.cogsci.princeton.edu/)1080 1608 w
+10 S f
+(~)2488 1608 w
+10 B f
+(wn/)2543 1608 w
+10 R f
+(.)2699 1608 w
+9 B f
+(Packages Available Via FTP or WWW)5 1605 1 900 1776 t
+10 R f
+( browser such as Netscape from)5 1416(The following WordNet packages can be downloaded using a web)9 2904 2 1080 1896 t
+10 B f
+(ftp://ftp.cogsci.princeton.edu/wordnet/)1080 2016 w
+10 R f
+( FTP directly)2 544( can also)2 367( Users)1 294(, or from the Web site noted above.)7 1474 4 2721 2016 t
+(from)1080 2136 w
+10 B f
+(ftp.cogsci.princeton.edu)1307 2136 w
+10 R f
+(, directory)1 418 1 2326 2136 t
+10 B f
+(wordnet)2777 2136 w
+10 R f
+(.)3132 2136 w
+10 S f
+(_ ____________________________________________________________________________)1 3840 1 1320 2276 t
+10 B f
+( Size)1 396( Platform)1 800(Package Filename)1 1302 3 1525 2396 t
+10 S f
+(*)4023 2396 w
+10 B f
+(Description)4447 2396 w
+10 S f
+(_ ____________________________________________________________________________)1 3840 1 1320 2416 t
+10 R f
+(WordNet 1.6)1 529 1 1370 2536 t
+10 B f
+(wn16.unix.tar.gz)2185 2536 w
+10 R f
+(Unix)3225 2536 w
+10 B f
+(wn16pc.exe)2185 2656 w
+10 R f
+(PC Database)1 -1490 1 3225 2656 t
+10 B f
+(wn16mac.sea)2185 2776 w
+10 R f
+(Macintosh)3225 2776 w
+( data-)1 242( 1.6)1 167(37MB WordNet)1 852 3 3797 2536 t
+(base, interfaces,)1 780 1 4278 2656 t
+( gloss)1 262(sense index,)1 518 2 4278 2776 t
+(index, interface)1 780 1 4278 2896 t
+(and library source)2 780 1 4278 3016 t
+(code,documentation.)4278 3136 w
+10 S f
+(_ ____________________________________________________________________________)1 3840 1 1320 3156 t
+10 R f
+(Semantic)1370 3276 w
+10 B f
+(semcor16.unix.tar.gz)2185 3276 w
+10 R f
+(Unix)3225 3276 w
+10 B f
+(semcor16.exe)2185 3396 w
+10 R f
+(PC Concordance)1 -1329 1 3225 3396 t
+10 B f
+(semcor16.mac.sea)2185 3516 w
+10 R f
+(Macintosh)3225 3516 w
+( concor-)1 408(43MB Semantic)1 853 2 3797 3276 t
+( tagged)1 323(dance \256les)1 457 2 4278 3396 t
+(to WordNet 1.6)2 780 1 4278 3516 t
+(database,)4278 3636 w
+10 B f
+(escort)4278 3756 w
+10 R f
+(\(1WN\))4532 3756 w
+(interface, docu-)1 780 1 4278 3876 t
+(mentation.)4278 3996 w
+10 S f
+(_ ____________________________________________________________________________)1 3840 1 1320 4016 t
+10 R f
+(Prolog Database)1 665 1 1370 4136 t
+10 B f
+(prolog16.tar.gz)2185 4136 w
+10 R f
+( data-)1 242( 1.6)1 167( WordNet)1 521(All 18.6MB)1 903 4 3225 4136 t
+(base \256les in)2 780 1 4278 4256 t
+(Prolog-readable)4278 4376 w
+(format, documen-)1 780 1 4278 4496 t
+(tation.)4278 4616 w
+10 S f
+(_ ____________________________________________________________________________)1 3840 1 1320 4636 t
+10 R f
+(Sense Map)1 449 1 1370 4756 t
+10 B f
+(snsmap16.tar.gz)2185 4756 w
+10 R f
+( 1.5)1 231( of)1 188( Mapping)1 561(All 6.7MB)1 853 4 3225 4756 t
+( 1.6)1 165(noun senses to)2 615 2 4278 4876 t
+(senses, documen-)1 780 1 4278 4996 t
+(tation.)4278 5116 w
+10 S f
+( \347)1 -3840(_ ____________________________________________________________________________)1 3840 2 1320 5136 t
+(\347)1320 5076 w
+(\347)1320 4976 w
+(\347)1320 4876 w
+(\347)1320 4776 w
+(\347)1320 4676 w
+(\347)1320 4576 w
+(\347)1320 4476 w
+(\347)1320 4376 w
+(\347)1320 4276 w
+(\347)1320 4176 w
+(\347)1320 4076 w
+(\347)1320 3976 w
+(\347)1320 3876 w
+(\347)1320 3776 w
+(\347)1320 3676 w
+(\347)1320 3576 w
+(\347)1320 3476 w
+(\347)1320 3376 w
+(\347)1320 3276 w
+(\347)1320 3176 w
+(\347)1320 3076 w
+(\347)1320 2976 w
+(\347)1320 2876 w
+(\347)1320 2776 w
+(\347)1320 2676 w
+(\347)1320 2576 w
+(\347)1320 2476 w
+(\347)1320 2376 w
+(\347)2110 5136 w
+(\347)2110 5076 w
+(\347)2110 4976 w
+(\347)2110 4876 w
+(\347)2110 4776 w
+(\347)2110 4676 w
+(\347)2110 4576 w
+(\347)2110 4476 w
+(\347)2110 4376 w
+(\347)2110 4276 w
+(\347)2110 4176 w
+(\347)2110 4076 w
+(\347)2110 3976 w
+(\347)2110 3876 w
+(\347)2110 3776 w
+(\347)2110 3676 w
+(\347)2110 3576 w
+(\347)2110 3476 w
+(\347)2110 3376 w
+(\347)2110 3276 w
+(\347)2110 3176 w
+(\347)2110 3076 w
+(\347)2110 2976 w
+(\347)2110 2876 w
+(\347)2110 2776 w
+(\347)2110 2676 w
+(\347)2110 2576 w
+(\347)2110 2476 w
+(\347)2110 2376 w
+(\347)3150 5136 w
+(\347)3150 5076 w
+(\347)3150 4976 w
+(\347)3150 4876 w
+(\347)3150 4776 w
+(\347)3150 4676 w
+(\347)3150 4576 w
+(\347)3150 4476 w
+(\347)3150 4376 w
+(\347)3150 4276 w
+(\347)3150 4176 w
+(\347)3150 4076 w
+(\347)3150 3976 w
+(\347)3150 3876 w
+(\347)3150 3776 w
+(\347)3150 3676 w
+(\347)3150 3576 w
+(\347)3150 3476 w
+(\347)3150 3376 w
+(\347)3150 3276 w
+(\347)3150 3176 w
+(\347)3150 3076 w
+(\347)3150 2976 w
+(\347)3150 2876 w
+(\347)3150 2776 w
+(\347)3150 2676 w
+(\347)3150 2576 w
+(\347)3150 2476 w
+(\347)3150 2376 w
+(\347)3722 5136 w
+(\347)3722 5076 w
+(\347)3722 4976 w
+(\347)3722 4876 w
+(\347)3722 4776 w
+(\347)3722 4676 w
+(\347)3722 4576 w
+(\347)3722 4476 w
+(\347)3722 4376 w
+(\347)3722 4276 w
+(\347)3722 4176 w
+(\347)3722 4076 w
+(\347)3722 3976 w
+(\347)3722 3876 w
+(\347)3722 3776 w
+(\347)3722 3676 w
+(\347)3722 3576 w
+(\347)3722 3476 w
+(\347)3722 3376 w
+(\347)3722 3276 w
+(\347)3722 3176 w
+(\347)3722 3076 w
+(\347)3722 2976 w
+(\347)3722 2876 w
+(\347)3722 2776 w
+(\347)3722 2676 w
+(\347)3722 2576 w
+(\347)3722 2476 w
+(\347)3722 2376 w
+(\347)4203 5136 w
+(\347)4203 5076 w
+(\347)4203 4976 w
+(\347)4203 4876 w
+(\347)4203 4776 w
+(\347)4203 4676 w
+(\347)4203 4576 w
+(\347)4203 4476 w
+(\347)4203 4376 w
+(\347)4203 4276 w
+(\347)4203 4176 w
+(\347)4203 4076 w
+(\347)4203 3976 w
+(\347)4203 3876 w
+(\347)4203 3776 w
+(\347)4203 3676 w
+(\347)4203 3576 w
+(\347)4203 3476 w
+(\347)4203 3376 w
+(\347)4203 3276 w
+(\347)4203 3176 w
+(\347)4203 3076 w
+(\347)4203 2976 w
+(\347)4203 2876 w
+(\347)4203 2776 w
+(\347)4203 2676 w
+(\347)4203 2576 w
+(\347)4203 2476 w
+(\347)4203 2376 w
+(\347)5160 5136 w
+(\347)5160 5076 w
+(\347)5160 4976 w
+(\347)5160 4876 w
+(\347)5160 4776 w
+(\347)5160 4676 w
+(\347)5160 4576 w
+(\347)5160 4476 w
+(\347)5160 4376 w
+(\347)5160 4276 w
+(\347)5160 4176 w
+(\347)5160 4076 w
+(\347)5160 3976 w
+(\347)5160 3876 w
+(\347)5160 3776 w
+(\347)5160 3676 w
+(\347)5160 3576 w
+(\347)5160 3476 w
+(\347)5160 3376 w
+(\347)5160 3276 w
+(\347)5160 3176 w
+(\347)5160 3076 w
+(\347)5160 2976 w
+(\347)5160 2876 w
+(\347)5160 2776 w
+(\347)5160 2676 w
+(\347)5160 2576 w
+(\347)5160 2476 w
+(\347)5160 2376 w
+(*)1080 5376 w
+10 R f
+( size of the installed database package differs by computer)9 2411( The)1 222( installed package.)2 758(Size refers to size of)4 846 4 1163 5376 t
+( size listed is for the largest installation.)7 1644(platform. Ths)1 585 2 1080 5496 t
+( database and accompanying packages require a large amount of disk space as noted in the)15 3760(The WordNet)1 560 2 1080 5736 t
+( contains necessary \256les and some auxiliary \256les which may be)10 2794( database package)2 775( The)1 241(table above.)1 510 4 1080 5856 t
+(deleted to save space.)3 888 1 1080 5976 t
+( 1)1 1803( change: 4 April 2001)4 903( Last)1 1445(WordNet 1.7)1 529 4 720 7680 t
+cleartomark
+showpage
+restore
+%%EndPage: 1 1
+%%Page: 2 2
+save
+mark
+2 pagesetup
+10 R f
+(WordNet)720 480 w
+10 S f
+(\324)1091 480 w
+10 R f
+(WNPKGS \( 7WN \))3 752 1 4648 480 t
+(Listed in the table below are the sizes of required and optional \256les.)12 2800 1 1080 960 t
+10 S f
+(_ __________________________________________)1 2102 1 2189 1100 t
+10 B f
+( Required)1 588(File Size)1 984 2 2686 1220 t
+10 S f
+(_ __________________________________________)1 2102 1 2189 1240 t
+10 R f
+( Yes)1 330( 22MB)1 519(Required database \256les)2 942 3 2239 1360 t
+( No)1 322(cntlist .9MB)1 1436 2 2239 1480 t
+( No)1 272( 5.7MB)1 446(Gloss Index \(index.gloss\))2 1040 3 2239 1600 t
+( 6.1MB No)2 703(Sense Index \(index.sense\))2 1055 2 2239 1720 t
+10 S f
+( \347)1 -2102(_ __________________________________________)1 2102 2 2189 1740 t
+(\347)2189 1700 w
+(\347)2189 1600 w
+(\347)2189 1500 w
+(\347)2189 1400 w
+(\347)2189 1300 w
+(\347)2189 1200 w
+(\347)3369 1740 w
+(\347)3369 1700 w
+(\347)3369 1600 w
+(\347)3369 1500 w
+(\347)3369 1400 w
+(\347)3369 1300 w
+(\347)3369 1200 w
+(\347)3800 1740 w
+(\347)3800 1700 w
+(\347)3800 1600 w
+(\347)3800 1500 w
+(\347)3800 1400 w
+(\347)3800 1300 w
+(\347)3800 1200 w
+(\347)4291 1740 w
+(\347)4291 1700 w
+(\347)4291 1600 w
+(\347)4291 1500 w
+(\347)4291 1400 w
+(\347)4291 1300 w
+(\347)4291 1200 w
+9 B f
+(CD-ROM)900 2028 w
+10 R f
+( systems.)1 379(The WordNet 1.6 CD-ROM contains the WordNet database package for the PC and Macintosh)13 3941 2 1080 2148 t
+( on their system, or to)5 932(The user can choose to install the entire package, including all the database \256les,)13 3388 2 1080 2268 t
+( other WordNet packages are also included on the CD-ROM.)9 2511( The)1 221(run WordNet from the CD-ROM.)4 1377 3 1080 2388 t
+9 B f
+(Database Package)1 720 1 900 2556 t
+10 R f
+( includes the 1.6 database)4 1115( It)1 142( installation for WordNet 1.6 users.)5 1527(The database package is a complete)5 1536 4 1080 2676 t
+( the platforms speci\256ed below, source code for the WordNet browsers and)11 3086(\256les, precompiled binaries for)3 1234 2 1080 2796 t
+( other packages are not included)5 1433( The)1 242(library, and documentation.)2 1162 3 1080 2916 t
+10 S1 f
+(\261)3971 2916 w
+10 R f
+( and)1 199(they must be downloaded)3 1111 2 4090 2916 t
+(installed separately.)1 801 1 1080 3036 t
+( should work on newer ver-)5 1170( Most)1 278( on.)1 164(Note that these are the platforms that the binaries were compiled)10 2708 4 1080 3276 t
+(sions of the operating system.)4 1223 1 1080 3396 t
+10 S f
+(_ ________________________________)1 1643 1 2418 3536 t
+10 B f
+( System)1 338(Hardware Operating)1 1116 2 2510 3656 t
+10 S f
+(_ ________________________________)1 1643 1 2418 3676 t
+10 R f
+( 4.1.3)1 233( SunOS)1 450(Sun SPARC)1 507 3 2468 3796 t
+( 2.5.2)1 233( Solaris)1 444(Sun SPARC)1 507 3 2468 3916 t
+( 5.3)1 158(SGI IRIX)1 878 2 2468 4036 t
+( \(kernel 2.0.27\))2 631(PC\(486\) Linux)1 912 2 2468 4156 t
+(PC\(Pentium\) Windows/95)1 1184 1 2468 4276 t
+( 3.1)1 158(PC\(386\) Windows)1 1056 2 2468 4396 t
+(PC\(386\) DOS)1 873 1 2468 4516 t
+( 7.5.1)1 233(PowerMac MacOS)1 978 2 2468 4636 t
+10 S f
+( \347)1 -1643(_ ________________________________)1 1643 2 2418 4656 t
+(\347)2418 4636 w
+(\347)2418 4536 w
+(\347)2418 4436 w
+(\347)2418 4336 w
+(\347)2418 4236 w
+(\347)2418 4136 w
+(\347)2418 4036 w
+(\347)2418 3936 w
+(\347)2418 3836 w
+(\347)2418 3736 w
+(\347)2418 3636 w
+(\347)3066 4656 w
+(\347)3066 4636 w
+(\347)3066 4536 w
+(\347)3066 4436 w
+(\347)3066 4336 w
+(\347)3066 4236 w
+(\347)3066 4136 w
+(\347)3066 4036 w
+(\347)3066 3936 w
+(\347)3066 3836 w
+(\347)3066 3736 w
+(\347)3066 3636 w
+(\347)4061 4656 w
+(\347)4061 4636 w
+(\347)4061 4536 w
+(\347)4061 4436 w
+(\347)4061 4336 w
+(\347)4061 4236 w
+(\347)4061 4136 w
+(\347)4061 4036 w
+(\347)4061 3936 w
+(\347)4061 3836 w
+(\347)4061 3736 w
+(\347)4061 3636 w
+9 B f
+(Semantic Concordance Package)2 1275 1 900 4944 t
+10 R f
+( \256les, sta-)2 422(The semantic concordance package contains three sets of semantically tagged Brown Corpus)11 3898 2 1080 5064 t
+(tistical information, and the)3 1171 1 1080 5184 t
+10 B f
+(escort)2298 5184 w
+10 R f
+( the Unix and Windows-based PC)5 1462(\(1WN\) interface precompiled for)3 1386 2 2552 5184 t
+( describing the format of the semantic concordance \256les and on)10 2688( Documentation)1 689(platforms listed above.)2 943 3 1080 5304 t
+(using)1080 5424 w
+10 B f
+(escort)1334 5424 w
+10 R f
+( is not included in this package and must be)9 1845( WordNet 1.6 database)3 950( The)1 225(\(1WN\) is included.)2 792 4 1588 5424 t
+(downloaded separately.)1 950 1 1080 5544 t
+9 B f
+(Prolog Database Package)2 1020 1 900 5712 t
+10 R f
+( Documenta-)1 566( this package in a Prolog-readable format.)6 1761(The WordNet 1.6 database \256les are available in)7 1993 3 1080 5832 t
+( compressed tar \256le)3 836( package is only downloadable in)5 1434( This)1 256(tion describing the \256le format is included.)6 1794 4 1080 5952 t
+( since the \256les are in)5 888(format, although once unpackaged it can be used from PC and Macintosh systems)12 3432 2 1080 6072 t
+(ASCII.)1080 6192 w
+9 B f
+(Sense Map Package)2 805 1 900 6360 t
+10 R f
+( 1.5 noun senses to their corresponding 1.6 senses, we provide noun)11 2845(To help users automatically convert)4 1475 2 1080 6480 t
+( package contains \256les to map polysemous and)7 2125( This)1 273(sense mapping information in this package.)5 1922 3 1080 6600 t
+( with the Prolog)3 717( As)1 194(monosemous nouns, and documentation that describes the format of these \256les.)10 3409 3 1080 6720 t
+(database, this package is only downloadable in compressed tar format, but the \256les are also in ASCII.)16 4180 1 1080 6840 t
+9 B f
+(NOTES)720 7008 w
+10 R f
+(The lexicographer \256les and)3 1113 1 1080 7128 t
+10 B f
+(grind)2226 7128 w
+10 R f
+(\(1WN\) program are not distributed.)4 1454 1 2460 7128 t
+( 2)1 1803( change: 4 April 2001)4 903( Last)1 1445(WordNet 1.7)1 529 4 720 7680 t
+cleartomark
+showpage
+restore
+%%EndPage: 2 2
+%%Page: 3 3
+save
+mark
+3 pagesetup
+10 R f
+(WordNet)720 480 w
+10 S f
+(\324)1091 480 w
+10 R f
+(WNPKGS \( 7WN \))3 752 1 4648 480 t
+(The tools and programs used to create the semantic concordances are not distributed.)12 3486 1 1080 960 t
+9 B f
+(SEE ALSO)1 460 1 720 1128 t
+10 B f
+(wnintro)1080 1248 w
+10 R f
+(\(1WN\),)1419 1248 w
+10 B f
+(wnintro)1759 1248 w
+10 R f
+(\(3WN\),)2098 1248 w
+10 B f
+(wnintro)2438 1248 w
+10 R f
+(\(5WN\),)2777 1248 w
+10 B f
+(wnintro)3117 1248 w
+10 R f
+(\(7WN\).)3456 1248 w
+( 3)1 1803( change: 4 April 2001)4 903( Last)1 1445(WordNet 1.7)1 529 4 720 7680 t
+cleartomark
+showpage
+restore
+%%EndPage: 3 3
+%%Trailer
+done
+%%DocumentFonts: Times-Roman Symbol Times-Bold
+%%Pages: 3

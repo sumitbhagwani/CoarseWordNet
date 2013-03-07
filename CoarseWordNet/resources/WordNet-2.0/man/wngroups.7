@@ -1,0 +1,39 @@
+'\" t
+.\" $Id$
+.tr ~
+.TH WNGROUPS 7WN "July 2003" "WordNet 2.0" "WordNet\(tm"
+.SH NAME
+wngroups \- discussion of WordNet search code to group similar verb senses
+.SH DESCRIPTION
+Some similar senses of verbs have been grouped by the lexicographers.
+This grouping is done statically in the lexicographer source files
+using the semantic \fIpointer_symbol\fP \fB$\fP.
+Transitivity is used to combine groups of overlapping
+senses into the largest sense groups possible.
+.SH NOTES
+Coverage of verb groups is incomplete.
+.SH ENVIRONMENT VARIABLES
+.TP 20
+.B WNHOME
+Base directory for WordNet.  Unix default is 
+\fB/usr/local/WordNet-2.0\fP, Windows default is \fBC:\eProgram~Files\eWordNet\e2.0\fP.
+.TP 20
+.B WNSEARCHDIR
+Directory in which the WordNet database has been installed.  Unix
+default is \fBWNHOME/dict\fP, Windows default is \fBWNHOME\edict\fP.
+.SH FILES
+All files are in directory \fBWNSEARCHDIR\fP:
+.TP 20
+.B sentidx.vrb
+verb sense keys and sentence frame numbers
+.TP 20
+.B sents.vrb
+example sentence frames
+.SH SEE ALSO
+.BR wn (1WN),
+.BR wnb (1WN),
+.BR senseidx (5WN),
+.BR wnsearch (3WN),
+.BR wndb (5WN),
+.BR wnintro (7WN).
+

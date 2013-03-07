@@ -1,0 +1,78 @@
+	(cd src; make -k CC='gcc' WN_ROOT='/usr/people/rit/WordNet/testinstall' TCL_INCDIR='/usr/csbmb/include' TK_INCDIR='/usr/csbmb/include' TCL_LIBDIR='/usr/csbmb/lib' TK_LIBDIR='/usr/csbmb/lib' X11_INCDIR='/usr/include' X11_LIBDIR='/usr/lib32' WNB_LIBS='-ltk -ltcl -lX11 -lm' LOCAL_CFLAGS='-O -DUNIX' LOCAL_LDFLAGS='' WN_BINDIR='/usr/people/rit/WordNet/testinstall/bin' WN_LIBDIR='/usr/people/rit/WordNet/testinstall/lib' WN_INCDIR='/usr/people/rit/WordNet/testinstall/include' all install)
+Installing include..
+Making directory /usr/people/rit/WordNet/testinstall/include
+Installing /usr/people/rit/WordNet/testinstall/include/license.h
+Installing /usr/people/rit/WordNet/testinstall/include/setutil.h
+Installing /usr/people/rit/WordNet/testinstall/include/wn.h
+Installing /usr/people/rit/WordNet/testinstall/include/wnconsts.h
+Installing /usr/people/rit/WordNet/testinstall/include/wnglobal.h
+Installing /usr/people/rit/WordNet/testinstall/include/wnhelp.h
+Installing /usr/people/rit/WordNet/testinstall/include/wnrtl.h
+Installing /usr/people/rit/WordNet/testinstall/include/wntypes.h
+Done installing include files in /usr/people/rit/WordNet/testinstall/include
+Making WordNet library libwn.a
+	gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -c binsrch.c
+	gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -c morph.c
+	gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -c search.c
+	gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -c setutil.c
+	gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -c wnglobal.c
+	gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -c wnhelp.c
+	gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -c wnrtl.c
+	gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -c wnutil.c
+	ar rcv libwn.a binsrch.o morph.o search.o setutil.o wnglobal.o wnhelp.o wnrtl.o wnutil.o; ranlib libwn.a
+a - binsrch.o
+a - morph.o
+a - search.o
+a - setutil.o
+a - wnglobal.o
+a - wnhelp.o
+a - wnrtl.o
+a - wnutil.o
+Done compiling library
+Installing lib..
+Making directory /usr/people/rit/WordNet/testinstall/lib
+Installing /usr/people/rit/WordNet/testinstall/lib/libwn.a
+Making directory /usr/people/rit/WordNet/testinstall/lib/wnres
+Installing resource files in /usr/people/rit/WordNet/testinstall/lib/wnres
+Installing /usr/people/rit/WordNet/testinstall/lib/wnres/license.txt
+Installing /usr/people/rit/WordNet/testinstall/lib/wnres/wn.xbm
+Installing /usr/people/rit/WordNet/testinstall/lib/wnres/wngloss.man
+Installing /usr/people/rit/WordNet/testinstall/lib/wnres/wnb.man
+Done installing resource files in /usr/people/rit/WordNet/testinstall/lib/wnres
+Done installing WordNet library in /usr/people/rit/WordNet/testinstall/lib
+Compiling wn...
+	gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -c wn.c
+	gcc -o wn -L/usr/people/rit/WordNet/testinstall/lib  wn.o -lwn
+Compiling wnb...
+	gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -I/usr/csbmb/include -I/usr/csbmb/include -I/usr/include -c stubs.c
+	gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -I/usr/csbmb/include -I/usr/csbmb/include -I/usr/include -c tkAppInit.c
+	gcc -o wishwn -L/usr/people/rit/WordNet/testinstall/lib -L/usr/csbmb/lib -L/usr/csbmb/lib -L/usr/lib32 stubs.o tkAppInit.o -ltk -ltcl -lX11 -lm -lwn
+Compiling grind...
+	gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -c aux.c
+	gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -c create.c
+	gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -c files.c
+	gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -c globals.c
+	gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -c grind.c
+	gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -c makedb.c
+	gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -c resolve.c
+	yacc -dl wnparse.y
+	mv y.tab.c wnparse.c
+	mv y.tab.h wnparse.h
+	gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -c wnparse.c
+	lex wnlex.l
+	mv lex.yy.c wnlex.c
+	gcc -I/usr/people/rit/WordNet/testinstall/include -O -DUNIX -c wnlex.c
+	gcc -o grind -L/usr/people/rit/WordNet/testinstall/lib  aux.o create.o files.o globals.o grind.o makedb.o resolve.o wnparse.o wnlex.o -lwn
+Done compiling interfaces
+Installing wn...
+Making directory /usr/people/rit/WordNet/testinstall/bin
+Installing /usr/people/rit/WordNet/testinstall/bin/wn
+Done installing command line interface in /usr/people/rit/WordNet/testinstall/bin
+Installing wnb...
+Installing /usr/people/rit/WordNet/testinstall/bin/wishwn
+Installing /usr/people/rit/WordNet/testinstall/bin/wnb
+Done installing WordNet browser interface in /usr/people/rit/WordNet/testinstall/bin
+Installing grind...
+Installing /usr/people/rit/WordNet/testinstall/bin/grind
+Done installing grinder in /usr/people/rit/WordNet/testinstall/bin
+Done installing interfaces

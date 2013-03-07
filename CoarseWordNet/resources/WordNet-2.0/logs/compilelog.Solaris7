@@ -1,0 +1,100 @@
+Cleaning directory bin...
+Cleaning subdirectory irix
+Cleaning subdirectory linux
+Cleaning subdirectory solaris
+Cleaning directory dict...
+Cleaning directory include...
+Cleaning directory lib...
+Cleaning subdirectory irix
+Cleaning subdirectory linux
+Cleaning subdirectory solaris
+Cleaning subdirectory wnres
+Cleaning directory man...
+Cleaning directory doc...
+Cleaning subdirectory html
+Cleaning subdirectory pdf
+Cleaning subdirectory ps
+Cleaning directory src...
+Cleaning subdirectory lib
+Cleaning subdirectory wn
+Cleaning subdirectory wnb
+Cleaning subdirectory grind
+Cleaning subdirectory include
+(cd src; make -k CC='gcc' WN_ROOT='/wordnet/wn/src/Release/2.0/testinstall' TCL_INCDIR='/usr/cogsci/include' TK_INCDIR='/usr/cogsci/include' TCL_LIBDIR='/usr/cogsci/lib' TK_LIBDIR='/usr/cogsci/lib' X11_INCDIR='/usr/openwin/include' X11_LIBDIR='/usr/openwin/lib' WNB_LIBS='-ltk8.3 -ltcl8.3 -lX11 -lm -lsocket -lnsl -ldl -lpthread' LOCAL_CFLAGS='-O -DUNIX' LOCAL_LDFLAGS='-R/usr/openwin/lib:/usr/lib:/usr/local/lib' WN_BINDIR='/wordnet/wn/src/Release/2.0/testinstall/bin' WN_LIBDIR='/wordnet/wn/src/Release/2.0/testinstall/lib' WN_INCDIR='/wordnet/wn/src/Release/2.0/testinstall/include' all install)
+Installing include..
+Making directory /wordnet/wn/src/Release/2.0/testinstall/include
+Installing /wordnet/wn/src/Release/2.0/testinstall/include/license.h
+Installing /wordnet/wn/src/Release/2.0/testinstall/include/setutil.h
+Installing /wordnet/wn/src/Release/2.0/testinstall/include/wn.h
+Installing /wordnet/wn/src/Release/2.0/testinstall/include/wnconsts.h
+Installing /wordnet/wn/src/Release/2.0/testinstall/include/wnglobal.h
+Installing /wordnet/wn/src/Release/2.0/testinstall/include/wnhelp.h
+Installing /wordnet/wn/src/Release/2.0/testinstall/include/wnrtl.h
+Installing /wordnet/wn/src/Release/2.0/testinstall/include/wntypes.h
+Done installing include files in /wordnet/wn/src/Release/2.0/testinstall/include
+Making WordNet library libwn.a
+gcc -I/wordnet/wn/src/Release/2.0/testinstall/include -O -DUNIX  -c  binsrch.c
+gcc -I/wordnet/wn/src/Release/2.0/testinstall/include -O -DUNIX  -c  morph.c
+gcc -I/wordnet/wn/src/Release/2.0/testinstall/include -O -DUNIX  -c  search.c
+gcc -I/wordnet/wn/src/Release/2.0/testinstall/include -O -DUNIX  -c  setutil.c
+gcc -I/wordnet/wn/src/Release/2.0/testinstall/include -O -DUNIX  -c  wnglobal.c
+gcc -I/wordnet/wn/src/Release/2.0/testinstall/include -O -DUNIX  -c  wnhelp.c
+gcc -I/wordnet/wn/src/Release/2.0/testinstall/include -O -DUNIX  -c  wnrtl.c
+gcc -I/wordnet/wn/src/Release/2.0/testinstall/include -O -DUNIX  -c  wnutil.c
+ar rcv libwn.a binsrch.o morph.o search.o setutil.o wnglobal.o wnhelp.o wnrtl.o wnutil.o; ranlib libwn.a
+a - binsrch.o
+a - morph.o
+a - search.o
+a - setutil.o
+a - wnglobal.o
+a - wnhelp.o
+a - wnrtl.o
+a - wnutil.o
+Done compiling library
+Installing lib..
+Making directory /wordnet/wn/src/Release/2.0/testinstall/lib
+Installing /wordnet/wn/src/Release/2.0/testinstall/lib/libwn.a
+Making directory /wordnet/wn/src/Release/2.0/testinstall/lib/wnres
+Installing resource files in /wordnet/wn/src/Release/2.0/testinstall/lib/wnres
+Installing /wordnet/wn/src/Release/2.0/testinstall/lib/wnres/license.txt
+Installing /wordnet/wn/src/Release/2.0/testinstall/lib/wnres/wn.xbm
+Installing /wordnet/wn/src/Release/2.0/testinstall/lib/wnres/wngloss.man
+Installing /wordnet/wn/src/Release/2.0/testinstall/lib/wnres/wnb.man
+Done installing resource files in /wordnet/wn/src/Release/2.0/testinstall/lib/wnres
+Done installing WordNet library in /wordnet/wn/src/Release/2.0/testinstall/lib
+Compiling wn...
+gcc -I/wordnet/wn/src/Release/2.0/testinstall/include -O -DUNIX  -c  wn.c
+gcc -o wn -L/wordnet/wn/src/Release/2.0/testinstall/lib -R/usr/openwin/lib:/usr/lib:/usr/local/lib wn.o -lwn
+Compiling wnb...
+gcc -I/wordnet/wn/src/Release/2.0/testinstall/include -O -DUNIX -I/usr/cogsci/include -I/usr/cogsci/include -I/usr/openwin/include  -c  stubs.c
+gcc -I/wordnet/wn/src/Release/2.0/testinstall/include -O -DUNIX -I/usr/cogsci/include -I/usr/cogsci/include -I/usr/openwin/include  -c  tkAppInit.c
+gcc -o wishwn -L/wordnet/wn/src/Release/2.0/testinstall/lib -R/usr/openwin/lib:/usr/lib:/usr/local/lib -L/usr/cogsci/lib -L/usr/cogsci/lib -L/usr/openwin/lib stubs.o tkAppInit.o -ltk8.3 -ltcl8.3 -lX11 -lm -lsocket -lnsl -ldl -lpthread -lwn
+Compiling grind...
+gcc -I/wordnet/wn/src/Release/2.0/testinstall/include -O -DUNIX  -c  aux.c
+gcc -I/wordnet/wn/src/Release/2.0/testinstall/include -O -DUNIX  -c  create.c
+gcc -I/wordnet/wn/src/Release/2.0/testinstall/include -O -DUNIX  -c  files.c
+gcc -I/wordnet/wn/src/Release/2.0/testinstall/include -O -DUNIX  -c  globals.c
+gcc -I/wordnet/wn/src/Release/2.0/testinstall/include -O -DUNIX  -c  grind.c
+gcc -I/wordnet/wn/src/Release/2.0/testinstall/include -O -DUNIX  -c  makedb.c
+gcc -I/wordnet/wn/src/Release/2.0/testinstall/include -O -DUNIX  -c  resolve.c
+yacc -dl wnparse.y
+mv y.tab.c wnparse.c
+mv y.tab.h wnparse.h
+gcc -I/wordnet/wn/src/Release/2.0/testinstall/include -O -DUNIX  -c  wnparse.c
+lex wnlex.l
+mv lex.yy.c wnlex.c
+gcc -I/wordnet/wn/src/Release/2.0/testinstall/include -O -DUNIX  -c  wnlex.c
+gcc -o grind -L/wordnet/wn/src/Release/2.0/testinstall/lib -R/usr/openwin/lib:/usr/lib:/usr/local/lib aux.o create.o files.o globals.o grind.o makedb.o resolve.o wnparse.o wnlex.o -lwn
+Done compiling interfaces
+Installing wn...
+Making directory /wordnet/wn/src/Release/2.0/testinstall/bin
+Installing /wordnet/wn/src/Release/2.0/testinstall/bin/wn
+Done installing command line interface in /wordnet/wn/src/Release/2.0/testinstall/bin
+Installing wnb...
+Installing /wordnet/wn/src/Release/2.0/testinstall/bin/wishwn
+Installing /wordnet/wn/src/Release/2.0/testinstall/bin/wnb
+Done installing WordNet browser interface in /wordnet/wn/src/Release/2.0/testinstall/bin
+Installing grind...
+Installing /wordnet/wn/src/Release/2.0/testinstall/bin/grind
+Done installing grinder in /wordnet/wn/src/Release/2.0/testinstall/bin
+Done installing interfaces

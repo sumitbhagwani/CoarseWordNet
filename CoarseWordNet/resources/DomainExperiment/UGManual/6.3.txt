@@ -1,0 +1,2861 @@
+--------------------------
+###Lemma: Grading 
+###SenseIdentifier: Grading NN 1010334 
+###Sense: the act of arranging in a graduated series
+###SenseIdentifier: Grading NN 912576 
+###Sense: changing the ground level to a smooth horizontal or gently sloping surface
+###SenseIdentifier: Grading NN 874977 
+###Sense: evaluation of performance by assigning a grade or score; "what he disliked about teaching was all the grading he had to do"
+--------------------------
+--------------------------
+###Lemma: System 
+###SenseIdentifier: System NN 4377057 
+###Sense: instrumentality that combines interrelated interacting artifacts designed to work as a coherent entity; "he bought a new stereo system"; "the system consists of a motor and a small computer"
+###SenseIdentifier: System NN 8435388 
+###Sense: a group of independent but interrelated elements comprising a unified whole; "a vast system of production and distribution and consumption keep the country going"
+###SenseIdentifier: System NN 14981183 
+###Sense: (physical chemistry) a sample of matter in which substances in different phases are in equilibrium; "in a static system oil cannot be replaced by water on a surface"; "a system generating hydrogen peroxide"
+###SenseIdentifier: System NN 5661996 
+###Sense: a complex of methods or rules governing behavior; "they have to operate under a system they oppose"; "that language has a complex system for indicating gender"
+###SenseIdentifier: System NN 5726596 
+###Sense: an organized structure for arranging or classifying; "he changed the arrangement of the topics"; "the facts were familiar but it was in the organization of them that he was original"; "he tried to understand their system of classification"
+###SenseIdentifier: System NN 5237227 
+###Sense: a group of physiologically or anatomically related organs or parts; "the body has a system of organs for digestion"
+###SenseIdentifier: System NN 5902872 
+###Sense: a procedure or process for obtaining an objective; "they had to devise a system that did not depend on cooperation"
+###SenseIdentifier: System NN 5219097 
+###Sense: the living body considered as made up of interdependent components forming a unified whole; "exercise helped him get the alcohol out of his system"
+###SenseIdentifier: System NN 4768657 
+###Sense: an ordered manner; orderliness by virtue of being methodical and well organized; "his compulsive organization was not an endearing quality"; "we can't do it unless we establish some system around here"
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: Grade 
+###SenseIdentifier: Grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: Grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: Grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: Grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: Grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: Grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: Grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: Grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: Grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: Points 
+###SenseIdentifier: Points NN 5865998 
+###Sense: a geometric element that has position but no extension; "a point is defined by its coordinates"
+###SenseIdentifier: Points NN 8620061 
+###Sense: the precise location of something; a spatially limited location; "she walked to a point where she could survey the whole street"
+###SenseIdentifier: Points NN 6606808 
+###Sense: a brief version of the essential meaning of something; "get to the point"; "he missed the point of the joke"; "life has lost its point"
+###SenseIdentifier: Points NN 5817845 
+###Sense: an isolated fact that is considered separately from the whole; "several of the details are similar"; "a point of information"
+###SenseIdentifier: Points NN 13939892 
+###Sense: a specific identifiable position in a continuum or series or especially in a process; "a remarkable degree of frankness"; "at what stage are the social sciences?"
+###SenseIdentifier: Points NN 15180528 
+###Sense: an instant of time; "at that point I had to leave"
+###SenseIdentifier: Points NN 5984066 
+###Sense: the object of an activity; "what is the point of discussing it?"
+###SenseIdentifier: Points NN 13902482 
+###Sense: a V shape; "the cannibal's teeth were filed to sharp points"
+###SenseIdentifier: Points NN 13911872 
+###Sense: a very small circular shape; "a row of points"; "draw lines between the dots"
+###SenseIdentifier: Points NN 13610162 
+###Sense: the unit of counting in scoring a game or contest; "he scored 20 points in the first half"; "a touchdown counts 6 points"
+###SenseIdentifier: Points NN 9396465 
+###Sense: a promontory extending out into a large body of water; "they sailed south around the point"
+###SenseIdentifier: Points NN 6482401 
+###Sense: a distinct part that can be specified separately in a group of things that could be enumerated on a list; "he noticed an item in the New York Times"; "she had several items on her shopping list"; "the main point on the agenda was taken up first"
+###SenseIdentifier: Points NN 13794885 
+###Sense: a style in speech or writing that arrests attention and has a penetrating or convincing quality or effect
+###SenseIdentifier: Points NN 4731925 
+###Sense: an outstanding characteristic; "his acting was one of the high points of the movie"
+###SenseIdentifier: Points NN 3974215 
+###Sense: sharp end; "he stuck the point of the knife into a tree"; "he broke the point of his pencil"
+###SenseIdentifier: Points NN 13830305 
+###Sense: any of 32 horizontal directions indicated on the card of a compass; "he checked the point on his compass"
+###SenseIdentifier: Points NN 13712286 
+###Sense: a linear unit used to measure the size of type; approximately 1/72 inch
+###SenseIdentifier: Points NN 13400150 
+###Sense: one percent of the total principal of a loan; it is paid at the time the loan is made and is independent of the interest on the loan
+###SenseIdentifier: Points NN 6843520 
+###Sense: a punctuation mark (.) placed at the end of a declarative sentence to indicate a full stop or after abbreviations; "in England they call a period a stop"
+###SenseIdentifier: Points NN 6822034 
+###Sense: a V-shaped mark at one end of an arrow pointer; "the point of the arrow was due north"
+###SenseIdentifier: Points NN 6812289 
+###Sense: the dot at the left of a decimal fraction
+###SenseIdentifier: Points NN 5071556 
+###Sense: the property of a shape that tapers to a sharp tip
+###SenseIdentifier: Points NN 4732067 
+###Sense: a distinguishing or individuating characteristic; "he knows my bad points as well as my good points"
+###SenseIdentifier: Points NN 3974769 
+###Sense: the gun muzzle's direction; "he held me up at the point of a gun"
+###SenseIdentifier: Points NN 3974671 
+###Sense: a wall socket
+###SenseIdentifier: Points NN 3213826 
+###Sense: a contact in the distributor; as the rotor turns its projecting arm contacts them and current flows to the spark plugs
+--------------------------
+--------------------------
+###Lemma: end 
+###SenseIdentifier: end NN 8566028 
+###Sense: either extremity of something that has length; "the end of the pier"; "she knotted the end of the thread"; "they rode to the end of the line"; "the terminals of the anterior arches of the fornix"
+###SenseIdentifier: end NN 15266911 
+###Sense: the point in time at which something ends; "the end of the year"; "the ending of warranty period"
+###SenseIdentifier: end NN 7291794 
+###Sense: the concluding parts of an event or occurrence; "the end was exciting"; "I had to miss the last of the movie"
+###SenseIdentifier: end NN 5980875 
+###Sense: the state of affairs that a plan is intended to achieve and that (when achieved) terminates behavior intended to achieve it; "the ends justify the means"
+###SenseIdentifier: end NN 5868477 
+###Sense: a final part or section; "we have given it at the end of the section since it involves the calculus"; "Start at the beginning and go on until you come to the end"
+###SenseIdentifier: end NN 14562960 
+###Sense: a final state; "he came to a bad end"; "the so-called glorious experiment came to an inglorious end"
+###SenseIdentifier: end NN 8566707 
+###Sense: the surface at either extremity of a three-dimensional object; "one end of the box was marked `This side up'"
+###SenseIdentifier: end NN 10056398 
+###Sense: (football) the person who plays at one end of the line of scrimmage; "the end managed to hold onto the pass"
+###SenseIdentifier: end NN 8565894 
+###Sense: a boundary marking the extremities of something; "the end of town"
+###SenseIdentifier: end NN 8566884 
+###Sense: one of two places from which people are communicating to each other; "the phone rang at the other end"; "both ends wrote at the same time"
+###SenseIdentifier: end NN 787727 
+###Sense: the part you are expected to play; "he held up his end"
+###SenseIdentifier: end NN 6398401 
+###Sense: the last section of a communication; "in conclusion I want to say..."
+###SenseIdentifier: end NN 3286383 
+###Sense: a piece of cloth that is left over after the rest has been used or sold
+###SenseIdentifier: end NN 728065 
+###Sense: (American football) a position on the line of scrimmage; "no one wanted to play end"
+--------------------------
+--------------------------
+###Lemma: semester 
+###SenseIdentifier: semester NN 15225797 
+###Sense: one of two divisions of an academic year
+###SenseIdentifier: semester NN 15204485 
+###Sense: half a year; a period of 6 months
+--------------------------
+--------------------------
+###Lemma: summer 
+###SenseIdentifier: summer NN 15237250 
+###Sense: the warmest season of the year; in the northern hemisphere it extends from the summer solstice to the autumnal equinox; "they spent a lazy summer at the shore"
+###SenseIdentifier: summer NN 15145012 
+###Sense: the period of finest development, happiness, or beauty; "the golden summer of his life"
+--------------------------
+--------------------------
+###Lemma: term 
+###SenseIdentifier: term NN 6303888 
+###Sense: a word or expression used for some particular thing; "he learned many medical terms"
+###SenseIdentifier: term NN 15224486 
+###Sense: a limited period of time; "a prison term"; "he left school before the end of term"
+###SenseIdentifier: term NN 6770875 
+###Sense: (usually plural) a statement of what is required as part of an agreement; "the contract set out the conditions of the lease"; "the terms of the treaty were generous"
+###SenseIdentifier: term NN 5855904 
+###Sense: any distinct quantity contained in a polynomial; "the general term of an algebraic equation of the n-th degree"
+###SenseIdentifier: term NN 6751974 
+###Sense: one of the substantive phrases in a logical proposition; "the major term of a syllogism must occur twice"
+###SenseIdentifier: term NN 15226451 
+###Sense: the end of gestation or point at which birth is imminent; "a healthy baby born at full term"
+###SenseIdentifier: term NN 4413723 
+###Sense: (architecture) a statue or a human bust or an animal carved out of the top of a square pillar; originally used as a boundary marker in ancient Rome
+--------------------------
+--------------------------
+###Lemma: student 
+###SenseIdentifier: student NN 10665698 
+###Sense: a learner who is enrolled in an educational institution
+###SenseIdentifier: student NN 10557854 
+###Sense: a learned person (especially in the humanities); someone who by long study has gained mastery in one or more disciplines
+--------------------------
+--------------------------
+###Lemma: letter 
+###SenseIdentifier: letter NN 6624161 
+###Sense: a written message addressed to a person or organization; "mailed an indignant letter to the editor"
+###SenseIdentifier: letter NN 6828818 
+###Sense: the conventional characters of the alphabet used to represent speech; "his grandmother taught him his letters"
+###SenseIdentifier: letter NN 10255207 
+###Sense: owner who lets another person use something (housing usually) for hire
+###SenseIdentifier: letter NN 7173389 
+###Sense: a strictly literal interpretation (as distinct from the intention); "he followed instructions to the letter"; "he obeyed the letter of the law"
+###SenseIdentifier: letter NN 6706504 
+###Sense: an award earned by participation in a school sport; "he won letters in three sports"
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: his 
+--------------------------
+--------------------------
+###Lemma: her 
+--------------------------
+--------------------------
+###Lemma: course 
+###SenseIdentifier: course NN 884466 
+###Sense: education imparted in a series of lessons or meetings; "he took a course in basket weaving"; "flirting is not unknown in college classes"
+###SenseIdentifier: course NN 8377085 
+###Sense: a connected series of events or actions or developments; "the government took a firm course"; "historians can only point out those lines for which evidence is available"
+###SenseIdentifier: course NN 8681222 
+###Sense: general line of orientation; "the river takes a southern course"; "the northeastern trend of the coast"
+###SenseIdentifier: course NN 38262 
+###Sense: a mode of action; "if you persist in that course you will surely fail"; "once a nation is embarked on a course of action it becomes extremely difficult for any retraction to take place"
+###SenseIdentifier: course NN 9387222 
+###Sense: a line or route along which something travels or moves; "the hurricane demolished houses in its path"; "the track of an animal"; "the course of the river"
+###SenseIdentifier: course NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: course NN 7556970 
+###Sense: part of a meal served at one time; "she prepared a three course meal"
+###SenseIdentifier: course NN 3120029 
+###Sense: (construction) a layer of masonry; "a course of bricks"
+###SenseIdentifier: course NN 3119790 
+###Sense: facility consisting of a circumscribed area of land or water laid out for a sport; "the course had only nine holes"; "the course was less than a mile"
+--------------------------
+--------------------------
+###Lemma: Instructor-in-Charge 
+###SenseIdentifier: Instructor-in-Charge NN 10694258 
+###Sense: a person whose occupation is teaching
+--------------------------
+--------------------------
+###Lemma: account 
+###SenseIdentifier: account NN 6514093 
+###Sense: a record or narrative description of past events; "a history of France"; "he gave an inaccurate account of the plot to kill the president"; "the story of exposure to lead"
+###SenseIdentifier: account NN 6681551 
+###Sense: a short account of the news; "the report of his speech"; "the story was on the 11 o'clock news"; "the account of his speech that was given on the evening news made the governor furious"
+###SenseIdentifier: account NN 13929037 
+###Sense: a formal contractual relationship established to provide for regular banking or brokerage or business services; "he asked to see the executive who handled his account"
+###SenseIdentifier: account NN 6738281 
+###Sense: a statement that makes something comprehensible by describing the relevant structure or operation or circumstances etc.; "the explanation was very simple"; "I expected a brief account"
+###SenseIdentifier: account NN 9179382 
+###Sense: grounds; "don't do it on my account"; "the paper was rejected on account of its length"; "he tried to blame the victim but his success on that score was doubtful"
+###SenseIdentifier: account NN 5169037 
+###Sense: importance or value; "a person of considerable account"; "he predicted that although it is of small account now it will rapidly increase in importance"
+###SenseIdentifier: account NN 13354985 
+###Sense: a statement of recent transactions and the resulting balance; "they send me an accounting every month"
+###SenseIdentifier: account NN 7217924 
+###Sense: the act of informing by verbal report; "he heard reports that they were causing trouble"; "by all accounts they were a happy couple"
+###SenseIdentifier: account NN 6516955 
+###Sense: an itemized statement of money owed for goods shipped or services rendered; "he paid his bill and left"; "send me an account of what I owe"
+###SenseIdentifier: account NN 5157732 
+###Sense: the quality of taking advantage; "she turned her writing skills to good account"
+--------------------------
+--------------------------
+###Lemma: his 
+--------------------------
+--------------------------
+###Lemma: her 
+--------------------------
+--------------------------
+###Lemma: performance 
+###SenseIdentifier: performance NN 6891493 
+###Sense: a dramatic or musical entertainment; "they listened to ten different performances"; "the play ran for 100 performances"; "the frequent performances of the symphony testify to its popularity"
+###SenseIdentifier: performance NN 550771 
+###Sense: the act of presenting a play or a piece of music or other entertainment; "we congratulated him on his performance at the rehearsal"; "an inspired performance of Mozart's C minor concerto"
+###SenseIdentifier: performance NN 97504 
+###Sense: the act of performing; of doing something successfully; using knowledge as distinguished from merely possessing it; "they criticised his performance as mayor"; "experience generally improves performance"
+###SenseIdentifier: performance NN 47106 
+###Sense: any recognized accomplishment; "they admired his performance under stress"; "when Roger Maris powered four home runs in one game his performance merits awe"
+###SenseIdentifier: performance NN 13525549 
+###Sense: process or manner of functioning or operating; "the power of its engine determines its operation"; "the plane's operation in high winds"; "they compared the cooking performance of each oven"; "the jet's performance conformed to high standards"
+--------------------------
+--------------------------
+###Lemma: examination 
+###SenseIdentifier: examination NN 635850 
+###Sense: the act of examining something closely (as for mistakes)
+###SenseIdentifier: examination NN 7197021 
+###Sense: a set of questions or exercises evaluating skill or knowledge; "when the test was stolen the professor had to make a new set of questions"
+###SenseIdentifier: examination NN 7193958 
+###Sense: formal systematic questioning
+###SenseIdentifier: examination NN 5787005 
+###Sense: a detailed inspection of your conscience (as done daily by Jesuits)
+###SenseIdentifier: examination NN 636461 
+###Sense: the act of giving students or candidates a test (as by questions) to determine what they know or have learned
+--------------------------
+--------------------------
+###Lemma: quiz 
+###SenseIdentifier: quiz NN 7199191 
+###Sense: an examination consisting of a few short questions
+--------------------------
+--------------------------
+###Lemma: assignment 
+###SenseIdentifier: assignment NN 730247 
+###Sense: a duty that you are assigned to perform (especially in the armed forces); "hazardous duty"
+###SenseIdentifier: assignment NN 6545528 
+###Sense: the instrument by which a claim or right or interest or property is transferred from one person to another
+###SenseIdentifier: assignment NN 164345 
+###Sense: the act of distributing something to designated places or persons; "the first task is the assignment of an address to each datum"
+###SenseIdentifier: assignment NN 13254237 
+###Sense: (law) a transfer of property by deed of conveyance
+###SenseIdentifier: assignment NN 796586 
+###Sense: an undertaking that you have been assigned to do (as by an instructor)
+###SenseIdentifier: assignment NN 163779 
+###Sense: the act of putting a person into a non-elective position; "the appointment had to be approved by the whole committee"
+--------------------------
+--------------------------
+###Lemma: laboratory 
+###SenseIdentifier: laboratory NN 3629986 
+###Sense: a workplace for the conduct of scientific research
+###SenseIdentifier: laboratory NN 8662570 
+###Sense: a region resembling a laboratory inasmuch as it offers opportunities for observation and practice and experimentation; "the new nation is a testing ground for socioeconomic theories"; "Pakistan is a laboratory for studying the use of American troops to combat terrorism"
+--------------------------
+--------------------------
+###Lemma: work 
+###SenseIdentifier: work NN 575741 
+###Sense: activity directed toward making or doing something; "she checked several points needing further work"
+###SenseIdentifier: work NN 4599396 
+###Sense: a product produced or accomplished through the effort or activity or agency of a person or thing; "it is not regarded as one of his more memorable works"; "the symphony was hailed as an ingenious work"; "he was indebted to the pioneering work of John Dewey"; "the work of an active imagination"; "erosion is the work of wind or water over time"
+###SenseIdentifier: work NN 584367 
+###Sense: the occupation for which you are paid; "he is looking for employment"; "a lot of people are out of work"
+###SenseIdentifier: work NN 5755883 
+###Sense: applying the mind to learning and understanding a subject (especially by reading); "mastering a second language requires a lot of work"; "no schools offer graduate study in interior design"
+###SenseIdentifier: work NN 11453420 
+###Sense: (physics) a manifestation of energy; the transfer of energy from one physical system to another expressed as the product of a force and the distance through which it moves a body in the direction of that force; "work equals force times distance"
+###SenseIdentifier: work NN 4602044 
+###Sense: a place where work is done; "he arrived at work early today"
+###SenseIdentifier: work NN 3841417 
+###Sense: the total output of a writer or artist (or a substantial part of it); "he studied the entire Wagnerian oeuvre"; "Picasso's work can be divided into periods"
+--------------------------
+--------------------------
+###Lemma: regularity 
+###SenseIdentifier: regularity NN 5065211 
+###Sense: a property of polygons: the property of having equal sides and equal angles
+###SenseIdentifier: regularity NN 4767347 
+###Sense: the quality of being characterized by a fixed principle or rate; "he was famous for the regularity of his habits"
+--------------------------
+--------------------------
+###Lemma: attendance 
+###SenseIdentifier: attendance NN 1233397 
+###Sense: the act of being present (at a meeting or event etc.)
+###SenseIdentifier: attendance NN 15284999 
+###Sense: the frequency with which a person is present; "a student's attendance is an important factor in her grade"
+###SenseIdentifier: attendance NN 8185063 
+###Sense: the number of people that are present; "attendance was up by 50 per cent"
+--------------------------
+--------------------------
+###Lemma: class 
+###SenseIdentifier: class NN 7997703 
+###Sense: a collection of things sharing a common attribute; "there are two classes of detergents"
+###SenseIdentifier: class NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: class NN 7974025 
+###Sense: people having the same social, economic, or educational status; "the working class"; "an emerging professional class"
+###SenseIdentifier: class NN 884466 
+###Sense: education imparted in a series of lessons or meetings; "he took a course in basket weaving"; "flirting is not unknown in college classes"
+###SenseIdentifier: class NN 8239808 
+###Sense: a league ranked by quality; "he played baseball in class D for two years"; "Princeton is in the NCAA Division 1-AA"
+###SenseIdentifier: class NN 8238660 
+###Sense: a body of students who graduate together; "the class of '97"; "she was in my year at Hoehandle High"
+###SenseIdentifier: class NN 8103777 
+###Sense: (biology) a taxonomic group containing one or more orders
+###SenseIdentifier: class NN 4815177 
+###Sense: elegance in dress or behavior; "she has a lot of class"
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: office 
+###SenseIdentifier: office NN 3841666 
+###Sense: place of business where professional or clerical duties are performed; "he rented an office in the new building"
+###SenseIdentifier: office NN 8337324 
+###Sense: an administrative unit of government; "the Central Intelligence Agency"; "the Census Bureau"; "Office of Management and Budget"; "Tennessee Valley Authority"
+###SenseIdentifier: office NN 720565 
+###Sense: the actions and activities assigned to or required or expected of a person or group; "the function of a teacher"; "the government must do its part"; "play its role"
+###SenseIdentifier: office NN 13945102 
+###Sense: (of a government or government official) holding an office means being in power; "being in office already gives a candidate a great advantage"; "during his first year in office"; "during his first year in power"; "the power of the president"
+###SenseIdentifier: office NN 8352303 
+###Sense: professional or clerical workers in an office; "the whole office was late the morning of the blizzard"
+###SenseIdentifier: office NN 1033458 
+###Sense: a religious rite or service prescribed by ecclesiastical authorities; "the offices of the mass"
+###SenseIdentifier: office NN 586262 
+###Sense: a job in an organization; "he occupied a post in the treasury"
+--------------------------
+--------------------------
+###Lemma: time 
+###SenseIdentifier: time NN 7309599 
+###Sense: an instance or single occasion for some event; "this time he succeeded"; "he called four times"; "he could do ten at a clip"
+###SenseIdentifier: time NN 15270431 
+###Sense: a period of time considered as a resource under your control and sufficient to accomplish something; "take time to smell the roses"; "I didn't have time to finish"; "it took more than half my time"
+###SenseIdentifier: time NN 15122231 
+###Sense: an indefinite period (usually marked by specific attributes or activities); "he waited a long time"; "the time of year for planting"; "he was a great actor in his time"
+###SenseIdentifier: time NN 15245515 
+###Sense: a suitable moment; "it is time to go"
+###SenseIdentifier: time NN 28270 
+###Sense: the continuum of experience in which events pass from the future through the present to the past
+###SenseIdentifier: time NN 7288215 
+###Sense: a person's experience on a particular occasion; "he had a time holding back the tears"; "they had a good time together"
+###SenseIdentifier: time NN 15129927 
+###Sense: a reading of a point in time as given by a clock; "do you know what time it is?"; "the time is 10 o'clock"
+###SenseIdentifier: time NN 15135822 
+###Sense: the fourth coordinate that is required (along with three spatial dimensions) to specify a physical event
+###SenseIdentifier: time NN 4991738 
+###Sense: rhythm as given by division into parts of equal duration
+###SenseIdentifier: time NN 15224692 
+###Sense: the period of time a prisoner is imprisoned; "he served a prison term of 15 months"; "his sentence was 5 to 10 years"; "he is doing time in the county jail"
+--------------------------
+--------------------------
+###Lemma: limit 
+###SenseIdentifier: limit NN 5124057 
+###Sense: the greatest possible degree of something; "what he did was beyond the bounds of acceptable behavior"; "to the limit of his ability"
+###SenseIdentifier: limit NN 15268857 
+###Sense: final or latest limiting point
+###SenseIdentifier: limit NN 8593130 
+###Sense: as far as something can go
+###SenseIdentifier: limit NN 8592656 
+###Sense: the boundary of a specific area
+###SenseIdentifier: limit NN 13758556 
+###Sense: the mathematical value toward which a function goes as the independent variable approaches infinity
+###SenseIdentifier: limit NN 13758296 
+###Sense: the greatest amount of something that is possible or allowed; "there are limits on the amount you can bet"; "it is growing rapidly with no limitation in sight"
+--------------------------
+--------------------------
+###Lemma: hour 
+###SenseIdentifier: hour NN 15227846 
+###Sense: a period of time equal to 1/24th of a day; "the job will take more than an hour"
+###SenseIdentifier: hour NN 15228378 
+###Sense: clock time; "the hour is getting late"
+###SenseIdentifier: hour NN 15228910 
+###Sense: a special and memorable period; "it was their finest hour"
+###SenseIdentifier: hour NN 5131023 
+###Sense: distance measured by the time taken to cover it; "we live an hour from the airport"; "its just 10 minutes away"
+--------------------------
+--------------------------
+###Lemma: end 
+###SenseIdentifier: end NN 8566028 
+###Sense: either extremity of something that has length; "the end of the pier"; "she knotted the end of the thread"; "they rode to the end of the line"; "the terminals of the anterior arches of the fornix"
+###SenseIdentifier: end NN 15266911 
+###Sense: the point in time at which something ends; "the end of the year"; "the ending of warranty period"
+###SenseIdentifier: end NN 7291794 
+###Sense: the concluding parts of an event or occurrence; "the end was exciting"; "I had to miss the last of the movie"
+###SenseIdentifier: end NN 5980875 
+###Sense: the state of affairs that a plan is intended to achieve and that (when achieved) terminates behavior intended to achieve it; "the ends justify the means"
+###SenseIdentifier: end NN 5868477 
+###Sense: a final part or section; "we have given it at the end of the section since it involves the calculus"; "Start at the beginning and go on until you come to the end"
+###SenseIdentifier: end NN 14562960 
+###Sense: a final state; "he came to a bad end"; "the so-called glorious experiment came to an inglorious end"
+###SenseIdentifier: end NN 8566707 
+###Sense: the surface at either extremity of a three-dimensional object; "one end of the box was marked `This side up'"
+###SenseIdentifier: end NN 10056398 
+###Sense: (football) the person who plays at one end of the line of scrimmage; "the end managed to hold onto the pass"
+###SenseIdentifier: end NN 8565894 
+###Sense: a boundary marking the extremities of something; "the end of town"
+###SenseIdentifier: end NN 8566884 
+###Sense: one of two places from which people are communicating to each other; "the phone rang at the other end"; "both ends wrote at the same time"
+###SenseIdentifier: end NN 787727 
+###Sense: the part you are expected to play; "he held up his end"
+###SenseIdentifier: end NN 6398401 
+###Sense: the last section of a communication; "in conclusion I want to say..."
+###SenseIdentifier: end NN 3286383 
+###Sense: a piece of cloth that is left over after the rest has been used or sold
+###SenseIdentifier: end NN 728065 
+###Sense: (American football) a position on the line of scrimmage; "no one wanted to play end"
+--------------------------
+--------------------------
+###Lemma: semester 
+###SenseIdentifier: semester NN 15225797 
+###Sense: one of two divisions of an academic year
+###SenseIdentifier: semester NN 15204485 
+###Sense: half a year; a period of 6 months
+--------------------------
+--------------------------
+###Lemma: examination 
+###SenseIdentifier: examination NN 635850 
+###Sense: the act of examining something closely (as for mistakes)
+###SenseIdentifier: examination NN 7197021 
+###Sense: a set of questions or exercises evaluating skill or knowledge; "when the test was stolen the professor had to make a new set of questions"
+###SenseIdentifier: examination NN 7193958 
+###Sense: formal systematic questioning
+###SenseIdentifier: examination NN 5787005 
+###Sense: a detailed inspection of your conscience (as done daily by Jesuits)
+###SenseIdentifier: examination NN 636461 
+###Sense: the act of giving students or candidates a test (as by questions) to determine what they know or have learned
+--------------------------
+--------------------------
+###Lemma: department 
+###SenseIdentifier: department NN 8114861 
+###Sense: a specialized division of a large organization; "you'll find it in the hardware department"; "she got a job in the historical section of the Treasury"
+###SenseIdentifier: department NN 8548733 
+###Sense: the territorial and administrative division of some countries (such as France)
+###SenseIdentifier: department NN 5853273 
+###Sense: a specialized sphere of knowledge; "baking is not my department"; "his work established a new department of literature"
+--------------------------
+--------------------------
+###Lemma: procedure 
+###SenseIdentifier: procedure NN 1023820 
+###Sense: a particular course of action intended to achieve a result; "the procedure of obtaining a driver's license"; "it was a process of trial and error"
+###SenseIdentifier: procedure NN 577068 
+###Sense: a process or series of acts especially of a practical or mechanical nature involved in a particular form of work; "the operations in building a house"; "certain machine tool operations"
+###SenseIdentifier: procedure NN 6582403 
+###Sense: a set sequence of steps, part of larger computer program
+###SenseIdentifier: procedure NN 1023636 
+###Sense: a mode of conducting legal and parliamentary proceedings
+--------------------------
+--------------------------
+###Lemma: award 
+###SenseIdentifier: award NN 87663 
+###Sense: a grant made by a law court; "he criticized the awarding of compensation by the court"
+###SenseIdentifier: award NN 6696483 
+###Sense: a tangible symbol signifying approval or distinction; "an award for bravery"
+###SenseIdentifier: award NN 13268146 
+###Sense: something given for victory or superiority in a contest or competition or for winning a lottery; "the prize was a free trip to Europe"
+--------------------------
+--------------------------
+###Lemma: letter 
+###SenseIdentifier: letter NN 6624161 
+###Sense: a written message addressed to a person or organization; "mailed an indignant letter to the editor"
+###SenseIdentifier: letter NN 6828818 
+###Sense: the conventional characters of the alphabet used to represent speech; "his grandmother taught him his letters"
+###SenseIdentifier: letter NN 10255207 
+###Sense: owner who lets another person use something (housing usually) for hire
+###SenseIdentifier: letter NN 7173389 
+###Sense: a strictly literal interpretation (as distinct from the intention); "he followed instructions to the letter"; "he obeyed the letter of the law"
+###SenseIdentifier: letter NN 6706504 
+###Sense: an award earned by participation in a school sport; "he won letters in three sports"
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: project 
+###SenseIdentifier: project NN 795720 
+###Sense: any piece of work that is undertaken or attempted; "he prepared for great undertakings"
+###SenseIdentifier: project NN 5910453 
+###Sense: a planned undertaking
+--------------------------
+--------------------------
+###Lemma: course 
+###SenseIdentifier: course NN 884466 
+###Sense: education imparted in a series of lessons or meetings; "he took a course in basket weaving"; "flirting is not unknown in college classes"
+###SenseIdentifier: course NN 8377085 
+###Sense: a connected series of events or actions or developments; "the government took a firm course"; "historians can only point out those lines for which evidence is available"
+###SenseIdentifier: course NN 8681222 
+###Sense: general line of orientation; "the river takes a southern course"; "the northeastern trend of the coast"
+###SenseIdentifier: course NN 38262 
+###Sense: a mode of action; "if you persist in that course you will surely fail"; "once a nation is embarked on a course of action it becomes extremely difficult for any retraction to take place"
+###SenseIdentifier: course NN 9387222 
+###Sense: a line or route along which something travels or moves; "the hurricane demolished houses in its path"; "the track of an animal"; "the course of the river"
+###SenseIdentifier: course NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: course NN 7556970 
+###Sense: part of a meal served at one time; "she prepared a three course meal"
+###SenseIdentifier: course NN 3120029 
+###Sense: (construction) a layer of masonry; "a course of bricks"
+###SenseIdentifier: course NN 3119790 
+###Sense: facility consisting of a circumscribed area of land or water laid out for a sport; "the course had only nine holes"; "the course was less than a mile"
+--------------------------
+--------------------------
+###Lemma: letter 
+###SenseIdentifier: letter NN 6624161 
+###Sense: a written message addressed to a person or organization; "mailed an indignant letter to the editor"
+###SenseIdentifier: letter NN 6828818 
+###Sense: the conventional characters of the alphabet used to represent speech; "his grandmother taught him his letters"
+###SenseIdentifier: letter NN 10255207 
+###Sense: owner who lets another person use something (housing usually) for hire
+###SenseIdentifier: letter NN 7173389 
+###Sense: a strictly literal interpretation (as distinct from the intention); "he followed instructions to the letter"; "he obeyed the letter of the law"
+###SenseIdentifier: letter NN 6706504 
+###Sense: an award earned by participation in a school sport; "he won letters in three sports"
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: a 
+###SenseIdentifier: a NN 13658027 
+###Sense: a metric unit of length equal to one ten billionth of a meter (or 0.0001 micron); used to specify wavelengths of electromagnetic radiation
+###SenseIdentifier: a NN 15089803 
+###Sense: any of several fat-soluble vitamins essential for normal vision; prevents night blindness or inflammation or dryness of the eyes
+###SenseIdentifier: a NN 14829565 
+###Sense: one of the four nucleotides used in building DNA; all four nucleotides have a common phosphate group and a sugar (ribose)
+###SenseIdentifier: a NN 14706889 
+###Sense: (biochemistry) purine base found in DNA and RNA; pairs with thymine in DNA and with uracil in RNA
+###SenseIdentifier: a NN 13637376 
+###Sense: the basic unit of electric current adopted under the Systeme International d'Unites; "a typical household circuit carries 15 to 50 amps"
+###SenseIdentifier: a NN 6831177 
+###Sense: the 1st letter of the Roman alphabet
+###SenseIdentifier: a NN 5400860 
+###Sense: the blood group whose red cells carry the A antigen
+--------------------------
+--------------------------
+###Lemma: b 
+###SenseIdentifier: b NN 1349948 
+###Sense: aerobic rod-shaped spore-producing bacterium; often occurring in chainlike formations; found primarily in soil
+###SenseIdentifier: b NN 15090742 
+###Sense: originally thought to be a single vitamin but now separated into several B vitamins
+###SenseIdentifier: b NN 14631871 
+###Sense: a trivalent metalloid element; occurs both in a hard black crystal and in the form of a yellow or brown powder
+###SenseIdentifier: b NN 13713521 
+###Sense: a logarithmic unit of sound intensity equal to 10 decibels
+###SenseIdentifier: b NN 13614256 
+###Sense: (physics) a unit of nuclear cross section; the effective circular area that one particle presents to another as a target for an encounter
+###SenseIdentifier: b NN 6831284 
+###Sense: the 2nd letter of the Roman alphabet
+###SenseIdentifier: b NN 5400978 
+###Sense: the blood group whose red cells carry the B antigen
+--------------------------
+--------------------------
+###Lemma: c 
+###SenseIdentifier: c NN 13714491 
+###Sense: a degree on the centigrade scale of temperature
+###SenseIdentifier: c NN 15284285 
+###Sense: the speed at which light travels in a vacuum; the constancy and universality of the speed of light is recognized by defining it to be exactly 299,792,458 meters per second
+###SenseIdentifier: c NN 15093298 
+###Sense: a vitamin found in fresh fruits (especially citrus fruits) and vegetables; prevents scurvy
+###SenseIdentifier: c NN 14829765 
+###Sense: one of the four nucleotides used in building DNA; all four nucleotides have a common phosphate group and a sugar (ribose)
+###SenseIdentifier: c NN 14828511 
+###Sense: a base found in DNA and RNA and derived from pyrimidine; pairs with guanine
+###SenseIdentifier: c NN 14633206 
+###Sense: an abundant nonmetallic tetravalent element occurring in three allotropic forms: amorphous carbon and graphite and diamond; occurs in all organic compounds
+###SenseIdentifier: c NN 13750415 
+###Sense: ten 10s
+###SenseIdentifier: c NN 13636648 
+###Sense: a unit of electrical charge equal to the amount of charge transferred by a current of 1 ampere in 1 second
+###SenseIdentifier: c NN 6902696 
+###Sense: a general-purpose programing language closely associated with the UNIX operating system
+###SenseIdentifier: c NN 6866332 
+###Sense: (music) the keynote of the scale of C major
+###SenseIdentifier: c NN 6831391 
+###Sense: the 3rd letter of the Roman alphabet
+###SenseIdentifier: c NN 3066743 
+###Sense: street names for cocaine
+--------------------------
+--------------------------
+###Lemma: d 
+###SenseIdentifier: d NN 15092227 
+###Sense: a fat-soluble vitamin that prevents rickets
+###SenseIdentifier: d NN 13750712 
+###Sense: the cardinal number that is the product of one hundred and five
+###SenseIdentifier: d NN 6831498 
+###Sense: the 4th letter of the Roman alphabet
+--------------------------
+--------------------------
+###Lemma: F. 
+###SenseIdentifier: F. NN 13714641 
+###Sense: a degree on the Fahrenheit scale of temperature
+###SenseIdentifier: F. NN 14637507 
+###Sense: a nonmetallic univalent element belonging to the halogens; usually a yellow irritating toxic flammable gas; a powerful oxidizing agent; recovered from fluorite or cryolite or fluorapatite
+###SenseIdentifier: F. NN 13636286 
+###Sense: the capacitance of a capacitor that has an equal and opposite charge of 1 coulomb on each plate and a voltage difference of 1 volt between the plates
+###SenseIdentifier: F. NN 6831712 
+###Sense: the 6th letter of the Roman alphabet
+--------------------------
+--------------------------
+###Lemma: The 
+--------------------------
+--------------------------
+###Lemma: letter 
+###SenseIdentifier: letter NN 6624161 
+###Sense: a written message addressed to a person or organization; "mailed an indignant letter to the editor"
+###SenseIdentifier: letter NN 6828818 
+###Sense: the conventional characters of the alphabet used to represent speech; "his grandmother taught him his letters"
+###SenseIdentifier: letter NN 10255207 
+###Sense: owner who lets another person use something (housing usually) for hire
+###SenseIdentifier: letter NN 7173389 
+###Sense: a strictly literal interpretation (as distinct from the intention); "he followed instructions to the letter"; "he obeyed the letter of the law"
+###SenseIdentifier: letter NN 6706504 
+###Sense: an award earned by participation in a school sport; "he won letters in three sports"
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: equivalent 
+###SenseIdentifier: equivalent NN 5695554 
+###Sense: a person or thing equal to another in value or measure or force or effect or significance etc; "send two dollars or the equivalent in stamps"
+###SenseIdentifier: equivalent NN 5026508 
+###Sense: the atomic weight of an element that has the same combining capacity as a given weight of another element; the standard is 8 for oxygen
+--------------------------
+--------------------------
+###Lemma: scale 
+###SenseIdentifier: scale NN 13850304 
+###Sense: an ordered reference standard; "judging on a scale of 1 to 10"
+###SenseIdentifier: scale NN 13815342 
+###Sense: relative magnitude; "they entertained on a grand scale"
+###SenseIdentifier: scale NN 13816862 
+###Sense: the ratio between the size of something and a representation of it; "the scale of the map"; "the scale of the model"
+###SenseIdentifier: scale NN 13155759 
+###Sense: a specialized leaf or bract that protects a bud or catkin
+###SenseIdentifier: scale NN 9425607 
+###Sense: a thin flake of dead epidermis shed from the surface of the skin
+###SenseIdentifier: scale NN 6856568 
+###Sense: (music) a series of notes differing in pitch according to a specific scheme (usually within an octave)
+###SenseIdentifier: scale NN 4141975 
+###Sense: a measuring instrument for weighing; shows amount of mass
+###SenseIdentifier: scale NN 4141838 
+###Sense: an indicator having a graduated sequence of marks
+###SenseIdentifier: scale NN 3959701 
+###Sense: a metal sheathing of uniform thickness (such as the shield attached to an artillery piece to protect the gunners)
+###SenseIdentifier: scale NN 1902877 
+###Sense: a flattened rigid plate forming part of the body covering of many animals
+--------------------------
+--------------------------
+###Lemma: Grade 
+###SenseIdentifier: Grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: Grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: Grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: Grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: Grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: Grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: Grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: Grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: Grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: Points 
+###SenseIdentifier: Points NN 5865998 
+###Sense: a geometric element that has position but no extension; "a point is defined by its coordinates"
+###SenseIdentifier: Points NN 8620061 
+###Sense: the precise location of something; a spatially limited location; "she walked to a point where she could survey the whole street"
+###SenseIdentifier: Points NN 6606808 
+###Sense: a brief version of the essential meaning of something; "get to the point"; "he missed the point of the joke"; "life has lost its point"
+###SenseIdentifier: Points NN 5817845 
+###Sense: an isolated fact that is considered separately from the whole; "several of the details are similar"; "a point of information"
+###SenseIdentifier: Points NN 13939892 
+###Sense: a specific identifiable position in a continuum or series or especially in a process; "a remarkable degree of frankness"; "at what stage are the social sciences?"
+###SenseIdentifier: Points NN 15180528 
+###Sense: an instant of time; "at that point I had to leave"
+###SenseIdentifier: Points NN 5984066 
+###Sense: the object of an activity; "what is the point of discussing it?"
+###SenseIdentifier: Points NN 13902482 
+###Sense: a V shape; "the cannibal's teeth were filed to sharp points"
+###SenseIdentifier: Points NN 13911872 
+###Sense: a very small circular shape; "a row of points"; "draw lines between the dots"
+###SenseIdentifier: Points NN 13610162 
+###Sense: the unit of counting in scoring a game or contest; "he scored 20 points in the first half"; "a touchdown counts 6 points"
+###SenseIdentifier: Points NN 9396465 
+###Sense: a promontory extending out into a large body of water; "they sailed south around the point"
+###SenseIdentifier: Points NN 6482401 
+###Sense: a distinct part that can be specified separately in a group of things that could be enumerated on a list; "he noticed an item in the New York Times"; "she had several items on her shopping list"; "the main point on the agenda was taken up first"
+###SenseIdentifier: Points NN 13794885 
+###Sense: a style in speech or writing that arrests attention and has a penetrating or convincing quality or effect
+###SenseIdentifier: Points NN 4731925 
+###Sense: an outstanding characteristic; "his acting was one of the high points of the movie"
+###SenseIdentifier: Points NN 3974215 
+###Sense: sharp end; "he stuck the point of the knife into a tree"; "he broke the point of his pencil"
+###SenseIdentifier: Points NN 13830305 
+###Sense: any of 32 horizontal directions indicated on the card of a compass; "he checked the point on his compass"
+###SenseIdentifier: Points NN 13712286 
+###Sense: a linear unit used to measure the size of type; approximately 1/72 inch
+###SenseIdentifier: Points NN 13400150 
+###Sense: one percent of the total principal of a loan; it is paid at the time the loan is made and is independent of the interest on the loan
+###SenseIdentifier: Points NN 6843520 
+###Sense: a punctuation mark (.) placed at the end of a declarative sentence to indicate a full stop or after abbreviations; "in England they call a period a stop"
+###SenseIdentifier: Points NN 6822034 
+###Sense: a V-shaped mark at one end of an arrow pointer; "the point of the arrow was due north"
+###SenseIdentifier: Points NN 6812289 
+###Sense: the dot at the left of a decimal fraction
+###SenseIdentifier: Points NN 5071556 
+###Sense: the property of a shape that tapers to a sharp tip
+###SenseIdentifier: Points NN 4732067 
+###Sense: a distinguishing or individuating characteristic; "he knows my bad points as well as my good points"
+###SenseIdentifier: Points NN 3974769 
+###Sense: the gun muzzle's direction; "he held me up at the point of a gun"
+###SenseIdentifier: Points NN 3974671 
+###Sense: a wall socket
+###SenseIdentifier: Points NN 3213826 
+###Sense: a contact in the distributor; as the rotor turns its projecting arm contacts them and current flows to the spark plugs
+--------------------------
+--------------------------
+###Lemma: a 
+###SenseIdentifier: a NN 13658027 
+###Sense: a metric unit of length equal to one ten billionth of a meter (or 0.0001 micron); used to specify wavelengths of electromagnetic radiation
+###SenseIdentifier: a NN 15089803 
+###Sense: any of several fat-soluble vitamins essential for normal vision; prevents night blindness or inflammation or dryness of the eyes
+###SenseIdentifier: a NN 14829565 
+###Sense: one of the four nucleotides used in building DNA; all four nucleotides have a common phosphate group and a sugar (ribose)
+###SenseIdentifier: a NN 14706889 
+###Sense: (biochemistry) purine base found in DNA and RNA; pairs with thymine in DNA and with uracil in RNA
+###SenseIdentifier: a NN 13637376 
+###Sense: the basic unit of electric current adopted under the Systeme International d'Unites; "a typical household circuit carries 15 to 50 amps"
+###SenseIdentifier: a NN 6831177 
+###Sense: the 1st letter of the Roman alphabet
+###SenseIdentifier: a NN 5400860 
+###Sense: the blood group whose red cells carry the A antigen
+--------------------------
+--------------------------
+###Lemma: b 
+###SenseIdentifier: b NN 1349948 
+###Sense: aerobic rod-shaped spore-producing bacterium; often occurring in chainlike formations; found primarily in soil
+###SenseIdentifier: b NN 15090742 
+###Sense: originally thought to be a single vitamin but now separated into several B vitamins
+###SenseIdentifier: b NN 14631871 
+###Sense: a trivalent metalloid element; occurs both in a hard black crystal and in the form of a yellow or brown powder
+###SenseIdentifier: b NN 13713521 
+###Sense: a logarithmic unit of sound intensity equal to 10 decibels
+###SenseIdentifier: b NN 13614256 
+###Sense: (physics) a unit of nuclear cross section; the effective circular area that one particle presents to another as a target for an encounter
+###SenseIdentifier: b NN 6831284 
+###Sense: the 2nd letter of the Roman alphabet
+###SenseIdentifier: b NN 5400978 
+###Sense: the blood group whose red cells carry the B antigen
+--------------------------
+--------------------------
+###Lemma: c 
+###SenseIdentifier: c NN 13714491 
+###Sense: a degree on the centigrade scale of temperature
+###SenseIdentifier: c NN 15284285 
+###Sense: the speed at which light travels in a vacuum; the constancy and universality of the speed of light is recognized by defining it to be exactly 299,792,458 meters per second
+###SenseIdentifier: c NN 15093298 
+###Sense: a vitamin found in fresh fruits (especially citrus fruits) and vegetables; prevents scurvy
+###SenseIdentifier: c NN 14829765 
+###Sense: one of the four nucleotides used in building DNA; all four nucleotides have a common phosphate group and a sugar (ribose)
+###SenseIdentifier: c NN 14828511 
+###Sense: a base found in DNA and RNA and derived from pyrimidine; pairs with guanine
+###SenseIdentifier: c NN 14633206 
+###Sense: an abundant nonmetallic tetravalent element occurring in three allotropic forms: amorphous carbon and graphite and diamond; occurs in all organic compounds
+###SenseIdentifier: c NN 13750415 
+###Sense: ten 10s
+###SenseIdentifier: c NN 13636648 
+###Sense: a unit of electrical charge equal to the amount of charge transferred by a current of 1 ampere in 1 second
+###SenseIdentifier: c NN 6902696 
+###Sense: a general-purpose programing language closely associated with the UNIX operating system
+###SenseIdentifier: c NN 6866332 
+###Sense: (music) the keynote of the scale of C major
+###SenseIdentifier: c NN 6831391 
+###Sense: the 3rd letter of the Roman alphabet
+###SenseIdentifier: c NN 3066743 
+###Sense: street names for cocaine
+--------------------------
+--------------------------
+###Lemma: d 
+###SenseIdentifier: d NN 15092227 
+###Sense: a fat-soluble vitamin that prevents rickets
+###SenseIdentifier: d NN 13750712 
+###Sense: the cardinal number that is the product of one hundred and five
+###SenseIdentifier: d NN 6831498 
+###Sense: the 4th letter of the Roman alphabet
+--------------------------
+--------------------------
+###Lemma: f 
+###SenseIdentifier: f NN 13714641 
+###Sense: a degree on the Fahrenheit scale of temperature
+###SenseIdentifier: f NN 14637507 
+###Sense: a nonmetallic univalent element belonging to the halogens; usually a yellow irritating toxic flammable gas; a powerful oxidizing agent; recovered from fluorite or cryolite or fluorapatite
+###SenseIdentifier: f NN 13636286 
+###Sense: the capacitance of a capacitor that has an equal and opposite charge of 1 coulomb on each plate and a voltage difference of 1 volt between the plates
+###SenseIdentifier: f NN 6831712 
+###Sense: the 6th letter of the Roman alphabet
+--------------------------
+--------------------------
+###Lemma: addition 
+###SenseIdentifier: addition NN 2679415 
+###Sense: a component that is added to something to improve it; "the addition of a bathroom was a major improvement"; "the addition of cinnamon improved the flavor"
+###SenseIdentifier: addition NN 363788 
+###Sense: the act of adding one thing to another; "the addition of flowers created a pleasing effect"; "the addition of a leap day every four years"
+###SenseIdentifier: addition NN 13754293 
+###Sense: a quantity that is added; "there was an addition to property taxes this year"; "they recorded the cattle's gain in weight over a period of weeks"
+###SenseIdentifier: addition NN 13253423 
+###Sense: something added to what you already have; "the librarian shelved the new accessions"; "he was a new addition to the staff"
+###SenseIdentifier: addition NN 8554872 
+###Sense: a suburban area laid out in streets and lots for a future residential area
+###SenseIdentifier: addition NN 872107 
+###Sense: the arithmetic operation of summing; calculating the sum of two or more numbers; "the summation of four and three gives seven"; "four plus three equals seven"
+--------------------------
+--------------------------
+###Lemma: letter 
+###SenseIdentifier: letter NN 6624161 
+###Sense: a written message addressed to a person or organization; "mailed an indignant letter to the editor"
+###SenseIdentifier: letter NN 6828818 
+###Sense: the conventional characters of the alphabet used to represent speech; "his grandmother taught him his letters"
+###SenseIdentifier: letter NN 10255207 
+###Sense: owner who lets another person use something (housing usually) for hire
+###SenseIdentifier: letter NN 7173389 
+###Sense: a strictly literal interpretation (as distinct from the intention); "he followed instructions to the letter"; "he obeyed the letter of the law"
+###SenseIdentifier: letter NN 6706504 
+###Sense: an award earned by participation in a school sport; "he won letters in three sports"
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: viz. 
+--------------------------
+--------------------------
+###Lemma: s 
+###SenseIdentifier: s NN 15235126 
+###Sense: 1/60 of a minute; the basic unit of time adopted under the Systeme International d'Unites
+###SenseIdentifier: s NN 14656219 
+###Sense: an abundant tasteless odorless multivalent nonmetallic element; best known in yellow crystals; occurs in many sulphide and sulphate minerals and even in native form (especially in volcanic regions)
+###SenseIdentifier: s NN 13833375 
+###Sense: the cardinal compass point that is at 180 degrees
+###SenseIdentifier: s NN 13637240 
+###Sense: a unit of conductance equal to the reciprocal of an ohm
+###SenseIdentifier: s NN 6833112 
+###Sense: the 19th letter of the Roman alphabet
+###SenseIdentifier: s NN 5012585 
+###Sense: (thermodynamics) a thermodynamic quantity representing the amount of energy in a system that is no longer available for doing mechanical work; "entropy increases as matter and energy in the universe degrade to an ultimate state of inert uniformity"
+--------------------------
+--------------------------
+###Lemma: x 
+###SenseIdentifier: x NN 13746512 
+###Sense: the cardinal number that is the sum of nine and one; the base of the decimal system
+###SenseIdentifier: x NN 6833663 
+###Sense: the 24th letter of the Roman alphabet
+###SenseIdentifier: x NN 2678738 
+###Sense: street names for methylenedioxymethamphetamine
+--------------------------
+--------------------------
+###Lemma: Grade 
+###SenseIdentifier: Grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: Grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: Grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: Grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: Grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: Grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: Grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: Grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: Grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: student 
+###SenseIdentifier: student NN 10665698 
+###Sense: a learner who is enrolled in an educational institution
+###SenseIdentifier: student NN 10557854 
+###Sense: a learned person (especially in the humanities); someone who by long study has gained mastery in one or more disciplines
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: course 
+###SenseIdentifier: course NN 884466 
+###Sense: education imparted in a series of lessons or meetings; "he took a course in basket weaving"; "flirting is not unknown in college classes"
+###SenseIdentifier: course NN 8377085 
+###Sense: a connected series of events or actions or developments; "the government took a firm course"; "historians can only point out those lines for which evidence is available"
+###SenseIdentifier: course NN 8681222 
+###Sense: general line of orientation; "the river takes a southern course"; "the northeastern trend of the coast"
+###SenseIdentifier: course NN 38262 
+###Sense: a mode of action; "if you persist in that course you will surely fail"; "once a nation is embarked on a course of action it becomes extremely difficult for any retraction to take place"
+###SenseIdentifier: course NN 9387222 
+###Sense: a line or route along which something travels or moves; "the hurricane demolished houses in its path"; "the track of an animal"; "the course of the river"
+###SenseIdentifier: course NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: course NN 7556970 
+###Sense: part of a meal served at one time; "she prepared a three course meal"
+###SenseIdentifier: course NN 3120029 
+###Sense: (construction) a layer of masonry; "a course of bricks"
+###SenseIdentifier: course NN 3119790 
+###Sense: facility consisting of a circumscribed area of land or water laid out for a sport; "the course had only nine holes"; "the course was less than a mile"
+--------------------------
+--------------------------
+###Lemma: he 
+###SenseIdentifier: he NN 14639921 
+###Sense: a very light colorless element that is one of the six inert gasses; the most difficult gas to liquefy; occurs in economically extractable amounts in certain natural gases (as those found in Texas and Kansas)
+###SenseIdentifier: he NN 6837146 
+###Sense: the 5th letter of the Hebrew alphabet
+--------------------------
+--------------------------
+###Lemma: she 
+--------------------------
+--------------------------
+###Lemma: reason 
+###SenseIdentifier: reason NN 9178999 
+###Sense: a rational motive for a belief or action; "the reason that war was declared"; "the grounds for their declaration"
+###SenseIdentifier: reason NN 6739990 
+###Sense: an explanation of the cause of some phenomenon; "the reason a steady state was never reached was that the back pressure built up too slowly"
+###SenseIdentifier: reason NN 5651680 
+###Sense: the capacity for rational thought or inference or discrimination; "we are told that man is endowed with reason and capable of distinguishing good from evil"
+###SenseIdentifier: reason NN 14379829 
+###Sense: the state of having good sense and sound judgment; "his rationality may have been impaired"; "he had to rely less on reason than on rousing their emotions"
+###SenseIdentifier: reason NN 6740402 
+###Sense: a justification for something existing or happening; "he had no cause to complain"; "they had good reason to rejoice"
+###SenseIdentifier: reason NN 5819149 
+###Sense: a fact that logically justifies some premise or conclusion; "there is reason to believe he is lying"
+--------------------------
+--------------------------
+###Lemma: part 
+###SenseIdentifier: part NN 13809207 
+###Sense: something determined in relation to something that includes it; "he wanted to feel a part of something bigger than himself"; "I read a portion of the manuscript"; "the smaller component is hard to reach"; "the animal constituent of plankton"
+###SenseIdentifier: part NN 3892891 
+###Sense: something less than the whole of a human artifact; "the rear part of the house"; "glue the two parts together"
+###SenseIdentifier: part NN 9385911 
+###Sense: a portion of a natural object; "they analyzed the river into three parts"; "he needed a piece of granite"
+###SenseIdentifier: part NN 5671974 
+###Sense: that which concerns a person with regard to a particular role or situation; "it requires vigilance on our part"; "they resisted every effort on his part"
+###SenseIdentifier: part NN 8630039 
+###Sense: the extended spatial location of something; "the farming regions of France"; "religions in all parts of the world"; "regions of outer space"
+###SenseIdentifier: part NN 720565 
+###Sense: the actions and activities assigned to or required or expected of a person or group; "the function of a teacher"; "the government must do its part"; "play its role"
+###SenseIdentifier: part NN 5929008 
+###Sense: an actor's portrayal of someone in a play; "she played the part of Desdemona"
+###SenseIdentifier: part NN 13285176 
+###Sense: assets belonging to or due to or contributed by an individual person or group; "he wanted his share in cash"
+###SenseIdentifier: part NN 5867413 
+###Sense: one of the portions into which something is regarded as divided and which together constitute a whole; "the written part of the exam"; "the finance section of the company"; "the BBC's engineering division"
+###SenseIdentifier: part NN 5256358 
+###Sense: a line of scalp that can be seen when sections of hair are combed in opposite directions; "his part was right in the middle"
+###SenseIdentifier: part NN 7030718 
+###Sense: the melody carried by a particular voice or instrument in polyphonic music; "he tried to sing the tenor part"
+###SenseIdentifier: part NN 787465 
+###Sense: the part played by a person in bringing about a result; "I am proud of my contribution in advancing the project"; "they all did their share of the work"
+--------------------------
+--------------------------
+###Lemma: course 
+###SenseIdentifier: course NN 884466 
+###Sense: education imparted in a series of lessons or meetings; "he took a course in basket weaving"; "flirting is not unknown in college classes"
+###SenseIdentifier: course NN 8377085 
+###Sense: a connected series of events or actions or developments; "the government took a firm course"; "historians can only point out those lines for which evidence is available"
+###SenseIdentifier: course NN 8681222 
+###Sense: general line of orientation; "the river takes a southern course"; "the northeastern trend of the coast"
+###SenseIdentifier: course NN 38262 
+###Sense: a mode of action; "if you persist in that course you will surely fail"; "once a nation is embarked on a course of action it becomes extremely difficult for any retraction to take place"
+###SenseIdentifier: course NN 9387222 
+###Sense: a line or route along which something travels or moves; "the hurricane demolished houses in its path"; "the track of an animal"; "the course of the river"
+###SenseIdentifier: course NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: course NN 7556970 
+###Sense: part of a meal served at one time; "she prepared a three course meal"
+###SenseIdentifier: course NN 3120029 
+###Sense: (construction) a layer of masonry; "a course of bricks"
+###SenseIdentifier: course NN 3119790 
+###Sense: facility consisting of a circumscribed area of land or water laid out for a sport; "the course had only nine holes"; "the course was less than a mile"
+--------------------------
+--------------------------
+###Lemma: requirement 
+###SenseIdentifier: requirement NN 5892651 
+###Sense: required activity; "the requirements of his work affected his health"; "there were many demands on his time"
+###SenseIdentifier: requirement NN 9367203 
+###Sense: anything indispensable; "food and shelter are necessities of life"; "the essentials of the good life"; "allow farmers to buy their requirements under favorable conditions"; "a place where the requisites of water fuel and fodder can be obtained"
+###SenseIdentifier: requirement NN 5892427 
+###Sense: something that is required in advance; "Latin was a prerequisite for admission"
+--------------------------
+--------------------------
+###Lemma: part 
+###SenseIdentifier: part NN 13809207 
+###Sense: something determined in relation to something that includes it; "he wanted to feel a part of something bigger than himself"; "I read a portion of the manuscript"; "the smaller component is hard to reach"; "the animal constituent of plankton"
+###SenseIdentifier: part NN 3892891 
+###Sense: something less than the whole of a human artifact; "the rear part of the house"; "glue the two parts together"
+###SenseIdentifier: part NN 9385911 
+###Sense: a portion of a natural object; "they analyzed the river into three parts"; "he needed a piece of granite"
+###SenseIdentifier: part NN 5671974 
+###Sense: that which concerns a person with regard to a particular role or situation; "it requires vigilance on our part"; "they resisted every effort on his part"
+###SenseIdentifier: part NN 8630039 
+###Sense: the extended spatial location of something; "the farming regions of France"; "religions in all parts of the world"; "regions of outer space"
+###SenseIdentifier: part NN 720565 
+###Sense: the actions and activities assigned to or required or expected of a person or group; "the function of a teacher"; "the government must do its part"; "play its role"
+###SenseIdentifier: part NN 5929008 
+###Sense: an actor's portrayal of someone in a play; "she played the part of Desdemona"
+###SenseIdentifier: part NN 13285176 
+###Sense: assets belonging to or due to or contributed by an individual person or group; "he wanted his share in cash"
+###SenseIdentifier: part NN 5867413 
+###Sense: one of the portions into which something is regarded as divided and which together constitute a whole; "the written part of the exam"; "the finance section of the company"; "the BBC's engineering division"
+###SenseIdentifier: part NN 5256358 
+###Sense: a line of scalp that can be seen when sections of hair are combed in opposite directions; "his part was right in the middle"
+###SenseIdentifier: part NN 7030718 
+###Sense: the melody carried by a particular voice or instrument in polyphonic music; "he tried to sing the tenor part"
+###SenseIdentifier: part NN 787465 
+###Sense: the part played by a person in bringing about a result; "I am proud of my contribution in advancing the project"; "they all did their share of the work"
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: student 
+###SenseIdentifier: student NN 10665698 
+###Sense: a learner who is enrolled in an educational institution
+###SenseIdentifier: student NN 10557854 
+###Sense: a learned person (especially in the humanities); someone who by long study has gained mastery in one or more disciplines
+--------------------------
+--------------------------
+###Lemma: examination 
+###SenseIdentifier: examination NN 635850 
+###Sense: the act of examining something closely (as for mistakes)
+###SenseIdentifier: examination NN 7197021 
+###Sense: a set of questions or exercises evaluating skill or knowledge; "when the test was stolen the professor had to make a new set of questions"
+###SenseIdentifier: examination NN 7193958 
+###Sense: formal systematic questioning
+###SenseIdentifier: examination NN 5787005 
+###Sense: a detailed inspection of your conscience (as done daily by Jesuits)
+###SenseIdentifier: examination NN 636461 
+###Sense: the act of giving students or candidates a test (as by questions) to determine what they know or have learned
+--------------------------
+--------------------------
+###Lemma: s 
+###SenseIdentifier: s NN 15235126 
+###Sense: 1/60 of a minute; the basic unit of time adopted under the Systeme International d'Unites
+###SenseIdentifier: s NN 14656219 
+###Sense: an abundant tasteless odorless multivalent nonmetallic element; best known in yellow crystals; occurs in many sulphide and sulphate minerals and even in native form (especially in volcanic regions)
+###SenseIdentifier: s NN 13833375 
+###Sense: the cardinal compass point that is at 180 degrees
+###SenseIdentifier: s NN 13637240 
+###Sense: a unit of conductance equal to the reciprocal of an ohm
+###SenseIdentifier: s NN 6833112 
+###Sense: the 19th letter of the Roman alphabet
+###SenseIdentifier: s NN 5012585 
+###Sense: (thermodynamics) a thermodynamic quantity representing the amount of energy in a system that is no longer available for doing mechanical work; "entropy increases as matter and energy in the universe degrade to an ultimate state of inert uniformity"
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: Instructor-in-Charge 
+###SenseIdentifier: Instructor-in-Charge NN 10694258 
+###Sense: a person whose occupation is teaching
+--------------------------
+--------------------------
+###Lemma: letter 
+###SenseIdentifier: letter NN 6624161 
+###Sense: a written message addressed to a person or organization; "mailed an indignant letter to the editor"
+###SenseIdentifier: letter NN 6828818 
+###Sense: the conventional characters of the alphabet used to represent speech; "his grandmother taught him his letters"
+###SenseIdentifier: letter NN 10255207 
+###Sense: owner who lets another person use something (housing usually) for hire
+###SenseIdentifier: letter NN 7173389 
+###Sense: a strictly literal interpretation (as distinct from the intention); "he followed instructions to the letter"; "he obeyed the letter of the law"
+###SenseIdentifier: letter NN 6706504 
+###Sense: an award earned by participation in a school sport; "he won letters in three sports"
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: office 
+###SenseIdentifier: office NN 3841666 
+###Sense: place of business where professional or clerical duties are performed; "he rented an office in the new building"
+###SenseIdentifier: office NN 8337324 
+###Sense: an administrative unit of government; "the Central Intelligence Agency"; "the Census Bureau"; "Office of Management and Budget"; "Tennessee Valley Authority"
+###SenseIdentifier: office NN 720565 
+###Sense: the actions and activities assigned to or required or expected of a person or group; "the function of a teacher"; "the government must do its part"; "play its role"
+###SenseIdentifier: office NN 13945102 
+###Sense: (of a government or government official) holding an office means being in power; "being in office already gives a candidate a great advantage"; "during his first year in office"; "during his first year in power"; "the power of the president"
+###SenseIdentifier: office NN 8352303 
+###Sense: professional or clerical workers in an office; "the whole office was late the morning of the blizzard"
+###SenseIdentifier: office NN 1033458 
+###Sense: a religious rite or service prescribed by ecclesiastical authorities; "the offices of the mass"
+###SenseIdentifier: office NN 586262 
+###Sense: a job in an organization; "he occupied a post in the treasury"
+--------------------------
+--------------------------
+###Lemma: date 
+###SenseIdentifier: date NN 15159583 
+###Sense: the specified day of the month; "what is the date today?"
+###SenseIdentifier: date NN 9992538 
+###Sense: a participant in a date; "his date never stopped talking"
+###SenseIdentifier: date NN 8385009 
+###Sense: a meeting arranged in advance; "she asked how to avoid kissing at the end of a date"
+###SenseIdentifier: date NN 15179888 
+###Sense: a particular but unspecified point in time; "they hoped to get together at an early date"
+###SenseIdentifier: date NN 15120223 
+###Sense: the present; "they are up to date"; "we haven't heard from them to date"
+###SenseIdentifier: date NN 15160579 
+###Sense: the particular day, month, or year (usually according to the Gregorian calendar) that an event occurred; "he tried to memorizes all the dates for his history class"
+###SenseIdentifier: date NN 15159819 
+###Sense: a particular day specified as the time something happens; "the date of the election is set by law"
+###SenseIdentifier: date NN 7765073 
+###Sense: sweet edible fruit of the date palm with a single long woody seed
+--------------------------
+--------------------------
+###Lemma: calendar 
+###SenseIdentifier: calendar NN 15173479 
+###Sense: a system of timekeeping that defines the beginning and length and divisions of the year
+###SenseIdentifier: calendar NN 6487395 
+###Sense: a list or register of events (appointments or social events or court cases etc); "I have you on my calendar for next Monday"
+###SenseIdentifier: calendar NN 8266849 
+###Sense: a tabular array of the days (usually for one year)
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: date 
+###SenseIdentifier: date NN 15159583 
+###Sense: the specified day of the month; "what is the date today?"
+###SenseIdentifier: date NN 9992538 
+###Sense: a participant in a date; "his date never stopped talking"
+###SenseIdentifier: date NN 8385009 
+###Sense: a meeting arranged in advance; "she asked how to avoid kissing at the end of a date"
+###SenseIdentifier: date NN 15179888 
+###Sense: a particular but unspecified point in time; "they hoped to get together at an early date"
+###SenseIdentifier: date NN 15120223 
+###Sense: the present; "they are up to date"; "we haven't heard from them to date"
+###SenseIdentifier: date NN 15160579 
+###Sense: the particular day, month, or year (usually according to the Gregorian calendar) that an event occurred; "he tried to memorizes all the dates for his history class"
+###SenseIdentifier: date NN 15159819 
+###Sense: a particular day specified as the time something happens; "the date of the election is set by law"
+###SenseIdentifier: date NN 7765073 
+###Sense: sweet edible fruit of the date palm with a single long woody seed
+--------------------------
+--------------------------
+###Lemma: f 
+###SenseIdentifier: f NN 13714641 
+###Sense: a degree on the Fahrenheit scale of temperature
+###SenseIdentifier: f NN 14637507 
+###Sense: a nonmetallic univalent element belonging to the halogens; usually a yellow irritating toxic flammable gas; a powerful oxidizing agent; recovered from fluorite or cryolite or fluorapatite
+###SenseIdentifier: f NN 13636286 
+###Sense: the capacitance of a capacitor that has an equal and opposite charge of 1 coulomb on each plate and a voltage difference of 1 volt between the plates
+###SenseIdentifier: f NN 6831712 
+###Sense: the 6th letter of the Roman alphabet
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: Project 
+###SenseIdentifier: Project NN 795720 
+###Sense: any piece of work that is undertaken or attempted; "he prepared for great undertakings"
+###SenseIdentifier: Project NN 5910453 
+###Sense: a planned undertaking
+--------------------------
+--------------------------
+###Lemma: Grades 
+###SenseIdentifier: Grades NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: Grades NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: Grades NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: Grades NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: Grades NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: Grades NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: Grades NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: Grades NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: Grades NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: Project 
+###SenseIdentifier: Project NN 795720 
+###Sense: any piece of work that is undertaken or attempted; "he prepared for great undertakings"
+###SenseIdentifier: Project NN 5910453 
+###Sense: a planned undertaking
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: date 
+###SenseIdentifier: date NN 15159583 
+###Sense: the specified day of the month; "what is the date today?"
+###SenseIdentifier: date NN 9992538 
+###Sense: a participant in a date; "his date never stopped talking"
+###SenseIdentifier: date NN 8385009 
+###Sense: a meeting arranged in advance; "she asked how to avoid kissing at the end of a date"
+###SenseIdentifier: date NN 15179888 
+###Sense: a particular but unspecified point in time; "they hoped to get together at an early date"
+###SenseIdentifier: date NN 15120223 
+###Sense: the present; "they are up to date"; "we haven't heard from them to date"
+###SenseIdentifier: date NN 15160579 
+###Sense: the particular day, month, or year (usually according to the Gregorian calendar) that an event occurred; "he tried to memorizes all the dates for his history class"
+###SenseIdentifier: date NN 15159819 
+###Sense: a particular day specified as the time something happens; "the date of the election is set by law"
+###SenseIdentifier: date NN 7765073 
+###Sense: sweet edible fruit of the date palm with a single long woody seed
+--------------------------
+--------------------------
+###Lemma: submission 
+###SenseIdentifier: submission NN 7167578 
+###Sense: something (manuscripts or architectural plans and models or estimates or works of art of all genres etc.) submitted for the judgment of others (as in a competition); "several of his submissions were rejected by publishers"; "what was the date of submission of your proposal?"
+###SenseIdentifier: submission NN 1166926 
+###Sense: the act of submitting; usually surrendering power to another
+###SenseIdentifier: submission NN 14580090 
+###Sense: the condition of having submitted to control by someone or something else; "the union was brought into submission"; "his submission to the will of God"
+###SenseIdentifier: submission NN 7509325 
+###Sense: the feeling of patient, submissive humbleness
+###SenseIdentifier: submission NN 6772094 
+###Sense: a legal document summarizing an agreement between parties in a dispute to abide by the decision of an arbiter
+###SenseIdentifier: submission NN 6771957 
+###Sense: an agreement between parties in a dispute to abide by the decision of an arbiter
+###SenseIdentifier: submission NN 6731510 
+###Sense: (law) a contention presented by a lawyer to a judge or jury as part of the case he is arguing
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: non-completion 
+###SenseIdentifier: non-completion NN 557419 
+###Sense: (American football) a successful forward pass in football
+###SenseIdentifier: non-completion NN 211110 
+###Sense: a concluding action
+--------------------------
+--------------------------
+###Lemma: project 
+###SenseIdentifier: project NN 795720 
+###Sense: any piece of work that is undertaken or attempted; "he prepared for great undertakings"
+###SenseIdentifier: project NN 5910453 
+###Sense: a planned undertaking
+--------------------------
+--------------------------
+###Lemma: lack 
+###SenseIdentifier: lack NN 14449405 
+###Sense: the state of needing something that is absent or unavailable; "there is a serious lack of insight into the problem"; "water is the critical deficiency in desert regions"; "for want of a nail the shoe was lost"
+--------------------------
+--------------------------
+###Lemma: facility 
+###SenseIdentifier: facility NN 3315023 
+###Sense: a building or place that provides a particular service or is used for a particular industry; "the assembly plant is an enormous facility"
+###SenseIdentifier: facility NN 5642175 
+###Sense: skillful performance or ability without difficulty; "his quick adeptness was a product of good design"; "he was famous for his facility as an archer"
+###SenseIdentifier: facility NN 4708796 
+###Sense: a natural effortlessness; "they conversed with great facility"; "a happy readiness of conversation"--Jane Austen
+###SenseIdentifier: facility NN 585406 
+###Sense: something designed and created to serve a particular function and to afford a particular convenience or service; "catering facilities"; "toilet facilities"; "educational facilities"
+###SenseIdentifier: facility NN 578549 
+###Sense: a service that an organization or a piece of equipment offers you; "a cell phone with internet facility"
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: grounds 
+###SenseIdentifier: grounds NN 5823932 
+###Sense: your basis for belief or disbelief; knowledge on which to base belief; "the evidence that smoking causes lung cancer is very compelling"
+###SenseIdentifier: grounds NN 4610879 
+###Sense: the enclosed land around a house or other building; "it was a small house with almost no yard"
+###SenseIdentifier: grounds NN 8570402 
+###Sense: a tract of land cleared for some special purposes (recreation or burial etc.)
+###SenseIdentifier: grounds NN 6740402 
+###Sense: a justification for something existing or happening; "he had no cause to complain"; "they had good reason to rejoice"
+###SenseIdentifier: grounds NN 9294984 
+###Sense: dregs consisting of solid particles (especially of coffee) that form a residue; "it is a Middle Eastern custom to read your future in your coffee grounds"
+--------------------------
+--------------------------
+###Lemma: Change 
+###SenseIdentifier: Change NN 7296428 
+###Sense: an event that occurs when something passes from one state or phase to another; "the change was intended to increase sales"; "this storm is certainly a change for the worse"; "the neighborhood had undergone few modifications since his last visit years ago"
+###SenseIdentifier: Change NN 13859043 
+###Sense: a relational difference between states; especially between states before and after some event; "he attributed the change to their marriage"
+###SenseIdentifier: Change NN 191142 
+###Sense: the action of changing something; "the change of government had no impact on the economy"; "his change on abortion cost him the election"
+###SenseIdentifier: Change NN 11412727 
+###Sense: the result of alteration or modification; "there were marked changes in the lining of the lungs"; "there had been no change in the mountains"
+###SenseIdentifier: Change NN 13387689 
+###Sense: the balance of money received when the amount you tender is greater than the amount due; "I paid with a twenty and pocketed the change"
+###SenseIdentifier: Change NN 3005920 
+###Sense: a thing that is different; "he inspected several changes before selecting one"
+###SenseIdentifier: Change NN 3005769 
+###Sense: a different or fresh set of clothes; "she brought a change in her overnight bag"
+###SenseIdentifier: Change NN 13388111 
+###Sense: coins of small denomination regarded collectively; "he had a pocketful of change"
+###SenseIdentifier: Change NN 13387479 
+###Sense: money received in return for its equivalent in a larger denomination or a different currency; "he got change for a twenty and used it to pay the taxi driver"
+###SenseIdentifier: Change NN 4752034 
+###Sense: a difference that is usually pleasant; "he goes to France for variety"; "it is a refreshing change to meet a woman mechanic"
+--------------------------
+--------------------------
+###Lemma: Grade 
+###SenseIdentifier: Grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: Grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: Grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: Grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: Grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: Grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: Grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: Grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: Grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: letter 
+###SenseIdentifier: letter NN 6624161 
+###Sense: a written message addressed to a person or organization; "mailed an indignant letter to the editor"
+###SenseIdentifier: letter NN 6828818 
+###Sense: the conventional characters of the alphabet used to represent speech; "his grandmother taught him his letters"
+###SenseIdentifier: letter NN 10255207 
+###Sense: owner who lets another person use something (housing usually) for hire
+###SenseIdentifier: letter NN 7173389 
+###Sense: a strictly literal interpretation (as distinct from the intention); "he followed instructions to the letter"; "he obeyed the letter of the law"
+###SenseIdentifier: letter NN 6706504 
+###Sense: an award earned by participation in a school sport; "he won letters in three sports"
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: request 
+###SenseIdentifier: request NN 6513366 
+###Sense: a formal message requesting something that is submitted to an authority
+###SenseIdentifier: request NN 7185325 
+###Sense: the verbal act of requesting
+--------------------------
+--------------------------
+###Lemma: instructor-in 
+###SenseIdentifier: instructor-in NN 10694258 
+###Sense: a person whose occupation is teaching
+--------------------------
+--------------------------
+###Lemma: charge 
+###SenseIdentifier: charge NN 974762 
+###Sense: an impetuous rush toward someone or something; "the wrestler's charge carried him past his adversary"; "the battle began with a cavalry charge"
+###SenseIdentifier: charge NN 6561942 
+###Sense: (criminal law) a pleading describing some wrong or offense; "he was arrested on a charge of larceny"
+###SenseIdentifier: charge NN 13306870 
+###Sense: the price charged for some article or service; "the admission charge"
+###SenseIdentifier: charge NN 11435028 
+###Sense: the quantity of unbalanced electricity in a body (either positive or negative) and construed as an excess or deficiency of electrons; "the battery needed a fresh charge"
+###SenseIdentifier: charge NN 829378 
+###Sense: attention and management implying responsibility for safety; "he is in the care of a bodyguard"
+###SenseIdentifier: charge NN 731222 
+###Sense: a special assignment that is given to a person or group; "a confidential mission to London"; "his charge was deliver a message"
+###SenseIdentifier: charge NN 9909760 
+###Sense: a person committed to your care; "the teacher led her charges across the street"
+###SenseIdentifier: charge NN 13400798 
+###Sense: financial liabilities (such as a tax); "the charges against the estate"
+###SenseIdentifier: charge NN 9185612 
+###Sense: (psychoanalysis) the libidinal energy invested in some idea or person or object; "Freud thought of cathexis as a psychic analog of an electrical charge"
+###SenseIdentifier: charge NN 7528470 
+###Sense: the swift release of a store of affective force; "they got a great bang out of it"; "what a boot!"; "he got a quick rush from injecting heroin"; "he does it for kicks"
+###SenseIdentifier: charge NN 7190941 
+###Sense: request for payment of a debt; "they submitted their charges at the end of each month"
+###SenseIdentifier: charge NN 7169480 
+###Sense: a formal statement of a command or injunction to do something; "the judge's charge to the jury"
+###SenseIdentifier: charge NN 6730780 
+###Sense: an assertion that someone is guilty of a fault or offence; "the newspaper published charges that Jones was guilty of drunken driving"
+###SenseIdentifier: charge NN 3008565 
+###Sense: heraldry consisting of a design or image depicted on a shield
+###SenseIdentifier: charge NN 3008275 
+###Sense: a quantity of explosive to be set off at one time; "this cartridge has a powder charge of 50 grains"
+--------------------------
+--------------------------
+###Lemma: instructor 
+###SenseIdentifier: instructor NN 10694258 
+###Sense: a person whose occupation is teaching
+--------------------------
+--------------------------
+###Lemma: tutor 
+###SenseIdentifier: tutor NN 9931418 
+###Sense: a person who gives private instruction (as in singing, acting, etc.)
+--------------------------
+--------------------------
+###Lemma: course 
+###SenseIdentifier: course NN 884466 
+###Sense: education imparted in a series of lessons or meetings; "he took a course in basket weaving"; "flirting is not unknown in college classes"
+###SenseIdentifier: course NN 8377085 
+###Sense: a connected series of events or actions or developments; "the government took a firm course"; "historians can only point out those lines for which evidence is available"
+###SenseIdentifier: course NN 8681222 
+###Sense: general line of orientation; "the river takes a southern course"; "the northeastern trend of the coast"
+###SenseIdentifier: course NN 38262 
+###Sense: a mode of action; "if you persist in that course you will surely fail"; "once a nation is embarked on a course of action it becomes extremely difficult for any retraction to take place"
+###SenseIdentifier: course NN 9387222 
+###Sense: a line or route along which something travels or moves; "the hurricane demolished houses in its path"; "the track of an animal"; "the course of the river"
+###SenseIdentifier: course NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: course NN 7556970 
+###Sense: part of a meal served at one time; "she prepared a three course meal"
+###SenseIdentifier: course NN 3120029 
+###Sense: (construction) a layer of masonry; "a course of bricks"
+###SenseIdentifier: course NN 3119790 
+###Sense: facility consisting of a circumscribed area of land or water laid out for a sport; "the course had only nine holes"; "the course was less than a mile"
+--------------------------
+--------------------------
+###Lemma: Chairman 
+###SenseIdentifier: Chairman NN 10468962 
+###Sense: the officer who presides at the meetings of an organization; "address your remarks to the chairperson"
+--------------------------
+--------------------------
+###Lemma: Senate 
+###SenseIdentifier: Senate NN 8161477 
+###Sense: assembly possessing high legislative powers
+###SenseIdentifier: Senate NN 8161591 
+###Sense: the upper house of the United States Congress
+--------------------------
+--------------------------
+###Lemma: request 
+###SenseIdentifier: request NN 6513366 
+###Sense: a formal message requesting something that is submitted to an authority
+###SenseIdentifier: request NN 7185325 
+###Sense: the verbal act of requesting
+--------------------------
+--------------------------
+###Lemma: change 
+###SenseIdentifier: change NN 7296428 
+###Sense: an event that occurs when something passes from one state or phase to another; "the change was intended to increase sales"; "this storm is certainly a change for the worse"; "the neighborhood had undergone few modifications since his last visit years ago"
+###SenseIdentifier: change NN 13859043 
+###Sense: a relational difference between states; especially between states before and after some event; "he attributed the change to their marriage"
+###SenseIdentifier: change NN 191142 
+###Sense: the action of changing something; "the change of government had no impact on the economy"; "his change on abortion cost him the election"
+###SenseIdentifier: change NN 11412727 
+###Sense: the result of alteration or modification; "there were marked changes in the lining of the lungs"; "there had been no change in the mountains"
+###SenseIdentifier: change NN 13387689 
+###Sense: the balance of money received when the amount you tender is greater than the amount due; "I paid with a twenty and pocketed the change"
+###SenseIdentifier: change NN 3005920 
+###Sense: a thing that is different; "he inspected several changes before selecting one"
+###SenseIdentifier: change NN 3005769 
+###Sense: a different or fresh set of clothes; "she brought a change in her overnight bag"
+###SenseIdentifier: change NN 13388111 
+###Sense: coins of small denomination regarded collectively; "he had a pocketful of change"
+###SenseIdentifier: change NN 13387479 
+###Sense: money received in return for its equivalent in a larger denomination or a different currency; "he got change for a twenty and used it to pay the taxi driver"
+###SenseIdentifier: change NN 4752034 
+###Sense: a difference that is usually pleasant; "he goes to France for variety"; "it is a refreshing change to meet a woman mechanic"
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: week 
+###SenseIdentifier: week NN 15169873 
+###Sense: any period of seven consecutive days; "it rained for a week"
+###SenseIdentifier: week NN 15135996 
+###Sense: hours or days of work in a calendar week; "they worked a 40-hour week"
+###SenseIdentifier: week NN 15136147 
+###Sense: a period of seven consecutive days starting on Sunday
+--------------------------
+--------------------------
+###Lemma: start 
+###SenseIdentifier: start NN 7325190 
+###Sense: the beginning of anything; "it was off to a good start"
+###SenseIdentifier: start NN 15265518 
+###Sense: the time at which something is supposed to begin; "they got an early start"; "she knew from the get-go that he was the man for her"
+###SenseIdentifier: start NN 241699 
+###Sense: a turn to be a starter (in a game at the beginning); "he got his start because one of the regular pitchers was in the hospital"; "his starting meant that the coach thought he was one of their best linemen"
+###SenseIdentifier: start NN 867357 
+###Sense: a sudden involuntary movement; "he awoke with a start"
+###SenseIdentifier: start NN 235435 
+###Sense: the act of starting something; "he was responsible for the beginning of negotiations"
+###SenseIdentifier: start NN 8653873 
+###Sense: a line indicating the location of the start of a race or a game
+###SenseIdentifier: start NN 6792188 
+###Sense: a signal to begin (as in a race); "the starting signal was a green light"; "the runners awaited the start"
+###SenseIdentifier: start NN 5157406 
+###Sense: the advantage gained by beginning early (as in a race); "with an hour's start he will be hard to catch"
+--------------------------
+--------------------------
+###Lemma: semester 
+###SenseIdentifier: semester NN 15225797 
+###Sense: one of two divisions of an academic year
+###SenseIdentifier: semester NN 15204485 
+###Sense: half a year; a period of 6 months
+--------------------------
+--------------------------
+###Lemma: form 
+###SenseIdentifier: form NN 6290637 
+###Sense: the phonological or orthographic sound or appearance of a word that can be used to describe or identify something; "the inflected forms of a word can be represented by a stem and a list of inflections to be attached"
+###SenseIdentifier: form NN 5839024 
+###Sense: a category of things distinguished by some common characteristic or quality; "sculpture is a form of art"; "what kinds of desserts are there?"
+###SenseIdentifier: form NN 5930736 
+###Sense: a perceptual structure; "the composition presents problems for students of musical form"; "a visual pattern must include not only objects but the spaces between them"
+###SenseIdentifier: form NN 5064037 
+###Sense: any spatial attributes (especially as defined by outline); "he could barely make out their shapes"
+###SenseIdentifier: form NN 5217168 
+###Sense: alternative names for the body of a human being; "Leonardo studied the human body"; "he has a strong physique"; "the spirit is willing but the flesh is weak"
+###SenseIdentifier: form NN 27807 
+###Sense: the spatial arrangement of something as distinct from its substance; "geometry is the mathematical science of shape"
+###SenseIdentifier: form NN 4677514 
+###Sense: the visual appearance of something or someone; "the delicate cast of his features"
+###SenseIdentifier: form NN 6473563 
+###Sense: a printed document with spaces in which to write; "he filled out his tax form"
+###SenseIdentifier: form NN 8111157 
+###Sense: (biology) a group of organisms within a species that differ in trivial ways from similar groups; "a new strain of microorganisms"
+###SenseIdentifier: form NN 7092356 
+###Sense: an arrangement of the elements in a composition or discourse; "the essay was in the form of a dialogue"; "he first sketches the plot in outline form"
+###SenseIdentifier: form NN 4930478 
+###Sense: a particular mode in which something is manifested; "his resentment took the form of extreme hostility"
+###SenseIdentifier: form NN 14480065 
+###Sense: (physical chemistry) a distinct state of matter in a system; matter that is identical in chemical composition and physical state and separated from other material by the phase boundary; "the reaction occurs in the liquid phase of the system"
+###SenseIdentifier: form NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: form NN 5200670 
+###Sense: an ability to perform well; "he was at the top of his form"; "the team was off form last night"
+###SenseIdentifier: form NN 3717921 
+###Sense: a life-size dummy used to display clothes
+###SenseIdentifier: form NN 3384535 
+###Sense: a mold for setting concrete; "they built elaborate forms for pouring the foundation"
+--------------------------
+--------------------------
+###Lemma: appendix 
+###SenseIdentifier: appendix NN 6399337 
+###Sense: supplementary material that is collected and appended at the back of a book
+###SenseIdentifier: appendix NN 5537576 
+###Sense: a vestigial process that extends from the lower end of the cecum and that resembles a small pouch
+--------------------------
+--------------------------
+###Lemma: record 
+###SenseIdentifier: record NN 6647206 
+###Sense: anything (such as a document or a phonograph record or a photograph) providing permanent evidence of or information about past events; "the film provided a valuable record of stage techniques"
+###SenseIdentifier: record NN 3924069 
+###Sense: sound recording consisting of a disk with a continuous groove; used to reproduce music by rotating while a phonograph needle tracks in the groove
+###SenseIdentifier: record NN 13596986 
+###Sense: the number of wins versus losses and ties a team has had; "at 9-0 they have the best record in their league"
+###SenseIdentifier: record NN 47745 
+###Sense: the sum of recognized accomplishments; "the lawyer has a good record"; "the track record shows that he will be a good president"
+###SenseIdentifier: record NN 6636524 
+###Sense: a compilation of the known facts regarding something or someone; "Al Smith used to say, `Let's look at the record'"; "his name is in all the record books"
+###SenseIdentifier: record NN 63014 
+###Sense: an extreme attainment; the best (or worst) performance ever attested (as in a sport); "he tied the Olympic record"; "coffee production last year broke all previous records"; "Chicago set the homicide record"
+###SenseIdentifier: record NN 13403643 
+###Sense: a document that can serve as legal evidence of a transaction; "they could find no record of the purchase"
+###SenseIdentifier: record NN 6490173 
+###Sense: a list of crimes for which an accused person has been previously convicted; "he ruled that the criminal record of the defendant could not be disclosed to the court"; "the prostitute had a record a mile long"
+--------------------------
+--------------------------
+###Lemma: justification 
+###SenseIdentifier: justification NN 5823054 
+###Sense: something (such as a fact or circumstance) that shows an action to be reasonable or necessary; "he considered misrule a justification for revolution"
+###SenseIdentifier: justification NN 6740183 
+###Sense: a statement in explanation of some action or belief
+###SenseIdentifier: justification NN 1241767 
+###Sense: the act of defending or explaining or making excuses for by reasoning; "the justification of barbarous means by holy ends"- H.J.Muller
+--------------------------
+--------------------------
+###Lemma: semester 
+###SenseIdentifier: semester NN 15225797 
+###Sense: one of two divisions of an academic year
+###SenseIdentifier: semester NN 15204485 
+###Sense: half a year; a period of 6 months
+--------------------------
+--------------------------
+###Lemma: Performance 
+###SenseIdentifier: Performance NN 6891493 
+###Sense: a dramatic or musical entertainment; "they listened to ten different performances"; "the play ran for 100 performances"; "the frequent performances of the symphony testify to its popularity"
+###SenseIdentifier: Performance NN 550771 
+###Sense: the act of presenting a play or a piece of music or other entertainment; "we congratulated him on his performance at the rehearsal"; "an inspired performance of Mozart's C minor concerto"
+###SenseIdentifier: Performance NN 97504 
+###Sense: the act of performing; of doing something successfully; using knowledge as distinguished from merely possessing it; "they criticised his performance as mayor"; "experience generally improves performance"
+###SenseIdentifier: Performance NN 47106 
+###Sense: any recognized accomplishment; "they admired his performance under stress"; "when Roger Maris powered four home runs in one game his performance merits awe"
+###SenseIdentifier: Performance NN 13525549 
+###Sense: process or manner of functioning or operating; "the power of its engine determines its operation"; "the plane's operation in high winds"; "they compared the cooking performance of each oven"; "the jet's performance conformed to high standards"
+--------------------------
+--------------------------
+###Lemma: Index 
+###SenseIdentifier: Index NN 13851067 
+###Sense: a numerical scale used to compare variables with one another or with some reference number
+###SenseIdentifier: Index NN 6639674 
+###Sense: a number or ratio (a value on a scale of measurement) derived from a series of observed facts; can reveal relative changes as a function of time
+###SenseIdentifier: Index NN 6812417 
+###Sense: a mathematical notation indicating the number of times a quantity is multiplied by itself
+###SenseIdentifier: Index NN 6491786 
+###Sense: an alphabetical listing of names and topics along with page numbers where they are discussed
+###SenseIdentifier: Index NN 5567381 
+###Sense: the finger next to the thumb
+--------------------------
+--------------------------
+###Lemma: SPI 
+--------------------------
+--------------------------
+###Lemma: Semester 
+###SenseIdentifier: Semester NN 15225797 
+###Sense: one of two divisions of an academic year
+###SenseIdentifier: Semester NN 15204485 
+###Sense: half a year; a period of 6 months
+--------------------------
+--------------------------
+###Lemma: Performance 
+###SenseIdentifier: Performance NN 6891493 
+###Sense: a dramatic or musical entertainment; "they listened to ten different performances"; "the play ran for 100 performances"; "the frequent performances of the symphony testify to its popularity"
+###SenseIdentifier: Performance NN 550771 
+###Sense: the act of presenting a play or a piece of music or other entertainment; "we congratulated him on his performance at the rehearsal"; "an inspired performance of Mozart's C minor concerto"
+###SenseIdentifier: Performance NN 97504 
+###Sense: the act of performing; of doing something successfully; using knowledge as distinguished from merely possessing it; "they criticised his performance as mayor"; "experience generally improves performance"
+###SenseIdentifier: Performance NN 47106 
+###Sense: any recognized accomplishment; "they admired his performance under stress"; "when Roger Maris powered four home runs in one game his performance merits awe"
+###SenseIdentifier: Performance NN 13525549 
+###Sense: process or manner of functioning or operating; "the power of its engine determines its operation"; "the plane's operation in high winds"; "they compared the cooking performance of each oven"; "the jet's performance conformed to high standards"
+--------------------------
+--------------------------
+###Lemma: Index 
+###SenseIdentifier: Index NN 13851067 
+###Sense: a numerical scale used to compare variables with one another or with some reference number
+###SenseIdentifier: Index NN 6639674 
+###Sense: a number or ratio (a value on a scale of measurement) derived from a series of observed facts; can reveal relative changes as a function of time
+###SenseIdentifier: Index NN 6812417 
+###Sense: a mathematical notation indicating the number of times a quantity is multiplied by itself
+###SenseIdentifier: Index NN 6491786 
+###Sense: an alphabetical listing of names and topics along with page numbers where they are discussed
+###SenseIdentifier: Index NN 5567381 
+###Sense: the finger next to the thumb
+--------------------------
+--------------------------
+###Lemma: SPI 
+--------------------------
+--------------------------
+###Lemma: average 
+###SenseIdentifier: average NN 6021761 
+###Sense: a statistic describing the location of a distribution; "it set the norm for American homes"
+###SenseIdentifier: average NN 13820655 
+###Sense: (sports) the ratio of successful performances to opportunities
+###SenseIdentifier: average NN 5856979 
+###Sense: an intermediate scale value regarded as normal or usual; "he is about average in height"; "the snowfall this month is below average"
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: point 
+###SenseIdentifier: point NN 5865998 
+###Sense: a geometric element that has position but no extension; "a point is defined by its coordinates"
+###SenseIdentifier: point NN 8620061 
+###Sense: the precise location of something; a spatially limited location; "she walked to a point where she could survey the whole street"
+###SenseIdentifier: point NN 6606808 
+###Sense: a brief version of the essential meaning of something; "get to the point"; "he missed the point of the joke"; "life has lost its point"
+###SenseIdentifier: point NN 5817845 
+###Sense: an isolated fact that is considered separately from the whole; "several of the details are similar"; "a point of information"
+###SenseIdentifier: point NN 13939892 
+###Sense: a specific identifiable position in a continuum or series or especially in a process; "a remarkable degree of frankness"; "at what stage are the social sciences?"
+###SenseIdentifier: point NN 15180528 
+###Sense: an instant of time; "at that point I had to leave"
+###SenseIdentifier: point NN 5984066 
+###Sense: the object of an activity; "what is the point of discussing it?"
+###SenseIdentifier: point NN 13902482 
+###Sense: a V shape; "the cannibal's teeth were filed to sharp points"
+###SenseIdentifier: point NN 13911872 
+###Sense: a very small circular shape; "a row of points"; "draw lines between the dots"
+###SenseIdentifier: point NN 13610162 
+###Sense: the unit of counting in scoring a game or contest; "he scored 20 points in the first half"; "a touchdown counts 6 points"
+###SenseIdentifier: point NN 9396465 
+###Sense: a promontory extending out into a large body of water; "they sailed south around the point"
+###SenseIdentifier: point NN 6482401 
+###Sense: a distinct part that can be specified separately in a group of things that could be enumerated on a list; "he noticed an item in the New York Times"; "she had several items on her shopping list"; "the main point on the agenda was taken up first"
+###SenseIdentifier: point NN 13794885 
+###Sense: a style in speech or writing that arrests attention and has a penetrating or convincing quality or effect
+###SenseIdentifier: point NN 4731925 
+###Sense: an outstanding characteristic; "his acting was one of the high points of the movie"
+###SenseIdentifier: point NN 3974215 
+###Sense: sharp end; "he stuck the point of the knife into a tree"; "he broke the point of his pencil"
+###SenseIdentifier: point NN 13830305 
+###Sense: any of 32 horizontal directions indicated on the card of a compass; "he checked the point on his compass"
+###SenseIdentifier: point NN 13712286 
+###Sense: a linear unit used to measure the size of type; approximately 1/72 inch
+###SenseIdentifier: point NN 13400150 
+###Sense: one percent of the total principal of a loan; it is paid at the time the loan is made and is independent of the interest on the loan
+###SenseIdentifier: point NN 6843520 
+###Sense: a punctuation mark (.) placed at the end of a declarative sentence to indicate a full stop or after abbreviations; "in England they call a period a stop"
+###SenseIdentifier: point NN 6822034 
+###Sense: a V-shaped mark at one end of an arrow pointer; "the point of the arrow was due north"
+###SenseIdentifier: point NN 6812289 
+###Sense: the dot at the left of a decimal fraction
+###SenseIdentifier: point NN 5071556 
+###Sense: the property of a shape that tapers to a sharp tip
+###SenseIdentifier: point NN 4732067 
+###Sense: a distinguishing or individuating characteristic; "he knows my bad points as well as my good points"
+###SenseIdentifier: point NN 3974769 
+###Sense: the gun muzzle's direction; "he held me up at the point of a gun"
+###SenseIdentifier: point NN 3974671 
+###Sense: a wall socket
+###SenseIdentifier: point NN 3213826 
+###Sense: a contact in the distributor; as the rotor turns its projecting arm contacts them and current flows to the spark plugs
+--------------------------
+--------------------------
+###Lemma: student 
+###SenseIdentifier: student NN 10665698 
+###Sense: a learner who is enrolled in an educational institution
+###SenseIdentifier: student NN 10557854 
+###Sense: a learned person (especially in the humanities); someone who by long study has gained mastery in one or more disciplines
+--------------------------
+--------------------------
+###Lemma: course 
+###SenseIdentifier: course NN 884466 
+###Sense: education imparted in a series of lessons or meetings; "he took a course in basket weaving"; "flirting is not unknown in college classes"
+###SenseIdentifier: course NN 8377085 
+###Sense: a connected series of events or actions or developments; "the government took a firm course"; "historians can only point out those lines for which evidence is available"
+###SenseIdentifier: course NN 8681222 
+###Sense: general line of orientation; "the river takes a southern course"; "the northeastern trend of the coast"
+###SenseIdentifier: course NN 38262 
+###Sense: a mode of action; "if you persist in that course you will surely fail"; "once a nation is embarked on a course of action it becomes extremely difficult for any retraction to take place"
+###SenseIdentifier: course NN 9387222 
+###Sense: a line or route along which something travels or moves; "the hurricane demolished houses in its path"; "the track of an animal"; "the course of the river"
+###SenseIdentifier: course NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: course NN 7556970 
+###Sense: part of a meal served at one time; "she prepared a three course meal"
+###SenseIdentifier: course NN 3120029 
+###Sense: (construction) a layer of masonry; "a course of bricks"
+###SenseIdentifier: course NN 3119790 
+###Sense: facility consisting of a circumscribed area of land or water laid out for a sport; "the course had only nine holes"; "the course was less than a mile"
+--------------------------
+--------------------------
+###Lemma: performance 
+###SenseIdentifier: performance NN 6891493 
+###Sense: a dramatic or musical entertainment; "they listened to ten different performances"; "the play ran for 100 performances"; "the frequent performances of the symphony testify to its popularity"
+###SenseIdentifier: performance NN 550771 
+###Sense: the act of presenting a play or a piece of music or other entertainment; "we congratulated him on his performance at the rehearsal"; "an inspired performance of Mozart's C minor concerto"
+###SenseIdentifier: performance NN 97504 
+###Sense: the act of performing; of doing something successfully; using knowledge as distinguished from merely possessing it; "they criticised his performance as mayor"; "experience generally improves performance"
+###SenseIdentifier: performance NN 47106 
+###Sense: any recognized accomplishment; "they admired his performance under stress"; "when Roger Maris powered four home runs in one game his performance merits awe"
+###SenseIdentifier: performance NN 13525549 
+###Sense: process or manner of functioning or operating; "the power of its engine determines its operation"; "the plane's operation in high winds"; "they compared the cooking performance of each oven"; "the jet's performance conformed to high standards"
+--------------------------
+--------------------------
+###Lemma: semester 
+###SenseIdentifier: semester NN 15225797 
+###Sense: one of two divisions of an academic year
+###SenseIdentifier: semester NN 15204485 
+###Sense: half a year; a period of 6 months
+--------------------------
+--------------------------
+###Lemma: s 
+###SenseIdentifier: s NN 15235126 
+###Sense: 1/60 of a minute; the basic unit of time adopted under the Systeme International d'Unites
+###SenseIdentifier: s NN 14656219 
+###Sense: an abundant tasteless odorless multivalent nonmetallic element; best known in yellow crystals; occurs in many sulphide and sulphate minerals and even in native form (especially in volcanic regions)
+###SenseIdentifier: s NN 13833375 
+###Sense: the cardinal compass point that is at 180 degrees
+###SenseIdentifier: s NN 13637240 
+###Sense: a unit of conductance equal to the reciprocal of an ohm
+###SenseIdentifier: s NN 6833112 
+###Sense: the 19th letter of the Roman alphabet
+###SenseIdentifier: s NN 5012585 
+###Sense: (thermodynamics) a thermodynamic quantity representing the amount of energy in a system that is no longer available for doing mechanical work; "entropy increases as matter and energy in the universe degrade to an ultimate state of inert uniformity"
+--------------------------
+--------------------------
+###Lemma: x 
+###SenseIdentifier: x NN 13746512 
+###Sense: the cardinal number that is the sum of nine and one; the base of the decimal system
+###SenseIdentifier: x NN 6833663 
+###Sense: the 24th letter of the Roman alphabet
+###SenseIdentifier: x NN 2678738 
+###Sense: street names for methylenedioxymethamphetamine
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: computation 
+###SenseIdentifier: computation NN 868910 
+###Sense: the procedure of calculating; determining something by mathematical or logical methods
+###SenseIdentifier: computation NN 5802185 
+###Sense: problem solving that involves numbers or quantities
+--------------------------
+--------------------------
+###Lemma: SPI 
+--------------------------
+--------------------------
+###Lemma: Performance 
+###SenseIdentifier: Performance NN 6891493 
+###Sense: a dramatic or musical entertainment; "they listened to ten different performances"; "the play ran for 100 performances"; "the frequent performances of the symphony testify to its popularity"
+###SenseIdentifier: Performance NN 550771 
+###Sense: the act of presenting a play or a piece of music or other entertainment; "we congratulated him on his performance at the rehearsal"; "an inspired performance of Mozart's C minor concerto"
+###SenseIdentifier: Performance NN 97504 
+###Sense: the act of performing; of doing something successfully; using knowledge as distinguished from merely possessing it; "they criticised his performance as mayor"; "experience generally improves performance"
+###SenseIdentifier: Performance NN 47106 
+###Sense: any recognized accomplishment; "they admired his performance under stress"; "when Roger Maris powered four home runs in one game his performance merits awe"
+###SenseIdentifier: Performance NN 13525549 
+###Sense: process or manner of functioning or operating; "the power of its engine determines its operation"; "the plane's operation in high winds"; "they compared the cooking performance of each oven"; "the jet's performance conformed to high standards"
+--------------------------
+--------------------------
+###Lemma: Index 
+###SenseIdentifier: Index NN 13851067 
+###Sense: a numerical scale used to compare variables with one another or with some reference number
+###SenseIdentifier: Index NN 6639674 
+###Sense: a number or ratio (a value on a scale of measurement) derived from a series of observed facts; can reveal relative changes as a function of time
+###SenseIdentifier: Index NN 6812417 
+###Sense: a mathematical notation indicating the number of times a quantity is multiplied by itself
+###SenseIdentifier: Index NN 6491786 
+###Sense: an alphabetical listing of names and topics along with page numbers where they are discussed
+###SenseIdentifier: Index NN 5567381 
+###Sense: the finger next to the thumb
+--------------------------
+--------------------------
+###Lemma: CPI 
+###SenseIdentifier: CPI NN 6641654 
+###Sense: an index of the cost of all goods and services to a typical consumer
+###SenseIdentifier: CPI NN 6474972 
+###Sense: a self-report personality inventory originally derived from the MMPI; consists of several hundred yes-no questions and yields scores on a number of scales including dominance and self acceptance and self control and socialization and achievement etc.
+--------------------------
+--------------------------
+###Lemma: Performance 
+###SenseIdentifier: Performance NN 6891493 
+###Sense: a dramatic or musical entertainment; "they listened to ten different performances"; "the play ran for 100 performances"; "the frequent performances of the symphony testify to its popularity"
+###SenseIdentifier: Performance NN 550771 
+###Sense: the act of presenting a play or a piece of music or other entertainment; "we congratulated him on his performance at the rehearsal"; "an inspired performance of Mozart's C minor concerto"
+###SenseIdentifier: Performance NN 97504 
+###Sense: the act of performing; of doing something successfully; using knowledge as distinguished from merely possessing it; "they criticised his performance as mayor"; "experience generally improves performance"
+###SenseIdentifier: Performance NN 47106 
+###Sense: any recognized accomplishment; "they admired his performance under stress"; "when Roger Maris powered four home runs in one game his performance merits awe"
+###SenseIdentifier: Performance NN 13525549 
+###Sense: process or manner of functioning or operating; "the power of its engine determines its operation"; "the plane's operation in high winds"; "they compared the cooking performance of each oven"; "the jet's performance conformed to high standards"
+--------------------------
+--------------------------
+###Lemma: Index 
+###SenseIdentifier: Index NN 13851067 
+###Sense: a numerical scale used to compare variables with one another or with some reference number
+###SenseIdentifier: Index NN 6639674 
+###Sense: a number or ratio (a value on a scale of measurement) derived from a series of observed facts; can reveal relative changes as a function of time
+###SenseIdentifier: Index NN 6812417 
+###Sense: a mathematical notation indicating the number of times a quantity is multiplied by itself
+###SenseIdentifier: Index NN 6491786 
+###Sense: an alphabetical listing of names and topics along with page numbers where they are discussed
+###SenseIdentifier: Index NN 5567381 
+###Sense: the finger next to the thumb
+--------------------------
+--------------------------
+###Lemma: CPI 
+###SenseIdentifier: CPI NN 6641654 
+###Sense: an index of the cost of all goods and services to a typical consumer
+###SenseIdentifier: CPI NN 6474972 
+###Sense: a self-report personality inventory originally derived from the MMPI; consists of several hundred yes-no questions and yields scores on a number of scales including dominance and self acceptance and self control and socialization and achievement etc.
+--------------------------
+--------------------------
+###Lemma: performance 
+###SenseIdentifier: performance NN 6891493 
+###Sense: a dramatic or musical entertainment; "they listened to ten different performances"; "the play ran for 100 performances"; "the frequent performances of the symphony testify to its popularity"
+###SenseIdentifier: performance NN 550771 
+###Sense: the act of presenting a play or a piece of music or other entertainment; "we congratulated him on his performance at the rehearsal"; "an inspired performance of Mozart's C minor concerto"
+###SenseIdentifier: performance NN 97504 
+###Sense: the act of performing; of doing something successfully; using knowledge as distinguished from merely possessing it; "they criticised his performance as mayor"; "experience generally improves performance"
+###SenseIdentifier: performance NN 47106 
+###Sense: any recognized accomplishment; "they admired his performance under stress"; "when Roger Maris powered four home runs in one game his performance merits awe"
+###SenseIdentifier: performance NN 13525549 
+###Sense: process or manner of functioning or operating; "the power of its engine determines its operation"; "the plane's operation in high winds"; "they compared the cooking performance of each oven"; "the jet's performance conformed to high standards"
+--------------------------
+--------------------------
+###Lemma: student 
+###SenseIdentifier: student NN 10665698 
+###Sense: a learner who is enrolled in an educational institution
+###SenseIdentifier: student NN 10557854 
+###Sense: a learned person (especially in the humanities); someone who by long study has gained mastery in one or more disciplines
+--------------------------
+--------------------------
+###Lemma: course 
+###SenseIdentifier: course NN 884466 
+###Sense: education imparted in a series of lessons or meetings; "he took a course in basket weaving"; "flirting is not unknown in college classes"
+###SenseIdentifier: course NN 8377085 
+###Sense: a connected series of events or actions or developments; "the government took a firm course"; "historians can only point out those lines for which evidence is available"
+###SenseIdentifier: course NN 8681222 
+###Sense: general line of orientation; "the river takes a southern course"; "the northeastern trend of the coast"
+###SenseIdentifier: course NN 38262 
+###Sense: a mode of action; "if you persist in that course you will surely fail"; "once a nation is embarked on a course of action it becomes extremely difficult for any retraction to take place"
+###SenseIdentifier: course NN 9387222 
+###Sense: a line or route along which something travels or moves; "the hurricane demolished houses in its path"; "the track of an animal"; "the course of the river"
+###SenseIdentifier: course NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: course NN 7556970 
+###Sense: part of a meal served at one time; "she prepared a three course meal"
+###SenseIdentifier: course NN 3120029 
+###Sense: (construction) a layer of masonry; "a course of bricks"
+###SenseIdentifier: course NN 3119790 
+###Sense: facility consisting of a circumscribed area of land or water laid out for a sport; "the course had only nine holes"; "the course was less than a mile"
+--------------------------
+--------------------------
+###Lemma: term 
+###SenseIdentifier: term NN 6303888 
+###Sense: a word or expression used for some particular thing; "he learned many medical terms"
+###SenseIdentifier: term NN 15224486 
+###Sense: a limited period of time; "a prison term"; "he left school before the end of term"
+###SenseIdentifier: term NN 6770875 
+###Sense: (usually plural) a statement of what is required as part of an agreement; "the contract set out the conditions of the lease"; "the terms of the treaty were generous"
+###SenseIdentifier: term NN 5855904 
+###Sense: any distinct quantity contained in a polynomial; "the general term of an algebraic equation of the n-th degree"
+###SenseIdentifier: term NN 6751974 
+###Sense: one of the substantive phrases in a logical proposition; "the major term of a syllogism must occur twice"
+###SenseIdentifier: term NN 15226451 
+###Sense: the end of gestation or point at which birth is imminent; "a healthy baby born at full term"
+###SenseIdentifier: term NN 4413723 
+###Sense: (architecture) a statue or a human bust or an animal carved out of the top of a square pillar; originally used as a boundary marker in ancient Rome
+--------------------------
+--------------------------
+###Lemma: Whenever 
+--------------------------
+--------------------------
+###Lemma: student 
+###SenseIdentifier: student NN 10665698 
+###Sense: a learner who is enrolled in an educational institution
+###SenseIdentifier: student NN 10557854 
+###Sense: a learned person (especially in the humanities); someone who by long study has gained mastery in one or more disciplines
+--------------------------
+--------------------------
+###Lemma: repeat 
+###SenseIdentifier: repeat NN 7342049 
+###Sense: an event that repeats; "the events today were a repeat of yesterday's"
+--------------------------
+--------------------------
+###Lemma: course 
+###SenseIdentifier: course NN 884466 
+###Sense: education imparted in a series of lessons or meetings; "he took a course in basket weaving"; "flirting is not unknown in college classes"
+###SenseIdentifier: course NN 8377085 
+###Sense: a connected series of events or actions or developments; "the government took a firm course"; "historians can only point out those lines for which evidence is available"
+###SenseIdentifier: course NN 8681222 
+###Sense: general line of orientation; "the river takes a southern course"; "the northeastern trend of the coast"
+###SenseIdentifier: course NN 38262 
+###Sense: a mode of action; "if you persist in that course you will surely fail"; "once a nation is embarked on a course of action it becomes extremely difficult for any retraction to take place"
+###SenseIdentifier: course NN 9387222 
+###Sense: a line or route along which something travels or moves; "the hurricane demolished houses in its path"; "the track of an animal"; "the course of the river"
+###SenseIdentifier: course NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: course NN 7556970 
+###Sense: part of a meal served at one time; "she prepared a three course meal"
+###SenseIdentifier: course NN 3120029 
+###Sense: (construction) a layer of masonry; "a course of bricks"
+###SenseIdentifier: course NN 3119790 
+###Sense: facility consisting of a circumscribed area of land or water laid out for a sport; "the course had only nine holes"; "the course was less than a mile"
+--------------------------
+--------------------------
+###Lemma: letter 
+###SenseIdentifier: letter NN 6624161 
+###Sense: a written message addressed to a person or organization; "mailed an indignant letter to the editor"
+###SenseIdentifier: letter NN 6828818 
+###Sense: the conventional characters of the alphabet used to represent speech; "his grandmother taught him his letters"
+###SenseIdentifier: letter NN 10255207 
+###Sense: owner who lets another person use something (housing usually) for hire
+###SenseIdentifier: letter NN 7173389 
+###Sense: a strictly literal interpretation (as distinct from the intention); "he followed instructions to the letter"; "he obeyed the letter of the law"
+###SenseIdentifier: letter NN 6706504 
+###Sense: an award earned by participation in a school sport; "he won letters in three sports"
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: letter 
+###SenseIdentifier: letter NN 6624161 
+###Sense: a written message addressed to a person or organization; "mailed an indignant letter to the editor"
+###SenseIdentifier: letter NN 6828818 
+###Sense: the conventional characters of the alphabet used to represent speech; "his grandmother taught him his letters"
+###SenseIdentifier: letter NN 10255207 
+###Sense: owner who lets another person use something (housing usually) for hire
+###SenseIdentifier: letter NN 7173389 
+###Sense: a strictly literal interpretation (as distinct from the intention); "he followed instructions to the letter"; "he obeyed the letter of the law"
+###SenseIdentifier: letter NN 6706504 
+###Sense: an award earned by participation in a school sport; "he won letters in three sports"
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: computation 
+###SenseIdentifier: computation NN 868910 
+###Sense: the procedure of calculating; determining something by mathematical or logical methods
+###SenseIdentifier: computation NN 5802185 
+###Sense: problem solving that involves numbers or quantities
+--------------------------
+--------------------------
+###Lemma: CPI 
+###SenseIdentifier: CPI NN 6641654 
+###Sense: an index of the cost of all goods and services to a typical consumer
+###SenseIdentifier: CPI NN 6474972 
+###Sense: a self-report personality inventory originally derived from the MMPI; consists of several hundred yes-no questions and yields scores on a number of scales including dominance and self acceptance and self control and socialization and achievement etc.
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: his 
+--------------------------
+--------------------------
+###Lemma: her 
+--------------------------
+--------------------------
+###Lemma: Grade 
+###SenseIdentifier: Grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: Grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: Grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: Grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: Grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: Grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: Grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: Grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: Grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: Report 
+###SenseIdentifier: Report NN 7218470 
+###Sense: a written document describing the findings of some individual or group; "this accords with the recent study by Hill and Dale"
+###SenseIdentifier: Report NN 7217924 
+###Sense: the act of informing by verbal report; "he heard reports that they were causing trouble"; "by all accounts they were a happy couple"
+###SenseIdentifier: Report NN 6681551 
+###Sense: a short account of the news; "the report of his speech"; "the story was on the 11 o'clock news"; "the account of his speech that was given on the evening news made the governor furious"
+###SenseIdentifier: Report NN 7391516 
+###Sense: a sharp explosive sound (especially the sound of a gun firing); "they heard a violent report followed by silence"
+###SenseIdentifier: Report NN 7220300 
+###Sense: a written evaluation of a student's scholarship and deportment; "his father signed his report card"
+###SenseIdentifier: Report NN 6409752 
+###Sense: an essay (especially one written as an assignment); "he got an A on his composition"
+###SenseIdentifier: Report NN 6207199 
+###Sense: the general estimation that the public has for a person; "he acquired a reputation as an actor before he started writing"; "he was a person of bad report"
+--------------------------
+--------------------------
+###Lemma: Grade 
+###SenseIdentifier: Grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: Grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: Grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: Grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: Grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: Grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: Grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: Grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: Grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: Report 
+###SenseIdentifier: Report NN 7218470 
+###Sense: a written document describing the findings of some individual or group; "this accords with the recent study by Hill and Dale"
+###SenseIdentifier: Report NN 7217924 
+###Sense: the act of informing by verbal report; "he heard reports that they were causing trouble"; "by all accounts they were a happy couple"
+###SenseIdentifier: Report NN 6681551 
+###Sense: a short account of the news; "the report of his speech"; "the story was on the 11 o'clock news"; "the account of his speech that was given on the evening news made the governor furious"
+###SenseIdentifier: Report NN 7391516 
+###Sense: a sharp explosive sound (especially the sound of a gun firing); "they heard a violent report followed by silence"
+###SenseIdentifier: Report NN 7220300 
+###Sense: a written evaluation of a student's scholarship and deportment; "his father signed his report card"
+###SenseIdentifier: Report NN 6409752 
+###Sense: an essay (especially one written as an assignment); "he got an A on his composition"
+###SenseIdentifier: Report NN 6207199 
+###Sense: the general estimation that the public has for a person; "he acquired a reputation as an actor before he started writing"; "he was a person of bad report"
+--------------------------
+--------------------------
+###Lemma: a 
+###SenseIdentifier: a NN 13658027 
+###Sense: a metric unit of length equal to one ten billionth of a meter (or 0.0001 micron); used to specify wavelengths of electromagnetic radiation
+###SenseIdentifier: a NN 15089803 
+###Sense: any of several fat-soluble vitamins essential for normal vision; prevents night blindness or inflammation or dryness of the eyes
+###SenseIdentifier: a NN 14829565 
+###Sense: one of the four nucleotides used in building DNA; all four nucleotides have a common phosphate group and a sugar (ribose)
+###SenseIdentifier: a NN 14706889 
+###Sense: (biochemistry) purine base found in DNA and RNA; pairs with thymine in DNA and with uracil in RNA
+###SenseIdentifier: a NN 13637376 
+###Sense: the basic unit of electric current adopted under the Systeme International d'Unites; "a typical household circuit carries 15 to 50 amps"
+###SenseIdentifier: a NN 6831177 
+###Sense: the 1st letter of the Roman alphabet
+###SenseIdentifier: a NN 5400860 
+###Sense: the blood group whose red cells carry the A antigen
+--------------------------
+--------------------------
+###Lemma: copy 
+###SenseIdentifier: copy NN 6505517 
+###Sense: a reproduction of a written record (e.g. of a legal or school record)
+###SenseIdentifier: copy NN 3104594 
+###Sense: a thing made to be similar or identical to another thing; "she made a copy of the designer dress"; "the clone was a copy of its ancestor"
+###SenseIdentifier: copy NN 6390512 
+###Sense: matter to be printed; exclusive of graphical materials
+###SenseIdentifier: copy NN 6676109 
+###Sense: material suitable for a journalistic account; "catastrophes make good copy"
+--------------------------
+--------------------------
+###Lemma: Grade 
+###SenseIdentifier: Grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: Grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: Grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: Grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: Grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: Grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: Grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: Grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: Grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: Report 
+###SenseIdentifier: Report NN 7218470 
+###Sense: a written document describing the findings of some individual or group; "this accords with the recent study by Hill and Dale"
+###SenseIdentifier: Report NN 7217924 
+###Sense: the act of informing by verbal report; "he heard reports that they were causing trouble"; "by all accounts they were a happy couple"
+###SenseIdentifier: Report NN 6681551 
+###Sense: a short account of the news; "the report of his speech"; "the story was on the 11 o'clock news"; "the account of his speech that was given on the evening news made the governor furious"
+###SenseIdentifier: Report NN 7391516 
+###Sense: a sharp explosive sound (especially the sound of a gun firing); "they heard a violent report followed by silence"
+###SenseIdentifier: Report NN 7220300 
+###Sense: a written evaluation of a student's scholarship and deportment; "his father signed his report card"
+###SenseIdentifier: Report NN 6409752 
+###Sense: an essay (especially one written as an assignment); "he got an A on his composition"
+###SenseIdentifier: Report NN 6207199 
+###Sense: the general estimation that the public has for a person; "he acquired a reputation as an actor before he started writing"; "he was a person of bad report"
+--------------------------
+--------------------------
+###Lemma: student 
+###SenseIdentifier: student NN 10665698 
+###Sense: a learner who is enrolled in an educational institution
+###SenseIdentifier: student NN 10557854 
+###Sense: a learned person (especially in the humanities); someone who by long study has gained mastery in one or more disciplines
+--------------------------
+--------------------------
+###Lemma: end 
+###SenseIdentifier: end NN 8566028 
+###Sense: either extremity of something that has length; "the end of the pier"; "she knotted the end of the thread"; "they rode to the end of the line"; "the terminals of the anterior arches of the fornix"
+###SenseIdentifier: end NN 15266911 
+###Sense: the point in time at which something ends; "the end of the year"; "the ending of warranty period"
+###SenseIdentifier: end NN 7291794 
+###Sense: the concluding parts of an event or occurrence; "the end was exciting"; "I had to miss the last of the movie"
+###SenseIdentifier: end NN 5980875 
+###Sense: the state of affairs that a plan is intended to achieve and that (when achieved) terminates behavior intended to achieve it; "the ends justify the means"
+###SenseIdentifier: end NN 5868477 
+###Sense: a final part or section; "we have given it at the end of the section since it involves the calculus"; "Start at the beginning and go on until you come to the end"
+###SenseIdentifier: end NN 14562960 
+###Sense: a final state; "he came to a bad end"; "the so-called glorious experiment came to an inglorious end"
+###SenseIdentifier: end NN 8566707 
+###Sense: the surface at either extremity of a three-dimensional object; "one end of the box was marked `This side up'"
+###SenseIdentifier: end NN 10056398 
+###Sense: (football) the person who plays at one end of the line of scrimmage; "the end managed to hold onto the pass"
+###SenseIdentifier: end NN 8565894 
+###Sense: a boundary marking the extremities of something; "the end of town"
+###SenseIdentifier: end NN 8566884 
+###Sense: one of two places from which people are communicating to each other; "the phone rang at the other end"; "both ends wrote at the same time"
+###SenseIdentifier: end NN 787727 
+###Sense: the part you are expected to play; "he held up his end"
+###SenseIdentifier: end NN 6398401 
+###Sense: the last section of a communication; "in conclusion I want to say..."
+###SenseIdentifier: end NN 3286383 
+###Sense: a piece of cloth that is left over after the rest has been used or sold
+###SenseIdentifier: end NN 728065 
+###Sense: (American football) a position on the line of scrimmage; "no one wanted to play end"
+--------------------------
+--------------------------
+###Lemma: semester 
+###SenseIdentifier: semester NN 15225797 
+###Sense: one of two divisions of an academic year
+###SenseIdentifier: semester NN 15204485 
+###Sense: half a year; a period of 6 months
+--------------------------
+--------------------------
+###Lemma: copy 
+###SenseIdentifier: copy NN 6505517 
+###Sense: a reproduction of a written record (e.g. of a legal or school record)
+###SenseIdentifier: copy NN 3104594 
+###Sense: a thing made to be similar or identical to another thing; "she made a copy of the designer dress"; "the clone was a copy of its ancestor"
+###SenseIdentifier: copy NN 6390512 
+###Sense: matter to be printed; exclusive of graphical materials
+###SenseIdentifier: copy NN 6676109 
+###Sense: material suitable for a journalistic account; "catastrophes make good copy"
+--------------------------
+--------------------------
+###Lemma: payment 
+###SenseIdentifier: payment NN 13278375 
+###Sense: a sum of money paid or a claim discharged
+###SenseIdentifier: payment NN 1120448 
+###Sense: the act of paying money
+###SenseIdentifier: payment NN 1235137 
+###Sense: an act of requiting; returning in kind
+--------------------------
+--------------------------
+###Lemma: fee 
+###SenseIdentifier: fee NN 13320168 
+###Sense: a fixed charge for a privilege or for professional services
+###SenseIdentifier: fee NN 13288529 
+###Sense: an interest in land capable of being inherited
+--------------------------
+--------------------------
+###Lemma: withholding 
+###SenseIdentifier: withholding NN 361192 
+###Sense: the act of deducting from an employee's salary
+###SenseIdentifier: withholding NN 13311368 
+###Sense: income tax withheld from employees' wages and paid directly to the government by the employer
+###SenseIdentifier: withholding NN 810794 
+###Sense: the act of holding back or keeping within your possession or control; "I resented his withholding permission"; "there were allegations of the withholding of evidence"
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: grade 
+###SenseIdentifier: grade NN 8238463 
+###Sense: a body of students who are taught together; "early morning classes are always sleepy"
+###SenseIdentifier: grade NN 14428160 
+###Sense: a relative position or degree of value in a graded group; "lumber of the highest grade"
+###SenseIdentifier: grade NN 5068716 
+###Sense: the gradient of a slope or road or other surface; "the road had a steep grade"
+###SenseIdentifier: grade NN 13612319 
+###Sense: one-hundredth of a right angle
+###SenseIdentifier: grade NN 7112282 
+###Sense: a degree of ablaut
+###SenseIdentifier: grade NN 5737153 
+###Sense: a number or letter indicating quality (especially of a student's performance); "she made good marks in algebra"; "grade A milk"; "what was your score on your homework?"
+###SenseIdentifier: grade NN 5132045 
+###Sense: the height of the ground on which something stands; "the base of the tower was below grade"
+###SenseIdentifier: grade NN 5093890 
+###Sense: a position on a scale of intensity or amount or quality; "a moderate grade of intelligence"; "a high level of care is required"; "it is all a matter of degree"
+###SenseIdentifier: grade NN 2406952 
+###Sense: a variety of cattle produced by crossbreeding with a superior breed
+--------------------------
+--------------------------
+###Lemma: student 
+###SenseIdentifier: student NN 10665698 
+###Sense: a learner who is enrolled in an educational institution
+###SenseIdentifier: student NN 10557854 
+###Sense: a learned person (especially in the humanities); someone who by long study has gained mastery in one or more disciplines
+--------------------------
+--------------------------
+###Lemma: he 
+###SenseIdentifier: he NN 14639921 
+###Sense: a very light colorless element that is one of the six inert gasses; the most difficult gas to liquefy; occurs in economically extractable amounts in certain natural gases (as those found in Texas and Kansas)
+###SenseIdentifier: he NN 6837146 
+###Sense: the 5th letter of the Hebrew alphabet
+--------------------------
+--------------------------
+###Lemma: she 
+--------------------------
+--------------------------
+###Lemma: due 
+###SenseIdentifier: due NN 5176082 
+###Sense: that which is deserved or owed; "give the devil his due"
+###SenseIdentifier: due NN 13396861 
+###Sense: a payment that is due (e.g., as the price of membership); "the society dropped him for non-payment of dues"
+--------------------------
+--------------------------
+###Lemma: case 
+###SenseIdentifier: case NN 7308889 
+###Sense: an occurrence of something; "it was a case of bad judgment"; "another instance occurred yesterday"; "but there is always the famous example of the Smiths"
+###SenseIdentifier: case NN 13943400 
+###Sense: a special set of circumstances; "in that event, the first possibility is excluded"; "it may rain in which case the picnic will be canceled"
+###SenseIdentifier: case NN 1182654 
+###Sense: a comprehensive term for any proceeding in a court of law whereby an individual seeks a legal remedy; "the family brought suit against the landlord"
+###SenseIdentifier: case NN 5817743 
+###Sense: the actual state of things; "that was not the case"
+###SenseIdentifier: case NN 2974697 
+###Sense: a portable container for carrying several objects; "the musicians left their instrument cases backstage"
+###SenseIdentifier: case NN 9898892 
+###Sense: a person requiring professional services; "a typical case was the suburban housewife described by a marriage counselor"
+###SenseIdentifier: case NN 10668666 
+###Sense: a person who is subjected to experimental or other observational procedures; someone who is an object of investigation; "the subjects for this investigation were selected randomly"; "the cases that we studied were drawn from two different communities"
+###SenseIdentifier: case NN 6784966 
+###Sense: a problem requiring investigation; "Perry Mason solved the case of the missing heir"
+###SenseIdentifier: case NN 6649426 
+###Sense: a statement of facts and reasons used to support an argument; "he stated his case clearly"
+###SenseIdentifier: case NN 13766436 
+###Sense: the quantity contained in a case
+###SenseIdentifier: case NN 6310945 
+###Sense: nouns or pronouns or adjectives (often marked by inflection) related in some way to other words in a sentence
+###SenseIdentifier: case NN 14015996 
+###Sense: a specific state of mind that is temporary; "a case of the jitters"
+###SenseIdentifier: case NN 9909060 
+###Sense: a person of a specified kind (usually with many eccentricities); "a real character"; "a strange character"; "a friendly eccentric"; "the capable type"; "a mental case"
+###SenseIdentifier: case NN 6825399 
+###Sense: a specific size and style of type within a type family
+###SenseIdentifier: case NN 5238036 
+###Sense: an enveloping structure or covering enclosing an animal or plant organ or part
+###SenseIdentifier: case NN 4190747 
+###Sense: the housing or outer covering of something; "the clock has a walnut case"
+###SenseIdentifier: case NN 2977619 
+###Sense: the enclosing frame around a door or window opening; "the casings had rotted away and had to be replaced"
+###SenseIdentifier: case NN 2975589 
+###Sense: (printing) the receptacle in which a compositor has his type, which is divided into compartments for the different letters, spaces, or numbers; "for English, a compositor will ordinarily have two such cases, the upper case containing the capitals and the lower case containing the small letters"
+###SenseIdentifier: case NN 2975412 
+###Sense: bed linen consisting of a cover for a pillow; "the burglar carried his loot in a pillowcase"
+###SenseIdentifier: case NN 2975212 
+###Sense: a glass container used to store and display items in a shop or museum or home
+--------------------------
+--------------------------
+###Lemma: indiscipline 
+###SenseIdentifier: indiscipline NN 4884450 
+###Sense: the trait of lacking discipline
+--------------------------
+--------------------------
+###Lemma: him 
+--------------------------
+--------------------------
+###Lemma: her 
+--------------------------
+--------------------------
+###Lemma: reason 
+###SenseIdentifier: reason NN 9178999 
+###Sense: a rational motive for a belief or action; "the reason that war was declared"; "the grounds for their declaration"
+###SenseIdentifier: reason NN 6739990 
+###Sense: an explanation of the cause of some phenomenon; "the reason a steady state was never reached was that the back pressure built up too slowly"
+###SenseIdentifier: reason NN 5651680 
+###Sense: the capacity for rational thought or inference or discrimination; "we are told that man is endowed with reason and capable of distinguishing good from evil"
+###SenseIdentifier: reason NN 14379829 
+###Sense: the state of having good sense and sound judgment; "his rationality may have been impaired"; "he had to rely less on reason than on rousing their emotions"
+###SenseIdentifier: reason NN 6740402 
+###Sense: a justification for something existing or happening; "he had no cause to complain"; "they had good reason to rejoice"
+###SenseIdentifier: reason NN 5819149 
+###Sense: a fact that logically justifies some premise or conclusion; "there is reason to believe he is lying"
+--------------------------

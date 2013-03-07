@@ -1,0 +1,46 @@
+Installation instructions for WordNet 3.0 Sense Map package.
+
+1. Manifest
+
+When the WordNet Sense Map package is unbundled you should have the
+following files and subdirectories in this directory:
+
+	INSTALL	this file
+	COPYING	WordNet copyright and license agreement
+	README	README file for WordNet system
+	doc	Sense Map documentation:
+
+		sensemap.5		man page source (nroff)
+		sensemap.5.ps		man page in PostScript
+		sensemap.5WN.html	man page in HTML
+		sensemap.5.pdf		man page in PDF format
+
+	2.1to3.0.noun.poly	mapping of polysemous 2.1 noun senses to 3.0
+				noun senses
+
+	2.1to3.0.noun.mono	mapping of momosemous 2.1 noun senses to 3.0
+				noun senses
+
+	2.1to3.0.verb.poly	mapping of polysemous 2.1 verb senses to 3.0
+				verb senses
+
+	2.1to3.0.verb.mono	mapping of monosemous 2.1 verb senses to 3.0
+				verb senses
+
+2. Using the Sense Map files
+
+The Sense Map files simply list each 2.1 noun sense (encoded as a
+sense key) paired with its mapping to one or more 3.0 noun senses.
+This package does not include WordNet 2.1 or 3.0.  You must download
+the database package separately.  The documentation provided describes
+the format of the Sense Map files.  Additional manual pages that you
+might need are found in the WordNet 3.0 database package.
+
+3. Information about WordNet
+
+Additional documenation and information about Wordnet is available
+online.  From the WordNet Web site you can browse all of the WordNet
+Reference Manual manual pages (including 'sensemap').
+
+Web site - http://wordnet.princeton.edu
+

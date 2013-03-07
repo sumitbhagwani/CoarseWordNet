@@ -1,0 +1,909 @@
+%!PS
+%%Version: 3.15
+%%DocumentFonts: (atend)
+%%Pages: (atend)
+%%EndComments
+%ident	"@(#)lp:filter/postscript/postscript/dpost.ps	1.1"
+%
+% Version 3.16 prologue for troff files.
+%
+
+/#copies 1 store
+/aspectratio 1 def
+/formsperpage 1 def
+/landscape false def
+/linewidth .3 def
+/magnification 1 def
+/margin 0 def
+/orientation 0 def
+/resolution 720 def
+/xoffset 0 def
+/yoffset 0 def
+
+/roundpage true def
+/useclippath true def
+/pagebbox [0 0 612 792] def
+
+/R  /Times-Roman def
+/I  /Times-Italic def
+/B  /Times-Bold def
+/BI /Times-BoldItalic def
+/H  /Helvetica def
+/HI /Helvetica-Oblique def
+/HB /Helvetica-Bold def
+/HX /Helvetica-BoldOblique def
+/CW /Courier def
+/CO /Courier def
+/CI /Courier-Oblique def
+/CB /Courier-Bold def
+/CX /Courier-BoldOblique def
+/PA /Palatino-Roman def
+/PI /Palatino-Italic def
+/PB /Palatino-Bold def
+/PX /Palatino-BoldItalic def
+/Hr /Helvetica-Narrow def
+/Hi /Helvetica-Narrow-Oblique def
+/Hb /Helvetica-Narrow-Bold def
+/Hx /Helvetica-Narrow-BoldOblique def
+/KR /Bookman-Light def
+/KI /Bookman-LightItalic def
+/KB /Bookman-Demi def
+/KX /Bookman-DemiItalic def
+/AR /AvantGarde-Book def
+/AI /AvantGarde-BookOblique def
+/AB /AvantGarde-Demi def
+/AX /AvantGarde-DemiOblique def
+/NR /NewCenturySchlbk-Roman def
+/NI /NewCenturySchlbk-Italic def
+/NB /NewCenturySchlbk-Bold def
+/NX /NewCenturySchlbk-BoldItalic def
+/ZD /ZapfDingbats def
+/ZI /ZapfChancery-MediumItalic def
+/VR /Varitimes#Roman def
+/VI /Varitimes#Italic def
+/VB /Varitimes#Bold def
+/VX /Varitimes#BoldItalic def
+/S  /S def
+/S1 /S1 def
+/GR /Symbol def
+
+/inch {72 mul} bind def
+/min {2 copy gt {exch} if pop} bind def
+
+/setup {
+	counttomark 2 idiv {def} repeat pop
+
+	landscape {/orientation 90 orientation add def} if
+	/scaling 72 resolution div def
+	linewidth setlinewidth
+	1 setlinecap
+
+	pagedimensions
+	xcenter ycenter translate
+	orientation neg rotate
+	width 2 div neg height 2 div translate
+	xoffset inch yoffset inch translate
+	margin 2 div dup neg translate
+	magnification dup aspectratio mul scale
+	scaling scaling scale
+
+	/Symbol /S Sdefs cf
+	/Times-Roman /S1 S1defs cf
+	0 0 moveto
+} def
+
+/pagedimensions {
+	useclippath userdict /gotpagebbox known not and {
+		/pagebbox [clippath pathbbox newpath] def
+		roundpage currentdict /roundpagebbox known and {roundpagebbox} if
+	} if
+	pagebbox aload pop
+	4 -1 roll exch 4 1 roll 4 copy
+	landscape {4 2 roll} if
+	sub /width exch def
+	sub /height exch def
+	add 2 div /xcenter exch def
+	add 2 div /ycenter exch def
+	userdict /gotpagebbox true put
+} def
+
+/pagesetup {
+	/page exch def
+	currentdict /pagedict known currentdict page known and {
+		page load pagedict exch get cvx exec
+	} if
+} def
+
+/decodingdefs [
+	{counttomark 2 idiv {y moveto show} repeat}
+	{neg /y exch def counttomark 2 idiv {y moveto show} repeat}
+	{neg moveto {2 index stringwidth pop sub exch div 0 32 4 -1 roll widthshow} repeat}
+	{neg moveto {spacewidth sub 0.0 32 4 -1 roll widthshow} repeat}
+	{counttomark 2 idiv {y moveto show} repeat}
+	{neg setfunnytext}
+] def
+
+/setdecoding {/t decodingdefs 3 -1 roll get bind def} bind def
+
+/w {neg moveto show} bind def
+/m {neg dup /y exch def moveto} bind def
+/done {/lastpage where {pop lastpage} if} def
+
+/f {
+	dup /font exch def findfont exch
+	dup /ptsize exch def scaling div dup /size exch def scalefont setfont
+	linewidth ptsize mul scaling 10 mul div setlinewidth
+	/spacewidth ( ) stringwidth pop def
+} bind def
+
+/changefont {
+	/fontheight exch def
+	/fontslant exch def
+	currentfont [
+		1 0
+		fontheight ptsize div fontslant sin mul fontslant cos div
+		fontheight ptsize div
+		0 0
+	] makefont setfont
+} bind def
+
+/sf {f} bind def
+
+/cf {
+	dup length 2 idiv
+	/entries exch def
+	/chtab exch def
+	/newfont exch def
+
+	findfont dup length 1 add dict
+	/newdict exch def
+	{1 index /FID ne {newdict 3 1 roll put} {pop pop} ifelse} forall
+
+	newdict /Metrics entries dict put
+	newdict /Metrics get
+	begin
+		chtab aload pop
+		1 1 entries {pop def} for
+		newfont newdict definefont pop
+	end
+} bind def
+
+%
+% A few arrays used to adjust reference points and character widths in some
+% of the printer resident fonts. If square roots are too high try changing
+% the lines describing /radical and /radicalex to,
+%
+%	/radical	[0 -75 550 0]
+%	/radicalex	[-50 -75 500 0]
+%
+
+/Sdefs [
+	/bracketlefttp		[220 500]
+	/bracketleftbt		[220 500]
+	/bracketrighttp		[-70 380]
+	/bracketrightbt		[-70 380]
+	/braceleftbt		[220 490]
+	/bracketrightex		[220 -125 500 0]
+	/radical		[0 0 550 0]
+	% NeWSprint's \(br is too low, compensate
+	statusdict /product get (NeWS Server) eq {
+		/radicalex		[-50 100 500 0]
+		/parenleftex		[-20 100 0 0]
+
+	} {
+		/radicalex		[-50 0 500 0]
+		/parenleftex		[-20 -170 0 0]
+	} ifelse
+	/integral		[100 -50 500 0]
+	/infinity		[10 -75 730 0]
+] def
+
+/S1defs [
+	/underscore		[0 80 500 0]
+	/endash			[7 90 650 0]
+] def
+%%EndProlog
+%%BeginSetup
+mark
+/resolution 720 def
+setup
+2 setdecoding
+%%EndSetup
+%%Page: 1 1
+save
+mark
+1 pagesetup
+10 R f
+(WordNet)720 480 w
+10 S f
+(\324)1091 480 w
+10 R f
+(MORPHY \( 7WN \))3 758 1 4642 480 t
+9 B f
+(NAME)720 960 w
+10 R f
+(morphy)1080 1080 w
+10 S1 f
+(\261)1424 1080 w
+10 R f
+(discussion of WordNet's morphological processing)4 2085 1 1522 1080 t
+9 B f
+(DESCRIPTION)720 1248 w
+10 R f
+( on in\257ected)2 528(Although only base forms of words are usually stored in WordNet, searches may be done)14 3792 2 1080 1368 t
+( Morphy, is applied to the search string to generate a form that is)13 2702( set of morphology functions,)4 1220(forms. A)1 398 3 1080 1488 t
+(present in WordNet.)2 828 1 1080 1608 t
+( to convert the string passed into one that can)9 1887(Morphology in WordNet uses two types of processes to try)9 2433 2 1080 1848 t
+( are lists of in\257ectional endings, based on syntactic category,)9 2553( There)1 304( the WordNet database.)3 978(be found in)2 485 4 1080 1968 t
+( words in an attempt to \256nd a form of the word that is in WordNet.)15 2814(that can be detached from individual)5 1506 2 1080 2088 t
+( in\257ected)1 388(There are also exception list \256les, one for each syntactic category, in which a search for an)16 3932 2 1080 2208 t
+( in an intelligent manner to translate the string)8 1987( tries to use these two processes)6 1372( Morphy)1 397(form is done.)2 564 4 1080 2328 t
+( \256rst checks for exceptions, then uses the rules of)9 2098( Morphy)1 395( form found in WordNet.)4 1061(passed to the base)3 766 4 1080 2448 t
+( from WordNet. After each transformation,)5 1880( Morphy functions are not independent)5 1711(detachment. The)1 729 3 1080 2568 t
+(WordNet is searched for the resulting string in the syntactic category speci\256ed.)11 3243 1 1080 2688 t
+( string is either a single word or a)8 1417( A)1 140( and a syntactic category.)4 1051(The Morphy functions are passed a string)6 1712 4 1080 2928 t
+( such as)2 334( some words,)2 550(collocation. Since)1 759 3 1080 3048 t
+10 B f
+(axes)2757 3048 w
+10 R f
+(can have more than one base form \()7 1489 1 2974 3048 t
+10 B f
+(axe)4463 3048 w
+10 R f
+(and)4641 3048 w
+10 B f
+(axis)4819 3048 w
+10 R f
+(\), Morphy)1 414 1 4986 3048 t
+( speci\256c string, it returns a)5 1135( \256rst time that Morphy is called with a)8 1645( The)1 227(works in the following manner.)4 1313 4 1080 3168 t
+( to Morphy made with a)5 1058( each subsequent call)3 905( For)1 217(base form.)1 441 4 1080 3288 t
+9 B f
+(NULL)3745 3288 w
+10 R f
+(string argument, Morphy returns)3 1361 1 4039 3288 t
+( Morphy cannot perform a transformation, whether on the \256rst call for a)12 3061( Whenever)1 483( form.)1 260(another base)1 516 4 1080 3408 t
+(word or subsequent calls,)3 1093 1 1080 3528 t
+9 B f
+(NULL)2224 3528 w
+10 R f
+( will return)2 494( transformation to a valid English string)6 1750( A)1 156(is returned.)1 475 4 2525 3528 t
+9 B f
+(NULL)1080 3648 w
+10 R f
+(if the base form of the string is not in WordNet.)10 1986 1 1363 3648 t
+( See)1 220( functions are found in the WordNet library.)7 1889(The morphological)1 780 3 1080 3888 t
+10 B f
+(morph)4012 3888 w
+10 R f
+(\(3WN\) for information on)3 1099 1 4301 3888 t
+(using these functions.)2 885 1 1080 4008 t
+9 B f
+(Rules of Detachment)2 845 1 900 4176 t
+10 R f
+( a word ends with one of the)7 1267( If)1 143( used by Morphy.)3 762(The following table shows the rules of detachment)7 2148 4 1080 4296 t
+( WordNet is searched)3 888( Then)1 272( added.)1 297(suf\256xes, it is stripped from the word and the corresponding ending is)11 2863 4 1080 4416 t
+( rules are applicable to adverbs.)5 1303( No)1 188(for the resulting string.)3 940 3 1080 4536 t
+10 S f
+(_ _________________________)1 1260 1 2610 4676 t
+10 B f
+( Ending)1 467(POS Suf\256x)1 647 2 2706 4796 t
+10 S f
+(_ _________________________)1 1260 1 2610 4816 t
+10 R f
+(NOUN)2660 4936 w
+10 S1 f
+(")3098 4936 w
+10 R f
+(s)3139 4936 w
+10 S1 f
+(" "")1 411 1 3178 4936 t
+10 R f
+(NOUN)2660 5056 w
+10 S1 f
+(")3098 5056 w
+10 R f
+(ses)3139 5056 w
+10 S1 f
+(" ")1 287 1 3261 5056 t
+10 R f
+(s)3548 5056 w
+10 S1 f
+(")3587 5056 w
+10 R f
+(NOUN)2660 5176 w
+10 S1 f
+(")3098 5176 w
+10 R f
+(xes)3139 5176 w
+10 S1 f
+(" ")1 276 1 3272 5176 t
+10 R f
+(x)3548 5176 w
+10 S1 f
+(")3598 5176 w
+10 R f
+(NOUN)2660 5296 w
+10 S1 f
+(")3098 5296 w
+10 R f
+(zes)3139 5296 w
+10 S1 f
+(" ")1 282 1 3266 5296 t
+10 R f
+(z)3548 5296 w
+10 S1 f
+(")3592 5296 w
+10 R f
+(NOUN)2660 5416 w
+10 S1 f
+(")3098 5416 w
+10 R f
+(ches)3139 5416 w
+10 S1 f
+(" ")1 232 1 3316 5416 t
+10 R f
+(ch)3548 5416 w
+10 S1 f
+(")3642 5416 w
+10 R f
+(NOUN)2660 5536 w
+10 S1 f
+(")3098 5536 w
+10 R f
+(shes)3139 5536 w
+10 S1 f
+(" ")1 237 1 3311 5536 t
+10 R f
+(sh)3548 5536 w
+10 S1 f
+(")3637 5536 w
+10 R f
+(NOUN)2660 5656 w
+10 S1 f
+(")3098 5656 w
+10 R f
+(men)3139 5656 w
+10 S1 f
+(" ")1 237 1 3311 5656 t
+10 R f
+(man)3548 5656 w
+10 S1 f
+(")3720 5656 w
+10 R f
+(NOUN)2660 5776 w
+10 S1 f
+(")3098 5776 w
+10 R f
+(ies)3139 5776 w
+10 S1 f
+(" ")1 298 1 3250 5776 t
+10 R f
+(y)3548 5776 w
+10 S1 f
+(")3598 5776 w
+10 R f
+(VERB)2660 5896 w
+10 S1 f
+(")3098 5896 w
+10 R f
+(s)3139 5896 w
+10 S1 f
+(" "")1 411 1 3178 5896 t
+10 R f
+(VERB)2660 6016 w
+10 S1 f
+(")3098 6016 w
+10 R f
+(ies)3139 6016 w
+10 S1 f
+(" ")1 298 1 3250 6016 t
+10 R f
+(y)3548 6016 w
+10 S1 f
+(")3598 6016 w
+10 R f
+(VERB)2660 6136 w
+10 S1 f
+(")3098 6136 w
+10 R f
+(es)3139 6136 w
+10 S1 f
+(" ")1 326 1 3222 6136 t
+10 R f
+(e)3548 6136 w
+10 S1 f
+(")3592 6136 w
+10 R f
+(VERB)2660 6256 w
+10 S1 f
+(")3098 6256 w
+10 R f
+(es)3139 6256 w
+10 S1 f
+(" "")1 367 1 3222 6256 t
+10 R f
+(VERB)2660 6376 w
+10 S1 f
+(")3098 6376 w
+10 R f
+(ed)3139 6376 w
+10 S1 f
+(" ")1 315 1 3233 6376 t
+10 R f
+(e)3548 6376 w
+10 S1 f
+(")3592 6376 w
+10 R f
+(VERB)2660 6496 w
+10 S1 f
+(")3098 6496 w
+10 R f
+(ed)3139 6496 w
+10 S1 f
+(" "")1 356 1 3233 6496 t
+10 R f
+(VERB)2660 6616 w
+10 S1 f
+(")3098 6616 w
+10 R f
+(ing)3139 6616 w
+10 S1 f
+(" ")1 281 1 3267 6616 t
+10 R f
+(e)3548 6616 w
+10 S1 f
+(")3592 6616 w
+10 R f
+(VERB)2660 6736 w
+10 S1 f
+(")3098 6736 w
+10 R f
+(ing)3139 6736 w
+10 S1 f
+(" "")1 322 1 3267 6736 t
+10 R f
+(ADJ)2660 6856 w
+10 S1 f
+(")3098 6856 w
+10 R f
+(er)3139 6856 w
+10 S1 f
+(" "")1 373 1 3216 6856 t
+10 R f
+(ADJ)2660 6976 w
+10 S1 f
+(")3098 6976 w
+10 R f
+(est)3139 6976 w
+10 S1 f
+(" "")1 339 1 3250 6976 t
+10 R f
+(ADJ)2660 7096 w
+10 S1 f
+(")3098 7096 w
+10 R f
+(er)3139 7096 w
+10 S1 f
+(" ")1 332 1 3216 7096 t
+10 R f
+(e)3548 7096 w
+10 S1 f
+(")3592 7096 w
+10 R f
+(ADJ)2660 7216 w
+10 S1 f
+(")3098 7216 w
+10 R f
+(est)3139 7216 w
+10 S1 f
+(" ")1 298 1 3250 7216 t
+10 R f
+(e)3548 7216 w
+10 S1 f
+(")3592 7216 w
+10 R f
+( 1)1 1866( change: July 2003)3 776( Last)1 1509(WordNet 2.0)1 529 4 720 7696 t
+cleartomark
+showpage
+restore
+%%EndPage: 1 1
+%%Page: 2 2
+save
+mark
+2 pagesetup
+10 R f
+(WordNet)720 480 w
+10 S f
+(\324)1091 480 w
+10 R f
+(MORPHY \( 7WN \))3 758 1 4642 480 t
+10 S f
+(_ _________________________)1 1260 1 2610 860 t
+(\347)2610 960 w
+(\347)2610 976 w
+(\347)2610 1076 w
+(\347)2610 1176 w
+(\347)2610 1276 w
+(\347)2610 1376 w
+(\347)2610 1476 w
+(\347)2610 1576 w
+(\347)2610 1676 w
+(\347)2610 1776 w
+(\347)2610 1876 w
+(\347)2610 1976 w
+(\347)2610 2076 w
+(\347)2610 2176 w
+(\347)2610 2276 w
+(\347)2610 2376 w
+(\347)2610 2476 w
+(\347)2610 2576 w
+(\347)2610 2676 w
+(\347)2610 2776 w
+(\347)2610 2876 w
+(\347)2610 2976 w
+(\347)2610 3076 w
+(\347)2610 3176 w
+(\347)2610 3276 w
+(\347)2610 3376 w
+(\347)2610 3476 w
+(\347)2610 3576 w
+(\347)2610 3676 w
+(\347)2610 3776 w
+(\347)2610 3876 w
+(\347)2610 3976 w
+(\347)2610 4076 w
+(\347)2610 4176 w
+(\347)2610 4276 w
+(\347)2610 4376 w
+(\347)2610 4476 w
+(\347)2610 4576 w
+(\347)2610 4676 w
+(\347)3023 960 w
+(\347)3023 976 w
+(\347)3023 1076 w
+(\347)3023 1176 w
+(\347)3023 1276 w
+(\347)3023 1376 w
+(\347)3023 1476 w
+(\347)3023 1576 w
+(\347)3023 1676 w
+(\347)3023 1776 w
+(\347)3023 1876 w
+(\347)3023 1976 w
+(\347)3023 2076 w
+(\347)3023 2176 w
+(\347)3023 2276 w
+(\347)3023 2376 w
+(\347)3023 2476 w
+(\347)3023 2576 w
+(\347)3023 2676 w
+(\347)3023 2776 w
+(\347)3023 2876 w
+(\347)3023 2976 w
+(\347)3023 3076 w
+(\347)3023 3176 w
+(\347)3023 3276 w
+(\347)3023 3376 w
+(\347)3023 3476 w
+(\347)3023 3576 w
+(\347)3023 3676 w
+(\347)3023 3776 w
+(\347)3023 3876 w
+(\347)3023 3976 w
+(\347)3023 4076 w
+(\347)3023 4176 w
+(\347)3023 4276 w
+(\347)3023 4376 w
+(\347)3023 4476 w
+(\347)3023 4576 w
+(\347)3023 4676 w
+(\347)3432 960 w
+(\347)3432 976 w
+(\347)3432 1076 w
+(\347)3432 1176 w
+(\347)3432 1276 w
+(\347)3432 1376 w
+(\347)3432 1476 w
+(\347)3432 1576 w
+(\347)3432 1676 w
+(\347)3432 1776 w
+(\347)3432 1876 w
+(\347)3432 1976 w
+(\347)3432 2076 w
+(\347)3432 2176 w
+(\347)3432 2276 w
+(\347)3432 2376 w
+(\347)3432 2476 w
+(\347)3432 2576 w
+(\347)3432 2676 w
+(\347)3432 2776 w
+(\347)3432 2876 w
+(\347)3432 2976 w
+(\347)3432 3076 w
+(\347)3432 3176 w
+(\347)3432 3276 w
+(\347)3432 3376 w
+(\347)3432 3476 w
+(\347)3432 3576 w
+(\347)3432 3676 w
+(\347)3432 3776 w
+(\347)3432 3876 w
+(\347)3432 3976 w
+(\347)3432 4076 w
+(\347)3432 4176 w
+(\347)3432 4276 w
+(\347)3432 4376 w
+(\347)3432 4476 w
+(\347)3432 4576 w
+(\347)3432 4676 w
+(\347)3870 960 w
+(\347)3870 976 w
+(\347)3870 1076 w
+(\347)3870 1176 w
+(\347)3870 1276 w
+(\347)3870 1376 w
+(\347)3870 1476 w
+(\347)3870 1576 w
+(\347)3870 1676 w
+(\347)3870 1776 w
+(\347)3870 1876 w
+(\347)3870 1976 w
+(\347)3870 2076 w
+(\347)3870 2176 w
+(\347)3870 2276 w
+(\347)3870 2376 w
+(\347)3870 2476 w
+(\347)3870 2576 w
+(\347)3870 2676 w
+(\347)3870 2776 w
+(\347)3870 2876 w
+(\347)3870 2976 w
+(\347)3870 3076 w
+(\347)3870 3176 w
+(\347)3870 3276 w
+(\347)3870 3376 w
+(\347)3870 3476 w
+(\347)3870 3576 w
+(\347)3870 3676 w
+(\347)3870 3776 w
+(\347)3870 3876 w
+(\347)3870 3976 w
+(\347)3870 4076 w
+(\347)3870 4176 w
+(\347)3870 4276 w
+(\347)3870 4376 w
+(\347)3870 4476 w
+(\347)3870 4576 w
+(\347)3870 4676 w
+9 B f
+(Exception Lists)1 615 1 900 1148 t
+10 R f
+( exception lists contain the morphologi-)5 1656( The)1 226( syntactic category.)2 799(There is one exception list \256le for each)7 1639 4 1080 1268 t
+( cannot be processed in an algorithmic)6 1632(cal transformations for strings that are not regular and therefore)9 2688 2 1080 1388 t
+( an in\257ected form of a word or collocation, followed by)10 2341( line of an exception list contains)6 1387(manner. Each)1 592 3 1080 1508 t
+( in alphabetical order and a binary search is used to \256nd words)12 2615( list is kept)3 470( The)1 224(one or more base forms.)4 1011 4 1080 1628 t
+( See)1 210(in these lists.)2 536 2 1080 1748 t
+10 B f
+(wndb)1859 1748 w
+10 R f
+(\(5WN\) for information on the format of the exception list \256les.)10 2596 1 2099 1748 t
+9 B f
+(Single Words)1 540 1 900 1916 t
+10 R f
+( the word in the exception)5 1095( \256rst looks for)3 594( Morphy)1 390(In general, single words are relatively easy to process.)8 2241 4 1080 2036 t
+( calls with a)3 516( Subsequent)1 531( returned.)1 394( it is found the \256rst base form is)8 1376(list. If)1 285 5 1080 2156 t
+9 B f
+(NULL)4219 2156 w
+10 R f
+(argument return addi-)2 894 1 4506 2156 t
+( A)1 138(tional base forms, if present.)4 1169 2 1080 2276 t
+9 B f
+(NULL)2420 2276 w
+10 R f
+(is returned when there are no more base forms of the word.)11 2448 1 2703 2276 t
+( in the exception list corresponding to the syntactic category, an algorithmic pro-)12 3334(If the word is not found)5 986 2 1080 2516 t
+( matching suf\256x is found, a)5 1249( a)1 101( If)1 156(cess using the rules of detachment looks for a matching suf\256x.)10 2814 4 1080 2636 t
+( applied \(sometimes this ending is a)6 1589(corresponding ending is)2 1010 2 1080 2756 t
+9 B f
+(NULL)3730 2756 w
+10 R f
+(string, so in effect the suf\256x is)6 1369 1 4031 2756 t
+( word is found in the desired)6 1221(removed from the word\), and WordNet is consulted to see if the resulting)12 3099 2 1080 2876 t
+(part of speech.)2 600 1 1080 2996 t
+9 B f
+(Collocations)900 3164 w
+10 R f
+( a base form that is)5 872(As opposed to single words, collocations can be quite dif\256cult to transform into)12 3448 2 1080 3284 t
+( forms of words, even those comprising collocations, are)8 2463( general, only base)3 826( In)1 167(present in WordNet.)2 864 4 1080 3404 t
+(stored in WordNet, such as)4 1152 1 1080 3524 t
+10 B f
+(attorney general)1 709 1 2274 3524 t
+10 R f
+( the collocation)2 652(. Transforming)1 649 2 2983 3524 t
+10 B f
+(attorneys general)1 748 1 4327 3524 t
+10 R f
+(is then)1 282 1 5118 3524 t
+( usu-)1 207( This)1 246( words comprising the collocation.)4 1425(simply a matter of \256nding the base forms of the individual)10 2442 4 1080 3644 t
+( as)1 128(ally works for nouns, therefore non-conforming nouns, such)7 2537 2 1080 3764 t
+10 B f
+(customs duty)1 572 1 3790 3764 t
+10 R f
+(are presently entered in)3 993 1 4407 3764 t
+(the noun exception list.)3 957 1 1080 3884 t
+(Verb collocations that contain prepositions, such as)6 2116 1 1080 4124 t
+10 B f
+(ask for it)2 399 1 3231 4124 t
+10 R f
+( single words,)2 580( with)1 213( As)1 179(, are more dif\256cult.)3 798 4 3630 4124 t
+( Morphy determines)2 842( the collocation is not found, special code in)8 1898( If)1 141(the exception list is searched \256rst.)5 1439 4 1080 4244 t
+( it does, a function is called to try to \256nd the base)12 2124( If)1 136(whether a verb collocation includes a preposition.)6 2060 3 1080 4364 t
+( that the \256rst word in the collocation is a verb and that the)13 2449( is assumed)2 485( It)1 131(form in the following manner.)4 1255 4 1080 4484 t
+( search string with the base forms of the verb and)10 2188( algorithm then builds a)4 1034( The)1 234(last word is a noun.)4 864 4 1080 4604 t
+( be)1 141(noun, leaving the remainder of the collocation \(usually just the preposition, but more words may)14 4179 2 1080 4724 t
+( example, passed)2 721( For)1 218( the middle.)2 517(involved\) in)1 506 4 1080 4844 t
+10 B f
+(asking for it)2 533 1 3088 4844 t
+10 R f
+(, the database search would be performed)6 1779 1 3621 4844 t
+(with)1080 4964 w
+10 B f
+(ask for it)2 399 1 1296 4964 t
+10 R f
+( a verb collocation)3 776( If)1 136( WordNet, and therefore returned from Morphy.)6 1994(, which is found in)4 799 4 1695 4964 t
+( word in the collocation is found and WordNet)8 1936(does not contain a preposition, then the base form of each)10 2384 2 1080 5084 t
+(is searched for the resulting string.)5 1421 1 1080 5204 t
+9 B f
+(Hyphenation)900 5372 w
+10 R f
+( decision)1 370( is often a subjective)4 865( It)1 130(Hyphenation also presents special dif\256culties when searching WordNet.)7 2955 4 1080 5492 t
+( hyphenated, joined as one word, or is a collocation of several words, and which)14 3342(as to whether a word is)5 978 2 1080 5612 t
+( string into)2 456( Morphy breaks a)3 731( When)1 306(of the various forms are entered into WordNet.)7 1943 4 1080 5732 t
+10 S1 f
+(")4552 5732 w
+10 R f
+(words)4593 5732 w
+10 S1 f
+(")4837 5732 w
+10 R f
+(, it looks for)3 522 1 4878 5732 t
+( strings and removes them if an exact)7 1552( also looks for periods in)5 1041( It)1 129(both spaces and hyphens as delimiters.)5 1598 4 1080 5852 t
+( search for an abbreviation like)5 1298( A)1 142(match is not found.)3 808 3 1080 5972 t
+10 B f
+(oct.)3365 5972 w
+10 R f
+( for)1 154(return the synset)2 684 2 3554 5972 t
+10 S f
+({)4430 5972 w
+10 B f
+(October, Oct)1 562 1 4511 5972 t
+10 S f
+(})5106 5972 w
+10 R f
+(. Not)1 246 1 5154 5972 t
+( it may be advantageous to)5 1118(every pattern of hyphenated and collocated string is searched for properly, so)11 3202 2 1080 6092 t
+(specify several search strings if the results of a search attempt seem incomplete.)12 3286 1 1080 6212 t
+9 B f
+(BUGS)720 6380 w
+10 R f
+(Since many noun collocations contains prepositions, such as)7 2548 1 1080 6500 t
+10 B f
+(line of products)2 683 1 3673 6500 t
+10 R f
+(, an algorithm similar to)4 1044 1 4356 6500 t
+( the present scheme, if Morphy is passed)7 1912( In)1 183(that used for verbs should be written for nouns.)8 2225 3 1080 6620 t
+10 B f
+(lines of products)2 722 1 1080 6740 t
+10 R f
+(, the search string becomes)4 1110 1 1802 6740 t
+10 B f
+(line of product)2 644 1 2945 6740 t
+10 R f
+(, which is not in WordNet)5 1078 1 3589 6740 t
+9 B f
+(ENVIRONMENT VARIABLES)1 1265 1 720 6908 t
+10 B f
+(WNHOME)1080 7028 w
+10 R f
+( default is)2 416( Unix)1 269(Base directory for WordNet.)3 1174 3 2080 7028 t
+10 B f
+(/usr/local/WordNet-2.0)3975 7028 w
+10 R f
+(, Windows)1 445 1 4955 7028 t
+(default is)1 377 1 2080 7148 t
+10 B f
+(C:)2490 7148 w
+10 S1 f
+(\\)2595 7148 w
+10 B f
+(Program Files)1 615 1 2623 7148 t
+10 S1 f
+(\\)3238 7148 w
+10 B f
+(WordNet)3266 7148 w
+10 S1 f
+(\\)3665 7148 w
+10 B f
+(2.0)3693 7148 w
+10 R f
+(.)3818 7148 w
+10 B f
+(WNSEARCHDIR)1080 7316 w
+10 R f
+( is)1 115( default)1 324( Unix)1 280(Directory in which the WordNet database has been installed.)8 2601 4 2080 7316 t
+( 2)1 1866( change: July 2003)3 776( Last)1 1509(WordNet 2.0)1 529 4 720 7796 t
+cleartomark
+showpage
+restore
+%%EndPage: 2 2
+%%Page: 3 3
+save
+mark
+3 pagesetup
+10 R f
+(WordNet)720 480 w
+10 S f
+(\324)1091 480 w
+10 R f
+(MORPHY \( 7WN \))3 758 1 4642 480 t
+10 B f
+(WNHOME/dict)2080 960 w
+10 R f
+(, Windows default is)3 851 1 2758 960 t
+10 B f
+(WNHOME)3642 960 w
+10 S1 f
+(\\)4131 960 w
+10 B f
+(dict)4159 960 w
+10 R f
+(.)4320 960 w
+9 B f
+(FILES)720 1128 w
+10 R f
+(In directory)1 476 1 1080 1248 t
+10 B f
+(WNSEARCHDIR)1589 1248 w
+10 R f
+(:)2361 1248 w
+10 I f
+(pos)1080 1416 w
+10 B f
+(.exc)1219 1416 w
+10 R f
+(morphology exception lists)2 1105 1 2080 1416 t
+9 B f
+(SEE ALSO)1 460 1 720 1584 t
+10 B f
+(wn)1080 1704 w
+10 R f
+(\(1WN\),)1208 1704 w
+10 B f
+(wnb)1548 1704 w
+10 R f
+(\(1WN\),)1732 1704 w
+10 B f
+(binsrch)2072 1704 w
+10 R f
+(\(3WN\),)2395 1704 w
+10 B f
+(morph)2735 1704 w
+10 R f
+(\(3WN\),)3024 1704 w
+10 B f
+(wndb)3364 1704 w
+10 R f
+(\(5WN\),)3604 1704 w
+10 B f
+(wninput)3944 1704 w
+10 R f
+(\(7WN\).)4301 1704 w
+( 3)1 1866( change: July 2003)3 776( Last)1 1509(WordNet 2.0)1 529 4 720 7680 t
+cleartomark
+showpage
+restore
+%%EndPage: 3 3
+%%Trailer
+done
+%%DocumentFonts: Times-Roman Symbol Times-Bold Times-Italic
+%%Pages: 3

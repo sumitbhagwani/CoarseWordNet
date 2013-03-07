@@ -1,0 +1,359 @@
+%!PS
+%%Version: 3.15
+%%DocumentFonts: (atend)
+%%Pages: (atend)
+%%EndComments
+%ident	"@(#)lp:filter/postscript/postscript/dpost.ps	1.1"
+%
+% Version 3.16 prologue for troff files.
+%
+
+/#copies 1 store
+/aspectratio 1 def
+/formsperpage 1 def
+/landscape false def
+/linewidth .3 def
+/magnification 1 def
+/margin 0 def
+/orientation 0 def
+/resolution 720 def
+/xoffset 0 def
+/yoffset 0 def
+
+/roundpage true def
+/useclippath true def
+/pagebbox [0 0 612 792] def
+
+/R  /Times-Roman def
+/I  /Times-Italic def
+/B  /Times-Bold def
+/BI /Times-BoldItalic def
+/H  /Helvetica def
+/HI /Helvetica-Oblique def
+/HB /Helvetica-Bold def
+/HX /Helvetica-BoldOblique def
+/CW /Courier def
+/CO /Courier def
+/CI /Courier-Oblique def
+/CB /Courier-Bold def
+/CX /Courier-BoldOblique def
+/PA /Palatino-Roman def
+/PI /Palatino-Italic def
+/PB /Palatino-Bold def
+/PX /Palatino-BoldItalic def
+/Hr /Helvetica-Narrow def
+/Hi /Helvetica-Narrow-Oblique def
+/Hb /Helvetica-Narrow-Bold def
+/Hx /Helvetica-Narrow-BoldOblique def
+/KR /Bookman-Light def
+/KI /Bookman-LightItalic def
+/KB /Bookman-Demi def
+/KX /Bookman-DemiItalic def
+/AR /AvantGarde-Book def
+/AI /AvantGarde-BookOblique def
+/AB /AvantGarde-Demi def
+/AX /AvantGarde-DemiOblique def
+/NR /NewCenturySchlbk-Roman def
+/NI /NewCenturySchlbk-Italic def
+/NB /NewCenturySchlbk-Bold def
+/NX /NewCenturySchlbk-BoldItalic def
+/ZD /ZapfDingbats def
+/ZI /ZapfChancery-MediumItalic def
+/VR /Varitimes#Roman def
+/VI /Varitimes#Italic def
+/VB /Varitimes#Bold def
+/VX /Varitimes#BoldItalic def
+/S  /S def
+/S1 /S1 def
+/GR /Symbol def
+
+/inch {72 mul} bind def
+/min {2 copy gt {exch} if pop} bind def
+
+/setup {
+	counttomark 2 idiv {def} repeat pop
+
+	landscape {/orientation 90 orientation add def} if
+	/scaling 72 resolution div def
+	linewidth setlinewidth
+	1 setlinecap
+
+	pagedimensions
+	xcenter ycenter translate
+	orientation neg rotate
+	width 2 div neg height 2 div translate
+	xoffset inch yoffset inch translate
+	margin 2 div dup neg translate
+	magnification dup aspectratio mul scale
+	scaling scaling scale
+
+	/Symbol /S Sdefs cf
+	/Times-Roman /S1 S1defs cf
+	0 0 moveto
+} def
+
+/pagedimensions {
+	useclippath userdict /gotpagebbox known not and {
+		/pagebbox [clippath pathbbox newpath] def
+		roundpage currentdict /roundpagebbox known and {roundpagebbox} if
+	} if
+	pagebbox aload pop
+	4 -1 roll exch 4 1 roll 4 copy
+	landscape {4 2 roll} if
+	sub /width exch def
+	sub /height exch def
+	add 2 div /xcenter exch def
+	add 2 div /ycenter exch def
+	userdict /gotpagebbox true put
+} def
+
+/pagesetup {
+	/page exch def
+	currentdict /pagedict known currentdict page known and {
+		page load pagedict exch get cvx exec
+	} if
+} def
+
+/decodingdefs [
+	{counttomark 2 idiv {y moveto show} repeat}
+	{neg /y exch def counttomark 2 idiv {y moveto show} repeat}
+	{neg moveto {2 index stringwidth pop sub exch div 0 32 4 -1 roll widthshow} repeat}
+	{neg moveto {spacewidth sub 0.0 32 4 -1 roll widthshow} repeat}
+	{counttomark 2 idiv {y moveto show} repeat}
+	{neg setfunnytext}
+] def
+
+/setdecoding {/t decodingdefs 3 -1 roll get bind def} bind def
+
+/w {neg moveto show} bind def
+/m {neg dup /y exch def moveto} bind def
+/done {/lastpage where {pop lastpage} if} def
+
+/f {
+	dup /font exch def findfont exch
+	dup /ptsize exch def scaling div dup /size exch def scalefont setfont
+	linewidth ptsize mul scaling 10 mul div setlinewidth
+	/spacewidth ( ) stringwidth pop def
+} bind def
+
+/changefont {
+	/fontheight exch def
+	/fontslant exch def
+	currentfont [
+		1 0
+		fontheight ptsize div fontslant sin mul fontslant cos div
+		fontheight ptsize div
+		0 0
+	] makefont setfont
+} bind def
+
+/sf {f} bind def
+
+/cf {
+	dup length 2 idiv
+	/entries exch def
+	/chtab exch def
+	/newfont exch def
+
+	findfont dup length 1 add dict
+	/newdict exch def
+	{1 index /FID ne {newdict 3 1 roll put} {pop pop} ifelse} forall
+
+	newdict /Metrics entries dict put
+	newdict /Metrics get
+	begin
+		chtab aload pop
+		1 1 entries {pop def} for
+		newfont newdict definefont pop
+	end
+} bind def
+
+%
+% A few arrays used to adjust reference points and character widths in some
+% of the printer resident fonts. If square roots are too high try changing
+% the lines describing /radical and /radicalex to,
+%
+%	/radical	[0 -75 550 0]
+%	/radicalex	[-50 -75 500 0]
+%
+
+/Sdefs [
+	/bracketlefttp		[220 500]
+	/bracketleftbt		[220 500]
+	/bracketrighttp		[-70 380]
+	/bracketrightbt		[-70 380]
+	/braceleftbt		[220 490]
+	/bracketrightex		[220 -125 500 0]
+	/radical		[0 0 550 0]
+	% NeWSprint's \(br is too low, compensate
+	statusdict /product get (NeWS Server) eq {
+		/radicalex		[-50 100 500 0]
+		/parenleftex		[-20 100 0 0]
+
+	} {
+		/radicalex		[-50 0 500 0]
+		/parenleftex		[-20 -170 0 0]
+	} ifelse
+	/integral		[100 -50 500 0]
+	/infinity		[10 -75 730 0]
+] def
+
+/S1defs [
+	/underscore		[0 80 500 0]
+	/endash			[7 90 650 0]
+] def
+%%EndProlog
+%%BeginSetup
+mark
+/resolution 720 def
+setup
+2 setdecoding
+%%EndSetup
+%%Page: 1 1
+save
+mark
+1 pagesetup
+10 R f
+(WordNet)720 480 w
+10 S f
+(\324)1091 480 w
+10 R f
+(UNIQBEG \( 7WN \))3 779 1 4621 480 t
+9 B f
+(NAME)720 960 w
+10 R f
+(uniqbeg)1080 1080 w
+10 S1 f
+(\261)1435 1080 w
+10 R f
+(unique beginners for noun hierarchies)4 1545 1 1533 1080 t
+9 B f
+(DESCRIPTION)720 1248 w
+10 R f
+( synset is part of at least one)7 1290( Each)1 280( into hierarchies.)2 714(All of the WordNet noun synsets are organized)7 2036 4 1080 1368 t
+( these synsets originate in the lexicogra-)6 1681( of)1 122( All)1 200(hierarchy, headed by a synset called a unique beginner.)8 2317 4 1080 1488 t
+(pher \256le)1 347 1 1080 1608 t
+10 B f
+(noun.Tops)1469 1608 w
+10 R f
+( the hypernym pointers can be)5 1296( any noun synset, except a unique beginner,)7 1863(. From)1 317 3 1924 1608 t
+(traced up to one of the following synsets:)7 1707 1 1080 1728 t
+10 S f
+({)1440 1968 w
+10 R f
+(entity, physical thing \(that which is perceived or known or inferred to have its own physical existence \(living or nonliving\)\))19 5090 1 1521 1968 t
+10 S f
+(})6644 1968 w
+({)1440 2208 w
+10 R f
+(psychological)1521 2208 w
+10 S f
+(_)2076 2208 w
+10 R f
+(feature, \(a feature of the mental life of a living organism\))10 2360 1 2126 2208 t
+10 S f
+(})4519 2208 w
+({)1440 2448 w
+10 R f
+(abstraction, \(a general concept formed by extracting common features from speci\256c examples\))11 3867 1 1521 2448 t
+10 S f
+(})5421 2448 w
+({)1440 2688 w
+10 R f
+(state, \(the way something is with respect to its main attributes;)10 2576 1 1521 2688 t
+10 S1 f
+(")4130 2688 w
+10 R f
+(the current state of knowledge)4 1240 1 4171 2688 t
+10 S1 f
+(")5411 2688 w
+10 R f
+(;)5452 2688 w
+10 S1 f
+(")5513 2688 w
+10 R f
+(his state of health)3 726 1 5554 2688 t
+10 S1 f
+(")6280 2688 w
+10 R f
+(;)6321 2688 w
+10 S1 f
+(")6382 2688 w
+10 R f
+(in a weak \256nancial state)4 991 1 6423 2688 t
+10 S1 f
+(")7414 2688 w
+10 R f
+(\))7455 2688 w
+10 S f
+(})7521 2688 w
+({)1440 2928 w
+10 R f
+(event, \(something that happens at a given place and time\))9 2368 1 1521 2928 t
+10 S f
+(})3922 2928 w
+({)1440 3168 w
+10 R f
+(act, human)1 446 1 1521 3168 t
+10 S f
+(_)1967 3168 w
+10 R f
+(action, human)1 574 1 2017 3168 t
+10 S f
+(_)2591 3168 w
+10 R f
+(activity, \(something that people do or cause to happen\))8 2258 1 2641 3168 t
+10 S f
+(})4932 3168 w
+({)1440 3408 w
+10 R f
+(group, grouping, \(any number of entities \(members\) considered as a unit\))10 3008 1 1521 3408 t
+10 S f
+(})4562 3408 w
+({)1440 3648 w
+10 R f
+(possession, \(anything owned or possessed\))4 1744 1 1521 3648 t
+10 S f
+(})3298 3648 w
+({)1440 3888 w
+10 R f
+(phenomenon, \(any state or process known through the senses rather than by intuition or reasoning\))14 4053 1 1521 3888 t
+10 S f
+(})5607 3888 w
+9 B f
+(NOTES)720 4056 w
+10 R f
+(The lexicographer \256les are not included in the WordNet database package.)10 3058 1 1080 4176 t
+9 B f
+(FILES)720 4344 w
+10 B f
+(noun.Tops)1080 4464 w
+10 R f
+(unique beginners for nouns)3 1114 1 2080 4464 t
+9 B f
+(SEE ALSO)1 460 1 720 4632 t
+10 B f
+(wndb)1080 4752 w
+10 R f
+(\(5WN\),)1320 4752 w
+10 B f
+(wninput)1660 4752 w
+10 R f
+(\(5WN\),)2017 4752 w
+10 B f
+(wnintro)2357 4752 w
+10 R f
+(\(7WN\),)2696 4752 w
+10 B f
+(wngloss)3036 4752 w
+10 R f
+(\(7WN\).)3370 4752 w
+( 1)1 1723( change: Decemeber 2001)3 1062( Last)1 1366(WordNet 2.0)1 529 4 720 7680 t
+cleartomark
+showpage
+restore
+%%EndPage: 1 1
+%%Trailer
+done
+%%DocumentFonts: Times-Roman Symbol Times-Bold
+%%Pages: 1
