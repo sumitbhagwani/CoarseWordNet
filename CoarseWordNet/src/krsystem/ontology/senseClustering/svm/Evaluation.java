@@ -176,7 +176,7 @@ public class Evaluation {
 			String[] sample = {path+posString+folderNum+"/sample.txt"};
 			
 			SVMLightInterface trainer = new SVMLightInterface();
-			FeatureGenerator fg = new FeatureGenerator(dir, arg, domainDataPath, dictionary, OEDMappingPath, sentimentFilePath);
+			FeatureGenerator fg = new FeatureGenerator(dir, arg, domainDataPath, dictionary, OEDMappingPath, sentimentFilePath, POS.VERB);
 			Training trainingModule = new Training(dictionary, fg);
 //			trainingModule.generateARFFFormat(trainingFilesEqual, arffPathTrain);
 //			trainingModule.generateARFFFormat(testingFilesEqual, arffPathTest);
@@ -187,7 +187,7 @@ public class Evaluation {
 //			tp.getKernelParameters().kernel_type = 2;
 //			ModelSVM model = trainingModule.train(trainingFiles, trainer, tp);
 //			ModelSVM model = trainingModule.train(trainingFilesEqual, trainer, tp);
-			ModelSVM model = trainingModule.trainMinMaxNormal(sample, trainer, tp);
+			ModelSVM model = trainingModule.trainMinMaxNormal(trainingFilesEqual, trainer, tp, arffPathTrain, "");
 //			ModelSVM model = trainingModule.trainZScoreNormal(trainingFilesEqual, trainer, tp);
 //			ModelSVM model = trainingModule.trainMinMaxNormal(sample, trainer, tp);			
 			System.out.println("Training completed...");
@@ -237,12 +237,8 @@ public class Evaluation {
 			String[] sample = {path+"Noun"+folderNum+"/sample.txt"};
 			
 			SVMLightInterface trainer = new SVMLightInterface();
-			FeatureGenerator fg = new FeatureGenerator(dir, arg, domainDataPathNoun, dictionary, OEDMappingPathNoun, sentimentFilePath);
+			FeatureGenerator fg = new FeatureGenerator(dir, arg, domainDataPathNoun, dictionary, OEDMappingPathNoun, sentimentFilePath, POS.NOUN);
 			Training trainingModule = new Training(dictionary, fg);
-//			trainingModule.generateARFFFormat(trainingFilesEqual, arffPathTrain);
-//			trainingModule.generateARFFFormat(testingFilesEqual, arffPathTest);
-//			trainingModule.generateSVMLightFormat(trainingFilesEqual, lightPathTrain);
-//			trainingModule.generateSVMLightFormat(testingFilesEqual, lightPathTest);
 			TrainingParameters tp = new TrainingParameters();
 			tp.getLearningParameters().verbosity = 1;		
 //			tp.getKernelParameters().kernel_type = 2;

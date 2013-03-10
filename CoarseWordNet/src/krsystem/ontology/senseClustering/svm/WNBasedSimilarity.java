@@ -406,7 +406,7 @@ public class WNBasedSimilarity {
 			
 			LeacockAndChodorow lch = ws.getLeacockAndChodorow();
 			
-			System.out.println(lch.lch("retain", "control", "v"));
+			System.out.println(lch.lch("retain",1, "control",1, "v"));
 		}
 		catch(Exception ex)
 		{

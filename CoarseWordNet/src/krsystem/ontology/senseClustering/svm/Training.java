@@ -16,6 +16,7 @@ import krsystem.utility.OrderedPair;
 
 
 import net.sf.extjwnl.JWNL;
+import net.sf.extjwnl.data.POS;
 import net.sf.extjwnl.dictionary.Dictionary;
 
 public class Training {	
@@ -268,6 +269,14 @@ public class Training {
 		return new NormalSVMModel(model);
 	}
 	
+	public MinMaxSVMModel trainMinMaxNormal(String[] trainingDataPaths, SVMLightInterface trainer, TrainingParameters params, String arffOutputPath, String SVMLightOutputPath)
+	{
+		OrderedPair<Integer , LabeledFeatureVector[]> dimNumExamplesPair = getFeatureVectors(trainingDataPaths);
+		LabeledFeatureVector[] examples = dimNumExamplesPair.getR();
+		int numFeatures = dimNumExamplesPair.getL();
+		return MinMaxSVMModel.train(examples, numFeatures, trainer, params , -1 , 1, arffOutputPath, SVMLightOutputPath);		
+	}
+	
 	public MinMaxSVMModel trainMinMaxNormal(String[] trainingDataPaths, SVMLightInterface trainer, TrainingParameters params)
 	{
 		OrderedPair<Integer , LabeledFeatureVector[]> dimNumExamplesPair = getFeatureVectors(trainingDataPaths);
@@ -306,7 +315,7 @@ public class Training {
 		int featureNum = dimNumExamplesPair.getL().intValue();
 		LabeledFeatureVector[] lfvs = dimNumExamplesPair.getR();
 		writeDataARFF(lfvs, featureNum, outputPath);
-	}
+	}		
 	
 	public void generateSVMLightFormat(String[] trainingDataPaths, String outputPath)
 	{
@@ -334,7 +343,7 @@ public class Training {
 //			Training.train(trainingFiles, dictionary, svmFolder);
 			
 			SVMLightInterface trainer = new SVMLightInterface();
-			FeatureGenerator fg = new FeatureGenerator(dir, arg, domainDataPathNoun,dictionary, OEDMappingPathNoun, sentimentFilePath);
+			FeatureGenerator fg = new FeatureGenerator(dir, arg, domainDataPathNoun,dictionary, OEDMappingPathNoun, sentimentFilePath, POS.NOUN);
 			Training trainingModule = new Training(dictionary, fg);
 //			TrainingParameters tp = new TrainingParameters();
 //			tp.getLearningParameters().verbosity = 1;

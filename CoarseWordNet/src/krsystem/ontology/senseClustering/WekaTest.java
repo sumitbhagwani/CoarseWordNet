@@ -54,7 +54,7 @@ public class WekaTest {
 	
 	public static void main(String[] args) 
 	{		
-		test2();
+		test1();
 	}
 			
 

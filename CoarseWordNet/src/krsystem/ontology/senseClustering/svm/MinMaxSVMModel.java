@@ -11,6 +11,7 @@ import jnisvmlight.LabeledFeatureVector;
 import jnisvmlight.SVMLightInterface;
 import jnisvmlight.SVMLightModel;
 import jnisvmlight.TrainingParameters;
+import krsystem.utility.OrderedPair;
 
 public class MinMaxSVMModel extends ModelSVM{
 		
@@ -124,7 +125,60 @@ public class MinMaxSVMModel extends ModelSVM{
 		MinMaxSVMModel minMaxModel = new MinMaxSVMModel(model, numFeatures, min, max, minReqd, maxReqd);
 		return minMaxModel;		
 	}
-			
+		
+	public static MinMaxSVMModel train(LabeledFeatureVector[] examples, int numFeatures, SVMLightInterface trainer, TrainingParameters params , double minReqd, double maxReqd, String arffOutputPath, String SVMLightOutputPath)
+	{		
+		double min[] = new double[numFeatures];		
+		double max[] = new double[numFeatures];
+		for(int i=0; i<numFeatures; i++)
+		{
+			min[i] =  Double.MAX_VALUE;
+			max[i] =  Double.MIN_VALUE;
+		}
+		for(LabeledFeatureVector lfv : examples)
+		{
+			for(int i=0; i<numFeatures; i++)
+			{				
+				double value = lfv.getValueAt(i);
+				min[i] = Math.min(min[i], value);
+				max[i] = Math.max(max[i], value);
+			}
+		}
+		
+		LabeledFeatureVector[] normalizedExamples = new LabeledFeatureVector[examples.length];
+		int j=0;
+		for(LabeledFeatureVector lfv : examples)
+		{
+			int[] dims = new int[numFeatures];
+			double[] vals = new double[numFeatures];
+			for(int i=0; i<numFeatures;i++)
+			{
+				dims[i] = i+1;
+				double val = lfv.getValueAt(i);
+				if(min[i]==max[i])
+					vals[i] = val;
+				else
+					vals[i] = minReqd + (((val-min[i])/(max[i]-min[i]))*(maxReqd-minReqd));					
+			}
+			normalizedExamples[j] = new LabeledFeatureVector(lfv.getLabel(), dims, vals);
+			j++;
+		}						
+
+		if(arffOutputPath.length() > 0)
+		{
+			Training.writeDataARFF(normalizedExamples, numFeatures, arffOutputPath);
+		}
+		
+		if(SVMLightOutputPath.length() > 0)
+		{
+			Training.writeDATASVMLight(normalizedExamples, numFeatures, SVMLightOutputPath);
+		}
+		
+		SVMLightModel model = trainer.trainModel(normalizedExamples, params);
+		MinMaxSVMModel minMaxModel = new MinMaxSVMModel(model, numFeatures, min, max, minReqd, maxReqd);
+		return minMaxModel;		
+	}	
+	
 	public double classify(FeatureVector fv)
 	{
 		int[] dims = new int[featureNum];
@@ -197,6 +251,6 @@ public class MinMaxSVMModel extends ModelSVM{
 			System.exit(-1);
 		}
 		return null;
-	}
+	}		
 	
 }
