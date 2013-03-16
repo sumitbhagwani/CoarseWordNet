@@ -1,7 +1,9 @@
-package krsystem.ontology.senseClustering;
+package krsystem.ontology.wekaClustering;
 
 import weka.attributeSelection.GainRatioAttributeEval;
 import weka.classifiers.functions.LibSVM;
+import weka.core.Attribute;
+import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.SelectedTag;
 import weka.core.converters.ConverterUtils.DataSource;

@@ -9,6 +9,7 @@ import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.regex.Matcher;
@@ -284,7 +285,7 @@ public class SemcorScorer {
 		Integer senseKeyCount = senseKeyFrequency.get(word.getSenseKey().toLowerCase());
 		int senseKeyFreq = senseKeyCount==null ? 0 : senseKeyCount.intValue();
 		
-		String lemma = word.getLemma();
+		String lemma = word.getLemma().replace(" ", "_").toLowerCase();
 		Integer lemmaCount = lemmaFrequency.get(lemma);
 		int lemmaFreq = lemmaCount==null ? 0 : lemmaCount.intValue();
 		
@@ -298,7 +299,8 @@ public class SemcorScorer {
 			System.exit(-1);
 		}
 		
-		score = (senseKeyFreq + alpha)/(lemmaFreq + alpha*numSenses); 		
+		score = (senseKeyFreq + alpha)/(lemmaFreq + alpha*numSenses);
+		System.out.println(senseKeyFreq+" "+lemmaFreq+" "+numSenses);
 		return score;
 	}
 	
@@ -307,11 +309,25 @@ public class SemcorScorer {
 		double score = 0;
 		for(Word word : syn.getWords())
 		{
-			score += getWordScore(word);
+			double wordScore = getWordScore(word);			
+			score += wordScore;
 		}
 		return score;
 	}
-		
+	
+	public double getSynsetScoreNormalized(Synset syn)
+	{
+		double score = 0;
+		List<Word> words = syn.getWords(); 
+		for(Word word : words)
+		{
+			double wordScore = getWordScore(word);			
+			score += wordScore;
+		}
+		score = score/words.size();
+		return score;
+	}
+	
 	public static SemcorScorer getSemcorScorer(String lemmaFreqPath, String senseKeyFreqPath, String synsetFreqPath, Dictionary dictPassed, POS posPassed, double alphaPassed)
 	{					
 		HashMap<String, Integer> senseKeyFrequency = new HashMap<String, Integer>();
@@ -357,7 +373,7 @@ public class SemcorScorer {
 		
 	}
 	
-	public static void getNounScoreDistribution(double alpha, String offsetFile)
+	public static void getNounScoreDistribution(double alpha, String offsetFile, boolean normalized)
 	{
 		String dataPath = StaticValues.dataPath;
 		
@@ -370,7 +386,7 @@ public class SemcorScorer {
 		String synsetFreqPath = dataPath+ "semcor3.0/FrequencyAnalysis/"+posString+"/synsetFreq.txt";
 		String propsFile30 = "resources/file_properties.xml";
 		
-		String outputFilePath = dataPath+ "semcor3.0/FrequencyAnalysis/"+posString+"/scores"+alpha+".txt";
+		String outputFilePath = dataPath+ "semcor3.0/FrequencyAnalysis/"+posString+"/scores"+normalized+alpha+".txt";
 		
 		try{
 			JWNL.initialize(new FileInputStream(propsFile30));
@@ -393,7 +409,11 @@ public class SemcorScorer {
 					Synset syn = dictionary.getSynsetAt(pos, offset);
 					if(syn != null)
 					{
-						double score = scorer.getSynsetScore(syn);
+						double score = 0;
+						if(normalized)
+							score = scorer.getSynsetScoreNormalized(syn);
+						else
+							score = scorer.getSynsetScore(syn);
 						bw.write(lineSplit[0]+" "+score+"\n");
 						count++;
 						if(count%1000 == 0)
@@ -411,7 +431,7 @@ public class SemcorScorer {
 		}
 	}
 	
-	public static void getVerbScoreDistribution(double alpha, String offsetFile)
+	public static void getVerbScoreDistribution(double alpha, String offsetFile, boolean normalized)
 	{
 		String dataPath = StaticValues.dataPath;
 		
@@ -424,7 +444,7 @@ public class SemcorScorer {
 		String synsetFreqPath = dataPath+ "semcor3.0/FrequencyAnalysis/"+posString+"/synsetFreq.txt";
 		String propsFile30 = "resources/file_properties.xml";
 		
-		String outputFilePath = dataPath+ "semcor3.0/FrequencyAnalysis/"+posString+"/scores"+alpha+".txt";
+		String outputFilePath = dataPath+ "semcor3.0/FrequencyAnalysis/"+posString+"/scores"+normalized+alpha+".txt";
 		
 		try{
 			JWNL.initialize(new FileInputStream(propsFile30));
@@ -447,7 +467,11 @@ public class SemcorScorer {
 					Synset syn = dictionary.getSynsetAt(pos, offset);
 					if(syn != null)
 					{
-						double score = scorer.getSynsetScore(syn);
+						double score = 0;
+						if(normalized)
+							score = scorer.getSynsetScoreNormalized(syn);
+						else
+							score = scorer.getSynsetScore(syn);
 						bw.write(lineSplit[0]+" "+score+"\n");
 						count++;
 						if(count%1000 == 0)
@@ -465,7 +489,7 @@ public class SemcorScorer {
 		}
 	}
 	
-	public static void test()
+	public static void generateFrequencyData()	
 	{
 		String dataPath = StaticValues.dataPath;
 		String brown1Path = dataPath + "semcor3.0/brown1/tagfiles/";
@@ -486,22 +510,51 @@ public class SemcorScorer {
 		try{
 			JWNL.initialize(new FileInputStream(propsFile30));
 			Dictionary dictionary = Dictionary.getInstance();			
-//			SemcorScorer extractor = new SemcorScorer(dictionary, pos);			
-//					
-//			String[] brownPaths = {brown1Path, brown2Path, brownvPath};						
+			SemcorScorer extractor = new SemcorScorer(dictionary, pos);			
+					
+			String[] brownPaths = {brown1Path, brown2Path, brownvPath};						
+			
+			extractor.processSemCor(brownPaths);
+			extractor.writeLemmaFreq(lemmaFreqPath);
+			extractor.writeSenseKeyFreq(senseKeyFreqPath);
+			extractor.writeSynsetFreq(synsetFreqPath);			
+			
+//			double alpha = 1;
 //			
-//			extractor.processSemCor(brownPaths);
-//			extractor.writeLemmaFreq(lemmaFreqPath);
-//			extractor.writeSenseKeyFreq(senseKeyFreqPath);
-//			extractor.writeSynsetFreq(synsetFreqPath);
-//			System.out.println(dictionary.getWordBySenseKey("conscious%5:00:00:aware:00"));
+//			SemcorScorer scorer = SemcorScorer.getSemcorScorer(lemmaFreqPath, senseKeyFreqPath, synsetFreqPath, dictionary, pos, alpha);			
+////			IndexWord iw = dictionary.getIndexWord(pos, "head");
+////			System.out.println(scorer.getSynsetScore(iw.getSenses().get(0)));
+//			Synset syn = dictionary.getSynsetAt(pos, 9044862);
+//			System.out.println(syn.getWords().size());
+//			System.out.println(scorer.getSynsetScore(syn));
 			
-			double alpha = 1;
-			
-			SemcorScorer scorer = SemcorScorer.getSemcorScorer(lemmaFreqPath, senseKeyFreqPath, synsetFreqPath, dictionary, pos, alpha);			
-			IndexWord iw = dictionary.getIndexWord(pos, "head");
-			System.out.println(scorer.getSynsetScore(iw.getSenses().get(0)));
-			
+		}
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
+		}
+	}
+	
+	public static void observeSysnets(String sorted, POS pos)
+	{
+		String propsFile30 = "resources/file_properties.xml";
+		int i=0;
+		String line;
+		try{			
+			JWNL.initialize(new FileInputStream(propsFile30));
+			Dictionary dictionary = Dictionary.getInstance();
+			Scanner sc = new Scanner(new File(sorted));
+			while(sc.hasNextLine())
+			{
+				line = sc.nextLine();
+				String[] lineSplit = line.split("\\s+");
+				Synset syn = dictionary.getSynsetAt(pos, Long.parseLong(lineSplit[0]));
+				System.out.println(lineSplit[1]+" "+syn);
+				i++;
+				if(i>20)
+					break;
+			}
+			sc.close();							
 		}
 		catch(Exception ex)
 		{
@@ -511,11 +564,16 @@ public class SemcorScorer {
 	
 	public static void main(String[] args)
 	{
-//		test();
+//		generateFrequencyData();
 		String dataPath = StaticValues.dataPath;		
 		String offsetFile = dataPath+"/xwnd/offsets.txt";		
-//		getNounScoreDistribution(1, offsetFile);
-		getVerbScoreDistribution(1, offsetFile);
+//		getNounScoreDistribution(1, offsetFile, true);
+//		getVerbScoreDistribution(1, offsetFile, true);
+//		String sortedNouns = dataPath+"semcor3.0/FrequencyAnalysis/Noun/scorestrue1.0Sorted.txt";
+//		observeSysnets(sortedNouns, POS.NOUN);
+		String sortedVerbs = dataPath+"semcor3.0/FrequencyAnalysis/Verb/scorestrue1.0Sorted.txt";
+		observeSysnets(sortedVerbs, POS.VERB);
+		
 	}
 
 }

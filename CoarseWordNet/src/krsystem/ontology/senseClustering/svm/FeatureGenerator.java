@@ -3,6 +3,7 @@ package krsystem.ontology.senseClustering.svm;
 import java.io.FileInputStream;
 import java.util.List;
 
+import jnisvmlight.FeatureVector;
 import jnisvmlight.LabeledFeatureVector;
 import jnisvmlight.SVMLightInterface;
 import krsystem.utility.OrderedPair;
@@ -88,6 +89,54 @@ public class FeatureGenerator
 		return new OrderedPair<Integer, LabeledFeatureVector>(dimNum, features);		
 	}
 
+	public FeatureVector getFeatureVector(Synset smaller, Synset larger)	
+	{					
+		int index = 0;
+		int dimNum = 0;
+		
+		double[] features1 = wnbs.getSimilarities(smaller, larger);
+		dimNum += features1.length;
+		
+		double[] features2 = wnbs.getFeatures(smaller, larger);
+		dimNum += features2.length;
+		
+		double[] features3 = wnbs.getFeaturesMiMoSP1(smaller, larger);
+		dimNum += features3.length;
+		
+		double[] features4 = cbs.getFeatures(smaller, larger);
+		dimNum += features4.length;
+			
+		double[] features5 = null;
+		if(pos.equals(POS.NOUN))
+		{
+			features5 = bnbs.getFeatures(smaller, larger);
+			dimNum += features5.length;
+		}
+		
+		int[] dims = new int[dimNum];
+		for(int i=1; i<=dimNum;i++)
+			dims[i-1] = i;
+		
+		double[] vals = new double[dimNum];
+		System.arraycopy(features1, 0, vals, index, features1.length); 
+		index+=features1.length;
+		System.arraycopy(features2, 0, vals, index, features2.length); 
+		index+=features2.length;
+		System.arraycopy(features3, 0, vals, index, features3.length); 
+		index+=features3.length;
+		System.arraycopy(features4, 0, vals, index, features4.length); 
+		index+=features4.length;
+		if(pos.equals(POS.NOUN))
+		{
+			System.arraycopy(features5, 0, vals, index, features5.length); 
+			index+=features5.length;
+		}
+		
+		FeatureVector features = new FeatureVector(dims, vals);		
+		return features; 		
+	}
+
+	
 	public static void main(String[] args) {
 		String propsFile30 = "resources/file_properties.xml";
 		String dir = "/home/sumitb/Data/";

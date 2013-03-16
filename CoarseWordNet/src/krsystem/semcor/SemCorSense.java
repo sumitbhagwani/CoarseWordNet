@@ -41,7 +41,7 @@ public class SemCorSense
 	}
 	
 	public String getSenseKey()
-	{
+	{		
 		String senseKey = lemma+"%"+lexsn;
 		return senseKey.toLowerCase();
 	}

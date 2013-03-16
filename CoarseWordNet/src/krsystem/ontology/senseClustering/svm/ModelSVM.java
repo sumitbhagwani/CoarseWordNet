@@ -8,6 +8,8 @@ public abstract class ModelSVM {
 	
 	public abstract void writeModel(String pathForSVMModel, String PathForOtherVariables);
 
+	
+	
 //	public abstract ModelSVM train(LabeledFeatureVector[] examples);
 	
 //	public abstract ModelSVM train(LabeledFeatureVector[] examples, TrainingParameters tp);

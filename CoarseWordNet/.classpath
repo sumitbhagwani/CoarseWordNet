@@ -33,5 +33,6 @@
 	<classpathentry kind="lib" path="externalLibraries/mysql-connector-java-5.1.22.jar"/>
 	<classpathentry kind="lib" path="externalLibraries/weka.jar"/>
 	<classpathentry kind="lib" path="externalLibraries/lucene-core-2.9.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/mysql-connector-java-5.1.23-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
