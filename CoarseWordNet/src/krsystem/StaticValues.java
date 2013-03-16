@@ -10,4 +10,8 @@ public class StaticValues
 	
 	public static String sqlPassword = "sumitb";
 	
+	public static String cseLabIP = "172.27.20.124";
+	
+	public static String propsFile30 = "resources/file_properties.xml";
+	
 }

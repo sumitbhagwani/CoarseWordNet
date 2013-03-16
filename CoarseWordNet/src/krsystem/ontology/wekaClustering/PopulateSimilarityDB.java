@@ -33,13 +33,13 @@ public class PopulateSimilarityDB {
 		String pathForSVMModel = svmFolder+"modelLinearEqualTrainingMinMaxNormalization";
 		String PathForMinMax   = svmFolder+"paramsLinearEqualTrainingMinMaxNormalization";
 		
-		String propsFile30 = "resources/file_properties.xml";
-		String dir = "/home/sumitb/Data/";
+		String propsFile30 = StaticValues.propsFile30;
+		String dir = StaticValues.dataPath;
 		String arg = "WordNet-3.0";		
-		String domainDataPath = "/home/sumitb/Data/xwnd/joinedPOSSeparated/joinedNoun.txt";
-		String OEDMappingPath = "/home/sumitb/Data/navigli_sense_inventory/mergeData-30.offsets.noun";
-		String sentimentFilePath = "/home/sumitb/Data/SentiWordNet/SentiWordNet.n";		
-		String wordNet30OffsetFile = "/home/sumitb/Data/xwnd/offsets.txt";
+		String domainDataPath = dir+"xwnd/joinedPOSSeparated/joinedNoun.txt";
+		String OEDMappingPath = dir+"navigli_sense_inventory/mergeData-30.offsets.noun";
+		String sentimentFilePath = dir+"/SentiWordNet/SentiWordNet.n";		
+		String wordNet30OffsetFile = dir+"/xwnd/offsets.txt";
 		
 		String line;
 		int i = 0;
@@ -52,7 +52,8 @@ public class PopulateSimilarityDB {
 		    throw new RuntimeException("Cannot find the driver in the classpath!", e);
 		}
 		
-		String url = "jdbc:mysql://localhost:3306/synsetSimilarity";
+		String ip = StaticValues.cseLabIP;
+		String url = "jdbc:mysql://"+ip+":3306/synsetSimilarity";
 		String username = StaticValues.sqlUsername;
 		String password = StaticValues.sqlPassword;
 		Connection connection = null;
@@ -128,7 +129,8 @@ public class PopulateSimilarityDB {
 		    throw new RuntimeException("Cannot find the driver in the classpath!", e);
 		}
 		
-		String url = "jdbc:mysql://localhost:3306/synsetSimilarity";
+		String ip = StaticValues.cseLabIP;
+		String url = "jdbc:mysql://"+ip+":3306/synsetSimilarity";
 		String username = StaticValues.sqlUsername;
 		String password = StaticValues.sqlPassword;
 		Connection connection = null;
@@ -139,9 +141,9 @@ public class PopulateSimilarityDB {
 		    
 		    
 		    		    
-//		    String query = "INSERT INTO synsetSimilarityNoun VALUES ('00000000', '11111111', 2.0)";
-//		    PreparedStatement ps = connection.prepareStatement(query);
-//		    ps.executeUpdate();
+		    String query = "INSERT INTO synsetSimilarityNoun VALUES ('00000000', '11111111', 2.0)";
+		    PreparedStatement ps = connection.prepareStatement(query);
+		    ps.executeUpdate();
 		    
 	      // Get a statement from the connection
 	      Statement stmt = connection.createStatement() ;
@@ -174,13 +176,13 @@ public class PopulateSimilarityDB {
 		String pathForSVMModel = svmFolder+"modelLinearEqualTrainingMinMaxNormalization";
 		String PathForMinMax   = svmFolder+"paramsLinearEqualTrainingMinMaxNormalization";
 		
-		String propsFile30 = "resources/file_properties.xml";
-		String dir = "/home/sumitb/Data/";
+		String propsFile30 = StaticValues.propsFile30;
+		String dir = StaticValues.dataPath;
 		String arg = "WordNet-3.0";		
-		String domainDataPath = "/home/sumitb/Data/xwnd/joinedPOSSeparated/joinedNoun.txt";
-		String OEDMappingPath = "/home/sumitb/Data/navigli_sense_inventory/mergeData-30.offsets.noun";
-		String sentimentFilePath = "/home/sumitb/Data/SentiWordNet/SentiWordNet.n";		
-		String wordNet30OffsetFile = "/home/sumitb/Data/xwnd/offsets.txt";
+		String domainDataPath = dir+"xwnd/joinedPOSSeparated/joinedNoun.txt";
+		String OEDMappingPath = dir+"navigli_sense_inventory/mergeData-30.offsets.noun";
+		String sentimentFilePath = dir+"/SentiWordNet/SentiWordNet.n";		
+		String wordNet30OffsetFile = dir+"/xwnd/offsets.txt";
 		
 		String line;
 		int i = 0;
@@ -235,11 +237,12 @@ public class PopulateSimilarityDB {
 	}
 	
 	public static void main(String[] args) {
-		long startTime = System.currentTimeMillis();
-//		test1();	
-		populateNouns();
-		long endTime = System.currentTimeMillis();
-		System.out.println("Took "+(endTime - startTime) + " ms"); 
+//		long startTime = System.currentTimeMillis();
+////		test1();	
+//		populateNouns();
+//		long endTime = System.currentTimeMillis();
+//		System.out.println("Took "+(endTime - startTime) + " ms");
+		test();
 	}
 
 }
