@@ -190,7 +190,11 @@ public class MinMaxSVMModel extends ModelSVM{
 			if(min[i]==max[i])
 				vals[i] = val;
 			else
-				vals[i] = minReqd + (((val-min[i])/(max[i]-min[i]))*(maxReqd-minReqd));					
+				vals[i] = minReqd + (((val-min[i])/(max[i]-min[i]))*(maxReqd-minReqd));	
+			if(vals[i] > max[i])
+				vals[i] = max[i];
+			if(vals[i] < min[i])
+				vals[i] = min[i];
 		}
 		FeatureVector newFV = new FeatureVector(dims, vals);
 		return svmModel.classify(newFV);
