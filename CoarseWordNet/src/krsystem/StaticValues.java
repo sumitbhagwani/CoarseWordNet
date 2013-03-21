@@ -12,6 +12,8 @@ public class StaticValues
 	
 	public static String cseLabIP = "172.27.20.124";
 	
+	public static String OEDMappingPathNoun30 = dataPath+"navigli_sense_inventory/mergeData-30.offsets.noun";
+	
 	public static String propsFile30 = "resources/file_properties.xml";
 	
 }

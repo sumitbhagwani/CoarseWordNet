@@ -12,6 +12,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import jnisvmlight.FeatureVector;
+import jnisvmlight.LabeledFeatureVector;
 import jnisvmlight.SVMLightInterface;
 import net.sf.extjwnl.JWNL;
 import net.sf.extjwnl.data.IndexWord;
@@ -22,7 +23,9 @@ import net.sf.extjwnl.dictionary.Dictionary;
 
 import krsystem.StaticValues;
 import krsystem.ontology.senseClustering.svm.FeatureGenerator;
+import krsystem.ontology.senseClustering.svm.Instance;
 import krsystem.ontology.senseClustering.svm.MinMaxSVMModel;
+import krsystem.utility.OrderedPair;
 
 public class PopulateSimilarityDB {
 
@@ -73,12 +76,12 @@ public class PopulateSimilarityDB {
 				String[] lineSplit = line.split("-");
 				if(lineSplit[1].equalsIgnoreCase("n"))
 				{
-					System.out.println("Noun : "+line);
+//					System.out.println("Noun : "+line);
 					long offset = Long.parseLong(lineSplit[0]);
 					Synset synset = dictionary.getSynsetAt(POS.NOUN, offset);
 					if(synset != null)
 					{						
-						System.out.println("NounSynset : "+synset);
+//						System.out.println("NounSynset : "+synset);
 						String synsetOffset = String.format("%08d", synset.getOffset());
 						for(Word word :synset.getWords())
 						{
@@ -91,17 +94,18 @@ public class PopulateSimilarityDB {
 								{
 									FeatureVector fv = fg.getFeatureVector(syn, synset);
 									double prediction = svmModel.classify(fv);
-									System.out.println(synOffset + " "+synsetOffset+" "+prediction);
+//									System.out.println(synOffset + " "+synsetOffset+" "+prediction);
 								    String query = "INSERT INTO synsetSimilarityNoun VALUES ('"+synOffset+"', '"+synsetOffset+"', "+prediction+")";
 								    PreparedStatement ps = connection.prepareStatement(query);
-								    ps.executeUpdate();
-									System.out.println(i);
-									i++;				
+								    ps.executeUpdate();									
 								}
 							}
 						}
 					}
 				}
+				if(i%1000 == 0)
+					System.out.println(i);
+				i++;				
 				if(i>10)
 					break;
 			}
@@ -138,9 +142,7 @@ public class PopulateSimilarityDB {
 		    System.out.println("Connecting database...");
 		    connection = DriverManager.getConnection(url, username, password);
 		    System.out.println("Database connected!");
-		    
-		    
-		    		    
+		    		    		    		    
 		    String query = "INSERT INTO synsetSimilarityNoun VALUES ('00000000', '11111111', 2.0)";
 		    PreparedStatement ps = connection.prepareStatement(query);
 		    ps.executeUpdate();
@@ -236,13 +238,57 @@ public class PopulateSimilarityDB {
 		}
 	}
 	
+	public static void test2()
+	{
+		String svmFolder = "resources/Clustering/svmBinaries/";
+		String posString = "Noun";
+		String pathForSVMModel = svmFolder+"modelLinearEqualTrainingMinMaxNormalization";
+		String PathForMinMax   = svmFolder+"paramsLinearEqualTrainingMinMaxNormalization";
+		
+		String propsFile30 = StaticValues.propsFile30;
+		String dir = StaticValues.dataPath;
+		String arg = "WordNet-3.0";		
+		String domainDataPath = dir+"xwnd/joinedPOSSeparated/joinedNoun.txt";
+		String OEDMappingPath = dir+"navigli_sense_inventory/mergeData-30.offsets.noun";
+		String sentimentFilePath = dir+"/SentiWordNet/SentiWordNet.n";		
+		String wordNet30OffsetFile = dir+"/xwnd/offsets.txt";
+				
+		
+		try{
+			JWNL.initialize(new FileInputStream(propsFile30));
+			Dictionary dictionary = Dictionary.getInstance();
+			MinMaxSVMModel svmModel = MinMaxSVMModel.readModel(pathForSVMModel, PathForMinMax);		
+			SVMLightInterface trainer = new SVMLightInterface();
+			FeatureGenerator fg = new FeatureGenerator(dir, arg, domainDataPath, dictionary, OEDMappingPath, sentimentFilePath, POS.NOUN);
+			
+			
+			long synOffset = 8500433;
+			long synsetOffset = 28651;
+			Synset syn = dictionary.getSynsetAt(POS.NOUN, synOffset);
+			Synset synset = dictionary.getSynsetAt(POS.NOUN, synsetOffset);
+			
+			OrderedPair<Integer, LabeledFeatureVector> pair = fg.getLabeledFeatureVector(new Instance(syn, synset, 0));
+			LabeledFeatureVector lfv = pair.getR();
+			for(int i=0; i<pair.getL().intValue(); i++)
+				System.out.print(lfv.getValueAt(i)+" ");
+			System.out.println();
+			double prediction = svmModel.classify((FeatureVector)lfv);
+			System.out.println(synOffset + " "+synsetOffset+" "+prediction);			
+		}
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
+		}
+	}
+	
 	public static void main(String[] args) {
 //		long startTime = System.currentTimeMillis();
 ////		test1();	
 //		populateNouns();
 //		long endTime = System.currentTimeMillis();
 //		System.out.println("Took "+(endTime - startTime) + " ms");
-		test();
+//		test();
+		test2();
 	}
 
 }

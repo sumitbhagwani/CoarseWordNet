@@ -34,5 +34,18 @@
 	<classpathentry kind="lib" path="externalLibraries/weka.jar"/>
 	<classpathentry kind="lib" path="externalLibraries/lucene-core-2.9.1.jar"/>
 	<classpathentry kind="lib" path="externalLibraries/mysql-connector-java-5.1.23-bin.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/colt-1.2.0.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/disco-1.3.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/dsiutils-2.0.5.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/edu.mit.jwi_2.2.3_jdk.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/fastutil-6.4.4.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/graph_weighted-1.0.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/jdbm-2.4.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/jsap-2.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/law-2.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/triangles-1.0.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/triangrw-1.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/webgraph-3.0.7.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
