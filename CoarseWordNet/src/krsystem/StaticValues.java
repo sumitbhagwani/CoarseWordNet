@@ -16,4 +16,6 @@ public class StaticValues
 	
 	public static String propsFile30 = "resources/file_properties.xml";
 	
+	public static String wnRelationsPath = "resources/wn30Relations/";
+	
 }

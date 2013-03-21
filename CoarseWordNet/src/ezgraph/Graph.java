@@ -49,6 +49,7 @@ public class Graph extends ArcLabelledImmutableGraph {
 	Float weight = (float)1.0;
 	WeightedArcSet list = new WeightedArcSet();
 	BufferedReader br;
+	int i = 0;
 	try { 
 		br = new BufferedReader(new InputStreamReader( new GZIPInputStream( new FileInputStream(file) ))); 
 	} catch ( Exception ex ) { 
@@ -63,6 +64,9 @@ public class Graph extends ArcLabelledImmutableGraph {
 		if ( !nodesReverse.containsKey(l2) ) { nodesReverse.put(l2, nodesReverse.size()); nodes.put(nodes.size(), l2); }
 		if ( parts.length == 3 ) weight = new Float(parts[2]);
 		list.add((WeightedArc)cons[0].newInstance(nodesReverse.get(l1),nodesReverse.get(l2),weight));
+		i++;
+		if(i%1000 == 0)
+			System.out.println(i);
 	} catch ( Exception ex ) { throw new Error(ex); }
 	this.graph = new WeightedBVGraph( list.toArray( new WeightedArc[0] ) );
 	br.close();
