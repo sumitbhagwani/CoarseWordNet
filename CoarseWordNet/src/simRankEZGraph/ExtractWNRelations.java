@@ -24,7 +24,7 @@ public class ExtractWNRelations {
 			Dictionary dictionary = Dictionary.getInstance();
 			Iterator<Synset> iterator = dictionary.getSynsetIterator(POS.NOUN);
 			String wn30Relations = StaticValues.wnRelationsPath;
-			String relation = "hypernym";
+			String relation = "hyponym";
 			double relationWeight = 1.0;
 			
 			int i=0;
@@ -34,7 +34,7 @@ public class ExtractWNRelations {
 			{
 				Synset synset = iterator.next();
 				String synsetOffset = String.format("%08d", synset.getOffset());
-				PointerTargetNodeList ptnl = PointerUtils.getDirectHypernyms(synset);
+				PointerTargetNodeList ptnl = PointerUtils.getDirectHyponyms(synset);
 				for(PointerTargetNode ptn : ptnl)
 				{
 					Synset syn = ptn.getSynset();

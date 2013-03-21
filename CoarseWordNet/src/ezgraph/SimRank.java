@@ -24,6 +24,7 @@ public class SimRank {
 		simrank = new SparseMatrix(graph.numNodes());
 		SparseMatrix simrank2 = new SparseMatrix(graph.numNodes());
 		for ( int step=0; step < maxIter && maxIter > 0; step++ ) {
+			System.out.println("Iteration : "+step);
 			double maxDelta = Double.MIN_VALUE;
 			for ( int i = 0 ; i < graph.numNodes() ; i++ ) { simrank.set(i,i,1.0); simrank2.set(i,i,1.0); }
 			ezgraph.NodeIterator it1 = graph.nodeIterator();

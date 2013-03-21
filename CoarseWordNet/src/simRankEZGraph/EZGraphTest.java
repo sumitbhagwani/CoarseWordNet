@@ -13,10 +13,11 @@ public class EZGraphTest {
 	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws IOException {
-		String file = "resources/wn30Relations/hypernym";
-		if ( args.length > 0 ) file = args[0];
+		String hypernymFile = "resources/wn30Relations/hypernym";
+		String hyponymFile = "resources/wn30Relations/hyponym";
+		String[] files = {hypernymFile, hyponymFile};				
 		System.out.print("Loading graph...");
-		Graph graph = new Graph(file);
+		Graph graph = new Graph(files);
 		System.out.println(" done.");
 		System.out.print("Computing SimRank on a Graph ...");
 		long startTime = System.currentTimeMillis();

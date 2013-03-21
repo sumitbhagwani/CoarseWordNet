@@ -49,7 +49,6 @@ public class Graph extends ArcLabelledImmutableGraph {
 	Float weight = (float)1.0;
 	WeightedArcSet list = new WeightedArcSet();
 	BufferedReader br;
-	int i = 0;
 	try { 
 		br = new BufferedReader(new InputStreamReader( new GZIPInputStream( new FileInputStream(file) ))); 
 	} catch ( Exception ex ) { 
@@ -64,9 +63,6 @@ public class Graph extends ArcLabelledImmutableGraph {
 		if ( !nodesReverse.containsKey(l2) ) { nodesReverse.put(l2, nodesReverse.size()); nodes.put(nodes.size(), l2); }
 		if ( parts.length == 3 ) weight = new Float(parts[2]);
 		list.add((WeightedArc)cons[0].newInstance(nodesReverse.get(l1),nodesReverse.get(l2),weight));
-		i++;
-		if(i%1000 == 0)
-			System.out.println(i);
 	} catch ( Exception ex ) { throw new Error(ex); }
 	this.graph = new WeightedBVGraph( list.toArray( new WeightedArc[0] ) );
 	br.close();
@@ -93,6 +89,61 @@ public class Graph extends ArcLabelledImmutableGraph {
 	commit();
   }
 
+  //my code
+  public Graph ( String[] files ) throws IOException {
+		org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger("it.unimi.dsi.webgraph.ImmutableGraph");
+		logger.setLevel(org.apache.log4j.Level.FATAL);
+		try {
+			File auxFile = File.createTempFile("graph-maps-" + System.currentTimeMillis(),"aux");
+			auxFile.deleteOnExit();
+	        	RecordManager recMan = RecordManagerFactory.createRecordManager(auxFile.getAbsolutePath());
+			nodes = recMan.hashMap("nodes");
+			nodesReverse = recMan.hashMap("nodesReverse");
+		} catch ( IOException ex ) { throw new Error(ex); }
+		nodes.clear();
+		nodesReverse.clear();
+	        Constructor[] cons = WeightedArc.class.getDeclaredConstructors();
+	        for ( int i = 0; i< cons.length; i++) cons[i].setAccessible(true);
+		String aux = null;
+		Float weight = (float)1.0;
+		WeightedArcSet list = new WeightedArcSet();
+		WeightedArcSet list2 = new WeightedArcSet();
+		BufferedReader br;
+		for(String file : files)
+		{
+			try { 
+				br = new BufferedReader(new InputStreamReader( new GZIPInputStream( new FileInputStream(file) ))); 
+			} catch ( Exception ex ) { 
+				br = new BufferedReader(new FileReader(file));
+			}
+			while ( ( aux = br.readLine() ) != null ) try {
+				if ( commit++ % COMMIT_SIZE == 0 ) { commit(); list.commit(); }
+				String parts[] = aux.split("\t");
+				String l1 = new String(parts[0]);
+				String l2 = new String(parts[1]);
+				if ( !nodesReverse.containsKey(l1) ) { nodesReverse.put(l1, nodesReverse.size()); nodes.put(nodes.size(), l1); }
+				if ( !nodesReverse.containsKey(l2) ) { nodesReverse.put(l2, nodesReverse.size()); nodes.put(nodes.size(), l2); }
+				if ( parts.length == 3 ) weight = new Float(parts[2]);
+				list.add((WeightedArc)cons[0].newInstance(nodesReverse.get(l1),nodesReverse.get(l2),weight));
+				list2.add((WeightedArc)cons[0].newInstance(nodesReverse.get(l2),nodesReverse.get(l1),weight));
+				
+			} catch ( Exception ex ) { throw new Error(ex); }
+			br.close();
+		}
+		this.graph = new WeightedBVGraph( list.toArray( new WeightedArc[0] ) );												
+		this.reverse = new WeightedBVGraph( list2.toArray( new WeightedArc[0] ) );		
+		numArcs = list.size();
+		iterator = nodeIterator();
+		try {
+			File auxFile = File.createTempFile("graph" + System.currentTimeMillis(),"aux");
+			auxFile.deleteOnExit();
+			String basename = auxFile.getAbsolutePath();
+			store(basename);
+		} catch ( IOException ex ) { throw new Error(ex); }
+		commit();
+	  }
+  
+  
   public Graph ( ) { this( new WeightedArc[]{} ); }
 
   public Graph ( WeightedArc[] arcs ) { this( new WeightedBVGraph( arcs ) ); }
