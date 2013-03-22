@@ -7,6 +7,7 @@ import java.util.HashMap;
 
 import edu.uci.ics.jung.graph.DirectedSparseMultigraph;
 import edu.uci.ics.jung.graph.Graph;
+import edu.uci.ics.jung.graph.UndirectedSparseMultigraph;
 import edu.uci.ics.jung.graph.util.EdgeType;
 
 public class MyGraph {
@@ -18,7 +19,11 @@ public class MyGraph {
 	
 	public MyGraph(String[] files, boolean directedEdges)
 	{
-		graph = new DirectedSparseMultigraph<Vertex, Edge>();
+		if(directedEdges)
+			graph = new DirectedSparseMultigraph<Vertex, Edge>();
+		else
+			graph = new UndirectedSparseMultigraph<Vertex, Edge>();
+			
 		System.out.println("Reading graph..");
 		for(String path : files)
 		{						
@@ -28,11 +33,14 @@ public class MyGraph {
 			while((line=br.readLine())!=null)
 			{
 				String[] lineSplit = line.split("\\s+");
-//				String label = lineSplit[0];
-				String offset1 = lineSplit[0];
-				String offset2 = lineSplit[1];
-				double weight = Double.parseDouble(lineSplit[2]);			
-				graph.addEdge(new Edge("label", weight), new Vertex("n",offset1) , new Vertex("n",offset2), EdgeType.DIRECTED);
+				String label = lineSplit[0];
+				String offset1 = lineSplit[1];
+				String offset2 = lineSplit[2];
+				double weight = Double.parseDouble(lineSplit[3]);	
+				if(directedEdges)
+					graph.addEdge(new Edge(label, weight), new Vertex("n",offset1) , new Vertex("n",offset2), EdgeType.DIRECTED);
+				else
+					graph.addEdge(new Edge(label, weight), new Vertex("n",offset1) , new Vertex("n",offset2), EdgeType.UNDIRECTED);
 			}			
 			br.close();
 			}
