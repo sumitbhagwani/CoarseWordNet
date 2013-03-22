@@ -5,6 +5,7 @@ import java.util.List;
 import java.io.FileInputStream;
 
 import krsystem.utility.OrderedPair;
+import krsystem.utility.SynsetToWordIndexMap;
 
 import net.sf.extjwnl.JWNL;
 import net.sf.extjwnl.data.IndexWord;
@@ -22,7 +23,8 @@ import edu.sussex.nlp.jws.*;
 
 public class WNBasedSimilarity {	
 	Dictionary dict;
-	EXTJWNLUtils tools;
+//	EXTJWNLUtils tools;
+	SynsetToWordIndexMap tools;
 	
 	JWS ws;
 	public int MiMoHeuristicK; // K=3 gives us the 'twins' similarity measure
@@ -43,10 +45,11 @@ public class WNBasedSimilarity {
 	AdaptedLeskTanimotoNoHyponyms adapLeskTaniNoHypo;
 	
 	
-	public WNBasedSimilarity(String dir, String arg, int MiMoHeuristicKPassed, Dictionary dictionary)
+	public WNBasedSimilarity(String dir, String arg, int MiMoHeuristicKPassed, Dictionary dictionary, String wordIndexMappingPath)
 	{
 		dict = dictionary;
-		tools = new EXTJWNLUtils(dictionary);
+//		tools = new EXTJWNLUtils(dictionary);
+		tools = new SynsetToWordIndexMap(wordIndexMappingPath);
 		ws = new JWS(dir, arg);
 		
 		//Paths between synsets based
@@ -89,13 +92,19 @@ public class WNBasedSimilarity {
 		if(posString.length()==0 || pair1==null || pair2==null)
 		{
 			//report error?
-			System.out.println("Can't get required Synsets");
+			System.out.println("Can't get required Synsets : "+syn1.getOffset()+ " "+syn2.getOffset());
+			System.out.println(posString);
+			System.out.println(pair1);
+			System.out.println(pair2);
 			System.exit(-1);
 		}
-		
+				
 		double[] similarities = new double[9];
 		try{
-		similarities[0] = hso.hso(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
+			if(syn1.getOffset()==126264 && syn2.getOffset()==169806 && posString.equals("v"))
+				similarities[0] = 0;
+			else
+				similarities[0] = hso.hso(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
 		similarities[1] = lch.lch(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
 		similarities[2] = wup.wup(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
 		similarities[3] = jcn.jcn(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
@@ -105,7 +114,7 @@ public class WNBasedSimilarity {
 		similarities[7] = adapLeskTani.lesk(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
 		similarities[8] = adapLeskTaniNoHypo.lesk(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
 		}
-		catch(StackOverflowError soe)
+		catch(Error soe)
 		{
 			System.out.println(syn1);
 			System.out.println(syn2);
@@ -384,12 +393,19 @@ public class WNBasedSimilarity {
 		String propsFile30 = "resources/file_properties.xml";
 		String dir = "/home/sumitb/Data/";
 		String arg = "WordNet-3.0";
+		String mappingPath = "resources/Clustering/synsetWordIndexMap/verbMap.txt";
 		try{			
-//			JWNL.initialize(new FileInputStream(propsFile30));
-//			Dictionary dictionary = Dictionary.getInstance();				
+			JWNL.initialize(new FileInputStream(propsFile30));
+			Dictionary dictionary = Dictionary.getInstance();
+			Synset syn1 = dictionary.getSynsetAt(POS.VERB, 126264);
+			Synset syn2 = dictionary.getSynsetAt(POS.VERB, 169806);
+			System.out.println(syn1.getWords().size());
+			EXTJWNLUtils tools = new EXTJWNLUtils(dictionary);
+			OrderedPair<String, Integer> pair = tools.getWordIndexPair(syn1);
+			System.out.println(pair.getL()+" "+pair.getR());
 //			List<Synset> syns = dictionary.getIndexWord(POS.NOUN, "head").getSenses();
 			JWS ws = new JWS(dir, arg);
-//			WNBasedSimilarity wnbs = new WNBasedSimilarity(dir, arg, 3, dictionary);
+			WNBasedSimilarity wnbs = new WNBasedSimilarity(dir, arg, 3, dictionary, mappingPath);
 			
 //			int index = 0;
 //			double[] similarities = wnbs.getSimilarities(syns.get(0), syns.get(1));
@@ -405,8 +421,19 @@ public class WNBasedSimilarity {
 //				System.out.println("3 : "+index++ +" "+ score);
 			
 			LeacockAndChodorow lch = ws.getLeacockAndChodorow();
+//			EXTJWNLUtils tools = new EXTJWNLUtils(dictionary);
+//			Synset syn1 = dictionary.getSynsetAt(POS.VERB, 169806);
+//			Synset syn2 = dictionary.getSynsetAt(POS.VERB, 126264);
+			OrderedPair<String, Integer> pair1 = tools.getWordIndexPair(syn1);
+			OrderedPair<String, Integer> pair2 = tools.getWordIndexPair(syn2);
+			HirstAndStOnge hso = ws.getHirstAndStOnge();
+//			System.out.println(lch.lch("retain",1, "control",1, "v"));
+//			System.out.println(hso.hso(pair1.getL(),pair1.getR().intValue(), pair2.getL(),pair2.getR().intValue(), "v"));
+			System.out.println(lch.lch(pair1.getL(),pair1.getR().intValue(), pair2.getL(),pair2.getR().intValue(), "v"));
+//			for(double d:wnbs.getSimilarities(syn1, syn2))
+//				System.out.print(d+",");
+//			System.out.println(lch.lch("fall over backwards", 1, "presume", 1, "v"));
 			
-			System.out.println(lch.lch("retain",1, "control",1, "v"));
 		}
 		catch(Exception ex)
 		{

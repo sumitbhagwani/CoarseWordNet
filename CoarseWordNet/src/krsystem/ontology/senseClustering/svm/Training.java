@@ -78,36 +78,43 @@ public class Training {
 	}
 
 	public OrderedPair<Integer, LabeledFeatureVector[]> getFeatureVectors(String[] dataPaths)
-	{			
-		List<Instance> instances = new ArrayList<Instance>();
+	{					
 		int dimNum = 0;
+		int size = 0;
 		try{		
 			for(String dataPath : dataPaths)
 			{
 				System.out.println("Working on "+dataPath);
-				Scanner sc = new Scanner(new File(dataPath));			
-				while(sc.hasNextLine())
-				{
-					String line = sc.nextLine().toLowerCase().trim();
-					String[] lineSplit = line.split("\\s+");
-					int label = Integer.parseInt(lineSplit[2]);
-					Instance instance = new Instance(lineSplit[0], lineSplit[1], dict, label);
-					instances.add(instance);
-				}
+				Scanner sc = new Scanner(new File(dataPath));
+				sc.useDelimiter("\\Z");
+				String text = sc.next();				
+				String[] lines = text.split("\\n");
+				size += lines.length;
 				sc.close();
 			}
 			System.out.println("Generating Features...");
-			LabeledFeatureVector[] featureVectors = new LabeledFeatureVector[instances.size()];
+			LabeledFeatureVector[] featureVectors = new LabeledFeatureVector[size];
 			int count = 0;
-			for(Instance instance : instances)
+			for(String dataPath : dataPaths)
 			{
-				OrderedPair<Integer, LabeledFeatureVector> dimNumLFVPair = fg.getLabeledFeatureVector(instance); 
-				LabeledFeatureVector lfv = dimNumLFVPair.getR();
-				dimNum = dimNumLFVPair.getL().intValue();
-				featureVectors[count] = lfv;
-				count++;
-				if(count%100 == 0)
-					System.out.println(count);
+				System.out.println("Working on "+dataPath);
+				Scanner sc = new Scanner(new File(dataPath));
+				while(sc.hasNextLine())
+				{
+					String line = sc.nextLine().toLowerCase().trim();	
+					if(count<2800) {count++; continue;}
+					String[] lineSplit = line.split("\\s+");
+					int label = Integer.parseInt(lineSplit[2]);
+					Instance instance = new Instance(lineSplit[0], lineSplit[1], dict, label);						
+					OrderedPair<Integer, LabeledFeatureVector> dimNumLFVPair = fg.getLabeledFeatureVector(instance); 
+					LabeledFeatureVector lfv = dimNumLFVPair.getR();
+					dimNum = dimNumLFVPair.getL().intValue();
+					featureVectors[count] = lfv;
+					count++;
+					if(count%100 == 0)
+						System.out.println(count);
+				}
+				sc.close();
 			}
 			return new OrderedPair<Integer, LabeledFeatureVector[]>(dimNum, featureVectors);
 		}
@@ -333,6 +340,7 @@ public class Training {
 		String domainDataPathNoun = "/home/sumitb/Data/xwnd/joinedPOSSeparated/joinedNoun.txt";
 		String OEDMappingPathNoun = "/home/sumitb/Data/navigli_sense_inventory/mergeData-30.offsets.noun";
 		String sentimentFilePath = "/home/sumitb/Data/SentiWordNet/SentiWordNet.n";
+		String synsetToWordIndexPairMap = "resources/Clustering/synsetWordIndexMap/nounMap.txt";
 		try{			
 			JWNL.initialize(new FileInputStream(propsFile30));
 			Dictionary dictionary = Dictionary.getInstance();
@@ -343,7 +351,7 @@ public class Training {
 //			Training.train(trainingFiles, dictionary, svmFolder);
 			
 			SVMLightInterface trainer = new SVMLightInterface();
-			FeatureGenerator fg = new FeatureGenerator(dir, arg, domainDataPathNoun,dictionary, OEDMappingPathNoun, sentimentFilePath, POS.NOUN);
+			FeatureGenerator fg = new FeatureGenerator(dir, arg, domainDataPathNoun,dictionary, OEDMappingPathNoun, sentimentFilePath, POS.NOUN, synsetToWordIndexPairMap);
 			Training trainingModule = new Training(dictionary, fg);
 //			TrainingParameters tp = new TrainingParameters();
 //			tp.getLearningParameters().verbosity = 1;

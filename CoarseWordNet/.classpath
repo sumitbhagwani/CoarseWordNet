@@ -47,5 +47,17 @@
 	<classpathentry kind="lib" path="externalLibraries/triangles-1.0.jar"/>
 	<classpathentry kind="lib" path="externalLibraries/triangrw-1.1.jar"/>
 	<classpathentry kind="lib" path="externalLibraries/webgraph-3.0.7.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/concurrent-1.3.4.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/j3d-core-1.3.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/jung-3d-2.0.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/jung-3d-demos-2.0.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/jung-io-2.0.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/jung-jai-2.0.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/jung-jai-samples-2.0.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/jung-samples-2.0.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/jung-visualization-2.0.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/vecmath-1.3.1.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/wstx-asl-3.2.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

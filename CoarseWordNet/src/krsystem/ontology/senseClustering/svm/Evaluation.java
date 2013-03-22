@@ -11,6 +11,7 @@ import jnisvmlight.LabeledFeatureVector;
 import jnisvmlight.SVMLightInterface;
 import jnisvmlight.SVMLightModel;
 import jnisvmlight.TrainingParameters;
+import krsystem.StaticValues;
 import krsystem.utility.OrderedPair;
 
 import net.sf.extjwnl.JWNL;
@@ -149,7 +150,7 @@ public class Evaluation {
 	
 	public static void evalVerb() {
 		System.out.println("Evaluation Running...");
-		String propsFile30 = "resources/file_properties.xml";
+		String propsFile30 = StaticValues.propsFile30;
 		String dir = "/home/sumitb/Data/";
 		String arg = "WordNet-3.0";
 		String svmFolder = "resources/Clustering/svmBinaries/";
@@ -162,6 +163,7 @@ public class Evaluation {
 		String arffPathTest = "/home/sumitb/Data/wekaRelated/verbAnalysisTest.arff";
 		String lightPathTrain = "/home/sumitb/Data/wekaRelated/verbAnalysisTrain.light";
 		String lightPathTest = "/home/sumitb/Data/wekaRelated/verbAnalysisTest.light";
+		String synsetToWordIndexPairMap = "resources/Clustering/synsetWordIndexMap/verbMap.txt";
 		int folderNum = 2;
 		String posString = "Verb";
 		try{			
@@ -176,7 +178,7 @@ public class Evaluation {
 			String[] sample = {path+posString+folderNum+"/sample.txt"};
 			
 			SVMLightInterface trainer = new SVMLightInterface();
-			FeatureGenerator fg = new FeatureGenerator(dir, arg, domainDataPath, dictionary, OEDMappingPath, sentimentFilePath, POS.VERB);
+			FeatureGenerator fg = new FeatureGenerator(dir, arg, domainDataPath, dictionary, OEDMappingPath, sentimentFilePath, POS.VERB, synsetToWordIndexPairMap);
 			Training trainingModule = new Training(dictionary, fg);
 //			trainingModule.generateARFFFormat(trainingFilesEqual, arffPathTrain);
 //			trainingModule.generateARFFFormat(testingFilesEqual, arffPathTest);
@@ -202,6 +204,8 @@ public class Evaluation {
 			evaluationModule.test(testingFilesEqual);
 //			evaluationModule.sanityCheck(wordNet30OffsetFile, "n", 1000);
 //			evaluationModule.sanityCheck(wordNet30OffsetFile, "v", 1000);
+			
+			dictionary.close();
 		}
 		catch(Exception ex)
 		{
@@ -224,6 +228,7 @@ public class Evaluation {
 		String arffPathTest = "/home/sumitb/Data/wekaRelated/nounAnalysisTest.arff";
 		String lightPathTrain = "/home/sumitb/Data/wekaRelated/nounAnalysisTrain.light";
 		String lightPathTest = "/home/sumitb/Data/wekaRelated/nounAnalysisTest.light";
+		String synsetToWordIndexPairMap = "resources/Clustering/synsetWordIndexMap/nounMap.txt";
 		int folderNum = 3;
 		try{			
 			JWNL.initialize(new FileInputStream(propsFile30));
@@ -237,7 +242,7 @@ public class Evaluation {
 			String[] sample = {path+"Noun"+folderNum+"/sample.txt"};
 			
 			SVMLightInterface trainer = new SVMLightInterface();
-			FeatureGenerator fg = new FeatureGenerator(dir, arg, domainDataPathNoun, dictionary, OEDMappingPathNoun, sentimentFilePath, POS.NOUN);
+			FeatureGenerator fg = new FeatureGenerator(dir, arg, domainDataPathNoun, dictionary, OEDMappingPathNoun, sentimentFilePath, POS.NOUN, synsetToWordIndexPairMap);
 			Training trainingModule = new Training(dictionary, fg);
 			TrainingParameters tp = new TrainingParameters();
 			tp.getLearningParameters().verbosity = 1;		
@@ -258,6 +263,8 @@ public class Evaluation {
 			System.out.println("-----------------------------------------");
 			evaluationModule.test(testingFilesEqual);
 //			evaluationModule.sanityCheck(wordNet30OffsetFile, "n", 1000);
+			
+			dictionary.close();
 		}
 		catch(Exception ex)
 		{

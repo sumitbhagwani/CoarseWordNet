@@ -43,6 +43,7 @@ public class PopulateSimilarityDB {
 		String OEDMappingPath = dir+"navigli_sense_inventory/mergeData-30.offsets.noun";
 		String sentimentFilePath = dir+"/SentiWordNet/SentiWordNet.n";		
 		String wordNet30OffsetFile = dir+"/xwnd/offsets.txt";
+		String synsetToWordIndexPairMap = "resources/Clustering/synsetWordIndexMap/nounMap.txt";
 		
 		String line;
 		int i = 0;
@@ -69,7 +70,7 @@ public class PopulateSimilarityDB {
 			Dictionary dictionary = Dictionary.getInstance();
 			MinMaxSVMModel svmModel = MinMaxSVMModel.readModel(pathForSVMModel, PathForMinMax);		
 			SVMLightInterface trainer = new SVMLightInterface();
-			FeatureGenerator fg = new FeatureGenerator(dir, arg, domainDataPath, dictionary, OEDMappingPath, sentimentFilePath, POS.NOUN);
+			FeatureGenerator fg = new FeatureGenerator(dir, arg, domainDataPath, dictionary, OEDMappingPath, sentimentFilePath, POS.NOUN, synsetToWordIndexPairMap);
 			BufferedReader br = new BufferedReader(new FileReader(new File(wordNet30OffsetFile)));
 			while((line=br.readLine())!=null)
 			{				
@@ -185,7 +186,7 @@ public class PopulateSimilarityDB {
 		String OEDMappingPath = dir+"navigli_sense_inventory/mergeData-30.offsets.noun";
 		String sentimentFilePath = dir+"/SentiWordNet/SentiWordNet.n";		
 		String wordNet30OffsetFile = dir+"/xwnd/offsets.txt";
-		
+		String synsetToWordIndexPairMap = "resources/Clustering/synsetWordIndexMap/nounMap.txt";
 		String line;
 		int i = 0;
 		
@@ -194,7 +195,7 @@ public class PopulateSimilarityDB {
 			Dictionary dictionary = Dictionary.getInstance();
 			MinMaxSVMModel svmModel = MinMaxSVMModel.readModel(pathForSVMModel, PathForMinMax);		
 			SVMLightInterface trainer = new SVMLightInterface();
-			FeatureGenerator fg = new FeatureGenerator(dir, arg, domainDataPath, dictionary, OEDMappingPath, sentimentFilePath, POS.NOUN);
+			FeatureGenerator fg = new FeatureGenerator(dir, arg, domainDataPath, dictionary, OEDMappingPath, sentimentFilePath, POS.NOUN, synsetToWordIndexPairMap);
 			BufferedReader br = new BufferedReader(new FileReader(new File(wordNet30OffsetFile)));
 			while((line=br.readLine())!=null)
 			{				
@@ -252,14 +253,14 @@ public class PopulateSimilarityDB {
 		String OEDMappingPath = dir+"navigli_sense_inventory/mergeData-30.offsets.noun";
 		String sentimentFilePath = dir+"/SentiWordNet/SentiWordNet.n";		
 		String wordNet30OffsetFile = dir+"/xwnd/offsets.txt";
-				
+		String synsetToWordIndexPairMap = "resources/Clustering/synsetWordIndexMap/nounMap.txt";
 		
 		try{
 			JWNL.initialize(new FileInputStream(propsFile30));
 			Dictionary dictionary = Dictionary.getInstance();
 			MinMaxSVMModel svmModel = MinMaxSVMModel.readModel(pathForSVMModel, PathForMinMax);		
 			SVMLightInterface trainer = new SVMLightInterface();
-			FeatureGenerator fg = new FeatureGenerator(dir, arg, domainDataPath, dictionary, OEDMappingPath, sentimentFilePath, POS.NOUN);
+			FeatureGenerator fg = new FeatureGenerator(dir, arg, domainDataPath, dictionary, OEDMappingPath, sentimentFilePath, POS.NOUN, synsetToWordIndexPairMap);
 			
 			
 			long synOffset = 8500433;

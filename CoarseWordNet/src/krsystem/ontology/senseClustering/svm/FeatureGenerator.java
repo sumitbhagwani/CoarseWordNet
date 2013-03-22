@@ -22,18 +22,18 @@ public class FeatureGenerator
 	int MiMoHeuristicK = 3;
 	POS pos;
 	
-	public FeatureGenerator(String dir, String arg, int MiMoHeuristicKPassed, String domainDataPath, Dictionary dictionary, String OEDMappingPath, String sentimentFilePath, POS posPassed)
+	public FeatureGenerator(String dir, String arg, int MiMoHeuristicKPassed, String domainDataPath, Dictionary dictionary, String OEDMappingPath, String sentimentFilePath, POS posPassed, String synsetToWordIndexPairMap)
 	{
 		pos = posPassed;
-		wnbs = new WNBasedSimilarity(dir, arg, MiMoHeuristicKPassed, dictionary);
+		wnbs = new WNBasedSimilarity(dir, arg, MiMoHeuristicKPassed, dictionary, synsetToWordIndexPairMap);
 		cbs = new CorporaBasedSimilarity(domainDataPath, OEDMappingPath, sentimentFilePath);		
 		bnbs = new BabelNetBasedSimilarity();			
 	}
 	
-	public FeatureGenerator(String dir, String arg, String domainDataPath, Dictionary dictionary, String OEDMappingPath, String sentimentFilePath, POS posPassed)
+	public FeatureGenerator(String dir, String arg, String domainDataPath, Dictionary dictionary, String OEDMappingPath, String sentimentFilePath, POS posPassed, String synsetToWordIndexPairMap)
 	{
 		pos = posPassed;
-		wnbs = new WNBasedSimilarity(dir, arg, MiMoHeuristicK, dictionary);
+		wnbs = new WNBasedSimilarity(dir, arg, MiMoHeuristicK, dictionary, synsetToWordIndexPairMap);
 		cbs = new CorporaBasedSimilarity(domainDataPath, OEDMappingPath, sentimentFilePath);		
 		bnbs = new BabelNetBasedSimilarity();		
 	}
@@ -144,10 +144,11 @@ public class FeatureGenerator
 		String domainDataPathNoun = "/home/sumitb/Data/xwnd/joinedPOSSeparated/joinedNoun.txt";
 		String OEDMappingPathNoun = "/home/sumitb/Data/navigli_sense_inventory/mergeData-30.offsets.noun";
 		String sentimentFilePath = "/home/sumitb/Data/SentiWordNet/SentiWordNet.n";
+		String synsetToWordIndexPairMap = "resources/Clustering/synsetWordIndexMap/nounMap.txt";
 		try{			
 			JWNL.initialize(new FileInputStream(propsFile30));
 			Dictionary dictionary = Dictionary.getInstance();			
-			FeatureGenerator fg = new FeatureGenerator(dir, arg, 3, domainDataPathNoun, dictionary, OEDMappingPathNoun, sentimentFilePath, POS.NOUN);
+			FeatureGenerator fg = new FeatureGenerator(dir, arg, 3, domainDataPathNoun, dictionary, OEDMappingPathNoun, sentimentFilePath, POS.NOUN, synsetToWordIndexPairMap);
 			List<Synset> syns = dictionary.getIndexWord(POS.NOUN, "head").getSenses();
 			Instance instance = new Instance(syns.get(0), syns.get(1), 1);
 			OrderedPair<Integer, LabeledFeatureVector> dimNumLFVPair = fg.getLabeledFeatureVector(instance); 

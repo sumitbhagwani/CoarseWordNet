@@ -1,4 +1,4 @@
-package simRankEZGraph;
+package simRank;
 
 import java.io.IOException;
 import java.util.Random;
@@ -13,9 +13,11 @@ public class EZGraphTest {
 	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws IOException {
-		String hypernymFile = "resources/wn30Relations/hypernym";
-		String hyponymFile = "resources/wn30Relations/hyponym";
-		String[] files = {hypernymFile, hyponymFile};				
+		String sampleFile = "resources/wn30Relations/sample";
+//		String hypernymFile = "resources/wn30Relations/hypernym";
+//		String hyponymFile = "resources/wn30Relations/hyponym";
+//		String[] files = {hypernymFile, hyponymFile};		
+		String[] files = {sampleFile};
 		System.out.print("Loading graph...");
 		Graph graph = new Graph(files);
 		System.out.println(" done.");
@@ -25,11 +27,12 @@ public class EZGraphTest {
 		long endTime = System.currentTimeMillis();
 		System.out.println(" done in "+(endTime-startTime)+" milliseconds");
 		System.out.println("SimRank similarity for random node pairs");
-		for ( int i=0; i<10; i++) {
-			int n1 = new Random().nextInt(graph.numNodes());
-			int n2 = new Random().nextInt(graph.numNodes());
-			System.out.println( graph.node(n1) + "\t" + graph.node(n2) + "\t" + simrank.getSimRankScore(n1,n2));
-		}
+		
+		for ( int i=0; i<graph.numNodes(); i++) {
+			for ( int j=0; j<graph.numNodes(); j++) 
+				System.out.print(simrank.getSimRankScore(i,j)+" ");
+			System.out.println();
+		}	
 	}
 
 }

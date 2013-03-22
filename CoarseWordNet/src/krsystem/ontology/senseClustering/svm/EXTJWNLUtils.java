@@ -8,6 +8,7 @@ import java.util.List;
 
 import jnisvmlight.LabeledFeatureVector;
 
+import krsystem.StaticValues;
 import krsystem.utility.OrderedPair;
 import net.sf.extjwnl.JWNL;
 import net.sf.extjwnl.data.IndexWord;
@@ -65,7 +66,7 @@ public class EXTJWNLUtils {
 	public OrderedPair<String, Integer> check(Synset synPassed)
 	{		
 		OrderedPair<String, Integer> wordIndexPair = null;	
-		String propsFile30 = "resources/file_properties.xml";		
+		String propsFile30 = StaticValues.propsFile30;		
 		try{			
 			JWNL.initialize(new FileInputStream(propsFile30));
 			Dictionary dictionary = Dictionary.getInstance();
@@ -87,6 +88,7 @@ public class EXTJWNLUtils {
 					if(s.equals(syn))
 					{
 //						System.out.println(lemma + " "+ count);
+						dictionary.close();
 						return new OrderedPair<String, Integer>(lemma, count);
 					}					
 					count++;
