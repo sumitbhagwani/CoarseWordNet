@@ -10,6 +10,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.List;
 
 import jnisvmlight.FeatureVector;
 import jnisvmlight.LabeledFeatureVector;
@@ -31,6 +32,10 @@ public class PopulateSimilarityDB {
 
 	public static void populateNouns()
 	{
+		int errorCount = 0;
+		int lessCount = 0;
+		int equalCount = 0;
+		int totalCount = 0;		
 		String svmFolder = "resources/Clustering/svmBinaries/";
 		String posString = "Noun";
 		String pathForSVMModel = svmFolder+"modelLinearEqualTrainingMinMaxNormalization";
@@ -84,15 +89,20 @@ public class PopulateSimilarityDB {
 					{						
 //						System.out.println("NounSynset : "+synset);
 						String synsetOffset = String.format("%08d", synset.getOffset());
-						for(Word word :synset.getWords())
+						List<Word> words = synset.getWords();
+						if(words==null  || words.size()==0)
+							errorCount++;
+						for(Word word : words)
 						{
 							String lemma = word.getLemma();
 							IndexWord iw = dictionary.getIndexWord(POS.NOUN, lemma);
 							for(Synset syn : iw.getSenses())
 							{
+								totalCount++;
 								String synOffset = String.format("%08d", syn.getOffset());
 								if(synOffset.compareTo(synsetOffset) < 0)
 								{
+									lessCount++;
 									FeatureVector fv = fg.getFeatureVector(syn, synset);
 									double prediction = svmModel.classify(fv);
 //									System.out.println(synOffset + " "+synsetOffset+" "+prediction);
@@ -100,17 +110,23 @@ public class PopulateSimilarityDB {
 								    PreparedStatement ps = connection.prepareStatement(query);
 								    ps.executeUpdate();									
 								}
+								else if(synOffset.compareTo(synsetOffset) == 0)
+									equalCount++;
 							}
 						}
 					}
 				}
 				if(i%1000 == 0)
-					System.out.println(i);
+					System.out.println("POPULATING DB - NOUN : "+i);
 				i++;				
 				if(i>10)
 					break;
 			}
-			br.close();	    		    		    		    
+			br.close();	    
+			System.out.println("ErrorCount : "+errorCount);
+			System.out.println("LessCount : "+lessCount);
+			System.out.println("EqualCount : "+equalCount);
+			System.out.println("TotalCount : "+totalCount);
 		}
 		catch (SQLException e) {
 			e.printStackTrace();

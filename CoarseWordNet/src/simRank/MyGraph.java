@@ -1,8 +1,10 @@
 package simRank;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.HashMap;
 
 import edu.uci.ics.jung.graph.DirectedSparseMultigraph;
@@ -59,6 +61,21 @@ public class MyGraph {
 			vertexToIdMap.put((Vertex)vertex, index);
 			idToVertexMap.put(index, (Vertex)vertex);
 			index++;
+		}
+	}
+	
+	public void writeIdToVertexMap(String idToVertexMapPath)
+	{
+		int numNodes = graph.getVertexCount();
+		try{
+			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(idToVertexMapPath)));						
+			for(int i=0; i <numNodes; i++)			
+				bw.write(i+" "+idToVertexMap.get(i)+"\n");			
+			bw.close();
+		}
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
 		}
 	}
 }
