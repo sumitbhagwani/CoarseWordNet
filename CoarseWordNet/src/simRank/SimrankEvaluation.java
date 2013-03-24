@@ -5,11 +5,14 @@ public class SimrankEvaluation {
 
 	public static void main(String[] args) throws Exception {
 		long startTime = System.currentTimeMillis();		 
-		String path = "resources/wn30Relations/sampleNew";
-		String simRankPath = "resources/wn30Relations/sampleSimRank.txt";
-		String idToVertexMapPath = "resources/wn30Relations/sampleIdToVertexMap.txt";
+		String pathHypernym = "resources/wn30Relations/hypernymNew";
+		String pathHyponym = "resources/wn30Relations/hyponymNew";
+		String pathMeronym = "resources/wn30Relations/meronymNew";
+		String pathHolonym = "resources/wn30Relations/holonymNew";
+		String simRankPath = "resources/wn30Relations/undirectedSimRank.txt";
+		String idToVertexMapPath = "resources/wn30Relations/undirectedIdToVertexMap.txt";
 		String simrankOutputPath = "resources/wn30Relations/simrankMatrixIteration";
-		String[] paths = {path};
+		String[] paths = {pathHypernym, pathMeronym};
 		
 		MyGraph mygraph = new MyGraph(paths, false);
 		
