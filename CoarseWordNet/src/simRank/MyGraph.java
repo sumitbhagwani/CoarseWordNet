@@ -28,8 +28,9 @@ public class MyGraph {
 			
 		System.out.println("Reading graph..");
 		for(String path : files)
-		{						
+		{				
 			try{
+			System.out.println("Reading : "+path);	
 			BufferedReader br = new BufferedReader(new FileReader(new File(path)));
 			String line;
 			while((line=br.readLine())!=null)

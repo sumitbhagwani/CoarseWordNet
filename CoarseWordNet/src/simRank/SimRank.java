@@ -119,7 +119,7 @@ public class SimRank {
 		for ( int step=0; step < maxIter && maxIter > 0; step++ ) 
 		{
 			System.out.println("Iteration : "+step);
-			double maxDelta = Double.MIN_VALUE;			
+			double maxDelta = -1.0 * Double.MAX_VALUE;			
 			for ( int i = 0 ; i < numNodes ; i++ ) 
 			{ 
 				simrank.set(i,i,1.0); 
@@ -136,7 +136,7 @@ public class SimRank {
 				{
 					Vertex currentVertex2 = (Vertex)it2.next();
 					if(graph.graph.inDegree(currentVertex2) == 0) continue;
-					if ( currentVertex1 == currentVertex2 ) continue;	
+					if ( currentVertex1.equals(currentVertex2) ) continue;	
 					int currentCol = graph.vertexToIdMap.get(currentVertex2).intValue();
 					if(currentRow > currentCol) continue;
 					double quantity = 0.0;
