@@ -4,6 +4,7 @@ import es.yrbcn.graph.weighted.*;
 import it.unimi.dsi.webgraph.*;
 import it.unimi.dsi.webgraph.labelling.*;
 import java.util.*;
+import java.util.Map.Entry;
 import java.util.zip.*;
 import java.io.*;
 import java.lang.reflect.*;
@@ -119,7 +120,7 @@ public class Graph extends ArcLabelledImmutableGraph {
 			int i = 0;
 			while ( ( aux = br.readLine() ) != null ) try {
 				if ( commit++ % COMMIT_SIZE == 0 ) { commit(); list.commit(); }
-				String parts[] = aux.split("\t");
+				String parts[] = aux.split("\\s+");
 				String l1 = new String(parts[0]);
 				String l2 = new String(parts[1]);
 				if ( !nodesReverse.containsKey(l1) ) { nodesReverse.put(l1, nodesReverse.size()); nodes.put(nodes.size(), l1); }
@@ -636,6 +637,23 @@ public class Graph extends ArcLabelledImmutableGraph {
 	try { nodesReverse.getRecordManager().commit(); } catch ( IOException e ) { throw new Error(e); }
   };
 
+  public void writeIdToVertexMap(String filePath)
+  {
+	  try{
+		  BufferedWriter bw = new BufferedWriter(new FileWriter(new File(filePath)));
+		  for(Entry<Integer, String> entry : nodes.entrySet())
+		  {
+			  bw.write(entry.getKey()+" "+entry.getValue()+"\n");
+		  }
+		  bw.close();
+	  }
+	  catch(Exception ex)
+	  {
+		  ex.printStackTrace();
+		  System.exit(-1);
+	  }
+  }
+  
   protected void finalize () throws Throwable {
 	super.finalize();
 	nodes.clear();

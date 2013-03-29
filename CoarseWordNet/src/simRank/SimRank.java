@@ -129,6 +129,7 @@ public class SimRank {
 			while(it1.hasNext())
 			{
 				Vertex currentVertex1 = (Vertex)it1.next();
+				System.out.println(currentVertex1);
 				if(graph.graph.inDegree(currentVertex1) == 0) continue;
 				int currentRow = graph.vertexToIdMap.get(currentVertex1).intValue();
 				Iterator it2 = graph.graph.getVertices().iterator();

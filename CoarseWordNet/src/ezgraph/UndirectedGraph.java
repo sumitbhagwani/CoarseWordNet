@@ -62,6 +62,62 @@ public class UndirectedGraph extends Graph {
 	} catch ( IOException ex ) { throw new Error(ex); }
   }
 
+  public UndirectedGraph ( String[] files ) throws IOException {
+	try {
+		File auxFile = File.createTempFile("graph-maps-" + System.currentTimeMillis(),"aux");
+		auxFile.deleteOnExit();
+        	RecordManager recMan = RecordManagerFactory.createRecordManager(auxFile.getAbsolutePath());
+		nodes = recMan.hashMap("nodes");
+		nodesReverse = recMan.hashMap("nodesReverse");
+	} catch ( IOException ex ) { throw new Error(ex); }
+	nodes.clear();
+	nodesReverse.clear();
+        Constructor[] cons = WeightedArc.class.getDeclaredConstructors();
+        for ( int i = 0; i< cons.length; i++) cons[i].setAccessible(true);
+	numArcs = 0;
+	String aux = null;
+	Float weight = (float)1.0;
+	WeightedArcSet list = new WeightedArcSet();
+	BufferedReader br;
+	for(String file : files)
+	{
+		try { 
+			br = new BufferedReader(new InputStreamReader( new GZIPInputStream( new FileInputStream(file) ))); 
+		} catch ( Exception ex ) { 
+			br = new BufferedReader(new FileReader(file));
+		}
+		
+		System.out.println("Reading : "+file);
+		
+		int i = 0;
+		while ( ( aux = br.readLine() ) != null ) try {
+			if ( commit++ % COMMIT_SIZE == 0 ) { commit(); list.commit(); }
+			String parts[] = aux.split("\t");
+			String l1 = new String(parts[0]);
+			String l2 = new String(parts[1]);
+			if ( !nodesReverse.containsKey(l1) ) { nodesReverse.put(l1, nodesReverse.size()); nodes.put(nodes.size(), l1); }
+			if ( !nodesReverse.containsKey(l2) ) { nodesReverse.put(l2, nodesReverse.size()); nodes.put(nodes.size(), l2); }
+			if ( parts.length == 3 ) weight = new Float(parts[2]);
+			list.add((WeightedArc)cons[0].newInstance(nodesReverse.get(l1),nodesReverse.get(l2),weight));
+			list.add((WeightedArc)cons[0].newInstance(nodesReverse.get(l2),nodesReverse.get(l1),weight));
+			i++;
+			if(i%1000 == 0)
+				System.out.println(i);
+		} catch ( Exception ex ) { throw new Error(ex); }
+		this.graph = new WeightedBVGraph( list.toArray( new WeightedArc[0] ) );
+		this.reverse = graph;
+		br.close();
+	}
+	numArcs = list.size();
+	iterator = nodeIterator();
+	try {
+		File auxFile = File.createTempFile("graph" + System.currentTimeMillis(),"aux");
+		auxFile.deleteOnExit();
+		String basename = auxFile.getAbsolutePath();
+		store(basename);
+	} catch ( IOException ex ) { throw new Error(ex); }
+  }
+  
   public UndirectedGraph ( WeightedArc[] arcs ) { this( new WeightedBVGraph( arcs ) ); }
 
   public UndirectedGraph ( WeightedArc[] arcs, String[] names ) { this( new WeightedBVGraph( arcs ) , names ); }
