@@ -31,7 +31,7 @@ public class SimRank {
 		for ( int step=0; step < maxIter && maxIter > 0; step++ ) {
 			System.out.println("Iteration : "+step);
 			double maxDelta = -1.0 * Double.MAX_VALUE;
-			for ( int i = 0 ; i < graph.numNodes() ; i++ ) { simrank.set(i,i,1.0); simrank2.set(i,i,1.0); }
+//			for ( int i = 0 ; i < graph.numNodes() ; i++ ) { simrank.set(i,i,1.0); simrank2.set(i,i,1.0); } // no need of setting 1 by default
 			int iterate1Count = 0;
 			ezgraph.NodeIterator it1 = graph.nodeIterator();
 			while ( it1.hasNext() ) {
@@ -60,7 +60,9 @@ public class SimRank {
 						while ( (aux2 = anc2.nextInt()) != null && aux2 >= 0 && aux2 < ( graph.numNodes() ) ) {
 							double weight2 = anc2.label().getFloat() / sum2;
 							double simrankAux12 = 0.0;
-							if(aux1 <= aux2)
+							if(aux1 == aux2)
+								simrankAux12 = 1.0;
+							else if(aux1 < aux2)
 								simrankAux12 = simrank.get(aux1,aux2);
 							else
 								simrankAux12 = simrank.get(aux2,aux1);
