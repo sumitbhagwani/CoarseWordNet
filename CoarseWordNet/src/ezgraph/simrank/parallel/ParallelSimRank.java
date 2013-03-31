@@ -1,9 +1,13 @@
-package ezgraph;
+package ezgraph.simrank.parallel;
 
 import es.yrbcn.graph.weighted.*;
+import ezgraph.Graph;
+import ezgraph.SparseMatrix;
 import it.unimi.dsi.webgraph.*;
 import it.unimi.dsi.webgraph.labelling.*;
 import java.util.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.io.*;
 import java.lang.reflect.*;
 
@@ -12,27 +16,24 @@ import com.sun.org.apache.xalan.internal.xsltc.dom.StepIterator;
 import it.unimi.dsi.fastutil.ints.*;
 import it.unimi.dsi.fastutil.objects.*;
 
-public class SimRank {
+public class ParallelSimRank {
 
 	private SparseMatrix simrank;
 
 	private Graph graph;
 
-	private double DEFAULT_C = 0.6;
-	
-	private int stepSizeForSimRankWriting = 4;
+	private double DEFAULT_C = 0.6; 	
 
- 	public SimRank ( Graph graph ) { this(graph, 0.0000000001, 5, ""); }
- 	
- 	public SimRank ( Graph graph , String writePath) { this(graph, 0.0000000001, 5, writePath); }
- 	
- 	public SimRank ( Graph graph, double threshold, int maxIter, String writePath) {
+	private static final int NTHREDS = 1;
+	
+ 	public ParallelSimRank ( Graph graph, double threshold, int maxIter, String writePath) { 		
 		this.graph = graph;
 		simrank = new SparseMatrix(graph.numNodes());
 		SparseMatrix simrank2 = new SparseMatrix(graph.numNodes());
 		for ( int step=0; step < maxIter && maxIter > 0; step++ ) 
 		{
 			System.out.println("Iteration : "+step);
+			ExecutorService executor = Executors.newFixedThreadPool(NTHREDS);
 			double maxDelta = -1.0 * Double.MAX_VALUE;
 			for ( int i = 0 ; i < graph.numNodes() ; i++ ) { simrank.set(i,i,1.0); simrank2.set(i,i,1.0); }
 			int iterate1Count = 0;
@@ -51,41 +52,17 @@ public class SimRank {
 //					if(inDegreeCurrentVertex2 == 0) continue;
 					if ( currentVertex1 == currentVertex2 ) continue;
 					if(currentVertex1 > currentVertex2) continue;
-					double quantity = 0.0;
-					Integer aux1 = null , aux2 = null;
-					ArcLabelledNodeIterator.LabelledArcIterator anc1 = it1.ancestors();
-					double sum1 = 0.0;
-					while ( (aux1 = anc1.nextInt()) != null && aux1 >= 0 && aux1 < ( graph.numNodes() ) ) sum1 += anc1.label().getFloat();
-					anc1 = it1.ancestors();
-					while ( (aux1 = anc1.nextInt()) != null && aux1 >= 0 && aux1 < ( graph.numNodes() ) ) {
-						double weight1 = anc1.label().getFloat() / sum1;
-						ArcLabelledNodeIterator.LabelledArcIterator anc2 = it2.ancestors();
-						double sum2 = 0.0;
-						while ( (aux2 = anc2.nextInt()) != null && aux2 >= 0 && aux2 < ( graph.numNodes() ) ) sum2 += anc2.label().getFloat();
-						anc2 = it2.ancestors();
-						while ( (aux2 = anc2.nextInt()) != null && aux2 >= 0 && aux2 < ( graph.numNodes() ) ) {
-							double weight2 = anc2.label().getFloat() / sum2;
-							double simrankAux12 = 0.0;
-							if(aux1 <= aux2)
-								simrankAux12 = simrank.get(aux1,aux2);
-							else
-								simrankAux12 = simrank.get(aux2,aux1);
-							quantity += weight1 * weight2 * simrankAux12;
-//							quantity += weight1 * weight2 * simrank.get(aux1, aux2);
-						}
-					}
-					if ( quantity != 0.0 ) {
-//						simrank2.set(currentVertex1,currentVertex2, quantity * ( DEFAULT_C / ( 1.0 * it1.indegree() * it2.indegree() )));
-						simrank2.set(currentVertex1,currentVertex2, quantity * DEFAULT_C );
-						maxDelta = Math.max(maxDelta, Math.abs( simrank2.get(currentVertex1,currentVertex2) - simrank.get(currentVertex1,currentVertex2) ) );
-					}
+					Runnable worker = new UpdateSimRankTask(simrank, simrank2, graph, currentVertex1, currentVertex2, it1, it2);
+				    executor.execute(worker);
 				}
 			}
-//			simrank = simrank2.clone();
-			simrank = simrank2;
+			executor.shutdown();
+		    // Wait until all threads are finish
+		    while (!executor.isTerminated()) {
+		    }
+			simrank = simrank2.clone();
 			simrank2 = new SparseMatrix(graph.numNodes());
-			System.gc();
-			if((step % stepSizeForSimRankWriting == 0) && writePath.length()>0)
+			if(step % 5 == 0)
 				writeScores(writePath+step);
 			if ( maxDelta < threshold && threshold > 0 ) break;
 		} 

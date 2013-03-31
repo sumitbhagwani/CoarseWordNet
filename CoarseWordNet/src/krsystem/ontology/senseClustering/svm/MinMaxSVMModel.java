@@ -90,7 +90,7 @@ public class MinMaxSVMModel extends ModelSVM{
 		for(int i=0; i<numFeatures; i++)
 		{
 			min[i] =  Double.MAX_VALUE;
-			max[i] =  Double.MIN_VALUE;
+			max[i] =  -1.0 * Double.MAX_VALUE;
 		}
 		for(LabeledFeatureVector lfv : examples)
 		{
@@ -133,7 +133,7 @@ public class MinMaxSVMModel extends ModelSVM{
 		for(int i=0; i<numFeatures; i++)
 		{
 			min[i] =  Double.MAX_VALUE;
-			max[i] =  Double.MIN_VALUE;
+			max[i] =  -1.0 * Double.MAX_VALUE;			
 		}
 		for(LabeledFeatureVector lfv : examples)
 		{
@@ -159,7 +159,7 @@ public class MinMaxSVMModel extends ModelSVM{
 					vals[i] = val;
 				else
 					vals[i] = minReqd + (((val-min[i])/(max[i]-min[i]))*(maxReqd-minReqd));					
-			}
+			}			
 			normalizedExamples[j] = new LabeledFeatureVector(lfv.getLabel(), dims, vals);
 			j++;
 		}						
@@ -190,11 +190,12 @@ public class MinMaxSVMModel extends ModelSVM{
 			if(min[i]==max[i])
 				vals[i] = val;
 			else
-				vals[i] = minReqd + (((val-min[i])/(max[i]-min[i]))*(maxReqd-minReqd));	
-			if(vals[i] > max[i])
-				vals[i] = max[i];
-			if(vals[i] < min[i])
-				vals[i] = min[i];
+				vals[i] = minReqd + (((val-min[i])/(max[i]-min[i]))*(maxReqd-minReqd));
+//			// clipping ?
+//			if(vals[i] > max[i])
+//				vals[i] = max[i];
+//			if(vals[i] < min[i])
+//				vals[i] = min[i];
 		}
 		FeatureVector newFV = new FeatureVector(dims, vals);
 		return svmModel.classify(newFV);
@@ -203,16 +204,17 @@ public class MinMaxSVMModel extends ModelSVM{
 	public void writeModel(String pathForSVMModel, String PathForMinMax)
 	{
 		svmModel.writeModelToFile(pathForSVMModel);
+		double[] weights = svmModel.getLinearWeights();
 		try{
-		BufferedWriter bw = new BufferedWriter(new FileWriter(new File(PathForMinMax)));
-		bw.write("#featureNum "+featureNum+"\n");
-		bw.write("#minReqd "+minReqd+"\n");
-		bw.write("#maxReqd "+maxReqd+"\n");		
-		for(int i=0; i<featureNum; i++)
-		{
-			bw.write(i+" "+min[i]+" "+max[i]+"\n");
-		}
-		bw.close();		
+			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(PathForMinMax)));
+			bw.write("#featureNum "+featureNum+"\n");
+			bw.write("#minReqd "+minReqd+"\n");
+			bw.write("#maxReqd "+maxReqd+"\n");		
+			for(int i=0; i<featureNum; i++)
+			{
+				bw.write(i+" "+min[i]+" "+max[i]+" "+weights[i]+"\n");
+			}
+			bw.close();		
 		}
 		catch(Exception ex)
 		{

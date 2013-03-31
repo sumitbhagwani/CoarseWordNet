@@ -16,12 +16,12 @@ public class SparseMatrix {
       private final List<Int2FloatMap> data;
   
       public SparseMatrix clone ( ) { 
-	SparseMatrix aux = new SparseMatrix();
-	for ( Int2FloatMap map : data ) { 
-		Int2FloatMap map2 = new Int2FloatOpenHashMap(map);
-		aux.data.add(map2);
-	}
-	return aux;
+		SparseMatrix aux = new SparseMatrix();
+		for ( Int2FloatMap map : data ) { 
+			Int2FloatMap map2 = new Int2FloatOpenHashMap(map);
+			aux.data.add(map2);
+		}
+		return aux;
       }
 
       public SparseMatrix() { data = new ObjectArrayList<Int2FloatMap>(); }

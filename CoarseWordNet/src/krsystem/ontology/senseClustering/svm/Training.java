@@ -101,8 +101,7 @@ public class Training {
 				Scanner sc = new Scanner(new File(dataPath));
 				while(sc.hasNextLine())
 				{
-					String line = sc.nextLine().toLowerCase().trim();	
-					if(count<2800) {count++; continue;}
+					String line = sc.nextLine().toLowerCase().trim();						
 					String[] lineSplit = line.split("\\s+");
 					int label = Integer.parseInt(lineSplit[2]);
 					Instance instance = new Instance(lineSplit[0], lineSplit[1], dict, label);						
@@ -280,7 +279,7 @@ public class Training {
 	{
 		OrderedPair<Integer , LabeledFeatureVector[]> dimNumExamplesPair = getFeatureVectors(trainingDataPaths);
 		LabeledFeatureVector[] examples = dimNumExamplesPair.getR();
-		int numFeatures = dimNumExamplesPair.getL();
+		int numFeatures = dimNumExamplesPair.getL();		
 		return MinMaxSVMModel.train(examples, numFeatures, trainer, params , -1 , 1, arffOutputPath, SVMLightOutputPath);		
 	}
 	

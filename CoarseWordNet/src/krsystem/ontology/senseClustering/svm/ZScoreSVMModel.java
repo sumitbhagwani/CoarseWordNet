@@ -132,7 +132,7 @@ public class ZScoreSVMModel extends ModelSVM{
 			j++;
 		}						
 
-		SVMLightModel model = trainer.trainModel(normalizedExamples);
+		SVMLightModel model = trainer.trainModel(normalizedExamples, params);
 		ZScoreSVMModel zScoreSVMModel = new ZScoreSVMModel(model, numFeatures, mean, std);
 		return zScoreSVMModel;		
 	}			

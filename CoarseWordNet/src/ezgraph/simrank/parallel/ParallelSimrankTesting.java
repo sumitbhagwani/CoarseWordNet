@@ -1,36 +1,27 @@
-package simRank;
+package ezgraph.simrank.parallel;
 
 import java.io.IOException;
-import java.util.Random;
-
-import krsystem.StaticValues;
 
 import ezgraph.Graph;
-import ezgraph.SimRank;
 import ezgraph.UndirectedGraph;
 
-public class EZGraphTest {
+public class ParallelSimrankTesting {
 
-	/**
-	 * @param args
-	 * @throws IOException 
-	 */
 	public static void main(String[] args) throws IOException {
 		String sampleFile = "resources/wn30Relations/sample";
 		String hypernymFile = "resources/wn30Relations/hypernym";
 		String hyponymFile = "resources/wn30Relations/hyponym";
 		String meronymFile = "resources/wn30Relations/meronym";
 		String holonymFile = "resources/wn30Relations/holonym";
-		String simrankExperimentPath = StaticValues.dataPath+"simrankExperiment/";
-		String idToVertexMapPath = simrankExperimentPath+"undirectedIdToVertexMap.txt";
-		String simrankOutputPath = simrankExperimentPath+"simrankMatrixIteration";
+		String idToVertexMapPath = "resources/wn30Relations/directedIdToVertexMap2.txt";
+		String simrankOutputPath = "resources/wn30Relations/simrankMatrixIteration";
 		
 		double threshold = 0.0000000001;
 		int maxIter = 10;
 		
 //		String[] files = {hypernymFile, hyponymFile, holonymFile, meronymFile};
-		String[] files = {hypernymFile, meronymFile};
-//		String[] files = {holonymFile};
+//		String[] files = {hypernymFile, meronymFile};
+		String[] files = {holonymFile};
 		
 		System.out.print("Loading graph...");
 		Graph graph = new UndirectedGraph(files);
@@ -41,7 +32,7 @@ public class EZGraphTest {
 		
 		System.out.println("Computing SimRank on a Graph ...");
 		long startTime = System.currentTimeMillis();
-		SimRank simrank = new SimRank(graph,threshold,maxIter, simrankOutputPath);
+		ParallelSimRank simrank = new ParallelSimRank(graph,threshold,maxIter, simrankOutputPath);
 		long endTime = System.currentTimeMillis();
 		System.out.println(" done in "+(endTime-startTime)+" milliseconds");
 		

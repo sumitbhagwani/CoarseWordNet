@@ -99,20 +99,22 @@ public class WNBasedSimilarity {
 			System.exit(-1);
 		}
 				
-		double[] similarities = new double[9];
+//		double[] similarities = new double[9];
+		double[] similarities = new double[8];
+		int index = 0;
 		try{
-			if(syn1.getOffset()==126264 && syn2.getOffset()==169806 && posString.equals("v"))
-				similarities[0] = 0;
-			else
-				similarities[0] = hso.hso(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
-		similarities[1] = lch.lch(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
-		similarities[2] = wup.wup(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
-		similarities[3] = jcn.jcn(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
-		similarities[4] = lin.lin(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
-		similarities[5] = res.res(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
-		similarities[6] = adapLesk.lesk(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
-		similarities[7] = adapLeskTani.lesk(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
-		similarities[8] = adapLeskTaniNoHypo.lesk(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
+//			if(syn1.getOffset()==126264 && syn2.getOffset()==169806 && posString.equals("v"))
+//				similarities[0] = 0;
+//			else
+//				similarities[0] = hso.hso(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
+		similarities[index++] = lch.lch(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
+		similarities[index++] = wup.wup(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
+		similarities[index++] = jcn.jcn(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
+		similarities[index++] = lin.lin(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
+		similarities[index++] = res.res(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
+		similarities[index++] = adapLesk.lesk(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
+		similarities[index++] = adapLeskTani.lesk(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
+		similarities[index++] = adapLeskTaniNoHypo.lesk(pair1.getL(), pair1.getR().intValue(), pair2.getL(), pair2.getR().intValue(), posString);
 		}
 		catch(Error soe)
 		{
@@ -150,34 +152,34 @@ public class WNBasedSimilarity {
 		List<Word> words2 = syn2.getWords();		
 		
 		// MiMo MergeSP2
-		int commonAntonymCount = 0;
-		try{
-			HashSet<String> antonymOffsets1 = new HashSet<String>();
-			PointerTargetNodeList list1 = PointerUtils.getAntonyms(syn1);
-			for(PointerTargetNode ptn : list1)
-			{
-				long offsetLong = ptn.getSynset().getOffset();						
-				String offset = String.format("%08d", offsetLong);				
-				antonymOffsets1.add(offset);
-			}
-					
-			PointerTargetNodeList list2 = PointerUtils.getAntonyms(syn2);
-			for(PointerTargetNode ptn : list2)
-			{
-				long offsetLong = ptn.getSynset().getOffset();						
-				String offset = String.format("%08d", offsetLong);				
-				if(antonymOffsets1.contains(offset))
-					commonAntonymCount++;
-			} 
-		}
-		catch(Exception ex)
-		{
-			System.out.println("--------------------Error in finding antonym----------------");
-			System.out.println(syn1);
-			System.out.println(syn2);
-			ex.printStackTrace(); // this throws "array index out of bounds sometimes"
-			System.out.println("-----------------------------------------------");
-		}
+//		int commonAntonymCount = 0;
+//		try{
+//			HashSet<String> antonymOffsets1 = new HashSet<String>();
+//			PointerTargetNodeList list1 = PointerUtils.getAntonyms(syn1);
+//			for(PointerTargetNode ptn : list1)
+//			{
+//				long offsetLong = ptn.getSynset().getOffset();						
+//				String offset = String.format("%08d", offsetLong);				
+//				antonymOffsets1.add(offset);
+//			}
+//					
+//			PointerTargetNodeList list2 = PointerUtils.getAntonyms(syn2);
+//			for(PointerTargetNode ptn : list2)
+//			{
+//				long offsetLong = ptn.getSynset().getOffset();						
+//				String offset = String.format("%08d", offsetLong);				
+//				if(antonymOffsets1.contains(offset))
+//					commonAntonymCount++;
+//			} 
+//		}
+//		catch(Exception ex)
+//		{
+//			System.out.println("--------------------Error in finding antonym----------------");
+//			System.out.println(syn1);
+//			System.out.println(syn2);
+//			ex.printStackTrace(); // this throws "array index out of bounds sometimes"
+//			System.out.println("-----------------------------------------------");
+//		}
 		
 		// MiMo MergeSP3
 //		Only for adjectives apparently 		
@@ -277,7 +279,7 @@ public class WNBasedSimilarity {
 			return null;
 		
 		int index = 0; 
-		features[index++] = commonAntonymCount;
+//		features[index++] = commonAntonymCount;
 		features[index++] = commonWordsCount;
 		features[index++] = commonWordSenseCount;
 		features[index++] = senseCount;

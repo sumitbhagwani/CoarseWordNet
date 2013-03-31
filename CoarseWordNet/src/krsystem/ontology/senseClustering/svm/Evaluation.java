@@ -215,7 +215,7 @@ public class Evaluation {
 	
 	public static void evalNoun() {
 		System.out.println("Evaluation Running...");
-		String propsFile30 = "resources/file_properties.xml";
+		String propsFile30 = StaticValues.propsFile30;
 		String dir = "/home/sumitb/Data/";
 		String arg = "WordNet-3.0";
 		String svmFolder = "resources/Clustering/svmBinaries/";
@@ -246,16 +246,17 @@ public class Evaluation {
 			Training trainingModule = new Training(dictionary, fg);
 			TrainingParameters tp = new TrainingParameters();
 			tp.getLearningParameters().verbosity = 1;		
+			System.out.println("Kernel Type : "+tp.getKernelParameters().kernel_type);
 //			tp.getKernelParameters().kernel_type = 2;
 //			ModelSVM model = trainingModule.train(trainingFiles, trainer, tp);
-//			ModelSVM model = trainingModule.train(trainingFilesEqual, trainer, tp);
-			ModelSVM model = trainingModule.trainMinMaxNormal(trainingFilesEqual, trainer, tp);
+//			ModelSVM model = trainingModule.train(trainingFilesEqual, trainer, tp);			
+			ModelSVM model = trainingModule.trainMinMaxNormal(trainingFilesEqual, trainer, tp, arffPathTrain, lightPathTrain);
 //			ModelSVM model = trainingModule.trainZScoreNormal(trainingFilesEqual, trainer, tp);
 //			ModelSVM model = trainingModule.trainMinMaxNormal(sample, trainer, tp);			
 			System.out.println("Training completed...");
-			model.writeModel(svmFolder+"modelLinearEqualTrainingMinMaxNormalizationVerb", svmFolder+"paramsLinearEqualTrainingMinMaxNormalizationVerb");
+//			model.writeModel(svmFolder+"modelLinearEqualTrainingMinMaxNormalizationNounBuggy", svmFolder+"paramsLinearEqualTrainingMinMaxNormalizationNounBuggy");
 			
-//			SVMLightModel model = SVMLightModel.readSVMLightModelFromURL(new java.io.File(svmFolder+"model4").toURL());
+//			ModelSVM model = MinMaxSVMModel.readModel(svmFolder+"modelLinearEqualTrainingMinMaxNormalizationNoun", svmFolder+"paramsLinearEqualTrainingMinMaxNormalizationNoun");
 //			System.out.println("Model loaded....");
 			
 			Evaluation evaluationModule = new Evaluation(dictionary, trainingModule, model, fg);
@@ -273,8 +274,8 @@ public class Evaluation {
 	}
 	
 	public static void main(String[] args) {
-//		Evaluation.evalNoun();
-		Evaluation.evalVerb();
+		Evaluation.evalNoun();
+//		Evaluation.evalVerb();
 	}
 
 }
