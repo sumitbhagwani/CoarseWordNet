@@ -20,7 +20,7 @@ public class SimRank {
 
 	private double DEFAULT_C = 0.6;
 	
-	private int stepSizeForSimRankWriting = 4;
+	private int stepSizeForSimRankWriting = 1;
 
  	public SimRank ( Graph graph ) { this(graph, 0.0000000001, 5, ""); }
  	
@@ -34,7 +34,7 @@ public class SimRank {
 		{
 			System.out.println("Iteration : "+step);
 			double maxDelta = -1.0 * Double.MAX_VALUE;
-			for ( int i = 0 ; i < graph.numNodes() ; i++ ) { simrank.set(i,i,1.0); simrank2.set(i,i,1.0); }
+//			for ( int i = 0 ; i < graph.numNodes() ; i++ ) { simrank.set(i,i,1.0); simrank2.set(i,i,1.0); }
 			int iterate1Count = 0;
 			ezgraph.NodeIterator it1 = graph.nodeIterator();
 			while ( it1.hasNext() ) {
@@ -42,8 +42,8 @@ public class SimRank {
 				iterate1Count++;
 				if(iterate1Count%1000 == 0)
 					System.out.println("Iterate1Count : "+iterate1Count);
-				int inDegreeCurrentVertex1 = graph.indegree(currentVertex1);
-				if(inDegreeCurrentVertex1 == 0) continue;
+//				int inDegreeCurrentVertex1 = graph.indegree(currentVertex1);
+//				if(inDegreeCurrentVertex1 == 0) continue;
 				ezgraph.NodeIterator it2 = graph.nodeIterator();
 				while ( it2.hasNext() ) {
 					int currentVertex2 = it2.nextInt();
@@ -66,7 +66,9 @@ public class SimRank {
 						while ( (aux2 = anc2.nextInt()) != null && aux2 >= 0 && aux2 < ( graph.numNodes() ) ) {
 							double weight2 = anc2.label().getFloat() / sum2;
 							double simrankAux12 = 0.0;
-							if(aux1 <= aux2)
+							if(aux1 == aux2)
+								simrankAux12 = 1.0;
+							else if(aux1 < aux2)
 								simrankAux12 = simrank.get(aux1,aux2);
 							else
 								simrankAux12 = simrank.get(aux2,aux1);

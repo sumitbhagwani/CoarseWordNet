@@ -212,10 +212,10 @@ public class PrepareBinaryClassificationData {
 		String outputPath = "resources/Clustering/BinaryClassificationData/";
 		String nounInputFolder = inputPath+"Noun/";
 		String verbInputFolder = inputPath+"Verb/";
-		String nounOutputFilePositive = outputPath+"nounPositive.txt";
-		String nounOutputFileNegative = outputPath+"nounNegative.txt";
-		String verbOutputFilePositive = outputPath+"verbPositive.txt";
-		String verbOutputFileNegative = outputPath+"verbNegative.txt";				
+		String nounOutputFilePositive = outputPath+"nounPositiveCleaned";
+		String nounOutputFileNegative = outputPath+"nounNegativeCleaned";
+		String verbOutputFilePositive = outputPath+"verbPositiveCleaned";
+		String verbOutputFileNegative = outputPath+"verbNegativeCleaned";				
 		
 		String propsFile30 = "resources/file_properties.xml";
 		try{
@@ -225,8 +225,8 @@ public class PrepareBinaryClassificationData {
 			{
 //				prepareData(nounInputFolder, nounOutputFilePositive, nounOutputFileNegative, dictionary);
 //				prepareData(verbInputFolder, verbOutputFilePositive, verbOutputFileNegative, dictionary);
-				divideDataset(nounOutputFilePositive, nounOutputFileNegative, 0.7, outputPath+"Noun3/");
-//				divideDataset(verbOutputFilePositive, verbOutputFileNegative, 0.7, outputPath+"Verb3/");
+//				divideDataset(nounOutputFilePositive, nounOutputFileNegative, 0.7, outputPath+"Noun6/");
+				divideDataset(verbOutputFilePositive, verbOutputFileNegative, 0.7, outputPath+"Verb3/");
 			}
 		}
 		catch(Exception ex)

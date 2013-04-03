@@ -1,0 +1,20 @@
+Noun4 onwards are from cleaned dataset
+
+--------------------------------------------
+dividing dataset stats 
+
+numPosExample : 1214
+numPosExampleFinal : 850
+numPosExampleTest : 364
+numNegExample : 11974
+numNegExampleFinal : 8382
+
+--------------------------------------------
+
+Verb 3 onwards..
+
+numPosExample : 6881
+numPosExampleFinal : 4817
+numPosExampleTest : 2064
+numNegExample : 20899
+numNegExampleFinal : 14630
