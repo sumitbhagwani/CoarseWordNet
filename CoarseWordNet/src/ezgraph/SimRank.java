@@ -21,10 +21,12 @@ public class SimRank {
 	private double DEFAULT_C = 0.6;
 	
 	private int stepSizeForSimRankWriting = 1;
+	
+	private static double maxDeltaThreshold = 0.0000000001;
 
- 	public SimRank ( Graph graph ) { this(graph, 0.0000000001, 5, ""); }
+ 	public SimRank ( Graph graph ) { this(graph, maxDeltaThreshold , 5, ""); }
  	
- 	public SimRank ( Graph graph , String writePath) { this(graph, 0.0000000001, 5, writePath); }
+ 	public SimRank ( Graph graph , String writePath) { this(graph, maxDeltaThreshold, 5, writePath); }
  	
  	public SimRank ( Graph graph, double threshold, int maxIter, String writePath) {
 		this.graph = graph;
@@ -87,6 +89,7 @@ public class SimRank {
 			simrank = simrank2;
 			simrank2 = new SparseMatrix(graph.numNodes());
 			System.gc();
+			System.out.println("MaxDelta for iteration "+step+" was "+maxDelta);
 			if((step % stepSizeForSimRankWriting == 0) && writePath.length()>0)
 				writeScores(writePath+step);
 			if ( maxDelta < threshold && threshold > 0 ) break;

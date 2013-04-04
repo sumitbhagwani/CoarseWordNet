@@ -11,7 +11,7 @@ public class SimrankEvaluation {
 		String pathHolonym = "resources/wn30Relations/holonymNew";
 		String simRankPath = "resources/wn30Relations/undirectedSimRank.txt";
 		String idToVertexMapPath = "resources/wn30Relations/undirectedIdToVertexMap.txt";
-		String simrankOutputPath = "resources/wn30Relations/simrankMatrixIteration";
+		String simrankOutputPath = "resources/wn30Relations/simrankMatrixIterationMyImplementation";
 		String[] paths = {pathMeronym};
 		
 		MyGraph mygraph = new MyGraph(paths, false);

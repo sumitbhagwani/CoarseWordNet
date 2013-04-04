@@ -33,13 +33,14 @@ public class PopulateSimilarityDB {
 	public static void populateNouns()
 	{
 		int errorCount = 0;
+		int errorCount2 = 0;
 		int lessCount = 0;
-		int equalCount = 0;
+		int equalCount = 0;		
 		int totalCount = 0;		
 		String svmFolder = "resources/Clustering/svmBinaries/";
 		String posString = "Noun";
-		String pathForSVMModel = svmFolder+"modelLinearEqualTrainingMinMaxNormalization";
-		String PathForMinMax   = svmFolder+"paramsLinearEqualTrainingMinMaxNormalization";
+		String pathForSVMModel = svmFolder+"modelLinearEqualTrainingMinMaxNormalizationNoun";
+		String PathForMinMax   = svmFolder+"paramsLinearEqualTrainingMinMaxNormalizationNoun";
 		
 		String propsFile30 = StaticValues.propsFile30;
 		String dir = StaticValues.dataPath;
@@ -115,12 +116,16 @@ public class PopulateSimilarityDB {
 							}
 						}
 					}
+					else
+					{
+						errorCount2++;
+					}
 				}
 				if(i%1000 == 0)
-					System.out.println("POPULATING DB - NOUN : "+i);
+					System.out.println("POPULATING NOUNS: "+i+" ErrorCount : "+errorCount+" ErrorCount2 : "+errorCount2+" LessCount : "+lessCount+" EqualCount : "+equalCount+" TotalCount : "+totalCount);
 				i++;				
-				if(i>10)
-					break;
+//				if(i>10)
+//					break;
 			}
 			br.close();	    
 			System.out.println("ErrorCount : "+errorCount);
@@ -192,8 +197,8 @@ public class PopulateSimilarityDB {
 	{
 		String svmFolder = "resources/Clustering/svmBinaries/";
 		String posString = "Noun";
-		String pathForSVMModel = svmFolder+"modelLinearEqualTrainingMinMaxNormalization";
-		String PathForMinMax   = svmFolder+"paramsLinearEqualTrainingMinMaxNormalization";
+		String pathForSVMModel = svmFolder+"modelLinearEqualTrainingMinMaxNormalizationNoun";
+		String PathForMinMax   = svmFolder+"paramsLinearEqualTrainingMinMaxNormalizationNoun";
 		
 		String propsFile30 = StaticValues.propsFile30;
 		String dir = StaticValues.dataPath;
@@ -259,8 +264,8 @@ public class PopulateSimilarityDB {
 	{
 		String svmFolder = "resources/Clustering/svmBinaries/";
 		String posString = "Noun";
-		String pathForSVMModel = svmFolder+"modelLinearEqualTrainingMinMaxNormalization";
-		String PathForMinMax   = svmFolder+"paramsLinearEqualTrainingMinMaxNormalization";
+		String pathForSVMModel = svmFolder+"modelLinearEqualTrainingMinMaxNormalizationNoun";
+		String PathForMinMax   = svmFolder+"paramsLinearEqualTrainingMinMaxNormalizationNoun";
 		
 		String propsFile30 = StaticValues.propsFile30;
 		String dir = StaticValues.dataPath;
@@ -301,11 +306,11 @@ public class PopulateSimilarityDB {
 	public static void main(String[] args) {
 //		long startTime = System.currentTimeMillis();
 ////		test1();	
-//		populateNouns();
+		populateNouns();
 //		long endTime = System.currentTimeMillis();
 //		System.out.println("Took "+(endTime - startTime) + " ms");
 //		test();
-		test2();
+//		test2();
 	}
 
 }
