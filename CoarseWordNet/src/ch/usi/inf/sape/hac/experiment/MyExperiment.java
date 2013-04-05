@@ -13,6 +13,7 @@ public class MyExperiment implements Experiment{
 		try{
 			DataSource source = new DataSource(instancesPath);
 			instances = source.getDataSet();
+			System.out.println("Working on "+instances.numInstances()+" instances");
 		}
 		catch(Exception ex)
 		{

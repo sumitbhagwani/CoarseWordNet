@@ -1,0 +1,10 @@
+genPlattProbNoun Running...
+Learning Transformation Model on 1700 instances..
+Iteration 0 ---- A : 0.0 ---- B : 0.0
+Iteration 1 ---- A : -0.8985023922432739 ---- B : -0.05274782228871906
+Iteration 2 ---- A : -1.136081576092076 ---- B : 0.03641722443940468
+Iteration 3 ---- A : -1.1650516972895433 ---- B : 0.02349933267786123
+Iteration 4 ---- A : -1.1655231498066823 ---- B : 0.022218323105606227
+Iteration 5 ---- A : -1.1655236968316927 ---- B : 0.022195797922121792
+transformationModel.A : -1.1655236968316927
+transformationModel.B : 0.022195797922121792

@@ -32,6 +32,13 @@ public final class MergeNode implements DendrogramNode {
 		observationCount = left.getObservationCount()+right.getObservationCount();
 	}
 	
+	public MergeNode(DendrogramNode left, DendrogramNode right, double dissimilarity, int ObsCount) {
+		this.left = left;
+		this.right = right;
+		this.dissimilarity = dissimilarity;
+		observationCount = ObsCount;
+	}
+	
 	public int getObservationCount() {
 		return observationCount;
 	}

@@ -124,7 +124,7 @@ public final class HierarchicalAgglomerativeClusterer {
         for (int o = 0; o<dissimilarityMatrix.length; o++) {
             dissimilarityMatrix[o][o] = 0.0;
         }
-        // fill rest (only compute half, then mirror accross diagonal, assuming
+        // fill rest (only compute half, then mirror across diagonal, assuming
         // a symmetric dissimilarity measure)
         for (int o1 = 0; o1<dissimilarityMatrix.length; o1++) {
             for (int o2 = 0; o2<o1; o2++) {

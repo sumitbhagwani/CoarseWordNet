@@ -10,6 +10,16 @@
  */
 package ch.usi.inf.sape.hac.dendrogram;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.StringTokenizer;
+
 import ch.usi.inf.sape.hac.experiment.Experiment;
 
 
@@ -24,7 +34,7 @@ public final class Dendrogram {
     private final DendrogramNode root;
 
 
-    public Dendrogram(final DendrogramNode root) {
+    public Dendrogram(DendrogramNode root) {
         this.root = root;
     }
 
@@ -47,4 +57,54 @@ public final class Dendrogram {
             dumpNode(indent+"  ", ((MergeNode)node).getRight());
         }
     }
+    
+    public void writeToFile(String file) throws IOException
+    {
+    	BufferedWriter bw = new BufferedWriter(new FileWriter(new File(file)));
+    	writeTree(root, bw);
+    	bw.close();
+    }
+    
+    private void writeTree(DendrogramNode node, BufferedWriter bw) throws IOException
+    {
+    	if(node instanceof ObservationNode)
+    		bw.write("O#"+((ObservationNode) node).getObservation()+"\n");
+    	else
+    	{
+    		MergeNode mNode = ((MergeNode)node); 
+    		bw.write("M#"+mNode.getDissimilarity()+"#"+mNode.getObservationCount()+"\n");
+    		writeTree(node.getLeft(), bw);
+    		writeTree(node.getRight(), bw);
+    	}
+    }
+    
+    private static DendrogramNode readTree(BufferedReader br) throws Exception
+    {    	
+    	String token = br.readLine();
+    	if(token != null)
+    	{
+    		if(token.startsWith("O"))
+    		{
+    			return new ObservationNode(Integer.parseInt(token.split("#")[1]));    			
+    		}
+    		else // mergeNode
+    		{
+    			DendrogramNode left = readTree(br);    	
+    			DendrogramNode right = readTree(br);    					
+    			double dissimilarity = Double.parseDouble(token.split("#")[1]);
+    			int obsCount = Integer.parseInt(token.split("#")[2]);
+    			return new MergeNode(left, right, dissimilarity, obsCount);    			    			    			
+    		}
+    	}
+    	return null; // Should never happen
+    }
+    
+    public static Dendrogram readFromFile(String file) throws Exception
+    {
+    	BufferedReader br = new BufferedReader(new FileReader(new File(file))); 
+    	DendrogramNode root = readTree(br);
+    	br.close();    	
+    	return new Dendrogram(root);
+    }
+    
 }

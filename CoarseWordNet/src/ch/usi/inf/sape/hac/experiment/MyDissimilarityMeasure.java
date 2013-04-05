@@ -24,7 +24,8 @@ public class MyDissimilarityMeasure implements DissimilarityMeasure{
 		    throw new RuntimeException("Cannot find the driver in the classpath!", e);
 		}
 		
-		String url = "jdbc:mysql://localhost:3306/synsetSimilarity";
+		String ip = StaticValues.cseLabIP;
+		String url = "jdbc:mysql://"+ip+":3306/synsetSimilarity";
 		String username = StaticValues.sqlUsername;
 		String password = StaticValues.sqlPassword;		
 		try {
@@ -40,7 +41,6 @@ public class MyDissimilarityMeasure implements DissimilarityMeasure{
 			ex.printStackTrace();
 			System.exit(-1);
 		}
-
 	}
 	
 	@Override

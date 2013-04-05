@@ -22,7 +22,7 @@ public final class ObservationNode implements DendrogramNode {
 	private final int observation;
 
 	
-	public ObservationNode(final int observation) {
+	public ObservationNode(int observation) {
 		this.observation = observation;
 	}
 	
