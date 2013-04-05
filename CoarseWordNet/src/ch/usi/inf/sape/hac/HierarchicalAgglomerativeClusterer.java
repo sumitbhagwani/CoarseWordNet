@@ -118,6 +118,56 @@ public final class HierarchicalAgglomerativeClusterer {
         }
     }
     
+    public void cluster(final ClusteringBuilder clusteringBuilder, double[][] dissimilarityMatrix) {        
+        final int nObservations = dissimilarityMatrix.length;
+        
+        final boolean[] indexUsed = new boolean[nObservations];
+        final int[] clusterCardinalities = new int[nObservations];
+        for (int i = 0; i<nObservations; i++) {
+            indexUsed[i] = true;
+            clusterCardinalities[i] = 1;
+        }
+        
+        // Perform nObservations-1 agglomerations
+        for (int a = 1; a<nObservations; a++) {
+            // Determine the two most similar clusters, i and j (such that i<j)
+            final Pair pair = findMostSimilarClusters(dissimilarityMatrix, indexUsed);
+            final int i = pair.getSmaller();
+            final int j = pair.getLarger();
+            final double d = dissimilarityMatrix[i][j];
+            
+            /**
+            System.out.println("Agglomeration #"+a+
+                    ": merging clusters "+i+
+                    " (cardinality "+(clusterCardinalities[i])+") and "+j+
+                    " (cardinality "+(clusterCardinalities[j])+") with dissimilarity "+d);
+            **/
+            
+            // cluster i becomes new cluster
+            // (by agglomerating former clusters i and j)
+            // update dissimilarityMatrix[i][*] and dissimilarityMatrix[*][i]
+            for (int k = 0; k<nObservations; k++) {
+                if ((k!=i)&&(k!=j)&&indexUsed[k]) {
+                    final double dissimilarity = agglomerationMethod.computeDissimilarity(dissimilarityMatrix[i][k], dissimilarityMatrix[j][k],
+                            dissimilarityMatrix[i][j], clusterCardinalities[i], clusterCardinalities[j], clusterCardinalities[k]);
+                    dissimilarityMatrix[i][k] = dissimilarity;
+                    dissimilarityMatrix[k][i] = dissimilarity;
+                }
+            }
+            clusterCardinalities[i] = clusterCardinalities[i]+clusterCardinalities[j];
+            
+            // erase cluster j
+            indexUsed[j] = false;
+            for (int k = 0; k<nObservations; k++) {
+                dissimilarityMatrix[j][k] = Double.POSITIVE_INFINITY;
+                dissimilarityMatrix[k][j] = Double.POSITIVE_INFINITY;
+            }
+            
+            // update clustering
+            clusteringBuilder.merge(i, j, d);
+        }
+    }
+    
     private double[][] computeDissimilarityMatrix() {
         final double[][] dissimilarityMatrix = new double[experiment.getNumberOfObservations()][experiment.getNumberOfObservations()];
         // fill diagonal

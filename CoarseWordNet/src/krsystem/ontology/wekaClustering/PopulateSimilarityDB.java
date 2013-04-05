@@ -1,9 +1,11 @@
 package krsystem.ontology.wekaClustering;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -303,10 +305,60 @@ public class PopulateSimilarityDB {
 		}
 	}
 	
+	public static void writeSimValuesNoun(String filePath)
+	{
+		try{
+			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(filePath)));
+			try {
+			    System.out.println("Loading driver...");
+			    Class.forName("com.mysql.jdbc.Driver");
+			    System.out.println("Driver loaded!");
+			} catch (ClassNotFoundException e) {
+			    throw new RuntimeException("Cannot find the driver in the classpath!", e);
+			}
+			
+			String ip = StaticValues.cseLabIP;
+			String url = "jdbc:mysql://"+ip+":3306/synsetSimilarity";
+			String username = StaticValues.sqlUsername;
+			String password = StaticValues.sqlPassword;
+			Connection connection = null;
+			try {
+			    System.out.println("Connecting database...");
+			    connection = DriverManager.getConnection(url, username, password);
+			    System.out.println("Database connected!");			    
+			    
+		      // Get a statement from the connection
+		      Statement stmt = connection.createStatement() ;		      
+		      ResultSet rs = stmt.executeQuery( "SELECT distinct * FROM synsetSimilarityNoun" ) ;
+
+		      // Loop through the result set
+		      while( rs.next() )
+		      {		    	  
+		         bw.write(rs.getString(1) + " "+ rs.getString(2) + " "+rs.getString(3)+"\n") ;
+		      }			    
+			    
+			} catch (SQLException e) {
+				e.printStackTrace();
+			    throw new RuntimeException("Cannot connect the database!", e);
+			} finally {
+			    System.out.println("Closing the connection.");
+			    if (connection != null) try { connection.close(); } catch (SQLException ignore) {}
+			}
+
+			bw.close();
+		}
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
+		}
+	}
+	
 	public static void main(String[] args) {
+		String filePath = "resources/Clustering/PopulatingDB/simValuesSVM.noun";
+		writeSimValuesNoun(filePath);
 //		long startTime = System.currentTimeMillis();
 ////		test1();	
-		populateNouns();
+//		populateNouns();		
 //		long endTime = System.currentTimeMillis();
 //		System.out.println("Took "+(endTime - startTime) + " ms");
 //		test();

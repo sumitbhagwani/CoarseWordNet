@@ -10,11 +10,11 @@ import krsystem.StaticValues;
 import weka.core.Attribute;
 import weka.core.Instance;
 
-public class MyDissimilarityMeasure implements DissimilarityMeasure{
+public class MyDissimilarityMeasureSQL implements DissimilarityMeasure{
 
 	Connection connection = null;
 	
-	public MyDissimilarityMeasure()
+	public MyDissimilarityMeasureSQL()
 	{
 		try {
 		    System.out.println("Loading driver...");
