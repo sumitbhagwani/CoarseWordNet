@@ -1,5 +1,11 @@
 package svmPredictionNormalization;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+
 public class PlattProb {
 
 	double A, B;
@@ -111,6 +117,12 @@ public class PlattProb {
 			System.out.println("Reaching maximum iterations");		
 	}
 	
+	public PlattProb(double APassed, double BPassed)
+	{
+		A = APassed;
+		B = BPassed;
+	}
+	
 	public double reportPosteriorProb(double deci)
 	{
 		// both expressions are same -- caution in writing because of overflow errors
@@ -121,4 +133,36 @@ public class PlattProb {
 			return 1.0/(1.0 + Math.exp(fApB));			
 	}		
 
+	public void predictionsToPosteriorProb(String inputFile, String outputFile)
+	{
+		try{
+			BufferedReader br = new BufferedReader(new FileReader(new File(inputFile)));
+			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(outputFile)));
+			String line;
+			while((line = br.readLine()) != null)
+			{
+				String[] lineSplit = line.split("\\s+");
+				double deci = Double.parseDouble(lineSplit[2]);
+				double prob = reportPosteriorProb(deci);
+				bw.write(lineSplit[0]+" "+lineSplit[1]+" "+prob+"\n");
+			}
+			bw.close();
+			br.close();
+		} catch(Exception ex)
+		{
+			ex.printStackTrace();
+		}		
+	}
+	
+	public static void main(String[] args)
+	{
+		double transformationModelA = -1.1655236968316927;
+		double transformationModelB = 0.022195797922121792;
+		PlattProb transformationModel = new PlattProb(transformationModelA, transformationModelB);
+		
+		String inputFile = "resources/Clustering/PopulatingDB/simValuesSVM.noun";
+		String outputFile = "resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun";
+		transformationModel.predictionsToPosteriorProb(inputFile, outputFile);
+	}
+	
 }
