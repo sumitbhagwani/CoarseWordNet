@@ -26,11 +26,15 @@ public class EZGraphTest {
 		String simrankOutputPath = simrankExperimentPath+"simrankMatrixIterationSVMTransformed";
 		String initFile = "resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun";
 		
+		String addition_1_0 = "resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun.1.0";
+		String addition_0_8 = "resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun.0.8";
+		
 		double threshold = 0.00001;
 		int maxIter = 10;
 		
 //		String[] files = {hypernymFile, hyponymFile, holonymFile, meronymFile};
-		String[] files = {hypernymFile, meronymFile};
+//		String[] files = {hypernymFile, meronymFile};
+		String[] files = {hypernymFile, meronymFile, addition_1_0};
 //		String[] files = {holonymFile};
 		
 		System.out.print("Loading graph...");

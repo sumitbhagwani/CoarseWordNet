@@ -1,6 +1,6 @@
-a = dlmread('LinearAllTraining0.7MinMaxNormalizationPlattProb');
-plot(a(1:850,2),'r*')
+a = dlmread('LinearEqualTrainingMinMaxNormalizationWithSynsets');
+plot(a(1:850,4),'r*')
 hold on
-plot(a(851:end,2),'b*')
+plot(a(851:end,4),'b*')
 print('plot.png')
 

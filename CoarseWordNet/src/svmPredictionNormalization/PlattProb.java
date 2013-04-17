@@ -142,9 +142,9 @@ public class PlattProb {
 			while((line = br.readLine()) != null)
 			{
 				String[] lineSplit = line.split("\\s+");
-				double deci = Double.parseDouble(lineSplit[2]);
+				double deci = Double.parseDouble(lineSplit[3]);
 				double prob = reportPosteriorProb(deci);
-				bw.write(lineSplit[0]+" "+lineSplit[1]+" "+prob+"\n");
+				bw.write(lineSplit[0]+" "+lineSplit[1]+" "+lineSplit[2]+" "+prob+"\n");
 			}
 			bw.close();
 			br.close();
@@ -160,8 +160,10 @@ public class PlattProb {
 		double transformationModelB = 0.022195797922121792;
 		PlattProb transformationModel = new PlattProb(transformationModelA, transformationModelB);
 		
-		String inputFile = "resources/Clustering/PopulatingDB/simValuesSVM.noun";
-		String outputFile = "resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun";
+//		String inputFile = "resources/Clustering/PopulatingDB/simValuesSVM.noun";
+//		String outputFile = "resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun";
+		String inputFile = "resources/Clustering/PlattProbExperiment/Noun4/LinearEqualTrainingMinMaxNormalizationWithSynsetsMappedToIds";
+		String outputFile = "resources/Clustering/PlattProbExperiment/Noun4/LinearEqualTrainingMinMaxNormalizationWithSynsetsMappedToIdsPlattProb";
 		transformationModel.predictionsToPosteriorProb(inputFile, outputFile);
 	}
 	

@@ -77,8 +77,8 @@ public class GeneratePlattProb {
 			ModelSVM model = MinMaxSVMModel.readModel(svmFolder+"modelLinearEqualTrainingMinMaxNormalizationNoun", svmFolder+"paramsLinearEqualTrainingMinMaxNormalizationNoun");
 			System.out.println("Model loaded....");
 												
-			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(plattProbExpPath+"LinearAllTraining0.7MinMaxNormalization")));			
-			for(String testFilePath : trainingFiles)
+			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(plattProbExpPath+"LinearEqualTrainingMinMaxNormalizationWithSynsets")));			
+			for(String testFilePath : trainingFilesEqual)
 			{
 				System.out.println("Working on "+testFilePath);
 				int i = 0;				
@@ -88,7 +88,7 @@ public class GeneratePlattProb {
 					OrderedPair<Integer, LabeledFeatureVector> dimNumLFVPair = fg.getLabeledFeatureVector(instance); 
 					LabeledFeatureVector lfv = dimNumLFVPair.getR();				
 					double prediction = model.classify((FeatureVector)lfv);
-					bw.write(lfv.getLabel()+" "+prediction+"\n");
+					bw.write(instance.getSmallerSynsetOffset()+" "+instance.getLargerSynsetOffset()+" "+lfv.getLabel()+" "+prediction+"\n");
 					i++;
 					if(i%100 == 0)
 						System.out.println(i);
@@ -153,8 +153,8 @@ public class GeneratePlattProb {
 	}
 	
 	public static void main(String[] args) {
-//		writeSVMPredictionsNoun();
-		genPlattProbNoun();
+		writeSVMPredictionsNoun();
+//		genPlattProbNoun();
 	}
 
 }

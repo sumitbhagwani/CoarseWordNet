@@ -50,6 +50,20 @@ public class Instance {
 		label = labelPassed;
 	}
 
+	public String getSmallerSynsetOffset()
+	{		
+		long offsetLong = smaller.getOffset();						
+		String offset = String.format("%08d", offsetLong);
+		return offset;
+	}
+	
+	public String getLargerSynsetOffset()
+	{		
+		long offsetLong = larger.getOffset();						
+		String offset = String.format("%08d", offsetLong);
+		return offset;
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 

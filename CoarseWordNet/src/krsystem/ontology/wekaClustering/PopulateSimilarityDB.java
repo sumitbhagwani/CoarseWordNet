@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.sql.Connection;
@@ -12,6 +13,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 
 import jnisvmlight.FeatureVector;
@@ -353,9 +357,109 @@ public class PopulateSimilarityDB {
 		}
 	}
 	
+	public static void sanityCheck1()
+	{
+		String propsFile30 = StaticValues.propsFile30;	
+		try{
+			JWNL.initialize(new FileInputStream(propsFile30));
+			Dictionary dictionary = Dictionary.getInstance();
+			int numReqd = 0;
+			int iter = 0;
+			System.out.println("Iterating over noun synsets.."+dictionary);
+			Iterator<Synset> it1 = dictionary.getSynsetIterator(POS.NOUN);
+			while(it1.hasNext())
+			{
+				iter++;
+				Synset syn1 = it1.next();
+				String syn1Offset = String.format("%08d", syn1.getOffset());
+				for(Word word : syn1.getWords())
+				{
+					String lemma = word.getLemma();
+					IndexWord iw = dictionary.getIndexWord(POS.NOUN, lemma);
+					for(Synset syn2 : iw.getSenses())
+					{
+						String syn2Offset = String.format("%08d", syn2.getOffset());
+						if(syn1Offset.compareTo(syn2Offset) < 0)
+							numReqd++;
+					}
+				}
+				if(iter %1000 == 0)
+					System.out.println(iter+" "+numReqd);
+			}
+			System.out.println(iter+" "+numReqd);
+		}
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
+		}
+	}
+	
+	public static void sanityCheck2() 
+	{
+		String svmPredictionsFile = "resources/Clustering/PopulatingDB/simValuesSVM.noun";
+		HashSet<String> offsetPairs = new HashSet<String>();
+		try{
+			BufferedReader br = new BufferedReader(new FileReader(new File(svmPredictionsFile)));
+			String line;
+			while((line=br.readLine()) != null)
+			{
+				String[] lineSplit = line.split("\\s+");
+				offsetPairs.add(lineSplit[0]+"-"+lineSplit[1]);
+			}
+			br.close();
+			
+			int found = 0;
+			int notFound = 0;
+			String posCleaned = "resources/Clustering/BinaryClassificationData/nounPositiveCleaned";
+			String negCleaned = "resources/Clustering/BinaryClassificationData/nounNegativeCleaned";
+			br = new BufferedReader(new FileReader(new File(posCleaned)));			
+			while((line=br.readLine()) != null)
+			{
+				String[] lineSplit = line.split("\\s+");
+				String offset0 = lineSplit[0].split("#")[1];
+				String offset1 = lineSplit[1].split("#")[1];
+				String key = "";
+				if(offset0.compareTo(offset1) < 0)
+					key = offset0+"-"+offset1;
+				else
+					key = offset1+"-"+offset0;
+				if(offsetPairs.contains(key))
+					found ++;
+				else
+					notFound ++;
+			}
+			br.close();
+			System.out.println(found+" "+notFound);
+			
+			found = notFound = 0;
+			br = new BufferedReader(new FileReader(new File(negCleaned)));			
+			while((line=br.readLine()) != null)
+			{
+				String[] lineSplit = line.split("\\s+");
+				String offset0 = lineSplit[0].split("#")[1];
+				String offset1 = lineSplit[1].split("#")[1];
+				String key = "";
+				if(offset0.compareTo(offset1) < 0)
+					key = offset0+"-"+offset1;
+				else
+					key = offset1+"-"+offset0;
+				if(offsetPairs.contains(key))
+					found ++;
+				else
+					notFound ++;
+			}
+			br.close();
+			System.out.println(found+" "+notFound);
+		}
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
+		}
+	}
+	
 	public static void main(String[] args) {
-		String filePath = "resources/Clustering/PopulatingDB/simValuesSVM.noun";
-		writeSimValuesNoun(filePath);
+//		String filePath = "resources/Clustering/PopulatingDB/simValuesSVM.noun";
+//		writeSimValuesNoun(filePath);
 //		long startTime = System.currentTimeMillis();
 ////		test1();	
 //		populateNouns();		
@@ -363,6 +467,7 @@ public class PopulateSimilarityDB {
 //		System.out.println("Took "+(endTime - startTime) + " ms");
 //		test();
 //		test2();
+		sanityCheck2();
 	}
 
 }
