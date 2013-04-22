@@ -40,7 +40,7 @@ public class UndirectedGraph extends Graph {
 	}
 	while ( ( aux = br.readLine() ) != null ) try {
 		if ( commit++ % COMMIT_SIZE == 0 ) { commit(); list.commit(); }
-		String parts[] = aux.split("\t");
+		String parts[] = aux.split("\\s+");
 		String l1 = new String(parts[0]);
 		String l2 = new String(parts[1]);
 		if ( !nodesReverse.containsKey(l1) ) { nodesReverse.put(l1, nodesReverse.size()); nodes.put(nodes.size(), l1); }
@@ -92,7 +92,7 @@ public class UndirectedGraph extends Graph {
 		int i = 0;
 		while ( ( aux = br.readLine() ) != null ) try {
 			if ( commit++ % COMMIT_SIZE == 0 ) { commit(); list.commit(); }
-			String parts[] = aux.split("\t");
+			String parts[] = aux.split("\\s+");
 			String l1 = new String(parts[0]);
 			String l2 = new String(parts[1]);
 			if ( !nodesReverse.containsKey(l1) ) { nodesReverse.put(l1, nodesReverse.size()); nodes.put(nodes.size(), l1); }

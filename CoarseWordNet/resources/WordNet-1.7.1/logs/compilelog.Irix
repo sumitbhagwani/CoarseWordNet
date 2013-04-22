@@ -1,0 +1,349 @@
+Cleaning directory bin...
+make[1]: Entering directory `/usr/scratch/WordNet-1.7.1/bin'
+Cleaning subdirectory irix
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/bin/irix'
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/bin/irix'
+Cleaning subdirectory linux
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/bin/linux'
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/bin/linux'
+Cleaning subdirectory solaris
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/bin/solaris'
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/bin/solaris'
+make[1]: Leaving directory `/usr/scratch/WordNet-1.7.1/bin'
+Cleaning directory dict...
+make[1]: Entering directory `/usr/scratch/WordNet-1.7.1/dict'
+make[1]: Leaving directory `/usr/scratch/WordNet-1.7.1/dict'
+Cleaning directory include...
+make[1]: Entering directory `/usr/scratch/WordNet-1.7.1/include'
+make[1]: Leaving directory `/usr/scratch/WordNet-1.7.1/include'
+Cleaning directory lib...
+make[1]: Entering directory `/usr/scratch/WordNet-1.7.1/lib'
+Cleaning subdirectory irix
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/lib/irix'
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/lib/irix'
+Cleaning subdirectory linux
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/lib/linux'
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/lib/linux'
+Cleaning subdirectory solaris
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/lib/solaris'
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/lib/solaris'
+Cleaning subdirectory wnres
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/lib/wnres'
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/lib/wnres'
+make[1]: Leaving directory `/usr/scratch/WordNet-1.7.1/lib'
+Cleaning directory man...
+make[1]: Entering directory `/usr/scratch/WordNet-1.7.1/man'
+make[1]: Leaving directory `/usr/scratch/WordNet-1.7.1/man'
+Cleaning directory doc...
+make[1]: Entering directory `/usr/scratch/WordNet-1.7.1/doc'
+Cleaning subdirectory html
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/doc/html'
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/doc/html'
+Cleaning subdirectory pdf
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/doc/pdf'
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/doc/pdf'
+Cleaning subdirectory ps
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/doc/ps'
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/doc/ps'
+make[1]: Leaving directory `/usr/scratch/WordNet-1.7.1/doc'
+Cleaning directory src...
+make[1]: Entering directory `/usr/scratch/WordNet-1.7.1/src'
+Cleaning subdirectory lib
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/src/lib'
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/src/lib'
+Cleaning subdirectory wn
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/src/wn'
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/src/wn'
+Cleaning subdirectory wnb
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/src/wnb'
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/src/wnb'
+Cleaning subdirectory grind
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/src/grind'
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/src/grind'
+Cleaning subdirectory include
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/src/include'
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/src/include'
+make[1]: Leaving directory `/usr/scratch/WordNet-1.7.1/src'
+(cd src; /usr/csbmb/bin/make -k CC='gcc' WN_ROOT='/scratch/wn' TCL_INCDIR='/usr/csbmb/include' TK_INCDIR='/usr/csbmb/include' TCL_LIBDIR='/usr/csbmb/lib' TK_LIBDIR='/usr/csbmb/lib' X11_INCDIR='/usr/include' X11_LIBDIR='/usr/lib32' WNB_LIBS='-Xlinker -B -Xlinker static -ltk -ltcl -Xlinker -B -Xlinker dynamic -lX11 -lm' LOCAL_CFLAGS='-O -DUNIX' LOCAL_LDFLAGS='' WN_BINDIR='/scratch/wn/bin' WN_LIBDIR='/scratch/wn/lib' WN_INCDIR='/scratch/wn/include' all install)
+make[1]: Entering directory `/usr/scratch/WordNet-1.7.1/src'
+Installing include..
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/src/include'
+make[2]: Nothing to be done for `all'.
+Making directory /scratch/wn/include
+Installing /scratch/wn/include/license.h
+Installing /scratch/wn/include/setutil.h
+Installing /scratch/wn/include/wn.h
+Installing /scratch/wn/include/wnconsts.h
+Installing /scratch/wn/include/wnglobal.h
+Installing /scratch/wn/include/wnhelp.h
+Installing /scratch/wn/include/wnrtl.h
+Installing /scratch/wn/include/wntypes.h
+Done installing include files in /scratch/wn/include
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/src/include'
+Making WordNet library libwn.a
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/src/lib'
+gcc -I/scratch/wn/include -O -DUNIX   -c binsrch.c -o binsrch.o
+gcc -I/scratch/wn/include -O -DUNIX   -c morph.c -o morph.o
+gcc -I/scratch/wn/include -O -DUNIX   -c search.c -o search.o
+gcc -I/scratch/wn/include -O -DUNIX   -c setutil.c -o setutil.o
+gcc -I/scratch/wn/include -O -DUNIX   -c wnglobal.c -o wnglobal.o
+gcc -I/scratch/wn/include -O -DUNIX   -c wnhelp.c -o wnhelp.o
+gcc -I/scratch/wn/include -O -DUNIX   -c wnrtl.c -o wnrtl.o
+gcc -I/scratch/wn/include -O -DUNIX   -c wnutil.c -o wnutil.o
+ar rcv libwn.a binsrch.o morph.o search.o setutil.o wnglobal.o wnhelp.o wnrtl.o wnutil.o; ranlib libwn.a
+a - binsrch.o
+a - morph.o
+a - search.o
+a - setutil.o
+a - wnglobal.o
+a - wnhelp.o
+a - wnrtl.o
+a - wnutil.o
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/src/lib'
+Done compiling library
+Installing lib..
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/src/lib'
+Making directory /scratch/wn/lib
+Installing /scratch/wn/lib/libwn.a
+make[3]: Entering directory `/usr/scratch/WordNet-1.7.1/src/lib/wnres'
+Making directory /scratch/wn/lib/wnres
+Installing resource files in /scratch/wn/lib/wnres
+Installing /scratch/wn/lib/wnres/license.txt
+Installing /scratch/wn/lib/wnres/wn.xbm
+Installing /scratch/wn/lib/wnres/wngloss.man
+Installing /scratch/wn/lib/wnres/wnb.man
+Done installing resource files in /scratch/wn/lib/wnres
+make[3]: Leaving directory `/usr/scratch/WordNet-1.7.1/src/lib/wnres'
+Done installing WordNet library in /scratch/wn/lib
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/src/lib'
+Compiling wn...
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/src/wn'
+gcc -I/scratch/wn/include -O -DUNIX   -c wn.c -o wn.o
+gcc -o wn -L/scratch/wn/lib  wn.o -lwn
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/src/wn'
+Compiling wnb...
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/src/wnb'
+gcc -I/scratch/wn/include -O -DUNIX -I/usr/csbmb/include -I/usr/csbmb/include -I/usr/include   -c stubs.c -o stubs.o
+gcc -I/scratch/wn/include -O -DUNIX -I/usr/csbmb/include -I/usr/csbmb/include -I/usr/include   -c tkAppInit.c -o tkAppInit.o
+gcc -o wishwn -L/scratch/wn/lib -L/usr/csbmb/lib -L/usr/csbmb/lib -L/usr/lib32 stubs.o tkAppInit.o -Xlinker -B -Xlinker static -ltk -ltcl -Xlinker -B -Xlinker dynamic -lX11 -lm -lwn
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/src/wnb'
+Compiling grind...
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/src/grind'
+gcc -I/scratch/wn/include -O -DUNIX   -c aux.c -o aux.o
+gcc -I/scratch/wn/include -O -DUNIX   -c create.c -o create.o
+gcc -I/scratch/wn/include -O -DUNIX   -c files.c -o files.o
+gcc -I/scratch/wn/include -O -DUNIX   -c globals.c -o globals.o
+gcc -I/scratch/wn/include -O -DUNIX   -c grind.c -o grind.o
+gcc -I/scratch/wn/include -O -DUNIX   -c makedb.c -o makedb.o
+gcc -I/scratch/wn/include -O -DUNIX   -c resolve.c -o resolve.o
+yacc -dl wnparse.y
+mv y.tab.c wnparse.c
+mv y.tab.h wnparse.h
+gcc -I/scratch/wn/include -O -DUNIX   -c wnparse.c -o wnparse.o
+lex wnlex.l
+mv lex.yy.c wnlex.c
+gcc -I/scratch/wn/include -O -DUNIX   -c wnlex.c -o wnlex.o
+gcc -o grind -L/scratch/wn/lib  aux.o create.o files.o globals.o grind.o makedb.o resolve.o wnparse.o wnlex.o -lwn
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/src/grind'
+Done compiling interfaces
+Installing wn...
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/src/wn'
+Making directory /scratch/wn/bin
+Installing /scratch/wn/bin/wn
+Done installing command line interface in /scratch/wn/bin
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/src/wn'
+Installing wnb...
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/src/wnb'
+Installing /scratch/wn/bin/wishwn
+Installing /scratch/wn/bin/wnb
+Done installing WordNet browser interface in /scratch/wn/bin
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/src/wnb'
+Installing grind...
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/src/grind'
+Installing /scratch/wn/bin/grind
+Done installing grinder in /scratch/wn/bin
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/src/grind'
+Done installing interfaces
+make[1]: Leaving directory `/usr/scratch/WordNet-1.7.1/src'
+Installing WordNet 1.7.1 database in /scratch/wn/dict...
+(cd dict; /usr/csbmb/bin/make -k WN_INSTALLDIR='/scratch/wn/dict' INSTALLCMD='cp' INSTALLFLAGS='-p' install)
+make[1]: Entering directory `/usr/scratch/WordNet-1.7.1/dict'
+Making directory /scratch/wn/dict
+Installing database files in /scratch/wn/dict
+Installing /scratch/wn/dict/data.noun
+Installing /scratch/wn/dict/data.verb
+Installing /scratch/wn/dict/data.adj
+Installing /scratch/wn/dict/data.adv
+Installing /scratch/wn/dict/index.noun
+Installing /scratch/wn/dict/index.verb
+Installing /scratch/wn/dict/index.adj
+Installing /scratch/wn/dict/index.adv
+Installing /scratch/wn/dict/noun.exc
+Installing /scratch/wn/dict/verb.exc
+Installing /scratch/wn/dict/adj.exc
+Installing /scratch/wn/dict/adv.exc
+Installing /scratch/wn/dict/index.sense
+Installing /scratch/wn/dict/cntlist
+Installing /scratch/wn/dict/cntlist.rev
+Installing /scratch/wn/dict/lexnames
+Installing /scratch/wn/dict/sentidx.vrb
+Installing /scratch/wn/dict/sents.vrb
+Done installing database files in /scratch/wn/dict
+make[1]: Leaving directory `/usr/scratch/WordNet-1.7.1/dict'
+Installing WordNet 1.7.1 Reference Manaul in /scratch/wn/man...
+(cd man; /usr/csbmb/bin/make -k WN_INSTALLDIR='/scratch/wn/man' install)
+make[1]: Entering directory `/usr/scratch/WordNet-1.7.1/man'
+Making directory /scratch/wn/man/man1
+Making directory /scratch/wn/man/man3
+Making directory /scratch/wn/man/man5
+Making directory /scratch/wn/man/man7
+Installing man pages in /scratch/wn/man
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/man'
+Installing /scratch/wn/man/man1/wn.1
+Installing /scratch/wn/man/man1/wnb.1
+Installing /scratch/wn/man/man1/wnintro.1
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/man'
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/man'
+Installing /scratch/wn/man/man3/binsrch.3
+Installing /scratch/wn/man/man3/morph.3
+Installing /scratch/wn/man/man3/wnintro.3
+Installing /scratch/wn/man/man3/wnsearch.3
+Installing /scratch/wn/man/man3/wnutil.3
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/man'
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/man'
+Installing /scratch/wn/man/man5/cntlist.5
+Installing /scratch/wn/man/man5/lexnames.5
+Installing /scratch/wn/man/man5/senseidx.5
+Installing /scratch/wn/man/man5/wndb.5
+Installing /scratch/wn/man/man5/wninput.5
+Installing /scratch/wn/man/man5/wnintro.5
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/man'
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/man'
+Installing /scratch/wn/man/man7/morphy.7
+Installing /scratch/wn/man/man7/uniqbeg.7
+Installing /scratch/wn/man/man7/wngloss.7
+Installing /scratch/wn/man/man7/wngroups.7
+Installing /scratch/wn/man/man7/wnintro.7
+Installing /scratch/wn/man/man7/wnlicens.7
+Installing /scratch/wn/man/man7/wnpkgs.7
+Installing /scratch/wn/man/man7/wnstats.7
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/man'
+Done installing man pages in /scratch/wn/man
+make[1]: Leaving directory `/usr/scratch/WordNet-1.7.1/man'
+Installing WordNet 1.7.1 Reference Manual in /scratch/wn/doc...
+(cd doc; /usr/csbmb/bin/make -k WN_INSTALLDIR='/scratch/wn/doc' install)
+make[1]: Entering directory `/usr/scratch/WordNet-1.7.1/doc'
+Installing html...
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/doc/html'
+if [ ! -d /scratch/wn/doc/html ] ; then \
+	echo "Making directory /scratch/wn/doc/html" ; \
+	mkdir -p /scratch/wn/doc/html ; \
+	chmod 755 /scratch/wn/doc/html ; \
+fi ;
+Making directory /scratch/wn/doc/html
+Installing HTML pages in /scratch/wn/doc/html
+make[3]: Entering directory `/usr/scratch/WordNet-1.7.1/doc/html'
+Installing /scratch/wn/doc/html/binsrch.3WN.html
+Installing /scratch/wn/doc/html/cntlist.5WN.html
+Installing /scratch/wn/doc/html/grind.1WN.html
+Installing /scratch/wn/doc/html/lexnames.5WN.html
+Installing /scratch/wn/doc/html/morph.3WN.html
+Installing /scratch/wn/doc/html/morphy.7WN.html
+Installing /scratch/wn/doc/html/prologdb.5WN.html
+Installing /scratch/wn/doc/html/senseidx.5WN.html
+Installing /scratch/wn/doc/html/uniqbeg.7WN.html
+Installing /scratch/wn/doc/html/wn.1WN.html
+Installing /scratch/wn/doc/html/wnb.1WN.html
+Installing /scratch/wn/doc/html/wndb.5WN.html
+Installing /scratch/wn/doc/html/wngloss.7WN.html
+Installing /scratch/wn/doc/html/wngroups.7WN.html
+Installing /scratch/wn/doc/html/wninput.5WN.html
+Installing /scratch/wn/doc/html/wnintro.1WN.html
+Installing /scratch/wn/doc/html/wnintro.3WN.html
+Installing /scratch/wn/doc/html/wnintro.5WN.html
+Installing /scratch/wn/doc/html/wnintro.7WN.html
+Installing /scratch/wn/doc/html/wnlicens.7WN.html
+Installing /scratch/wn/doc/html/wnpkgs.7WN.html
+Installing /scratch/wn/doc/html/wnsearch.3WN.html
+Installing /scratch/wn/doc/html/wnstats.7WN.html
+Installing /scratch/wn/doc/html/wnutil.3WN.html
+make[3]: Leaving directory `/usr/scratch/WordNet-1.7.1/doc/html'
+Done installing HTML pages in /scratch/wn/doc/html
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/doc/html'
+Installing pdf...
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/doc/pdf'
+if [ ! -d /scratch/wn/doc/pdf ] ; then \
+	echo "Making directory /scratch/wn/doc/pdf" ; \
+	mkdir -p /scratch/wn/doc/pdf ; \
+	chmod 755 /scratch/wn/doc/pdf ; \
+fi ;
+Making directory /scratch/wn/doc/pdf
+Installing HTML pages in /scratch/wn/doc/pdf
+make[3]: Entering directory `/usr/scratch/WordNet-1.7.1/doc/pdf'
+Installing /scratch/wn/doc/pdf/binsrch.3.pdf
+Installing /scratch/wn/doc/pdf/cntlist.5.pdf
+Installing /scratch/wn/doc/pdf/grind.1.pdf
+Installing /scratch/wn/doc/pdf/lexnames.5.pdf
+Installing /scratch/wn/doc/pdf/morph.3.pdf
+Installing /scratch/wn/doc/pdf/morphy.7.pdf
+Installing /scratch/wn/doc/pdf/prologdb.5.pdf
+Installing /scratch/wn/doc/pdf/senseidx.5.pdf
+Installing /scratch/wn/doc/pdf/uniqbeg.7.pdf
+Installing /scratch/wn/doc/pdf/wn.1.pdf
+Installing /scratch/wn/doc/pdf/wnb.1.pdf
+Installing /scratch/wn/doc/pdf/wndb.5.pdf
+Installing /scratch/wn/doc/pdf/wngloss.7.pdf
+Installing /scratch/wn/doc/pdf/wngroups.7.pdf
+Installing /scratch/wn/doc/pdf/wninput.5.pdf
+Installing /scratch/wn/doc/pdf/wnintro.1.pdf
+Installing /scratch/wn/doc/pdf/wnintro.3.pdf
+Installing /scratch/wn/doc/pdf/wnintro.5.pdf
+Installing /scratch/wn/doc/pdf/wnintro.7.pdf
+Installing /scratch/wn/doc/pdf/wnlicens.7.pdf
+Installing /scratch/wn/doc/pdf/wnpkgs.7.pdf
+Installing /scratch/wn/doc/pdf/wnsearch.3.pdf
+Installing /scratch/wn/doc/pdf/wnstats.7.pdf
+Installing /scratch/wn/doc/pdf/wnutil.3.pdf
+make[3]: Leaving directory `/usr/scratch/WordNet-1.7.1/doc/pdf'
+Done installing HTML pages in /scratch/wn/doc/pdf
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/doc/pdf'
+Installing ps...
+make[2]: Entering directory `/usr/scratch/WordNet-1.7.1/doc/ps'
+if [ ! -d /scratch/wn/doc/ps ] ; then \
+	echo "Making directory /scratch/wn/doc/ps" ; \
+	mkdir -p /scratch/wn/doc/ps ; \
+	chmod 755 /scratch/wn/doc/ps ; \
+fi ;
+Making directory /scratch/wn/doc/ps
+Installing HTML pages in /scratch/wn/doc/ps
+make[3]: Entering directory `/usr/scratch/WordNet-1.7.1/doc/ps'
+Installing /scratch/wn/doc/ps/binsrch.3.ps
+Installing /scratch/wn/doc/ps/cntlist.5.ps
+Installing /scratch/wn/doc/ps/grind.1.ps
+Installing /scratch/wn/doc/ps/lexnames.5.ps
+Installing /scratch/wn/doc/ps/morph.3.ps
+Installing /scratch/wn/doc/ps/morphy.7.ps
+Installing /scratch/wn/doc/ps/prologdb.5.ps
+Installing /scratch/wn/doc/ps/senseidx.5.ps
+Installing /scratch/wn/doc/ps/uniqbeg.7.ps
+Installing /scratch/wn/doc/ps/wn.1.ps
+Installing /scratch/wn/doc/ps/wnb.1.ps
+Installing /scratch/wn/doc/ps/wndb.5.ps
+Installing /scratch/wn/doc/ps/wngloss.7.ps
+Installing /scratch/wn/doc/ps/wngroups.7.ps
+Installing /scratch/wn/doc/ps/wninput.5.ps
+Installing /scratch/wn/doc/ps/wnintro.1.ps
+Installing /scratch/wn/doc/ps/wnintro.3.ps
+Installing /scratch/wn/doc/ps/wnintro.5.ps
+Installing /scratch/wn/doc/ps/wnintro.7.ps
+Installing /scratch/wn/doc/ps/wnlicens.7.ps
+Installing /scratch/wn/doc/ps/wnpkgs.7.ps
+Installing /scratch/wn/doc/ps/wnsearch.3.ps
+Installing /scratch/wn/doc/ps/wnstats.7.ps
+Installing /scratch/wn/doc/ps/wnutil.3.ps
+make[3]: Leaving directory `/usr/scratch/WordNet-1.7.1/doc/ps'
+Done installing HTML pages in /scratch/wn/doc/ps
+make[2]: Leaving directory `/usr/scratch/WordNet-1.7.1/doc/ps'
+Done installind HTML and PDF documentation
+make[1]: Leaving directory `/usr/scratch/WordNet-1.7.1/doc'
+Done creating and installing WordNet 1.7.1..

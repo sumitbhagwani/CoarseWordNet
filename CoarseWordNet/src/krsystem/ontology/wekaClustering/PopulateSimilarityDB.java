@@ -457,6 +457,57 @@ public class PopulateSimilarityDB {
 		}
 	}
 	
+	public static void sanityCheck3()
+	{
+		String propsFile30 = StaticValues.propsFile30;	
+		try{
+			JWNL.initialize(new FileInputStream(propsFile30));
+			Dictionary dictionary = Dictionary.getInstance();
+			HashSet<String> lemmas = new HashSet<String>();
+			System.out.println("Iterating over noun synsets.."+dictionary);
+			Iterator<Synset> it1 = dictionary.getSynsetIterator(POS.NOUN);
+			int i = 0;
+			while(it1.hasNext())
+			{
+				Synset syn = it1.next();
+				for(Word w :syn.getWords())
+				{
+					lemmas.add(w.getLemma());
+				}
+				i++;
+				if(i%1000 == 0)
+				{
+					System.out.println(i+ " "+lemmas.size());
+				}
+			}
+			System.out.println("Number of noun lemmas : "+lemmas.size());
+			HashSet<String> polysemousSynsets = new HashSet<String>();
+			int lemmasExplored = 0;
+			for(String lemma : lemmas)
+			{
+				IndexWord iw = dictionary.getIndexWord(POS.NOUN, lemma);
+				List<Synset> senses = iw.getSenses();
+				if(senses.size() > 1) // polysemous
+				{
+					for(Synset syn : senses)
+					{
+						long offsetLong = syn.getOffset();						
+						String offset = String.format("%08d", offsetLong);
+						polysemousSynsets.add(offset);
+					}
+				}
+				lemmasExplored++;
+				if(lemmasExplored % 10000 == 0)
+					System.out.println(lemmasExplored);
+			}
+			System.out.println("Size of polysemous synsets  = "+polysemousSynsets.size());
+		}
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
+		}
+	}
+	
 	public static void main(String[] args) {
 //		String filePath = "resources/Clustering/PopulatingDB/simValuesSVM.noun";
 //		writeSimValuesNoun(filePath);
@@ -467,7 +518,7 @@ public class PopulateSimilarityDB {
 //		System.out.println("Took "+(endTime - startTime) + " ms");
 //		test();
 //		test2();
-		sanityCheck2();
+		sanityCheck3();
 	}
 
 }

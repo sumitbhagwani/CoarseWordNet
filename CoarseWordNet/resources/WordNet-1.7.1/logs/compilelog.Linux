@@ -1,0 +1,326 @@
+Cleaning directory bin...
+make[1]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/bin'
+Cleaning subdirectory irix
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/bin/irix'
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/bin/irix'
+Cleaning subdirectory linux
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/bin/linux'
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/bin/linux'
+Cleaning subdirectory solaris
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/bin/solaris'
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/bin/solaris'
+make[1]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/bin'
+Cleaning directory dict...
+make[1]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/dict'
+make[1]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/dict'
+Cleaning directory include...
+make[1]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/include'
+make[1]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/include'
+Cleaning directory lib...
+make[1]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/lib'
+Cleaning subdirectory irix
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/lib/irix'
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/lib/irix'
+Cleaning subdirectory linux
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/lib/linux'
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/lib/linux'
+Cleaning subdirectory solaris
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/lib/solaris'
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/lib/solaris'
+Cleaning subdirectory wnres
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/lib/wnres'
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/lib/wnres'
+make[1]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/lib'
+Cleaning directory man...
+make[1]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/man'
+make[1]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/man'
+Cleaning directory doc...
+make[1]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/doc'
+Cleaning subdirectory html
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/doc/html'
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/doc/html'
+Cleaning subdirectory pdf
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/doc/pdf'
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/doc/pdf'
+Cleaning subdirectory ps
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/doc/ps'
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/doc/ps'
+make[1]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/doc'
+Cleaning directory src...
+make[1]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/src'
+Cleaning subdirectory lib
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/src/lib'
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/src/lib'
+Cleaning subdirectory wn
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/src/wn'
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/src/wn'
+Cleaning subdirectory wnb
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/src/wnb'
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/src/wnb'
+Skipping grind...
+Cleaning subdirectory include
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/src/include'
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/src/include'
+make[1]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/src'
+(cd src; make -k CC='gcc' WN_ROOT='/home/rit/testinstall' TCL_INCDIR='/usr/include' TK_INCDIR='/usr/include' TCL_LIBDIR='/usr/lib' TK_LIBDIR='/usr/lib' X11_INCDIR='/usr/X11R6/include' X11_LIBDIR='/usr/X11R6/lib' WNB_LIBS='-ltk -ltcl -lX11 -lm -lnsl -ldl -lpthread' LOCAL_CFLAGS='-O -DUNIX' LOCAL_LDFLAGS='' WN_BINDIR='/home/rit/testinstall/bin' WN_LIBDIR='/home/rit/testinstall/lib' WN_INCDIR='/home/rit/testinstall/include' all install)
+make[1]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/src'
+Installing include..
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/src/include'
+make[2]: Nothing to be done for `all'.
+Making directory /home/rit/testinstall/include
+Installing /home/rit/testinstall/include/license.h
+Installing /home/rit/testinstall/include/setutil.h
+Installing /home/rit/testinstall/include/wn.h
+Installing /home/rit/testinstall/include/wnconsts.h
+Installing /home/rit/testinstall/include/wnglobal.h
+Installing /home/rit/testinstall/include/wnhelp.h
+Installing /home/rit/testinstall/include/wnrtl.h
+Installing /home/rit/testinstall/include/wntypes.h
+Done installing include files in /home/rit/testinstall/include
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/src/include'
+Making WordNet library libwn.a
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/src/lib'
+gcc -I/home/rit/testinstall/include -O -DUNIX   -c -o binsrch.o binsrch.c
+gcc -I/home/rit/testinstall/include -O -DUNIX   -c -o morph.o morph.c
+gcc -I/home/rit/testinstall/include -O -DUNIX   -c -o search.o search.c
+gcc -I/home/rit/testinstall/include -O -DUNIX   -c -o setutil.o setutil.c
+gcc -I/home/rit/testinstall/include -O -DUNIX   -c -o wnglobal.o wnglobal.c
+gcc -I/home/rit/testinstall/include -O -DUNIX   -c -o wnhelp.o wnhelp.c
+gcc -I/home/rit/testinstall/include -O -DUNIX   -c -o wnrtl.o wnrtl.c
+gcc -I/home/rit/testinstall/include -O -DUNIX   -c -o wnutil.o wnutil.c
+ar rcv libwn.a binsrch.o morph.o search.o setutil.o wnglobal.o wnhelp.o wnrtl.o wnutil.o; ranlib libwn.a
+a - binsrch.o
+a - morph.o
+a - search.o
+a - setutil.o
+a - wnglobal.o
+a - wnhelp.o
+a - wnrtl.o
+a - wnutil.o
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/src/lib'
+Done compiling library
+Installing lib..
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/src/lib'
+Making directory /home/rit/testinstall/lib
+Installing /home/rit/testinstall/lib/libwn.a
+make[3]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/src/lib/wnres'
+Making directory /home/rit/testinstall/lib/wnres
+Installing resource files in /home/rit/testinstall/lib/wnres
+Installing /home/rit/testinstall/lib/wnres/license.txt
+Installing /home/rit/testinstall/lib/wnres/wn.xbm
+Installing /home/rit/testinstall/lib/wnres/wngloss.man
+Installing /home/rit/testinstall/lib/wnres/wnb.man
+Done installing resource files in /home/rit/testinstall/lib/wnres
+make[3]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/src/lib/wnres'
+Done installing WordNet library in /home/rit/testinstall/lib
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/src/lib'
+Compiling wn...
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/src/wn'
+gcc -I/home/rit/testinstall/include -O -DUNIX   -c -o wn.o wn.c
+gcc -o wn -L/home/rit/testinstall/lib  wn.o -lwn
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/src/wn'
+Compiling wnb...
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/src/wnb'
+gcc -I/home/rit/testinstall/include -O -DUNIX -I/usr/include -I/usr/include -I/usr/X11R6/include   -c -o stubs.o stubs.c
+gcc -I/home/rit/testinstall/include -O -DUNIX -I/usr/include -I/usr/include -I/usr/X11R6/include   -c -o tkAppInit.o tkAppInit.c
+gcc -o wishwn -L/home/rit/testinstall/lib -L/usr/lib -L/usr/lib -L/usr/X11R6/lib stubs.o tkAppInit.o -ltk -ltcl -lX11 -lm -lnsl -ldl -lpthread -lwn
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/src/wnb'
+Skipping grind...
+Done compiling interfaces
+Installing wn...
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/src/wn'
+Making directory /home/rit/testinstall/bin
+Installing /home/rit/testinstall/bin/wn
+Done installing command line interface in /home/rit/testinstall/bin
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/src/wn'
+Installing wnb...
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/src/wnb'
+Installing /home/rit/testinstall/bin/wishwn
+Installing /home/rit/testinstall/bin/wnb
+Done installing WordNet browser interface in /home/rit/testinstall/bin
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/src/wnb'
+Skipping grind...
+Done installing interfaces
+make[1]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/src'
+Installing WordNet 1.7.1 database in /home/rit/testinstall/dict...
+(cd dict; make -k WN_INSTALLDIR='/home/rit/testinstall/dict' INSTALLCMD='cp' INSTALLFLAGS='-p' install)
+make[1]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/dict'
+Making directory /home/rit/testinstall/dict
+Installing database files in /home/rit/testinstall/dict
+Installing /home/rit/testinstall/dict/data.noun
+Installing /home/rit/testinstall/dict/data.verb
+Installing /home/rit/testinstall/dict/data.adj
+Installing /home/rit/testinstall/dict/data.adv
+Installing /home/rit/testinstall/dict/index.noun
+Installing /home/rit/testinstall/dict/index.verb
+Installing /home/rit/testinstall/dict/index.adj
+Installing /home/rit/testinstall/dict/index.adv
+Installing /home/rit/testinstall/dict/noun.exc
+Installing /home/rit/testinstall/dict/verb.exc
+Installing /home/rit/testinstall/dict/adj.exc
+Installing /home/rit/testinstall/dict/adv.exc
+Installing /home/rit/testinstall/dict/index.sense
+Installing /home/rit/testinstall/dict/cntlist
+Installing /home/rit/testinstall/dict/cntlist.rev
+Installing /home/rit/testinstall/dict/lexnames
+Installing /home/rit/testinstall/dict/sentidx.vrb
+Installing /home/rit/testinstall/dict/sents.vrb
+Done installing database files in /home/rit/testinstall/dict
+make[1]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/dict'
+Installing WordNet 1.7.1 Reference Manaul in /home/rit/testinstall/man...
+(cd man; make -k WN_INSTALLDIR='/home/rit/testinstall/man' install)
+make[1]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/man'
+Making directory /home/rit/testinstall/man/man1
+Making directory /home/rit/testinstall/man/man3
+Making directory /home/rit/testinstall/man/man5
+Making directory /home/rit/testinstall/man/man7
+Installing man pages in /home/rit/testinstall/man
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/man'
+Installing /home/rit/testinstall/man/man1/wn.1
+Installing /home/rit/testinstall/man/man1/wnb.1
+Installing /home/rit/testinstall/man/man1/wnintro.1
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/man'
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/man'
+Installing /home/rit/testinstall/man/man3/binsrch.3
+Installing /home/rit/testinstall/man/man3/morph.3
+Installing /home/rit/testinstall/man/man3/wnintro.3
+Installing /home/rit/testinstall/man/man3/wnsearch.3
+Installing /home/rit/testinstall/man/man3/wnutil.3
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/man'
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/man'
+Installing /home/rit/testinstall/man/man5/cntlist.5
+Installing /home/rit/testinstall/man/man5/lexnames.5
+Installing /home/rit/testinstall/man/man5/senseidx.5
+Installing /home/rit/testinstall/man/man5/wndb.5
+Installing /home/rit/testinstall/man/man5/wninput.5
+Installing /home/rit/testinstall/man/man5/wnintro.5
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/man'
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/man'
+Installing /home/rit/testinstall/man/man7/morphy.7
+Installing /home/rit/testinstall/man/man7/uniqbeg.7
+Installing /home/rit/testinstall/man/man7/wngloss.7
+Installing /home/rit/testinstall/man/man7/wngroups.7
+Installing /home/rit/testinstall/man/man7/wnintro.7
+Installing /home/rit/testinstall/man/man7/wnlicens.7
+Installing /home/rit/testinstall/man/man7/wnpkgs.7
+Installing /home/rit/testinstall/man/man7/wnstats.7
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/man'
+Done installing man pages in /home/rit/testinstall/man
+make[1]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/man'
+Installing WordNet 1.7.1 Reference Manual in /home/rit/testinstall/doc...
+(cd doc; make -k WN_INSTALLDIR='/home/rit/testinstall/doc' install)
+make[1]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/doc'
+Installing html...
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/doc/html'
+if [ ! -d /home/rit/testinstall/doc/html ] ; then \
+	echo "Making directory /home/rit/testinstall/doc/html" ; \
+	mkdir -p /home/rit/testinstall/doc/html ; \
+	chmod 755 /home/rit/testinstall/doc/html ; \
+fi ;
+Making directory /home/rit/testinstall/doc/html
+Installing HTML pages in /home/rit/testinstall/doc/html
+make[3]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/doc/html'
+Installing /home/rit/testinstall/doc/html/binsrch.3WN.html
+Installing /home/rit/testinstall/doc/html/cntlist.5WN.html
+Installing /home/rit/testinstall/doc/html/grind.1WN.html
+Installing /home/rit/testinstall/doc/html/lexnames.5WN.html
+Installing /home/rit/testinstall/doc/html/morph.3WN.html
+Installing /home/rit/testinstall/doc/html/morphy.7WN.html
+Installing /home/rit/testinstall/doc/html/prologdb.5WN.html
+Installing /home/rit/testinstall/doc/html/senseidx.5WN.html
+Installing /home/rit/testinstall/doc/html/uniqbeg.7WN.html
+Installing /home/rit/testinstall/doc/html/wn.1WN.html
+Installing /home/rit/testinstall/doc/html/wnb.1WN.html
+Installing /home/rit/testinstall/doc/html/wndb.5WN.html
+Installing /home/rit/testinstall/doc/html/wngloss.7WN.html
+Installing /home/rit/testinstall/doc/html/wngroups.7WN.html
+Installing /home/rit/testinstall/doc/html/wninput.5WN.html
+Installing /home/rit/testinstall/doc/html/wnintro.1WN.html
+Installing /home/rit/testinstall/doc/html/wnintro.3WN.html
+Installing /home/rit/testinstall/doc/html/wnintro.5WN.html
+Installing /home/rit/testinstall/doc/html/wnintro.7WN.html
+Installing /home/rit/testinstall/doc/html/wnlicens.7WN.html
+Installing /home/rit/testinstall/doc/html/wnpkgs.7WN.html
+Installing /home/rit/testinstall/doc/html/wnsearch.3WN.html
+Installing /home/rit/testinstall/doc/html/wnstats.7WN.html
+Installing /home/rit/testinstall/doc/html/wnutil.3WN.html
+make[3]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/doc/html'
+Done installing HTML pages in /home/rit/testinstall/doc/html
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/doc/html'
+Installing pdf...
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/doc/pdf'
+if [ ! -d /home/rit/testinstall/doc/pdf ] ; then \
+	echo "Making directory /home/rit/testinstall/doc/pdf" ; \
+	mkdir -p /home/rit/testinstall/doc/pdf ; \
+	chmod 755 /home/rit/testinstall/doc/pdf ; \
+fi ;
+Making directory /home/rit/testinstall/doc/pdf
+Installing HTML pages in /home/rit/testinstall/doc/pdf
+make[3]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/doc/pdf'
+Installing /home/rit/testinstall/doc/pdf/binsrch.3.pdf
+Installing /home/rit/testinstall/doc/pdf/cntlist.5.pdf
+Installing /home/rit/testinstall/doc/pdf/grind.1.pdf
+Installing /home/rit/testinstall/doc/pdf/lexnames.5.pdf
+Installing /home/rit/testinstall/doc/pdf/morph.3.pdf
+Installing /home/rit/testinstall/doc/pdf/morphy.7.pdf
+Installing /home/rit/testinstall/doc/pdf/prologdb.5.pdf
+Installing /home/rit/testinstall/doc/pdf/senseidx.5.pdf
+Installing /home/rit/testinstall/doc/pdf/uniqbeg.7.pdf
+Installing /home/rit/testinstall/doc/pdf/wn.1.pdf
+Installing /home/rit/testinstall/doc/pdf/wnb.1.pdf
+Installing /home/rit/testinstall/doc/pdf/wndb.5.pdf
+Installing /home/rit/testinstall/doc/pdf/wngloss.7.pdf
+Installing /home/rit/testinstall/doc/pdf/wngroups.7.pdf
+Installing /home/rit/testinstall/doc/pdf/wninput.5.pdf
+Installing /home/rit/testinstall/doc/pdf/wnintro.1.pdf
+Installing /home/rit/testinstall/doc/pdf/wnintro.3.pdf
+Installing /home/rit/testinstall/doc/pdf/wnintro.5.pdf
+Installing /home/rit/testinstall/doc/pdf/wnintro.7.pdf
+Installing /home/rit/testinstall/doc/pdf/wnlicens.7.pdf
+Installing /home/rit/testinstall/doc/pdf/wnpkgs.7.pdf
+Installing /home/rit/testinstall/doc/pdf/wnsearch.3.pdf
+Installing /home/rit/testinstall/doc/pdf/wnstats.7.pdf
+Installing /home/rit/testinstall/doc/pdf/wnutil.3.pdf
+make[3]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/doc/pdf'
+Done installing HTML pages in /home/rit/testinstall/doc/pdf
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/doc/pdf'
+Installing ps...
+make[2]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/doc/ps'
+if [ ! -d /home/rit/testinstall/doc/ps ] ; then \
+	echo "Making directory /home/rit/testinstall/doc/ps" ; \
+	mkdir -p /home/rit/testinstall/doc/ps ; \
+	chmod 755 /home/rit/testinstall/doc/ps ; \
+fi ;
+Making directory /home/rit/testinstall/doc/ps
+Installing HTML pages in /home/rit/testinstall/doc/ps
+make[3]: Entering directory `/var/home/rit/wordnet/WordNet-1.7.1/doc/ps'
+Installing /home/rit/testinstall/doc/ps/binsrch.3.ps
+Installing /home/rit/testinstall/doc/ps/cntlist.5.ps
+Installing /home/rit/testinstall/doc/ps/grind.1.ps
+Installing /home/rit/testinstall/doc/ps/lexnames.5.ps
+Installing /home/rit/testinstall/doc/ps/morph.3.ps
+Installing /home/rit/testinstall/doc/ps/morphy.7.ps
+Installing /home/rit/testinstall/doc/ps/prologdb.5.ps
+Installing /home/rit/testinstall/doc/ps/senseidx.5.ps
+Installing /home/rit/testinstall/doc/ps/uniqbeg.7.ps
+Installing /home/rit/testinstall/doc/ps/wn.1.ps
+Installing /home/rit/testinstall/doc/ps/wnb.1.ps
+Installing /home/rit/testinstall/doc/ps/wndb.5.ps
+Installing /home/rit/testinstall/doc/ps/wngloss.7.ps
+Installing /home/rit/testinstall/doc/ps/wngroups.7.ps
+Installing /home/rit/testinstall/doc/ps/wninput.5.ps
+Installing /home/rit/testinstall/doc/ps/wnintro.1.ps
+Installing /home/rit/testinstall/doc/ps/wnintro.3.ps
+Installing /home/rit/testinstall/doc/ps/wnintro.5.ps
+Installing /home/rit/testinstall/doc/ps/wnintro.7.ps
+Installing /home/rit/testinstall/doc/ps/wnlicens.7.ps
+Installing /home/rit/testinstall/doc/ps/wnpkgs.7.ps
+Installing /home/rit/testinstall/doc/ps/wnsearch.3.ps
+Installing /home/rit/testinstall/doc/ps/wnstats.7.ps
+Installing /home/rit/testinstall/doc/ps/wnutil.3.ps
+make[3]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/doc/ps'
+Done installing HTML pages in /home/rit/testinstall/doc/ps
+make[2]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/doc/ps'
+Done installind HTML and PDF documentation
+make[1]: Leaving directory `/var/home/rit/wordnet/WordNet-1.7.1/doc'
+Done creating and installing WordNet 1.7.1..

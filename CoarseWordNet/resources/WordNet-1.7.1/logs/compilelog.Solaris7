@@ -1,0 +1,256 @@
+Cleaning directory bin...
+Cleaning subdirectory irix
+Cleaning subdirectory linux
+Cleaning subdirectory solaris
+Cleaning directory dict...
+Cleaning directory include...
+Cleaning directory lib...
+Cleaning subdirectory irix
+Cleaning subdirectory linux
+Cleaning subdirectory solaris
+Cleaning subdirectory wnres
+Cleaning directory man...
+Cleaning directory doc...
+Cleaning subdirectory html
+Cleaning subdirectory pdf
+Cleaning subdirectory ps
+Cleaning directory src...
+Cleaning subdirectory lib
+Cleaning subdirectory wn
+Cleaning subdirectory wnb
+Cleaning subdirectory grind
+Cleaning subdirectory include
+(cd src; make -k CC='gcc' WN_ROOT='/wordnet/wn/src/Release/1.7.1/testinstall' TCL_INCDIR='/usr/cogsci/include' TK_INCDIR='/usr/cogsci/include' TCL_LIBDIR='/usr/cogsci/lib' TK_LIBDIR='/usr/cogsci/lib' X11_INCDIR='/usr/openwin/include' X11_LIBDIR='/usr/openwin/lib' WNB_LIBS='-ltk8.3 -ltcl8.3 -lX11 -lm -lsocket -lnsl -ldl -lpthread' LOCAL_CFLAGS='-O -DUNIX' LOCAL_LDFLAGS='-R/usr/openwin/lib:/usr/lib:/usr/local/lib' WN_BINDIR='/wordnet/wn/src/Release/1.7.1/testinstall/bin' WN_LIBDIR='/wordnet/wn/src/Release/1.7.1/testinstall/lib' WN_INCDIR='/wordnet/wn/src/Release/1.7.1/testinstall/include' all install)
+Installing include..
+Making directory /wordnet/wn/src/Release/1.7.1/testinstall/include
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/include/license.h
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/include/setutil.h
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/include/wn.h
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/include/wnconsts.h
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/include/wnglobal.h
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/include/wnhelp.h
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/include/wnrtl.h
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/include/wntypes.h
+Done installing include files in /wordnet/wn/src/Release/1.7.1/testinstall/include
+Making WordNet library libwn.a
+gcc -I/wordnet/wn/src/Release/1.7.1/testinstall/include -O -DUNIX  -c  binsrch.c
+gcc -I/wordnet/wn/src/Release/1.7.1/testinstall/include -O -DUNIX  -c  morph.c
+gcc -I/wordnet/wn/src/Release/1.7.1/testinstall/include -O -DUNIX  -c  search.c
+gcc -I/wordnet/wn/src/Release/1.7.1/testinstall/include -O -DUNIX  -c  setutil.c
+gcc -I/wordnet/wn/src/Release/1.7.1/testinstall/include -O -DUNIX  -c  wnglobal.c
+gcc -I/wordnet/wn/src/Release/1.7.1/testinstall/include -O -DUNIX  -c  wnhelp.c
+gcc -I/wordnet/wn/src/Release/1.7.1/testinstall/include -O -DUNIX  -c  wnrtl.c
+gcc -I/wordnet/wn/src/Release/1.7.1/testinstall/include -O -DUNIX  -c  wnutil.c
+ar rcv libwn.a binsrch.o morph.o search.o setutil.o wnglobal.o wnhelp.o wnrtl.o wnutil.o; ranlib libwn.a
+a - binsrch.o
+a - morph.o
+a - search.o
+a - setutil.o
+a - wnglobal.o
+a - wnhelp.o
+a - wnrtl.o
+a - wnutil.o
+Done compiling library
+Installing lib..
+Making directory /wordnet/wn/src/Release/1.7.1/testinstall/lib
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/lib/libwn.a
+Making directory /wordnet/wn/src/Release/1.7.1/testinstall/lib/wnres
+Installing resource files in /wordnet/wn/src/Release/1.7.1/testinstall/lib/wnres
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/lib/wnres/license.txt
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/lib/wnres/wn.xbm
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/lib/wnres/wngloss.man
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/lib/wnres/wnb.man
+Done installing resource files in /wordnet/wn/src/Release/1.7.1/testinstall/lib/wnres
+Done installing WordNet library in /wordnet/wn/src/Release/1.7.1/testinstall/lib
+Compiling wn...
+gcc -I/wordnet/wn/src/Release/1.7.1/testinstall/include -O -DUNIX  -c  wn.c
+gcc -o wn -L/wordnet/wn/src/Release/1.7.1/testinstall/lib -R/usr/openwin/lib:/usr/lib:/usr/local/lib wn.o -lwn
+Compiling wnb...
+gcc -I/wordnet/wn/src/Release/1.7.1/testinstall/include -O -DUNIX -I/usr/cogsci/include -I/usr/cogsci/include -I/usr/openwin/include  -c  stubs.c
+gcc -I/wordnet/wn/src/Release/1.7.1/testinstall/include -O -DUNIX -I/usr/cogsci/include -I/usr/cogsci/include -I/usr/openwin/include  -c  tkAppInit.c
+gcc -o wishwn -L/wordnet/wn/src/Release/1.7.1/testinstall/lib -R/usr/openwin/lib:/usr/lib:/usr/local/lib -L/usr/cogsci/lib -L/usr/cogsci/lib -L/usr/openwin/lib stubs.o tkAppInit.o -ltk8.3 -ltcl8.3 -lX11 -lm -lsocket -lnsl -ldl -lpthread -lwn
+Compiling grind...
+gcc -I/wordnet/wn/src/Release/1.7.1/testinstall/include -O -DUNIX  -c  aux.c
+gcc -I/wordnet/wn/src/Release/1.7.1/testinstall/include -O -DUNIX  -c  create.c
+gcc -I/wordnet/wn/src/Release/1.7.1/testinstall/include -O -DUNIX  -c  files.c
+gcc -I/wordnet/wn/src/Release/1.7.1/testinstall/include -O -DUNIX  -c  globals.c
+gcc -I/wordnet/wn/src/Release/1.7.1/testinstall/include -O -DUNIX  -c  grind.c
+gcc -I/wordnet/wn/src/Release/1.7.1/testinstall/include -O -DUNIX  -c  makedb.c
+gcc -I/wordnet/wn/src/Release/1.7.1/testinstall/include -O -DUNIX  -c  resolve.c
+yacc -dl wnparse.y
+mv y.tab.c wnparse.c
+mv y.tab.h wnparse.h
+gcc -I/wordnet/wn/src/Release/1.7.1/testinstall/include -O -DUNIX  -c  wnparse.c
+lex wnlex.l
+mv lex.yy.c wnlex.c
+gcc -I/wordnet/wn/src/Release/1.7.1/testinstall/include -O -DUNIX  -c  wnlex.c
+gcc -o grind -L/wordnet/wn/src/Release/1.7.1/testinstall/lib -R/usr/openwin/lib:/usr/lib:/usr/local/lib aux.o create.o files.o globals.o grind.o makedb.o resolve.o wnparse.o wnlex.o -lwn
+Done compiling interfaces
+Installing wn...
+Making directory /wordnet/wn/src/Release/1.7.1/testinstall/bin
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/bin/wn
+Done installing command line interface in /wordnet/wn/src/Release/1.7.1/testinstall/bin
+Installing wnb...
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/bin/wishwn
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/bin/wnb
+Done installing WordNet browser interface in /wordnet/wn/src/Release/1.7.1/testinstall/bin
+Installing grind...
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/bin/grind
+Done installing grinder in /wordnet/wn/src/Release/1.7.1/testinstall/bin
+Done installing interfaces
+Installing WordNet 1.7.1 database in /wordnet/wn/src/Release/1.7.1/testinstall/dict...
+(cd dict; make -k WN_INSTALLDIR='/wordnet/wn/src/Release/1.7.1/testinstall/dict' INSTALLCMD='cp' INSTALLFLAGS='-p' install)
+Making directory /wordnet/wn/src/Release/1.7.1/testinstall/dict
+Installing database files in /wordnet/wn/src/Release/1.7.1/testinstall/dict
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/dict/data.noun
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/dict/data.verb
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/dict/data.adj
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/dict/data.adv
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/dict/index.noun
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/dict/index.verb
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/dict/index.adj
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/dict/index.adv
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/dict/noun.exc
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/dict/verb.exc
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/dict/adj.exc
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/dict/adv.exc
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/dict/index.sense
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/dict/cntlist
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/dict/cntlist.rev
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/dict/lexnames
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/dict/sentidx.vrb
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/dict/sents.vrb
+Done installing database files in /wordnet/wn/src/Release/1.7.1/testinstall/dict
+Installing WordNet 1.7.1 Reference Manaul in /wordnet/wn/src/Release/1.7.1/testinstall/man...
+(cd man; make -k WN_INSTALLDIR='/wordnet/wn/src/Release/1.7.1/testinstall/man' install)
+Making directory /wordnet/wn/src/Release/1.7.1/testinstall/man/man1
+Making directory /wordnet/wn/src/Release/1.7.1/testinstall/man/man3
+Making directory /wordnet/wn/src/Release/1.7.1/testinstall/man/man5
+Making directory /wordnet/wn/src/Release/1.7.1/testinstall/man/man7
+Installing man pages in /wordnet/wn/src/Release/1.7.1/testinstall/man
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man1/wn.1
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man1/wnb.1
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man1/wnintro.1
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man3/binsrch.3
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man3/morph.3
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man3/wnintro.3
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man3/wnsearch.3
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man3/wnutil.3
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man5/cntlist.5
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man5/lexnames.5
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man5/senseidx.5
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man5/wndb.5
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man5/wninput.5
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man5/wnintro.5
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man7/morphy.7
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man7/uniqbeg.7
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man7/wngloss.7
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man7/wngroups.7
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man7/wnintro.7
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man7/wnlicens.7
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man7/wnpkgs.7
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/man/man7/wnstats.7
+Done installing man pages in /wordnet/wn/src/Release/1.7.1/testinstall/man
+Installing WordNet 1.7.1 Reference Manual in /wordnet/wn/src/Release/1.7.1/testinstall/doc...
+(cd doc; make -k WN_INSTALLDIR='/wordnet/wn/src/Release/1.7.1/testinstall/doc' install)
+Installing html...
+if [ ! -d /wordnet/wn/src/Release/1.7.1/testinstall/doc/html ] ; then \
+	echo "Making directory /wordnet/wn/src/Release/1.7.1/testinstall/doc/html" ; \
+	mkdir -p /wordnet/wn/src/Release/1.7.1/testinstall/doc/html ; \
+	chmod 755 /wordnet/wn/src/Release/1.7.1/testinstall/doc/html ; \
+fi ;
+Making directory /wordnet/wn/src/Release/1.7.1/testinstall/doc/html
+Installing HTML pages in /wordnet/wn/src/Release/1.7.1/testinstall/doc/html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/binsrch.3WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/cntlist.5WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/grind.1WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/lexnames.5WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/morph.3WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/morphy.7WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/prologdb.5WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/senseidx.5WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/uniqbeg.7WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/wn.1WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/wnb.1WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/wndb.5WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/wngloss.7WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/wngroups.7WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/wninput.5WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/wnintro.1WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/wnintro.3WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/wnintro.5WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/wnintro.7WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/wnlicens.7WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/wnpkgs.7WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/wnsearch.3WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/wnstats.7WN.html
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/html/wnutil.3WN.html
+Done installing HTML pages in /wordnet/wn/src/Release/1.7.1/testinstall/doc/html
+Installing pdf...
+if [ ! -d /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf ] ; then \
+	echo "Making directory /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf" ; \
+	mkdir -p /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf ; \
+	chmod 755 /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf ; \
+fi ;
+Making directory /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf
+Installing HTML pages in /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/binsrch.3.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/cntlist.5.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/grind.1.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/lexnames.5.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/morph.3.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/morphy.7.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/prologdb.5.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/senseidx.5.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/uniqbeg.7.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/wn.1.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/wnb.1.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/wndb.5.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/wngloss.7.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/wngroups.7.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/wninput.5.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/wnintro.1.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/wnintro.3.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/wnintro.5.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/wnintro.7.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/wnlicens.7.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/wnpkgs.7.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/wnsearch.3.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/wnstats.7.pdf
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf/wnutil.3.pdf
+Done installing HTML pages in /wordnet/wn/src/Release/1.7.1/testinstall/doc/pdf
+Installing ps...
+if [ ! -d /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps ] ; then \
+	echo "Making directory /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps" ; \
+	mkdir -p /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps ; \
+	chmod 755 /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps ; \
+fi ;
+Making directory /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps
+Installing HTML pages in /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/binsrch.3.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/cntlist.5.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/grind.1.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/lexnames.5.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/morph.3.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/morphy.7.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/prologdb.5.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/senseidx.5.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/uniqbeg.7.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/wn.1.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/wnb.1.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/wndb.5.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/wngloss.7.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/wngroups.7.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/wninput.5.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/wnintro.1.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/wnintro.3.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/wnintro.5.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/wnintro.7.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/wnlicens.7.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/wnpkgs.7.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/wnsearch.3.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/wnstats.7.ps
+Installing /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps/wnutil.3.ps
+Done installing HTML pages in /wordnet/wn/src/Release/1.7.1/testinstall/doc/ps
+Done installind HTML and PDF documentation
+Done creating and installing WordNet 1.7.1..

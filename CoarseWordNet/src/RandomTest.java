@@ -17,7 +17,7 @@ public class RandomTest {
 		try{
 			JWNL.initialize(new FileInputStream(propsFile30));
 			Dictionary dictionary = Dictionary.getInstance();
-			IndexWord iw = dictionary.getIndexWord(POS.NOUN, "stress");
+			IndexWord iw = dictionary.getIndexWord(POS.NOUN, "some thing");
 			for(Synset syn : iw.getSenses())
 			{
 				System.out.println(syn);

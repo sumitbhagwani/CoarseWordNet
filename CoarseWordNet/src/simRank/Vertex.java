@@ -30,4 +30,14 @@ public class Vertex
 			return true;
 		return false;
 	}
+	
+	public String getOffset()
+	{
+		return offset;
+	}
+	
+	public String getPOS()
+	{
+		return pos;
+	}			
 }
