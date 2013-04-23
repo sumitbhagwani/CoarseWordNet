@@ -10,6 +10,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+import com.sun.org.apache.bcel.internal.generic.FCONST;
+
 import krsystem.StaticValues;
 
 import net.sf.extjwnl.JWNL;
@@ -34,12 +36,13 @@ public class WSDScorer {
 		instances.put(instance.instanceId, instance);
 	}
 	
-	public void score(String attemptFile)
+	public HashMap<String, Double> score(String attemptFile)
 	{
-		int attempted = 0;
-		int correctFine = 0;
-		int correctCoarse = 0;
-		int total = instances.size();
+		HashMap<String, Double> scores = new HashMap<String, Double>();
+		double attempted = 0;
+		double correctFine = 0;
+		double correctCoarse = 0;
+		double total = instances.size();
 		double baselineScore = 0;
 		try{
 			BufferedReader br = new BufferedReader(new FileReader(new File(attemptFile)));
@@ -51,36 +54,67 @@ public class WSDScorer {
 				//lineSplit[1] is instance id
 				//lineSplit[2] is the answer marked by the system
 				String instanceID = lineSplit[1];
-				String answerMarked = lineSplit[2];
+				String fineAnswer = lineSplit[2];
+				Integer id = clusterData.vertexToId.get(fineAnswer);
+				String coarseAnswer = "";
+				if(id != null)
+					coarseAnswer = id.toString();
+				else
+					coarseAnswer = fineAnswer;
 				WSDInstance wsdInstance = instances.get(instanceID);
 				if(wsdInstance != null)
 				{
 					attempted++;
-					if(wsdInstance.fineCorrect(answerMarked))
+					if(wsdInstance.fineCorrect(fineAnswer))
 					{
-						correctFine++;
-						correctCoarse++;
+						correctFine += 1.0;
+						correctCoarse += 1.0;
 						baselineScore += 1.0;
 					}
-					else if(wsdInstance.coarseCorrect(answerMarked))
+					else if(wsdInstance.coarseCorrect(coarseAnswer))
 					{
-						correctCoarse++;
+						correctCoarse += 1.0;
 						baselineScore += wsdInstance.getBaselineScore();
 					}
+					else
+						baselineScore += wsdInstance.getBaselineScore();
 				}
 			}
 			br.close();
+						
+			scores.put("attempted", attempted/total);
 			
-			System.out.println("Attempted : "+ attempted +" / "+total);
-			System.out.println("Precision Fine : "+ correctFine + " / "+attempted);
-			System.out.println("Recall Fine : "+ correctFine + " / "+total);
-			System.out.println("Precision Coarse : "+ correctCoarse + " / "+attempted);
-			System.out.println("Recall Coarse : "+ correctCoarse + " / "+total);
+			double precision_fine = correctFine/attempted;
+			scores.put("precision_fine",precision_fine);
+			
+			double recall_fine = correctFine/total;
+			scores.put("recall_fine",precision_fine);			
+			
+			double fscore_fine = (2.0*precision_fine*recall_fine)/(precision_fine + recall_fine);
+			scores.put("fscore_fine", fscore_fine);
+			
+			double precision_coarse = correctCoarse/attempted;
+			scores.put("precision_coarse",precision_coarse);
+			
+			double recall_coarse = correctCoarse/total;
+			scores.put("recall_coarse",precision_fine);			
+			
+			double fscore_coarse = (2.0*precision_coarse*recall_coarse)/(precision_coarse + recall_coarse);
+			scores.put("fscore_coarse", fscore_coarse);
+			
+			double random_baseline_precision = baselineScore/attempted;
+			double random_baseline_recall = baselineScore/total;
+			double random_baseline_fscore = (2.0*random_baseline_precision*random_baseline_recall)/(random_baseline_precision+random_baseline_recall);
+			scores.put("random_baseline", random_baseline_fscore);
+			
+			double improvement = fscore_coarse - random_baseline_fscore;
+			scores.put("improvement", improvement);
 		}
 		catch(Exception ex)
 		{
 			ex.printStackTrace();
 		}
+		return scores;
 	}
 	
 	public WSDScorer(ConnectedComponents clustersPassed, String answerKeyFile) {
@@ -113,21 +147,22 @@ public class WSDScorer {
 					}
 					else
 					{
-						Set<String> cluster = clusterData.clusterList.get(id.intValue());						
-						for(String str : cluster)
-						{
-							Synset synsetStr = dictionary.getSynsetAt(POS.NOUN, Long.parseLong(str));
-							for(Word w : synsetStr.getWords())
-							{
-								String fetchedLemma = w.getLemma();
-								fetchedLemma = fetchedLemma.replaceAll(" ", "_");
-								if(fetchedLemma.compareToIgnoreCase(lemma) == 0)
-								{
-									wsdInstance.addCoarseAnswer(str);
-									break;
-								}
-							}
-						}
+						wsdInstance.addCoarseAnswer(id.toString());
+//						Set<String> cluster = clusterData.clusterList.get(id.intValue());						
+//						for(String str : cluster)
+//						{
+//							Synset synsetStr = dictionary.getSynsetAt(POS.NOUN, Long.parseLong(str));
+//							for(Word w : synsetStr.getWords())
+//							{
+//								String fetchedLemma = w.getLemma();
+//								fetchedLemma = fetchedLemma.replaceAll(" ", "_");
+//								if(fetchedLemma.compareToIgnoreCase(lemma) == 0)
+//								{
+//									wsdInstance.addCoarseAnswer(str);
+//									break;
+//								}
+//							}
+//						}
 					}				
 				}
 				

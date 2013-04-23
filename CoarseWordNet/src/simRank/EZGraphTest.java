@@ -7,6 +7,7 @@ import krsystem.StaticValues;
 
 import ezgraph.Graph;
 import ezgraph.SimRank;
+import ezgraph.SimRankWithInit;
 import ezgraph.UndirectedGraph;
 
 public class EZGraphTest {
@@ -24,17 +25,17 @@ public class EZGraphTest {
 		String simrankExperimentPath = StaticValues.dataPath+"simrankExperiment/";
 		String idToVertexMapPath = simrankExperimentPath+"undirectedIdToVertexMapSVMTransformed.1.0.txt";
 		String simrankOutputPath = simrankExperimentPath+"simrankMatrixIterationSVMTransformed.1.0";
-//		String initFile = "resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun";
+		String initFile = "resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun";
 		
-		String addition_1_0 = "resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun.1.0";
-		String addition_0_8 = "resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun.0.8";
+//		String addition_1_0 = "resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun.1.0";
+//		String addition_0_8 = "resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun.0.8";
 		
 		double threshold = 0.00001;
 		int maxIter = 10;
 		
 //		String[] files = {hypernymFile, hyponymFile, holonymFile, meronymFile};
-//		String[] files = {hypernymFile, meronymFile};
-		String[] files = {hypernymFile, meronymFile, addition_1_0};
+		String[] files = {hypernymFile, meronymFile};
+//		String[] files = {hypernymFile, meronymFile, addition_1_0};
 //		String[] files = {holonymFile};
 		
 		System.out.print("Loading graph...");
@@ -46,7 +47,8 @@ public class EZGraphTest {
 		
 		System.out.println("Computing SimRank on a Graph ...");
 		long startTime = System.currentTimeMillis();
-		SimRank simrank = new SimRank(graph,threshold,maxIter, simrankOutputPath);
+//		SimRank simrank = new SimRank(graph,threshold,maxIter, simrankOutputPath);
+		SimRankWithInit simrank = new SimRankWithInit(graph,threshold,maxIter, simrankOutputPath, initFile);
 		long endTime = System.currentTimeMillis();
 		System.out.println(" done in "+(endTime-startTime)+" milliseconds");
 		

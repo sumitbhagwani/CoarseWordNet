@@ -78,15 +78,5 @@ public class ConnectedComponents {
 		System.out.println(numClusters);
 	}
 	
-	public static void main(String[] args) {
-		String[] files = {"resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun"};
-		double threshold = 0.9;
-		ConnectedComponents components = new ConnectedComponents(files, threshold);
-		String answerKey = "resources/Clustering/Senseval3/NounExtractedFiles/EnglishAW.test.key.synsets.lemmas";
-		String attemptFile = "resources/Clustering/Senseval3/NounExtractedFiles/GAMBL.synsets";
-		WSDScorer scorer = new WSDScorer(components, answerKey);
-		scorer.score(attemptFile);
-		
-	}
-
+	
 }
