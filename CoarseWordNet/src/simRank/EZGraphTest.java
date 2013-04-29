@@ -23,8 +23,8 @@ public class EZGraphTest {
 		String meronymFile = "resources/wn30Relations/meronym";
 		String holonymFile = "resources/wn30Relations/holonym";
 		String simrankExperimentPath = StaticValues.dataPath+"simrankExperiment/";
-		String idToVertexMapPath = simrankExperimentPath+"undirectedIdToVertexMapSVMTransformed.1.0.txt";
-		String simrankOutputPath = simrankExperimentPath+"simrankMatrixIterationSVMTransformed.1.0";
+		String idToVertexMapPath = simrankExperimentPath+"undirectedIdToVertexMapSVMProbScaled.txt";
+		String simrankOutputPath = simrankExperimentPath+"simrankMatrixIterationSVMProbScaled";
 		String initFile = "resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun";
 		
 //		String addition_1_0 = "resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun.1.0";
@@ -48,7 +48,7 @@ public class EZGraphTest {
 		System.out.println("Computing SimRank on a Graph ...");
 		long startTime = System.currentTimeMillis();
 //		SimRank simrank = new SimRank(graph,threshold,maxIter, simrankOutputPath);
-		SimRankWithInit simrank = new SimRankWithInit(graph,threshold,maxIter, simrankOutputPath, initFile);
+		SimRankWithInit simrank = new SimRankWithInit(graph,threshold,maxIter, simrankOutputPath, initFile, true);
 		long endTime = System.currentTimeMillis();
 		System.out.println(" done in "+(endTime-startTime)+" milliseconds");
 		

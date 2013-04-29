@@ -18,4 +18,6 @@ public class StaticValues
 	
 	public static String wnRelationsPath = "resources/wn30Relations/";
 	
+	public static String verbNetPath = dataPath + "verbnet-3.2/";
+	
 }

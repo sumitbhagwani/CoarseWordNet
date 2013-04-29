@@ -19,7 +19,9 @@ public class SimRankWithInit {
 	
 	private int stepSizeForSimRankWriting = 1;
 	
-	private static double maxDeltaThreshold = 0.0000000001; 	
+	private static double maxDeltaThreshold = 0.0000000001; 
+	
+	private boolean cScaling = false;
  	
  	public void init(String initFile)
  	{
@@ -41,7 +43,10 @@ public class SimRankWithInit {
  					index1 = index0;
  				} 				
  				String key = index0+"-"+index1;
- 				initMatrix.put(key,similarity);
+ 				if(cScaling)
+ 					initMatrix.put(key,similarity*DEFAULT_C);
+ 				else
+ 					initMatrix.put(key,similarity);
  			}
  			br.close();
  		} catch(Exception ex)
@@ -50,9 +55,10 @@ public class SimRankWithInit {
  		} 		
  	}
  	
- 	public SimRankWithInit ( Graph graph, double threshold, int maxIter, String writePath, String initFile) 
+ 	public SimRankWithInit ( Graph graph, double threshold, int maxIter, String writePath, String initFile, boolean cScalingPassed) 
  	{
 		this.graph = graph;
+		this.cScaling = cScalingPassed;
 		simrank = new SparseMatrix(graph.numNodes());
 		initMatrix = new HashMap<String, Double>();
 		init(initFile); // one time initialisation
@@ -78,7 +84,7 @@ public class SimRankWithInit {
 //					if(inDegreeCurrentVertex2 == 0) continue;
 					if ( currentVertex1 == currentVertex2 ) continue;
 					if(currentVertex1 > currentVertex2) continue;
-					if(initMatrix.containsKey(currentVertex1+"-"+currentVertex2)) continue;
+					//if(initMatrix.containsKey(currentVertex1+"-"+currentVertex2)) continue;
 					double quantity = 0.0;
 					Integer aux1 = null , aux2 = null;
 					ArcLabelledNodeIterator.LabelledArcIterator anc1 = it1.ancestors();

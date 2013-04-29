@@ -8,19 +8,20 @@ import java.util.HashMap;
 public class Analysis {
 
 	public static void main(String[] args) {
-		String[] files = {"/home/sumitb/Desktop/scoresOutput"};
+//		String[] files = {"resources/Clustering/PopulatingDB/simValuesSVM.noun"};
+		String[] files = {"resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun"};//, "/home/sumitb/Desktop/simrankMatrixIterationSVMTransformedSemisupervised8-3-6.synsets"};
 		String answerKey = "resources/Clustering/Senseval3/NounExtractedFiles/EnglishAW.test.key.synsets.lemmas";		
 		
 		String attemptPath = "resources/Clustering/Senseval3/NounExtractedFiles/";
 		String[] attemptFiles = {attemptPath+"GAMBL.synsets", attemptPath+"SenseLearner.synsets", attemptPath+"kuaw.synsets", attemptPath+"IRST-DDD-00.synsets",};
 		
-		String scoresFile = attemptPath+"results/testUnsupervised.txt";
+		String scoresFile = attemptPath+"results/testProb.txt";
 		String[] hashKeys = {"precision_fine", "random_baseline","recall_coarse","fscore_coarse","fscore_fine","improvement","precision_coarse","recall_fine","attempted"};
 		double[] bestImprovement = {Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY};
 		double[] bestImprovementThreshold = {0,0,0,0};
 		try{
 			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(scoresFile)));
-			for(double threshold = 0.05; threshold <= 0.4; threshold += 0.01)
+			for(double threshold = 0.3; threshold <= 0.95; threshold += 0.01)
 			{
 				bw.write(threshold+"");
 				System.out.println("Finding Connected Components ...");

@@ -164,7 +164,7 @@ public class Evaluation {
 		String lightPathTrain = "/home/sumitb/Data/wekaRelated/verbAnalysisTrain.light";
 		String lightPathTest = "/home/sumitb/Data/wekaRelated/verbAnalysisTest.light";
 		String synsetToWordIndexPairMap = "resources/Clustering/synsetWordIndexMap/verbMap.txt";
-		int folderNum = 2;
+		int folderNum = 3;
 		String posString = "Verb";
 		try{			
 			JWNL.initialize(new FileInputStream(propsFile30));
@@ -189,14 +189,14 @@ public class Evaluation {
 //			tp.getKernelParameters().kernel_type = 2;
 //			ModelSVM model = trainingModule.train(trainingFiles, trainer, tp);
 //			ModelSVM model = trainingModule.train(trainingFilesEqual, trainer, tp);
-			ModelSVM model = trainingModule.trainMinMaxNormal(trainingFilesEqual, trainer, tp, arffPathTrain, "");
+//			ModelSVM model = trainingModule.trainMinMaxNormal(trainingFilesEqual, trainer, tp, arffPathTrain, "");
 //			ModelSVM model = trainingModule.trainZScoreNormal(trainingFilesEqual, trainer, tp);
 //			ModelSVM model = trainingModule.trainMinMaxNormal(sample, trainer, tp);			
 			System.out.println("Training completed...");
-			model.writeModel(svmFolder+"modelLinearEqualTrainingMinMaxNormalization"+posString, svmFolder+"paramsLinearEqualTrainingMinMaxNormalization"+posString);
+//			model.writeModel(svmFolder+"modelLinearEqualTrainingMinMaxNormalization"+posString, svmFolder+"paramsLinearEqualTrainingMinMaxNormalization"+posString);
 			
-//			SVMLightModel model = SVMLightModel.readSVMLightModelFromURL(new java.io.File(svmFolder+"model4").toURL());
-//			System.out.println("Model loaded....");
+			ModelSVM model = MinMaxSVMModel.readModel(svmFolder+"modelLinearEqualTrainingMinMaxNormalization"+posString, svmFolder+"paramsLinearEqualTrainingMinMaxNormalization"+posString);
+			System.out.println("Model loaded....");
 			
 			Evaluation evaluationModule = new Evaluation(dictionary, trainingModule, model, fg);
 //			evaluationModule.test(trainingFilesEqual);
@@ -277,8 +277,8 @@ public class Evaluation {
 	}
 	
 	public static void main(String[] args) {
-		Evaluation.evalNoun();
-//		Evaluation.evalVerb();
+//		Evaluation.evalNoun();
+		Evaluation.evalVerb();
 	}
 
 }

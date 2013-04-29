@@ -61,5 +61,6 @@
 	<classpathentry kind="lib" path="externalLibraries/wstx-asl-3.2.6.jar"/>
 	<classpathentry kind="lib" path="externalLibraries/WordNetGlossTagLibrary.jar"/>
 	<classpathentry kind="lib" path="externalLibraries/jwnl.jar"/>
+	<classpathentry kind="lib" path="externalLibraries/edu.mit.jverbnet-1.2.0-jdk.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
