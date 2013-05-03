@@ -262,7 +262,8 @@ public class Training {
 	public NormalSVMModel train(String[] trainingDataPaths, SVMLightInterface trainer)
 	{
 		OrderedPair<Integer , LabeledFeatureVector[]> dimNumExamplesPair = getFeatureVectors(trainingDataPaths);
-		LabeledFeatureVector[] examples = dimNumExamplesPair.getR();		
+		LabeledFeatureVector[] examples = dimNumExamplesPair.getR();
+		int numFeatures = dimNumExamplesPair.getL();		
 		SVMLightModel model = trainer.trainModel(examples);
 		return new NormalSVMModel(model);
 	}
@@ -271,6 +272,25 @@ public class Training {
 	{
 		OrderedPair<Integer , LabeledFeatureVector[]> dimNumExamplesPair = getFeatureVectors(trainingDataPaths);
 		LabeledFeatureVector[] examples = dimNumExamplesPair.getR();
+		int numFeatures = dimNumExamplesPair.getL();		
+		SVMLightModel model = trainer.trainModel(examples, params);
+		return new NormalSVMModel(model);
+	}
+	
+	public NormalSVMModel train(String[] trainingDataPaths, SVMLightInterface trainer, TrainingParameters params, String arffOutputPath, String SVMLightOutputPath)
+	{
+		OrderedPair<Integer , LabeledFeatureVector[]> dimNumExamplesPair = getFeatureVectors(trainingDataPaths);
+		LabeledFeatureVector[] examples = dimNumExamplesPair.getR();
+		int numFeatures = dimNumExamplesPair.getL();		
+		if(arffOutputPath.length() > 0)
+		{
+			Training.writeDataARFF(examples, numFeatures, arffOutputPath);
+		}
+		
+		if(SVMLightOutputPath.length() > 0)
+		{
+			Training.writeDATASVMLight(examples, numFeatures, SVMLightOutputPath);
+		}
 		SVMLightModel model = trainer.trainModel(examples, params);
 		return new NormalSVMModel(model);
 	}

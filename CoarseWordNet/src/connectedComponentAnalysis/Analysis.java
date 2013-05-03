@@ -9,7 +9,8 @@ public class Analysis {
 
 	public static void main(String[] args) {
 //		String[] files = {"resources/Clustering/PopulatingDB/simValuesSVM.noun"};
-		String[] files = {"resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun"};//, "/home/sumitb/Desktop/simrankMatrixIterationSVMTransformedSemisupervised8-3-6.synsets"};
+//		String[] files = {"resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun"};//, "/home/sumitb/Desktop/simrankMatrixIterationSVMTransformedSemisupervised8-3-6.synsets"};
+		String[] files = {"/home/sumitb/Desktop/simrankMatrixIterationSVMProbScaled8-3-6.synsets.cleaned"};
 		String answerKey = "resources/Clustering/Senseval3/NounExtractedFiles/EnglishAW.test.key.synsets.lemmas";		
 		
 		String attemptPath = "resources/Clustering/Senseval3/NounExtractedFiles/";
@@ -21,7 +22,7 @@ public class Analysis {
 		double[] bestImprovementThreshold = {0,0,0,0};
 		try{
 			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(scoresFile)));
-			for(double threshold = 0.3; threshold <= 0.95; threshold += 0.01)
+			for(double threshold = 0.3; threshold <= 0.6; threshold += 0.01)
 			{
 				bw.write(threshold+"");
 				System.out.println("Finding Connected Components ...");

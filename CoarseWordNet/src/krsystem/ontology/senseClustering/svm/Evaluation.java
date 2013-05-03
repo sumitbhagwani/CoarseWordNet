@@ -248,8 +248,8 @@ public class Evaluation {
 			TrainingParameters tp = new TrainingParameters();
 			tp.getLearningParameters().verbosity = 1;					
 //			tp.getKernelParameters().kernel_type = 2;
-//			System.out.println("Kernel Type : "+tp.getKernelParameters().kernel_type);
-//			ModelSVM model = trainingModule.train(trainingFiles, trainer, tp);
+			System.out.println("Kernel Type : "+tp.getKernelParameters().kernel_type);
+			ModelSVM model = trainingModule.train(trainingFiles, trainer, tp);
 //			ModelSVM model = trainingModule.train(trainingFilesEqual, trainer, tp);			
 //			ModelSVM model = trainingModule.trainMinMaxNormal(trainingFilesEqual, trainer, tp, arffPathTrain, lightPathTrain);
 //			ModelSVM model = trainingModule.trainZScoreNormal(trainingFilesEqual, trainer, tp);
@@ -257,15 +257,15 @@ public class Evaluation {
 //			System.out.println("Training completed...");
 //			model.writeModel(svmFolder+"modelLinearEqualTrainingMinMaxNormalizationNoun", svmFolder+"paramsLinearEqualTrainingMinMaxNormalizationNoun");
 			
-			System.out.println("Model loading...");
-			ModelSVM model = MinMaxSVMModel.readModel(svmFolder+"modelLinearEqualTrainingMinMaxNormalizationNoun", svmFolder+"paramsLinearEqualTrainingMinMaxNormalizationNoun");
+//			System.out.println("Model loading...");
+//			ModelSVM model = MinMaxSVMModel.readModel(svmFolder+"modelLinearEqualTrainingMinMaxNormalizationNoun", svmFolder+"paramsLinearEqualTrainingMinMaxNormalizationNoun");
 			System.out.println("Model loaded....");
 			
 			Evaluation evaluationModule = new Evaluation(dictionary, trainingModule, model, fg);
 //			evaluationModule.test(trainingFilesEqual);
 			System.out.println("-----------------------------------------");
-//			evaluationModule.test(testingFilesEqual);
-			evaluationModule.test(sensevalNounFiles);
+			evaluationModule.test(testingFiles);
+//			evaluationModule.test(sensevalNounFiles);
 //			evaluationModule.sanityCheck(wordNet30OffsetFile, "n", 1000);
 			
 			dictionary.close();
@@ -277,8 +277,8 @@ public class Evaluation {
 	}
 	
 	public static void main(String[] args) {
-//		Evaluation.evalNoun();
-		Evaluation.evalVerb();
+		Evaluation.evalNoun();
+//		Evaluation.evalVerb();
 	}
 
 }

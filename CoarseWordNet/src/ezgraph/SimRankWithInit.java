@@ -84,7 +84,7 @@ public class SimRankWithInit {
 //					if(inDegreeCurrentVertex2 == 0) continue;
 					if ( currentVertex1 == currentVertex2 ) continue;
 					if(currentVertex1 > currentVertex2) continue;
-					//if(initMatrix.containsKey(currentVertex1+"-"+currentVertex2)) continue;
+					if(initMatrix.containsKey(currentVertex1+"-"+currentVertex2)) continue;
 					double quantity = 0.0;
 					Integer aux1 = null , aux2 = null;
 					ArcLabelledNodeIterator.LabelledArcIterator anc1 = it1.ancestors();
