@@ -209,10 +209,12 @@ public class MinMaxSVMModel extends ModelSVM{
 			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(PathForMinMax)));
 			bw.write("#featureNum "+featureNum+"\n");
 			bw.write("#minReqd "+minReqd+"\n");
-			bw.write("#maxReqd "+maxReqd+"\n");		
+			bw.write("#maxReqd "+maxReqd+"\n");	
+//			System.out.println("Number of features : "+featureNum);
+//			System.out.println("weights ="+weights);
 			for(int i=0; i<featureNum; i++)
 			{
-				bw.write(i+" "+min[i]+" "+max[i]+" "+weights[i]+"\n");
+				bw.write(i+" "+min[i]+" "+max[i]+"\n");//+weights[i]+"\n");
 			}
 			bw.close();		
 		}

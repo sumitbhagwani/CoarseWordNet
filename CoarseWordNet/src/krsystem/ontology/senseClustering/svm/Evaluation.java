@@ -213,12 +213,12 @@ public class Evaluation {
 		}
 	}
 	
-	public static void evalNoun() {
+	public static void evalNoun(int folderNum) {
 		System.out.println("Evaluation Running...");
 		String propsFile30 = StaticValues.propsFile30;
 		String dir = "/home/sumitb/Data/";
 		String arg = "WordNet-3.0";
-		String svmFolder = "resources/Clustering/svmBinaries/";
+		String svmFolder = "resources/Clustering/SVMFinal/";
 		String domainDataPathNoun = "/home/sumitb/Data/xwnd/joinedPOSSeparated/joinedNoun.txt";
 		String OEDMappingPathNoun = "/home/sumitb/Data/navigli_sense_inventory/mergeData-30.offsets.noun";
 		String sentimentFilePath = "/home/sumitb/Data/SentiWordNet/SentiWordNet.n";
@@ -229,7 +229,6 @@ public class Evaluation {
 		String lightPathTrain = "/home/sumitb/Data/wekaRelated/nounAnalysisTrain.light";
 		String lightPathTest = "/home/sumitb/Data/wekaRelated/nounAnalysisTest.light";
 		String synsetToWordIndexPairMap = "resources/Clustering/synsetWordIndexMap/nounMap.txt";
-		int folderNum = 4;
 		try{			
 			JWNL.initialize(new FileInputStream(propsFile30));
 			Dictionary dictionary = Dictionary.getInstance();
@@ -241,30 +240,37 @@ public class Evaluation {
 			String[] testingFilesEqual = {path+"Noun"+folderNum+"/PosTest0.7.txt", path+"Noun"+folderNum+"/NegTestEqual.txt"};
 			String[] sample = {path+"Noun"+folderNum+"/sample.txt"};
 			String[] sensevalNounFiles = {sensevalDataPath+"nPositive30.txt",sensevalDataPath+"nNegative30.txt"};
+			String[] completeOntonotesFiles = {path+"Noun"+folderNum+"/NegTrain0.7.txt", path+"Noun"+folderNum+"/PosTrain0.7.txt",
+					path+"Noun"+folderNum+"/PosTest0.7.txt", path+"Noun"+folderNum+"/NegTest0.7.txt"};
 			
 			SVMLightInterface trainer = new SVMLightInterface();
 			FeatureGenerator fg = new FeatureGenerator(dir, arg, domainDataPathNoun, dictionary, OEDMappingPathNoun, sentimentFilePath, POS.NOUN, synsetToWordIndexPairMap);
 			Training trainingModule = new Training(dictionary, fg);
 			TrainingParameters tp = new TrainingParameters();
-			tp.getLearningParameters().verbosity = 1;					
-//			tp.getKernelParameters().kernel_type = 2;
+			tp.getLearningParameters().verbosity = 1;
+			int kernelType = 0; // 0 for linear and 2 for rbf
+			tp.getKernelParameters().kernel_type = kernelType;
 			System.out.println("Kernel Type : "+tp.getKernelParameters().kernel_type);
-			ModelSVM model = trainingModule.train(trainingFiles, trainer, tp);
-//			ModelSVM model = trainingModule.train(trainingFilesEqual, trainer, tp);			
-//			ModelSVM model = trainingModule.trainMinMaxNormal(trainingFilesEqual, trainer, tp, arffPathTrain, lightPathTrain);
+//			ModelSVM model = trainingModule.train(trainingFiles, trainer, tp);
+//			ModelSVM model = trainingModule.train(trainingFilesEqual, trainer, tp);
+//			ModelSVM model = trainingModule.train(completeOntonotesFiles, trainer, tp, arffPathTrain, lightPathTrain);
+			ModelSVM model = trainingModule.trainMinMaxNormal(trainingFilesEqual, trainer, tp, arffPathTrain, lightPathTrain);
 //			ModelSVM model = trainingModule.trainZScoreNormal(trainingFilesEqual, trainer, tp);
 //			ModelSVM model = trainingModule.trainMinMaxNormal(sample, trainer, tp);			
-//			System.out.println("Training completed...");
-//			model.writeModel(svmFolder+"modelLinearEqualTrainingMinMaxNormalizationNoun", svmFolder+"paramsLinearEqualTrainingMinMaxNormalizationNoun");
+			System.out.println("Training completed...");			
+			model.writeModel(svmFolder+"model"+kernelType+"EqualTraining"+"MinMaxNormalization"+"Noun"+folderNum, svmFolder+"params"+kernelType+"EqualTraining"+"MinMaxNormalization"+"Noun"+folderNum);
 			
 //			System.out.println("Model loading...");
-//			ModelSVM model = MinMaxSVMModel.readModel(svmFolder+"modelLinearEqualTrainingMinMaxNormalizationNoun", svmFolder+"paramsLinearEqualTrainingMinMaxNormalizationNoun");
-			System.out.println("Model loaded....");
+//			ModelSVM model = MinMaxSVMModel.readModel(svmFolder+"model"+kernelType+"EqualTraining"+"NoNormalization"+"Noun", svmFolder+"params"+kernelType+"EqualTraining"+"NoNormalization"+"Noun");
+//			System.out.println("Model loaded....");
 			
 			Evaluation evaluationModule = new Evaluation(dictionary, trainingModule, model, fg);
 //			evaluationModule.test(trainingFilesEqual);
-			System.out.println("-----------------------------------------");
-			evaluationModule.test(testingFiles);
+//			System.out.println("-----------------------------------------");
+//			evaluationModule.test(testingFiles);
+//			System.out.println("-----------------------------------------");
+			evaluationModule.test(testingFilesEqual);
+//			System.out.println("-----------------------------------------");
 //			evaluationModule.test(sensevalNounFiles);
 //			evaluationModule.sanityCheck(wordNet30OffsetFile, "n", 1000);
 			
@@ -277,7 +283,12 @@ public class Evaluation {
 	}
 	
 	public static void main(String[] args) {
-		Evaluation.evalNoun();
+		for(int folderNum=4; folderNum<=8;folderNum++)
+		{
+			Evaluation.evalNoun(folderNum);
+			System.out.println("************************************************");
+			System.out.println("************************************************");
+		}
 //		Evaluation.evalVerb();
 	}
 

@@ -9,20 +9,23 @@ public class Analysis {
 
 	public static void main(String[] args) {
 //		String[] files = {"resources/Clustering/PopulatingDB/simValuesSVM.noun"};
-//		String[] files = {"resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun"};//, "/home/sumitb/Desktop/simrankMatrixIterationSVMTransformedSemisupervised8-3-6.synsets"};
-		String[] files = {"/home/sumitb/Desktop/simrankMatrixIterationSVMProbScaled8-3-6.synsets.cleaned"};
+//		String[] files = {"resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun"};//, "/home/sumitb/Desktop/simrankMatrixIterationSVMTransformedSemisupervised8-3-6.synsets"};		
+		String[] files = {"resources/Clustering/SimilarityModels/Scaled0.7/simrankMatrixIterationSVMProbScaled9-5-7.synsets", "resources/Clustering/PopulatingDB/svmProbScaled/simValuesSVMTransformed.nounScaled0.7"};
+
+		double minthreshold = 0.5;
+		double maxthreshold = 0.7;
 		String answerKey = "resources/Clustering/Senseval3/NounExtractedFiles/EnglishAW.test.key.synsets.lemmas";		
 		
 		String attemptPath = "resources/Clustering/Senseval3/NounExtractedFiles/";
 		String[] attemptFiles = {attemptPath+"GAMBL.synsets", attemptPath+"SenseLearner.synsets", attemptPath+"kuaw.synsets", attemptPath+"IRST-DDD-00.synsets",};
 		
-		String scoresFile = attemptPath+"results/testProb.txt";
+		String scoresFile = attemptPath+"results/testScaled0.7.txt";
 		String[] hashKeys = {"precision_fine", "random_baseline","recall_coarse","fscore_coarse","fscore_fine","improvement","precision_coarse","recall_fine","attempted"};
 		double[] bestImprovement = {Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY};
 		double[] bestImprovementThreshold = {0,0,0,0};
 		try{
 			BufferedWriter bw = new BufferedWriter(new FileWriter(new File(scoresFile)));
-			for(double threshold = 0.3; threshold <= 0.6; threshold += 0.01)
+			for(double threshold = minthreshold; threshold <= maxthreshold; threshold += 0.01)
 			{
 				bw.write(threshold+"");
 				System.out.println("Finding Connected Components ...");

@@ -174,24 +174,30 @@ public class BabelNetBasedSimilarity {
 				System.out.println("no babelsynsets found !");
 				System.exit(-1);
 			}
-			List<BabelSynset> senses = bn.getSynsets(Language.EN, "head", POS.NOUN, BabelSenseSource.WN);
-			int count = 0;
+			List<BabelSynset> senses = bn.getSynsets(Language.EN, "evidence", POS.NOUN, BabelSenseSource.WN);
 			for(BabelSynset sense : senses)
-			{			
-				for(String offset : sense.getWordNetOffsets())
-					System.out.println(offset);
-				System.out.println(count++);
-				HashSet<String> trans = new HashSet<String>();
-				Collection<BabelSense> translations = sense.getTranslations().values();
-				for(BabelSense bs : translations)
-				{
-					System.out.println(bs.toString());					
-					trans.add(bs.getLemma()+"#"+bs.getLanguage());
-				}
-				for(String tran : trans)
-					System.out.println(tran);
-				System.out.println("--------------------------------------------------");				
-			}			
+			{
+				for(String s : sense.getDBPediaURIs(Language.EN))
+					System.out.println(s);
+				System.out.println("--------------------------------------------------");
+			}
+//			int count = 0;
+//			for(BabelSynset sense : senses)
+//			{			
+//				for(String offset : sense.getWordNetOffsets())
+//					System.out.println(offset);
+//				System.out.println(count++);
+//				HashSet<String> trans = new HashSet<String>();
+//				Collection<BabelSense> translations = sense.getTranslations().values();
+//				for(BabelSense bs : translations)
+//				{
+//					System.out.println(bs.toString());					
+//					trans.add(bs.getLemma()+"#"+bs.getLanguage());
+//				}
+//				for(String tran : trans)
+//					System.out.println(tran);
+//				System.out.println("--------------------------------------------------");				
+//			}			
 		}
 		catch(Exception ex)
 		{

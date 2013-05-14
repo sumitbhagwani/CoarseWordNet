@@ -1,0 +1,34 @@
+LCH
+WUP
+JCN
+LIN
+RES
+AdapLesk
+AdapLeskTani
+AdapLeskTaniNoHypo
+commonWordsCount - Common Lemma Count
+commonWordSenseCount - This is not going to be useful
+SenseCount
+senseNum
+lexFileSimilarity
+#EmptyEntry
+mergeSP1_1
+mergeSP1_2
+mergeSP1_2_relaxed
+mergeSP1_3
+number of Common Hypernyms
+autohyponymy
+#DomainCosineSimilarity
+#Domainl1Distance
+#Domainl2Distance
+OEDMerged
+#SentiWordNetCosineSimilarity
+#SentiWordNetl1Distance
+#SentiWordNetl2Distance
+CommonEnglishTranslations
+German
+Spanish
+Italian
+French
+Catalan
+CommonDBPediaEntries

@@ -225,8 +225,8 @@ public class PrepareBinaryClassificationData {
 			{
 //				prepareData(nounInputFolder, nounOutputFilePositive, nounOutputFileNegative, dictionary);
 //				prepareData(verbInputFolder, verbOutputFilePositive, verbOutputFileNegative, dictionary);
-//				divideDataset(nounOutputFilePositive, nounOutputFileNegative, 0.7, outputPath+"Noun6/");
-				divideDataset(verbOutputFilePositive, verbOutputFileNegative, 0.7, outputPath+"Verb3/");
+				divideDataset(nounOutputFilePositive, nounOutputFileNegative, 0.7, outputPath+"Noun7/");
+//				divideDataset(verbOutputFilePositive, verbOutputFileNegative, 0.7, outputPath+"Verb3/");
 			}
 		}
 		catch(Exception ex)

@@ -23,6 +23,7 @@ public class SimpleUndirectedGraph {
 			System.out.println("Reading : "+path);	
 			BufferedReader br = new BufferedReader(new FileReader(new File(path)));
 			String line;
+			int i = 0;
 			while((line=br.readLine())!=null)
 			{
 				String[] lineSplit = line.split("\\s+");
@@ -32,6 +33,9 @@ public class SimpleUndirectedGraph {
 				double weight = Double.parseDouble(lineSplit[2]);
 				if(weight > threshold)
 					graph.addEdge(new Edge(label, weight), new Vertex("n",offset1) , new Vertex("n",offset2), EdgeType.UNDIRECTED);
+				i++;
+				if(i%10000 == 0)
+					System.out.println(i);
 			}			
 			br.close();
 			}
