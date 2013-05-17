@@ -3,6 +3,7 @@ package simRank;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.util.List;
 
 import edu.uci.ics.jung.graph.Graph;
 import edu.uci.ics.jung.graph.UndirectedSparseGraph;
@@ -44,6 +45,31 @@ public class SimpleUndirectedGraph {
 				ex.printStackTrace();
 				System.exit(-1);
 			}
+		}
+		System.out.println("Graph read..");
+		System.out.println("NumNodes : "+graph.getVertexCount());
+		System.out.println("NumEdges : "+graph.getEdgeCount());
+	}
+	
+	
+	public SimpleUndirectedGraph(List<String> similarityPairs, double threshold)
+	{
+		graph = new UndirectedSparseGraph<Vertex, Edge>();
+			
+		System.out.println("Reading graph..");
+		int i = 0;	
+		for(String line : similarityPairs)
+		{														
+			String[] lineSplit = line.split("\\s+");
+			String label = "svmPrediction";
+			String offset1 = lineSplit[0];
+			String offset2 = lineSplit[1];
+			double weight = Double.parseDouble(lineSplit[2]);
+			if(weight > threshold)
+				graph.addEdge(new Edge(label, weight), new Vertex("n",offset1) , new Vertex("n",offset2), EdgeType.UNDIRECTED);
+			i++;
+			if(i%10000 == 0)
+				System.out.println(i);			
 		}
 		System.out.println("Graph read..");
 		System.out.println("NumNodes : "+graph.getVertexCount());

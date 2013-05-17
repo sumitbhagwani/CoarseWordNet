@@ -1,25 +1,56 @@
 package connectedComponentAnalysis;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class Analysis {
 
+	public List<String> readFiles(String[] files)
+	{
+		List<String> synsetPairScores = new ArrayList<String>();
+		try{
+			for(String file:files)
+			{
+				System.out.println("Reading ... "+file);
+				BufferedReader br = new BufferedReader(new FileReader(new File(file)));
+				String line;
+				while((line=br.readLine())!=null)
+				{
+					synsetPairScores.add(line);
+				}
+				br.close();
+			}
+		}
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
+		}
+		return synsetPairScores;
+	}
+	
 	public static void main(String[] args) {
-//		String[] files = {"resources/Clustering/PopulatingDB/simValuesSVM.noun"};
-//		String[] files = {"resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun"};//, "/home/sumitb/Desktop/simrankMatrixIterationSVMTransformedSemisupervised8-3-6.synsets"};		
-		String[] files = {"resources/Clustering/SimilarityModels/Scaled0.7/simrankMatrixIterationSVMProbScaled9-5-7.synsets", "resources/Clustering/PopulatingDB/svmProbScaled/simValuesSVMTransformed.nounScaled0.7"};
-
-		double minthreshold = 0.5;
-		double maxthreshold = 0.7;
-		String answerKey = "resources/Clustering/Senseval3/NounExtractedFiles/EnglishAW.test.key.synsets.lemmas";		
-		
+		String answerKey = "resources/Clustering/Senseval3/NounExtractedFiles/EnglishAW.test.key.synsets.lemmas";				
 		String attemptPath = "resources/Clustering/Senseval3/NounExtractedFiles/";
 		String[] attemptFiles = {attemptPath+"GAMBL.synsets", attemptPath+"SenseLearner.synsets", attemptPath+"kuaw.synsets", attemptPath+"IRST-DDD-00.synsets",};
 		
-		String scoresFile = attemptPath+"results/testScaled0.7.txt";
+//		String[] files = {"resources/Clustering/PopulatingDB/simValuesSVM.noun"}; // Original SVM Predictions
+//		String[] files = {"resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun"}; // SVM posterior prob
+		
+		String scaledSimValuesPath = "resources/Clustering/PopulatingDB/svmProbScaled/simValuesSVMTransformed.nounScaled0.7";
+		String simRankValuesPath = "resources/Clustering/SimilarityModels/Scaled0.7/simrankMatrixIterationSVMProbScaled9-5-7.synsets";
+		String[] files = {scaledSimValuesPath, simRankValuesPath};
+//		String[] files = {"resources/Clustering/SimilarityModels/Scaled0.7/simrankMatrixIterationSVMProbScaled9-5-7.synsets", "resources/Clustering/PopulatingDB/svmProbScaled/simValuesSVMTransformed.nounScaled0.7"};		
+
+		double minthreshold = 0.5;
+		double maxthreshold = 0.7;		
+		String scoresFile = attemptPath+"results/SVMScaled0.7.txt";
+		
 		String[] hashKeys = {"precision_fine", "random_baseline","recall_coarse","fscore_coarse","fscore_fine","improvement","precision_coarse","recall_fine","attempted"};
 		double[] bestImprovement = {Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY};
 		double[] bestImprovementThreshold = {0,0,0,0};

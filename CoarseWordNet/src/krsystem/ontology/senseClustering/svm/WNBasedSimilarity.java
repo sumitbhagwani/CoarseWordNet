@@ -395,24 +395,28 @@ public class WNBasedSimilarity {
 		String propsFile30 = "resources/file_properties.xml";
 		String dir = "/home/sumitb/Data/";
 		String arg = "WordNet-3.0";
-		String mappingPath = "resources/Clustering/synsetWordIndexMap/verbMap.txt";
+		String mappingPath = "resources/Clustering/synsetWordIndexMap/nounMap.txt";
 		try{			
 			JWNL.initialize(new FileInputStream(propsFile30));
 			Dictionary dictionary = Dictionary.getInstance();
-			Synset syn1 = dictionary.getSynsetAt(POS.VERB, 126264);
-			Synset syn2 = dictionary.getSynsetAt(POS.VERB, 169806);
-			System.out.println(syn1.getWords().size());
+//			Synset syn1 = dictionary.getSynsetAt(POS.VERB, 126264);
+//			Synset syn2 = dictionary.getSynsetAt(POS.VERB, 169806);
+//			System.out.println(syn1.getWords().size());
 			EXTJWNLUtils tools = new EXTJWNLUtils(dictionary);
-			OrderedPair<String, Integer> pair = tools.getWordIndexPair(syn1);
-			System.out.println(pair.getL()+" "+pair.getR());
-//			List<Synset> syns = dictionary.getIndexWord(POS.NOUN, "head").getSenses();
+//			OrderedPair<String, Integer> pair = tools.getWordIndexPair(syn1);
+//			System.out.println(pair.getL()+" "+pair.getR());
+			
+			List<Synset> syns = dictionary.getIndexWord(POS.NOUN, "student").getSenses();
+			List<Synset> syns1 = dictionary.getIndexWord(POS.NOUN, "teacher").getSenses();
+			System.out.println(syns.get(0));
+			System.out.println(syns1.get(0));
 			JWS ws = new JWS(dir, arg);
 			WNBasedSimilarity wnbs = new WNBasedSimilarity(dir, arg, 3, dictionary, mappingPath);
 			
-//			int index = 0;
-//			double[] similarities = wnbs.getSimilarities(syns.get(0), syns.get(1));
-//			for(double score : similarities)
-//				System.out.println("1 : "+index++ +" "+ score);
+			int index = 0;
+			double[] similarities = wnbs.getSimilarities(syns.get(0), syns1.get(0));
+			for(double score : similarities)
+				System.out.println("1 : "+index++ +" "+ score);
 //			
 //			similarities = wnbs.getFeatures(syns.get(0), syns.get(1));
 //			for(double score : similarities)
@@ -422,16 +426,16 @@ public class WNBasedSimilarity {
 //			for(double score : similarities)
 //				System.out.println("3 : "+index++ +" "+ score);
 			
-			LeacockAndChodorow lch = ws.getLeacockAndChodorow();
+//			LeacockAndChodorow lch = ws.getLeacockAndChodorow();
 //			EXTJWNLUtils tools = new EXTJWNLUtils(dictionary);
 //			Synset syn1 = dictionary.getSynsetAt(POS.VERB, 169806);
 //			Synset syn2 = dictionary.getSynsetAt(POS.VERB, 126264);
-			OrderedPair<String, Integer> pair1 = tools.getWordIndexPair(syn1);
-			OrderedPair<String, Integer> pair2 = tools.getWordIndexPair(syn2);
-			HirstAndStOnge hso = ws.getHirstAndStOnge();
+//			OrderedPair<String, Integer> pair1 = tools.getWordIndexPair(syn1);
+//			OrderedPair<String, Integer> pair2 = tools.getWordIndexPair(syn2);
+//			HirstAndStOnge hso = ws.getHirstAndStOnge();
 //			System.out.println(lch.lch("retain",1, "control",1, "v"));
 //			System.out.println(hso.hso(pair1.getL(),pair1.getR().intValue(), pair2.getL(),pair2.getR().intValue(), "v"));
-			System.out.println(lch.lch(pair1.getL(),pair1.getR().intValue(), pair2.getL(),pair2.getR().intValue(), "v"));
+//			System.out.println(lch.lch(pair1.getL(),pair1.getR().intValue(), pair2.getL(),pair2.getR().intValue(), "v"));
 //			for(double d:wnbs.getSimilarities(syn1, syn2))
 //				System.out.print(d+",");
 //			System.out.println(lch.lch("fall over backwards", 1, "presume", 1, "v"));

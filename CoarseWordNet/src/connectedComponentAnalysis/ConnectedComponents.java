@@ -55,6 +55,31 @@ public class ConnectedComponents {
 		int numClusters = (numSynsets-numVertices) + clusters.size();
 		System.out.println("Overall numClusters = "+numClusters);		
 	}
+		
+	public ConnectedComponents(List<String> similarityPairs, double threshold)
+	{
+		clusterList = new ArrayList<Set<String>>();
+		vertexToId = new HashMap<String, Integer>();		
+		SimpleUndirectedGraph g = new SimpleUndirectedGraph(similarityPairs, threshold);
+		WeakComponentClusterer<Vertex, Edge> clusterer = new WeakComponentClusterer<Vertex, Edge>();
+		Set<Set<Vertex>> clusters = clusterer.transform(g.graph);
+		int i = 0;
+		for(Set<Vertex> cluster : clusters)
+		{
+			HashSet<String> offsetCollection = new HashSet<String>();
+			for(Vertex v : cluster)
+			{
+				vertexToId.put(v.getOffset(), i);				
+				offsetCollection.add(v.getOffset());
+			}
+			clusterList.add(offsetCollection);
+			i++;
+		}
+		int numVertices = g.graph.getVertexCount();
+		System.out.println("Obtained "+clusters.size()+" clusters over "+numVertices+ " vertices.");		
+		int numClusters = (numSynsets-numVertices) + clusters.size();
+		System.out.println("Overall numClusters = "+numClusters);		
+	}
 	
 	public static void test(){
 //		String[] files = {"resources/Clustering/PopulatingDB/simValuesSVM.noun"};
