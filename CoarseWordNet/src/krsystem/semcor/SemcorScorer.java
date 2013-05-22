@@ -569,10 +569,10 @@ public class SemcorScorer {
 		String offsetFile = dataPath+"/xwnd/offsets.txt";		
 //		getNounScoreDistribution(1, offsetFile, true);
 //		getVerbScoreDistribution(1, offsetFile, true);
-//		String sortedNouns = dataPath+"semcor3.0/FrequencyAnalysis/Noun/scorestrue1.0Sorted.txt";
-//		observeSysnets(sortedNouns, POS.NOUN);
-		String sortedVerbs = dataPath+"semcor3.0/FrequencyAnalysis/Verb/scorestrue1.0Sorted.txt";
-		observeSysnets(sortedVerbs, POS.VERB);
+		String sortedNouns = dataPath+"semcor3.0/FrequencyAnalysis/Noun/scorestrue1.0Sorted.txt";
+		observeSysnets(sortedNouns, POS.NOUN);
+//		String sortedVerbs = dataPath+"semcor3.0/FrequencyAnalysis/Verb/scorestrue1.0Sorted.txt";
+//		observeSysnets(sortedVerbs, POS.VERB);
 		
 	}
 

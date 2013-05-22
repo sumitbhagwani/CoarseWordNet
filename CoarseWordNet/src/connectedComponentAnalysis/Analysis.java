@@ -11,7 +11,7 @@ import java.util.List;
 
 public class Analysis {
 
-	public List<String> readFiles(String[] files)
+	public static List<String> readFiles(String[] files)
 	{
 		List<String> synsetPairScores = new ArrayList<String>();
 		try{
@@ -43,11 +43,12 @@ public class Analysis {
 //		String[] files = {"resources/Clustering/PopulatingDB/simValuesSVMTransformed.noun"}; // SVM posterior prob
 		
 		String scaledSimValuesPath = "resources/Clustering/PopulatingDB/svmProbScaled/simValuesSVMTransformed.nounScaled0.7";
-		String simRankValuesPath = "resources/Clustering/SimilarityModels/Scaled0.7/simrankMatrixIterationSVMProbScaled9-5-7.synsets";
+		String simRankValuesPath = "resources/Clustering/SimilarityModels/Scaled0.7/simrankMatrixIterationSVMProbScaled9-4-7.synsets";
 		String[] files = {scaledSimValuesPath, simRankValuesPath};
 //		String[] files = {"resources/Clustering/SimilarityModels/Scaled0.7/simrankMatrixIterationSVMProbScaled9-5-7.synsets", "resources/Clustering/PopulatingDB/svmProbScaled/simValuesSVMTransformed.nounScaled0.7"};		
 
-		double minthreshold = 0.5;
+		List<String> scores = readFiles(files);
+		double minthreshold = 0.4;
 		double maxthreshold = 0.7;		
 		String scoresFile = attemptPath+"results/SVMScaled0.7.txt";
 		
@@ -60,7 +61,7 @@ public class Analysis {
 			{
 				bw.write(threshold+"");
 				System.out.println("Finding Connected Components ...");
-				ConnectedComponents components = new ConnectedComponents(files, threshold);
+				ConnectedComponents components = new ConnectedComponents(scores, threshold);
 				System.out.println("Connected Components found ...");
 				
 				System.out.println("Constructing Scorer ...");				
