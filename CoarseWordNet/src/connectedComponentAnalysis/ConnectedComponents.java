@@ -103,5 +103,9 @@ public class ConnectedComponents {
 		System.out.println(numClusters);
 	}
 	
+	public Integer getVertexId(String synset)
+	{
+		return vertexToId.get(synset);
+	}
 	
 }
