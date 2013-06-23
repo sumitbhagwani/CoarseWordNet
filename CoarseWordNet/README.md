@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------
-									Coarsening WordNet
+Coarsening WordNet
 ----------------------------------------------------------------------------------------------
 Abstract: 
 Currently used general purpose dictionaries are often too fine-grained, with narrow 
