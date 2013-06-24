@@ -16,6 +16,16 @@ Notes:
 2) For more details refer: Merging Word Senses, M.Tech. Thesis - Sumit Bhagwani, Computer Science and Engineering, IIT Kanpur.
 
 =============
+Instructions:
+
+1) The system requires all the additional datasets like BabelNet and SentiWordNet, in 
+/home/USERNAME/Data folder.
+
+2) The USERNAME needs to be set in the code as well - StaticValues.java
+
+3) The properties file of EXTJWNL and BabelNet needs to be set appropriately.
+
+----------------------------------------------------------------------------------------------
 
 Installation Instructions:
 1) The system requires all following additional datasets in /home/USERNAME/Data folder:
