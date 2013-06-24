@@ -25,10 +25,12 @@ Installation Instructions:
 2. The USERNAME needs to be set in the code (StaticValues.java) and in properties files of 
 EXTJWNL and BabelNet.
 
-----------------------------------------------------------------------------------------------
+=============
+
 Code Details:
 
-1. Data Processing: The data preprocessing codes are available in krsystem.ontology.senseClustering package
+1. Data Processing: 
+	* The data preprocessing codes are available in krsystem.ontology.senseClustering package
 2. Supervised Learning Framework: 
 	* The SVM framework used for learning similarity metric is available in krsystem.ontology.senseClustering.svm package. 
 	* The FeatureGenerator.java class collects the features and passes it to learning module.
